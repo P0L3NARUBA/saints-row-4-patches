@@ -26,7 +26,7 @@ Also install Visual Studio 2017 with Desktop C++ and C++ Game Development select
 ## Building Assets
 1. Run **py pip install p4python**
 
-After you install the client and server you will need to run these 2 commands in CMD:
+After you install the client and server you will need to run these 2 commands in CMD:<br>
 `p4 set P4PORT=(server ip):1666` Set server ip to what you set in P4V it will most likely be localhost:1666<br>
 `p4 set P4CLIENT=(WORKSPACENAME)` Set the workspace name to what you have in Perforce.
 
