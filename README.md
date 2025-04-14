@@ -25,8 +25,9 @@ And last thing to is put the sr35 file to your saints row 4 source code.
 1. Install Python. After its installed run **py pip install p4python**
 2. Install the Vulkan SDK. The default selected is fine.
 3. [Install the Perforce Visual Client and server.](https://www.youtube.com/watch?v=2me3R2FFjcI)
-After you install the client and server you will need to run 2 commands in CMD.
-`p4 set P4PORT=(server ip):1666` Set server ip to what you set in P4V it will most likely be localhost:1666.
+
+After you install the client and server you will need to run these 2 commands in CMD:
+`p4 set P4PORT=(server ip):1666` Set server ip to what you set in P4V it will most likely be localhost:1666
 `p4 set P4CLIENT=(WORKSPACENAME)` Set the workspace name to what you have in Perforce.
 
 - You need to gen the pcvdir You can do this running `py dsfl.py genvdir pc` in the `D:\projects\sr35\ng2\sr35` folder.
