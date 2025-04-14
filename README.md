@@ -18,8 +18,8 @@ Password: ``LDFsvm36*q2236.cx-=312"5xc32-1236`12b_sx.[232#6-12cvw0s-``<br>
 Also make a new Environment Variable called **NINTENDO_SDK_ROOT** You can point this to an empty folder.
 
 # How to set the patches?
-Drag Microsoft GDK to **C:\Program Files (x86)**
-And last thing to is put the sr35 file to your saints row 4 source code.
+Drag Microsoft GDK to **C:\Program Files (x86)**<br>
+And last thing to is put the sr35 file to your Saints Row 4 Source Code Location.
 
 ## Building Assets
 1. Install Python. After its installed run **py pip install p4python**
