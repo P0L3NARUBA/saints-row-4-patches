@@ -8,13 +8,13 @@ Saints Row 4 Patches and Additional Files for Building the Source Code
 [Vulkan SDK](https://sdk.lunarg.com/sdk/download/1.3.296.0/windows/VulkanSDK-1.3.296.0-Installer.exe)
 [Volition .reg file](/volition.reg)
 
-### For assets (Not Required)
-[Perforce Visual Client and Server](https://mega.nz/file/HyYx3BzR#X_i0lWE1l_Lx-4wZSuwLo9X-Ec_L69OCZ2Im7Txz3w8)
-[Python](https://www.python.org/downloads/)
-
 Here's the source: https://gofile.io/d/PqdaAk<br>
 Password: ``LDFsvm36*q2236.cx-=312"5xc32-1236`12b_sx.[232#6-12cvw0s-``<br>
 Also make a new Environment Variable called **NINTENDO_SDK_ROOT** You can point this to an empty folder.
+
+### For assets (Not Required)
+[Perforce Visual Client and Server](https://mega.nz/file/HyYx3BzR#X_i0lWE1l_Lx-4wZSuwLo9X-Ec_L69OCZ2Im7Txz3w8)
+[Python](https://www.python.org/downloads/)
 
 # How to set the patches?
 Drag Microsoft GDK to **C:\Program Files (x86)**<br>
