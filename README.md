@@ -22,9 +22,7 @@ Drag Microsoft GDK to **C:\Program Files (x86)**<br>
 And last thing to is put the sr35 file to your Saints Row 4 Source Code Location.
 
 ## Building Assets
-1. Install Python. After its installed run **py pip install p4python**
-2. Install the Vulkan SDK. The default selected is fine.
-3. [Install the Perforce Visual Client and server.](https://www.youtube.com/watch?v=2me3R2FFjcI)
+1. Run **py pip install p4python**
 
 After you install the client and server you will need to run these 2 commands in CMD:
 `p4 set P4PORT=(server ip):1666` Set server ip to what you set in P4V it will most likely be localhost:1666
