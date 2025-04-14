@@ -6,7 +6,7 @@ Saints Row 4 Patches for Building the Source Code
 [Visual Studio 2019](/vs_Community2019.exe)
 [Microsoft GDK October 2023 Update 7](https://github.com/microsoft/GDK/archive/refs/tags/October_2023_Update_7.zip)
 [Vulkan SDK](https://sdk.lunarg.com/sdk/download/1.3.296.0/windows/VulkanSDK-1.3.296.0-Installer.exe)
-[Volition reg file](/volition.reg)
+[Volition .reg file](/volition.reg)
 
 ### For assets (Not Required)
 [Perforce Visual Client](https://www.perforce.com/downloads/helix-visual-client-p4v)
