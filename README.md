@@ -1,5 +1,5 @@
 # saints-row-4-patches
-Saints Row 4 Patches for Building the Source Code
+Saints Row 4 Patches and Additional Files for Building the Source Code
 
 ## Requirements
 [Visual Studio 2017](/vs_Community2017.exe)
@@ -9,8 +9,7 @@ Saints Row 4 Patches for Building the Source Code
 [Volition .reg file](/volition.reg)
 
 ### For assets (Not Required)
-[Perforce Visual Client](https://www.perforce.com/downloads/helix-visual-client-p4v)
-[Perforce Server](https://www.perforce.com/products/helix-core/free-version-control) 
+[Perforce Visual Client and Server](https://mega.nz/file/HyYx3BzR#X_i0lWE1l_Lx-4wZSuwLo9X-Ec_L69OCZ2Im7Txz3w8)
 [Python](https://www.python.org/downloads/)
 
 Here's the source: https://gofile.io/d/PqdaAk<br>
