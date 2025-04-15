@@ -5,7 +5,7 @@ Saints Row 4 Patches and Additional Files for Building the Source Code
 Drag Microsoft GDK folder into **C:\Program Files (x86)**<br>
 And last thing to do is put the sr35 file to your Saints Row 4 Source Code Location<br>
 Make a new Environment Variable called **NINTENDO_SDK_ROOT** You can point this to an empty folder.<br>
-Also download the real game from steam and put all the folders to the sr35/ng2/sr35 directory, do not click replace the files just skip it.
+Also download the real game from steam and put all the folders to the sr35/ng2/sr35 directory, do not click replace the files just skip it.<br>
 Remove these 2 files(polarssl.c and polarssl.h) inside this folder: ``D:\SR4\sr35\ng2\sr35\src\vendor\Agora Games (Hydra SDK)\external\curl-7.21.4\lib``
 
 
