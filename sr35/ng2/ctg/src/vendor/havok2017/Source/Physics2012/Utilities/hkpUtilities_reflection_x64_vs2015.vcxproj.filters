@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Actions">
+        <UniqueIdentifier>2C798412-C798-422C-9841-2C7984122C79</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\AngularDashpot">
+        <UniqueIdentifier>2B440A2B-40A2-440A-B440-2B440A2B440A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\Dashpot">
+        <UniqueIdentifier>A3C6E05A-C6E0-43C6-05A3-6E05A3C6E05A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\EaseConstraints">
+        <UniqueIdentifier>3BC689F0-BC68-403B-689F-3BC689F03BC6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\EasePenetration">
+        <UniqueIdentifier>1DCDEEAF-DCDE-4F1D-DEEA-1DCDEEAF1DCD</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\Motor">
+        <UniqueIdentifier>11D34A1B-1D34-4B11-34A1-11D34A1B11D3</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\MouseSpring">
+        <UniqueIdentifier>65A873F8-5A87-4865-873F-65A873F865A8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\Reorient">
+        <UniqueIdentifier>636C113B-36C1-4B63-C113-636C113B636C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\Spring">
+        <UniqueIdentifier>5391BFA5-91BF-4391-FA53-1BFA5391BFA5</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Actions\Wind">
+        <UniqueIdentifier>3C77C79F-C77C-4F3C-7C79-3C77C79F3C77</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl">
+        <UniqueIdentifier>492A68F0-92A6-4049-A68F-492A68F0492A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\CharacterProxy">
+        <UniqueIdentifier>7C2D8748-C2D8-487C-D874-7C2D87487C2D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\CharacterProxy\Multithreaded">
+        <UniqueIdentifier>5EAB2CCA-EAB2-4A5E-B2CC-5EAB2CCA5EAB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\CharacterProxy\Multithreaded\Cpu">
+        <UniqueIdentifier>568A1D8C-68A1-4C56-A1D8-568A1D8C568A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\CharacterProxy\Multithreaded\Util">
+        <UniqueIdentifier>3A2B2BE7-A2B2-473A-B2BE-3A2B2BE73A2B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\CharacterRigidBody">
+        <UniqueIdentifier>412CB875-12CB-4541-CB87-412CB875412C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\FirstPersonCharacter">
+        <UniqueIdentifier>89F18518-F185-49F1-5189-185189F18518</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\StateMachine">
+        <UniqueIdentifier>19E681B5-9E68-4519-681B-19E681B519E6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\StateMachine\Climbing">
+        <UniqueIdentifier>4FDD5017-FDD5-474F-D501-4FDD50174FDD</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\StateMachine\Flying">
+        <UniqueIdentifier>8B5B0A38-5B0A-4B5B-A38B-B0A38B5B0A38</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\StateMachine\InAir">
+        <UniqueIdentifier>4CCF27C2-CCF2-424C-F27C-4CCF27C24CCF</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\StateMachine\Jumping">
+        <UniqueIdentifier>49A37971-9A37-4149-3797-49A3797149A3</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\StateMachine\OnGround">
+        <UniqueIdentifier>78D63CA2-8D63-4278-63CA-78D63CA278D6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="CharacterControl\StateMachine\Util">
+        <UniqueIdentifier>7BCCDC28-BCCD-487B-CDC2-7BCCDC287BCC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide">
+        <UniqueIdentifier>6E720A2D-E720-4D6E-20A2-6E720A2D6E72</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactModifiers">
+        <UniqueIdentifier>5D9E4210-D9E4-405D-E421-5D9E42105D9E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactModifiers\CenterOfMassChanger">
+        <UniqueIdentifier>5830F4DE-830F-4E58-0F4D-5830F4DE5830</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactModifiers\MassChanger">
+        <UniqueIdentifier>377D1E8E-77D1-4E37-D1E8-377D1E8E377D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactModifiers\SoftContact">
+        <UniqueIdentifier>36E751AC-6E75-4C36-751A-36E751AC36E7</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactModifiers\SurfaceVelocity">
+        <UniqueIdentifier>57081828-7081-4857-8182-570818285708</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactModifiers\SurfaceVelocity\Filtered">
+        <UniqueIdentifier>E453584E-5358-4453-84E4-3584E453584E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactModifiers\ViscoseSurface">
+        <UniqueIdentifier>5AF0F71E-AF0F-4E5A-0F71-5AF0F71E5AF0</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\Filter">
+        <UniqueIdentifier>9C4A9BE9-4A9B-4C4A-BE9C-A9BE9C4A9BE9</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\Filter\GroupFilter">
+        <UniqueIdentifier>4CE694D1-CE69-414C-694D-4CE694D14CE6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\RemoveContact">
+        <UniqueIdentifier>1128ABB5-128A-4511-8ABB-1128ABB51128</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils">
+        <UniqueIdentifier>478302B6-7830-4647-302B-478302B64783</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\CollapseTransform">
+        <UniqueIdentifier>47109547-7109-4747-0954-471095474710</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\CreateShape">
+        <UniqueIdentifier>B7687CDB-687C-4768-CDB7-87CDB7687CDB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\MoppCodeStreamer">
+        <UniqueIdentifier>68587659-8587-4968-8765-685876596858</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\ShapeConverter">
+        <UniqueIdentifier>472AF304-72AF-4447-AF30-472AF304472A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\ShapeKeyPath">
+        <UniqueIdentifier>1FCDBE8A-FCDB-4A1F-DBE8-1FCDBE8A1FCD</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\ShapeMerger">
+        <UniqueIdentifier>42DC7235-2DC7-4542-C723-42DC723542DC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\ShapeScaling">
+        <UniqueIdentifier>4BAB3549-BAB3-494B-B354-4BAB35494BAB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\ShapeSharing">
+        <UniqueIdentifier>588D1012-88D1-4258-D101-588D1012588D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\ShapeToMeshConverter">
+        <UniqueIdentifier>4F05AB72-F05A-424F-5AB7-4F05AB724F05</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ShapeUtils\SimpleMeshTklStreamer">
+        <UniqueIdentifier>4D609FF9-D609-494D-09FF-4D609FF94D60</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\TriggerVolume">
+        <UniqueIdentifier>41ACFD75-1ACF-4541-CFD7-41ACFD7541AC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint">
+        <UniqueIdentifier>66D536B9-6D53-4966-536B-66D536B966D5</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Bilateral">
+        <UniqueIdentifier>7682B7D7-682B-4776-2B7D-7682B7D77682</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Chain">
+        <UniqueIdentifier>1CD1432A-CD14-4A1C-1432-1CD1432A1CD1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Deprecated">
+        <UniqueIdentifier>378DFB49-78DF-4937-DFB4-378DFB49378D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Deprecated\ConstrainedSystem">
+        <UniqueIdentifier>5A4EAC2C-A4EA-4C5A-EAC2-5A4EAC2C5A4E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Deprecated\DisableEntity">
+        <UniqueIdentifier>3D862426-D862-463D-6242-3D8624263D86</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Deprecated\H1Group">
+        <UniqueIdentifier>5D47D489-D47D-495D-7D48-5D47D4895D47</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction">
+        <UniqueIdentifier>363B2413-3B24-463B-4136-B241363B2413</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakOffParts">
+        <UniqueIdentifier>86105D38-105D-4610-D386-05D386105D38</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics">
+        <UniqueIdentifier>35C20306-5C20-4635-2030-35C2030635C2</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\EntityContactCollector">
+        <UniqueIdentifier>153FE76B-53FE-4B15-FE76-153FE76B153F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\ImpulseAccumulator">
+        <UniqueIdentifier>47E70804-7E70-4447-7080-47E7080447E7</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\Inertia">
+        <UniqueIdentifier>67E857E8-7E85-4867-857E-67E857E867E8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\KeyFrame">
+        <UniqueIdentifier>541ECE03-41EC-4354-ECE0-541ECE03541E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\Lazyadd">
+        <UniqueIdentifier>2A7368DD-A736-4D2A-368D-2A7368DD2A73</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\PhantomBatchMove">
+        <UniqueIdentifier>250F4041-50F4-4125-F404-250F4041250F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\RigidBodyReset">
+        <UniqueIdentifier>1D41C8C1-D41C-411D-1C8C-1D41C8C11D41</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\SaveContactPoints">
+        <UniqueIdentifier>58BDE6B0-8BDE-4058-DE6B-58BDE6B058BD</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\ScaleSystem">
+        <UniqueIdentifier>96157039-1570-4615-0396-570396157039</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\SuspendInactiveAgents">
+        <UniqueIdentifier>3D1F12BF-D1F1-4F3D-F12B-3D1F12BF3D1F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dynamics\TimeSteppers">
+        <UniqueIdentifier>6FD171EE-FD17-4E6F-171E-6FD171EE6FD1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External">
+        <UniqueIdentifier>283B594B-83B5-4B28-B594-283B594B283B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External\Tools">
+        <UniqueIdentifier>58A1BCD2-8A1B-4258-1BCD-58A1BCD258A1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External\Tools\PreBuild">
+        <UniqueIdentifier>7D03B0F2-D03B-427D-3B0F-7D03B0F27D03</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External\Tools\PreBuild\bin">
+        <UniqueIdentifier>1EB66A9F-EB66-4F1E-66A9-1EB66A9F1EB6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External\Tools\PreBuild\bin\windows">
+        <UniqueIdentifier>677C36E6-77C3-4667-C36E-677C36E6677C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Geometry">
+        <UniqueIdentifier>212FD948-12FD-4821-FD94-212FD948212F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Serialize">
+        <UniqueIdentifier>690CDF15-90CD-4569-CDF1-690CDF15690C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Serialize\Display">
+        <UniqueIdentifier>3808B61B-808B-4B38-8B61-3808B61B3808</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest">
+        <UniqueIdentifier>1D4E8DF6-D4E8-461D-E8DF-1D4E8DF61D4E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest\TriggerVolume">
+        <UniqueIdentifier>71FC063E-1FC0-4E71-C063-71FC063E71FC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger">
+        <UniqueIdentifier>2274476F-2744-4F22-4476-2274476F2274</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger\ShapeHash">
+        <UniqueIdentifier>806043E8-6043-4060-3E80-043E806043E8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger\Viewer">
+        <UniqueIdentifier>20596218-0596-4820-9621-205962182059</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger\Viewer\Collide">
+        <UniqueIdentifier>41E6ABB2-1E6A-4241-6ABB-41E6ABB241E6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger\Viewer\Dynamics">
+        <UniqueIdentifier>19BBE379-9BBE-4919-BE37-19BBE37919BB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger\Viewer\Dynamics\Constraint">
+        <UniqueIdentifier>57872907-7872-4757-7290-578729075787</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger\Viewer\Dynamics\Constraint\Drawer">
+        <UniqueIdentifier>330D9B17-30D9-4733-D9B1-330D9B17330D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger\Viewer\Utilities">
+        <UniqueIdentifier>5BF9EE8E-BF9E-4E5B-9EE8-5BF9EE8E5BF9</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VisualDebugger\Viewer\Vehicle">
+        <UniqueIdentifier>2A593F34-A593-442A-93F3-2A593F342A59</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Weapons">
+        <UniqueIdentifier>52BA3970-2BA3-4052-A397-52BA397052BA</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_ExtraPreBuildIncludes">
+        <UniqueIdentifier>2696D3B1-696D-4126-6D3B-2696D3B12696</UniqueIdentifier>
+        </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_ExtraPreBuildIncludes\hkpUtilitiesExtraIncludes.h">
+        <Filter>_ExtraPreBuildIncludes</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpConstraintChainUtil.h">
+        <Filter>Constraint\Chain</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\SuspendInactiveAgents\hkpSuspendInactiveAgentsUtil.h">
+        <Filter>Dynamics\SuspendInactiveAgents</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\KeyFrame\hkpKeyFrameUtility.h">
+        <Filter>Dynamics\KeyFrame</Filter>
+        </ClInclude>
+    <ClInclude Include="Geometry\hkpGeometryConverter.h">
+        <Filter>Geometry</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpSimulationIslandViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="Serialize\Display\hkpSerializedDisplayMarker.h">
+        <Filter>Serialize\Display</Filter>
+        </ClInclude>
+    <ClInclude Include="Serialize\hkpDisplayBindingData.h">
+        <Filter>Serialize</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\hkpCharacterProxyJobs.h">
+        <Filter>CharacterControl\CharacterProxy\Multithreaded</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpPhantomDisplayViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\ViscoseSurface\hkpViscoseSurfaceUtil.h">
+        <Filter>Collide\ContactModifiers\ViscoseSurface</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpWeldingViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\Util\hkpCharacterMovementUtil.h">
+        <Filter>CharacterControl\StateMachine\Util</Filter>
+        </ClInclude>
+    <ClInclude Include="Weapons\hkpGravityGun.h">
+        <Filter>Weapons</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterRigidBody\hkpCharacterRigidBody.h">
+        <Filter>CharacterControl\CharacterRigidBody</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpPoweredChainMapper.h">
+        <Filter>Constraint\Chain</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Vehicle\hkpVehicleViewer.h">
+        <Filter>VisualDebugger\Viewer\Vehicle</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\CollapseTransform\hkpTransformCollapseUtil.h">
+        <Filter>Collide\ShapeUtils\CollapseTransform</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\SimpleMeshTklStreamer\hkpSimpleMeshTklStreamer.h">
+        <Filter>Collide\ShapeUtils\SimpleMeshTklStreamer</Filter>
+        </ClInclude>
+    <ClInclude Include="Weapons\hkpFirstPersonGun.h">
+        <Filter>Weapons</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\TimeSteppers\hkpAsynchronousTimestepper.h">
+        <Filter>Dynamics\TimeSteppers</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpInactiveContactPointViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\hkpShapeDisplayBuilder.h">
+        <Filter>VisualDebugger\Viewer</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\hkpCharacterControl.h">
+        <Filter>CharacterControl</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\hkpDefaultCharacterStates.h">
+        <Filter>CharacterControl\StateMachine</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyCentreOfMassViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\hkpCharacterProxy.h">
+        <Filter>CharacterControl\CharacterProxy</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\hkpCharacterStateManager.h">
+        <Filter>CharacterControl\StateMachine</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyInertiaViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\ShapeHash\hkpShapeHashUtil.h">
+        <Filter>VisualDebugger\ShapeHash</Filter>
+        </ClInclude>
+    <ClInclude Include="Serialize\hkpPhysicsData.h">
+        <Filter>Serialize</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\Bilateral\hkpConstraintUtils.h">
+        <Filter>Constraint\Bilateral</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\RigidBodyReset\hkpRigidBodyResetUtil.h">
+        <Filter>Dynamics\RigidBodyReset</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\Inertia\hkpInertiaTensorComputer.h">
+        <Filter>Dynamics\Inertia</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\Spring\hkpSpringAction.h">
+        <Filter>Actions\Spring</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpSweptTransformDisplayViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\Wind\hkpWindRegion.h">
+        <Filter>Actions\Wind</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpToiCountViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\SaveContactPoints\hkpSerializedAgentNnEntry.h">
+        <Filter>Dynamics\SaveContactPoints</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\hkpShapeGenerator.h">
+        <Filter>Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpActiveContactPointViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\Lazyadd\hkpLazyAddToWorld.h">
+        <Filter>Dynamics\Lazyadd</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\Jumping\hkpCharacterStateJumping.h">
+        <Filter>CharacterControl\StateMachine\Jumping</Filter>
+        </ClInclude>
+    <ClInclude Include="Serialize\Display\hkpSerializedDisplayMarkerList.h">
+        <Filter>Serialize\Display</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeConverter\hkpShapeConverter.h">
+        <Filter>Collide\ShapeUtils\ShapeConverter</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Utilities\hkpMousePickingViewer.h">
+        <Filter>VisualDebugger\Viewer\Utilities</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\Wind\hkpWindAction.h">
+        <Filter>Actions\Wind</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeKeyPath\hkpShapeKeyPath.h">
+        <Filter>Collide\ShapeUtils\ShapeKeyPath</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\ImpulseAccumulator\hkpImpulseAccumulator.h">
+        <Filter>Dynamics\ImpulseAccumulator</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\Constraint\Drawer\hkpConstraintChainDrawer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics\Constraint\Drawer</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\Filter\GroupFilter\hkpGroupFilterUtil.h">
+        <Filter>Collide\Filter\GroupFilter</Filter>
+        </ClInclude>
+    <ClInclude Include="UnitTest\Tests.h">
+        <Filter>UnitTest</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpConvexRadiusViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\hkpCharacterProxyCinfo.h">
+        <Filter>CharacterControl\CharacterProxy</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\CreateShape\hkpCreateShapeUtility.h">
+        <Filter>Collide\ShapeUtils\CreateShape</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\MassChanger\hkpCollisionMassChangerUtil.h">
+        <Filter>Collide\ContactModifiers\MassChanger</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\hkpCharacterState.h">
+        <Filter>CharacterControl\StateMachine</Filter>
+        </ClInclude>
+    <ClInclude Include="Serialize\Display\hkpSerializedDisplayRbTransforms.h">
+        <Filter>Serialize\Display</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpToiContactPointViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\Wind\hkpPrevailingWind.h">
+        <Filter>Actions\Wind</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpConvexRadiusBuilder.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterRigidBody\hkpCharacterRigidBodyCinfo.h">
+        <Filter>CharacterControl\CharacterRigidBody</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\Climbing\hkpCharacterStateClimbing.h">
+        <Filter>CharacterControl\StateMachine\Climbing</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\InAir\hkpCharacterStateInAir.h">
+        <Filter>CharacterControl\StateMachine\InAir</Filter>
+        </ClInclude>
+    <ClInclude Include="UnitTest\TriggerVolume\unitTestTriggerVolume.h">
+        <Filter>UnitTest\TriggerVolume</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeScaling\hkpShapeScalingUtility.h">
+        <Filter>Collide\ShapeUtils\ShapeScaling</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeSharing\hkpShapeSharingUtil.h">
+        <Filter>Collide\ShapeUtils\ShapeSharing</Filter>
+        </ClInclude>
+    <ClInclude Include="Deprecated\hkpCollapseTransformsDeprecated.h">
+        <Filter>Deprecated</Filter>
+        </ClInclude>
+    <ClInclude Include="Deprecated\DisableEntity\hkpDisableEntityCollisionFilter.h">
+        <Filter>Deprecated\DisableEntity</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpConstraintViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\Inertia\hkpAccurateInertiaTensorComputer.h">
+        <Filter>Dynamics\Inertia</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyCollector.h">
+        <Filter>CharacterControl\CharacterProxy\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Serialize\hkpPhysicsToSceneDataBridge.h">
+        <Filter>Serialize</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpInconsistentWindingViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\TriggerVolume\hkpTriggerVolume.h">
+        <Filter>Collide\TriggerVolume</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyLocalFrameViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="Destruction\BreakOffParts\hkpBreakOffPartsUtil.h">
+        <Filter>Destruction\BreakOffParts</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\AngularDashpot\hkpAngularDashpotAction.h">
+        <Filter>Actions\AngularDashpot</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\SaveContactPoints\hkpPhysicsSystemWithContacts.h">
+        <Filter>Dynamics\SaveContactPoints</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\EntityContactCollector\hkpEntityContactCollector.h">
+        <Filter>Dynamics\EntityContactCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Deprecated\ConstrainedSystem\hkpConstrainedSystemFilter.h">
+        <Filter>Deprecated\ConstrainedSystem</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\PhantomBatchMove\hkpPhantomBatchMoveUtil.h">
+        <Filter>Dynamics\PhantomBatchMove</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\hkpCharacterContext.h">
+        <Filter>CharacterControl\StateMachine</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\Util\hkpCharacterProxyJobUtil.h">
+        <Filter>CharacterControl\CharacterProxy\Multithreaded\Util</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\EaseConstraints\hkpEaseConstraintsAction.h">
+        <Filter>Actions\EaseConstraints</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\Dashpot\hkpDashpotAction.h">
+        <Filter>Actions\Dashpot</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\hkpCharacterProxyJobQueueUtils.h">
+        <Filter>CharacterControl\CharacterProxy\Multithreaded</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpWorldSnapshotViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\SaveContactPoints\hkpSaveContactPointsEndianUtil.h">
+        <Filter>Dynamics\SaveContactPoints</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\SoftContact\hkpSoftContactUtil.h">
+        <Filter>Collide\ContactModifiers\SoftContact</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyUtil.h">
+        <Filter>CharacterControl\CharacterProxy\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpContactPointViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\Reorient\hkpReorientAction.h">
+        <Filter>Actions\Reorient</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\Flying\hkpCharacterStateFlying.h">
+        <Filter>CharacterControl\StateMachine\Flying</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\FirstPersonCharacter\hkpFirstPersonCharacter.h">
+        <Filter>CharacterControl\FirstPersonCharacter</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\hkpCharacterControllerCinfo.h">
+        <Filter>CharacterControl</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpCollideDebugUtil.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\SurfaceVelocity\Filtered\hkpFilteredSurfaceVelocityUtil.h">
+        <Filter>Collide\ContactModifiers\SurfaceVelocity\Filtered</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\MoppCodeStreamer\hkpMoppCodeStreamer.h">
+        <Filter>Collide\ShapeUtils\MoppCodeStreamer</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpSingleBodyConstraintViewer.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="Weapons\hkpBallGun.h">
+        <Filter>Weapons</Filter>
+        </ClInclude>
+    <ClInclude Include="Deprecated\H1Group\hkpGroupCollisionFilter.h">
+        <Filter>Deprecated\H1Group</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpWorldViewerBase.h">
+        <Filter>VisualDebugger\Viewer\Dynamics</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpPoweredChainMapperUtil.h">
+        <Filter>Constraint\Chain</Filter>
+        </ClInclude>
+    <ClInclude Include="Weapons\hkpMountedBallGun.h">
+        <Filter>Weapons</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\hkpPhysicsContext.h">
+        <Filter>VisualDebugger</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\EasePenetration\hkpEasePenetrationAction.h">
+        <Filter>Actions\EasePenetration</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\MouseSpring\hkpMouseSpringAction.h">
+        <Filter>Actions\MouseSpring</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\SaveContactPoints\hkpSaveContactPointsUtil.h">
+        <Filter>Dynamics\SaveContactPoints</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeMerger\hkpShapeMergeUtility.h">
+        <Filter>Collide\ShapeUtils\ShapeMerger</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyIntegrateJob.h">
+        <Filter>CharacterControl\CharacterProxy\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\SurfaceVelocity\hkpSurfaceVelocityUtil.h">
+        <Filter>Collide\ContactModifiers\SurfaceVelocity</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpMidphaseViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeToMeshConverter\hkpShapeToMeshConverter.h">
+        <Filter>Collide\ShapeUtils\ShapeToMeshConverter</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\CenterOfMassChanger\hkpCenterOfMassChangerUtil.h">
+        <Filter>Collide\ContactModifiers\CenterOfMassChanger</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpBroadphaseViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+    <ClInclude Include="Serialize\hkpHavokSnapshot.h">
+        <Filter>Serialize</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\Wind\hkpWind.h">
+        <Filter>Actions\Wind</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\RemoveContact\hkpRemoveContactUtil.h">
+        <Filter>Collide\RemoveContact</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\ScaleSystem\hkpSystemScalingUtility.h">
+        <Filter>Dynamics\ScaleSystem</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\OnGround\hkpCharacterStateOnGround.h">
+        <Filter>CharacterControl\StateMachine\OnGround</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterRigidBody\hkpCharacterRigidBodyListener.h">
+        <Filter>CharacterControl\CharacterRigidBody</Filter>
+        </ClInclude>
+    <ClInclude Include="Dynamics\TimeSteppers\hkpVariableTimestepper.h">
+        <Filter>Dynamics\TimeSteppers</Filter>
+        </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\hkpCharacterProxyListener.h">
+        <Filter>CharacterControl\CharacterProxy</Filter>
+        </ClInclude>
+    <ClInclude Include="Weapons\hkpProjectileGun.h">
+        <Filter>Weapons</Filter>
+        </ClInclude>
+    <ClInclude Include="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe">
+        <Filter>External\Tools\PreBuild\bin\windows</Filter>
+        </ClInclude>
+    <ClInclude Include="Actions\Motor\hkpMotorAction.h">
+        <Filter>Actions\Motor</Filter>
+        </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpShapeDisplayViewer.h">
+        <Filter>VisualDebugger\Viewer\Collide</Filter>
+        </ClInclude>
+  </ItemGroup>
+</Project>
