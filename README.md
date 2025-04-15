@@ -2,16 +2,17 @@
 Saints Row 4 Patches and Additional Files for Building the Source Code
 
 ## How to set the patches?
+You need GDK so get it from the **[Extras](#extras)**
 Drag Microsoft GDK into **C:\Program Files (x86)**<br>
 And last thing to do is put the sr35 file to your Saints Row 4 Source Code Location<br>
-Install Visual Studio 2019 with Desktop C++ Development as well as Windows 10 SDK Version 10.0.18362.0<br>
-Also install Visual Studio 2017 with Desktop C++ and C++ Game Development selected as well as Visual C++ MFC for x86 and x64.<br>
 Make a new Environment Variable called **NINTENDO_SDK_ROOT** You can point this to an empty folder.
 
 
 # Extras
 [Visual Studio 2017](/vs_Community2017.exe)
+   - with Desktop C++ and C++ Game Development selected as well as Visual C++ MFC for x86 and x64.
 [Visual Studio 2019](/vs_Community2019.exe)
+   - with Desktop C++ Development as well as Windows 10 SDK Version **10.0.18362.0**.
 [Microsoft GDK October 2023 Update 7](https://github.com/microsoft/GDK/archive/refs/tags/October_2023_Update_7.zip)
 [Vulkan SDK](https://sdk.lunarg.com/sdk/download/1.3.296.0/windows/VulkanSDK-1.3.296.0-Installer.exe)
 [Volition .reg file](/volition.reg)
