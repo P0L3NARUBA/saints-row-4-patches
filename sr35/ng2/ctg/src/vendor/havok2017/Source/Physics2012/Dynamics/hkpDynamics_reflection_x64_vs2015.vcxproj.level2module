@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    SOLUTION_FOLDER = "Reflection"
+    RUNTIME_DEPENDENCIES = "['hkBase_reflection_x64_vs2015.vcxproj']"
+    SOURCE_LEVEL = "CLIENT"
+    REQUIRED_HAVOK_PRODUCTS = "PHYSICS_2012"
+    
+    
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|x64">
+      <Configuration>Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F889CC7-F889-476F-89CC-6F889CC76F88}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <Keyword>Reflection</Keyword>
+    <RootNamespace>Reflection</RootNamespace>
+    <ProjectName>hkpDynamics_reflection</ProjectName>
+    
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  </ImportGroup>
+  <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  <PropertyGroup>
+<TargetExt></TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Obj\x64_vs2015\debug\hkpDynamics_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hkpDynamics_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Obj\x64_vs2015\dev\hkpDynamics_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">hkpDynamics_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Obj\x64_vs2015\release\hkpDynamics_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hkpDynamics_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"></ClInclude>
+    <ClInclude Include="Action\hkpAction.h"></ClInclude>
+    <ClInclude Include="Action\hkpActionListener.h"></ClInclude>
+    <ClInclude Include="Action\hkpArrayAction.h"></ClInclude>
+    <ClInclude Include="Action\hkpBinaryAction.h"></ClInclude>
+    <ClInclude Include="Action\hkpUnaryAction.h"></ClInclude>
+    <ClInclude Include="Collide\ContactListener\Util\hkpAddModifierUtil.h"></ClInclude>
+    <ClInclude Include="Collide\ContactListener\Util\hkpCollisionCallbackUtil.h"></ClInclude>
+    <ClInclude Include="Collide\ContactListener\Util\hkpEndOfStepCallbackUtil.h"></ClInclude>
+    <ClInclude Include="Collide\ContactListener\hkpCollisionEvent.h"></ClInclude>
+    <ClInclude Include="Collide\ContactListener\hkpContactListener.h"></ClInclude>
+    <ClInclude Include="Collide\ContactListener\hkpContactPointEvent.h"></ClInclude>
+    <ClInclude Include="Collide\Deprecated\Dispatch\hkpCollideCallbackDispatcher.h"></ClInclude>
+    <ClInclude Include="Collide\Deprecated\hkpCollisionEvents.h"></ClInclude>
+    <ClInclude Include="Collide\Deprecated\hkpCollisionListener.h"></ClInclude>
+    <ClInclude Include="Collide\Deprecated\hkpContactUpdater.h"></ClInclude>
+    <ClInclude Include="Collide\Deprecated\hkpReportContactMgr.h"></ClInclude>
+    <ClInclude Include="Collide\Filter\Constraint\hkpConstraintCollisionFilter.h"></ClInclude>
+    <ClInclude Include="Collide\Filter\Pair\hkpPairCollisionFilter.h"></ClInclude>
+    <ClInclude Include="Collide\hkpDynamicsContactMgr.h"></ClInclude>
+    <ClInclude Include="Collide\hkpResponseModifier.h"></ClInclude>
+    <ClInclude Include="Collide\hkpSimpleConstraintContactMgr.h"></ClInclude>
+    <ClInclude Include="Common\SmallArray\hkSmallArray.h"></ClInclude>
+    <ClInclude Include="Common\TraceStream\hkTraceStream.h"></ClInclude>
+    <ClInclude Include="Common\hkpMaterial.h"></ClInclude>
+    <ClInclude Include="Common\hkpProperty.h"></ClInclude>
+    <ClInclude Include="Constraint\Atom\hkpModifierConstraintAtom.h"></ClInclude>
+    <ClInclude Include="Constraint\Atom\hkpSimpleContactConstraintAtom.h"></ClInclude>
+    <ClInclude Include="Constraint\Atom\hkpSimpleContactConstraintAtomUtil.h"></ClInclude>
+    <ClInclude Include="Constraint\Breakable\hkpBreakableConstraintData.h"></ClInclude>
+    <ClInclude Include="Constraint\Breakable\hkpBreakableListener.h"></ClInclude>
+    <ClInclude Include="Constraint\Chain\BallSocket\hkpBallSocketChainData.h"></ClInclude>
+    <ClInclude Include="Constraint\Chain\Powered\hkpPoweredChainData.h"></ClInclude>
+    <ClInclude Include="Constraint\Chain\Rope\hkpSegmentedRope.h"></ClInclude>
+    <ClInclude Include="Constraint\Chain\StiffSpring\hkpStiffSpringChainData.h"></ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpConstraintChainData.h"></ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpConstraintChainInstance.h"></ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpConstraintChainInstanceAction.h"></ClInclude>
+    <ClInclude Include="Constraint\ConstraintKit\hkpConstraintConstructionKit.h"></ClInclude>
+    <ClInclude Include="Constraint\ConstraintKit\hkpConstraintModifier.h"></ClInclude>
+    <ClInclude Include="Constraint\ConstraintKit\hkpGenericConstraintData.h"></ClInclude>
+    <ClInclude Include="Constraint\ConstraintKit\hkpGenericConstraintParameters.h"></ClInclude>
+    <ClInclude Include="Constraint\ConstraintKit\hkpGenericConstraintScheme.h"></ClInclude>
+    <ClInclude Include="Constraint\Contact\hkContactPointMaterial.h"></ClInclude>
+    <ClInclude Include="Constraint\Contact\hkpContactImpulseLimitBreachedListener.h"></ClInclude>
+    <ClInclude Include="Constraint\Contact\hkpContactPointProperties.h"></ClInclude>
+    <ClInclude Include="Constraint\Contact\hkpDynamicsCpIdMgr.h"></ClInclude>
+    <ClInclude Include="Constraint\Contact\hkpSimpleContactConstraintData.h"></ClInclude>
+    <ClInclude Include="Constraint\Contact\hkpSimpleContactConstraintUtil.h"></ClInclude>
+    <ClInclude Include="Constraint\Malleable\hkpMalleableConstraintData.h"></ClInclude>
+    <ClInclude Include="Constraint\Response\hkpSimpleCollisionResponse.h"></ClInclude>
+    <ClInclude Include="Constraint\Setup\hkpConstraintSolverSetup.h"></ClInclude>
+    <ClInclude Include="Constraint\Util\hkpConstraintCallbackUtil.h"></ClInclude>
+    <ClInclude Include="Constraint\Util\hkpConstraintChainLengthUtil.h"></ClInclude>
+    <ClInclude Include="Constraint\Util\hkpConstraintDataCloningUtil.h"></ClInclude>
+    <ClInclude Include="Constraint\Util\hkpConstraintPivotsUtil.h"></ClInclude>
+    <ClInclude Include="Constraint\Util\hkpConstraintStabilizationUtil.h"></ClInclude>
+    <ClInclude Include="Constraint\hkpConstraintInstance.h"></ClInclude>
+    <ClInclude Include="Constraint\hkpConstraintListener.h"></ClInclude>
+    <ClInclude Include="Constraint\hkpConstraintOwner.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableBody\hkpBreakableBody.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableMaterial\MultiMaterial\CompoundShape\hkpScsBreakableMaterial.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableMaterial\MultiMaterial\ExtendedMeshShape\hkpEmsBreakableMaterial.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableMaterial\MultiMaterial\ListShape\hkpListShapeBreakableMaterial.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableMaterial\MultiMaterial\hkpBreakableMultiMaterial.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableMaterial\Simple\hkpSimpleBreakableMaterial.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableMaterial\hkpBreakableMaterial.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableMaterial\hkpBreakableMaterialUtil.h"></ClInclude>
+    <ClInclude Include="Destruction\BreakableShape\hkpBreakableShape.h"></ClInclude>
+    <ClInclude Include="Destruction\Utilities\hkpDestructionBreakOffUtil.h"></ClInclude>
+    <ClInclude Include="Destruction\Utilities\hkpDestructionSpuUtil.h"></ClInclude>
+    <ClInclude Include="Entity\Util\hkpEntityAabbUtil.h"></ClInclude>
+    <ClInclude Include="Entity\Util\hkpEntityCallbackUtil.h"></ClInclude>
+    <ClInclude Include="Entity\hkpEntity.h"></ClInclude>
+    <ClInclude Include="Entity\hkpEntityActivationListener.h"></ClInclude>
+    <ClInclude Include="Entity\hkpEntityListener.h"></ClInclude>
+    <ClInclude Include="Entity\hkpRigidBody.h"></ClInclude>
+    <ClInclude Include="Entity\hkpRigidBodyCinfo.h"></ClInclude>
+    <ClInclude Include="Motion\MotionState\hkMotionState.h"></ClInclude>
+    <ClInclude Include="Motion\Rigid\ThinBoxMotion\hkpThinBoxMotion.h"></ClInclude>
+    <ClInclude Include="Motion\Rigid\hkpBoxMotion.h"></ClInclude>
+    <ClInclude Include="Motion\Rigid\hkpCharacterMotion.h"></ClInclude>
+    <ClInclude Include="Motion\Rigid\hkpFixedRigidMotion.h"></ClInclude>
+    <ClInclude Include="Motion\Rigid\hkpKeyframedRigidMotion.h"></ClInclude>
+    <ClInclude Include="Motion\Rigid\hkpSphereMotion.h"></ClInclude>
+    <ClInclude Include="Motion\SweptTransform\hkSweptTransform.h"></ClInclude>
+    <ClInclude Include="Motion\SweptTransform\hkSweptTransformUtil.h"></ClInclude>
+    <ClInclude Include="Motion\Util\hkpRigidMotionUtil.h"></ClInclude>
+    <ClInclude Include="Motion\hkpMotion.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpAabbPhantom.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpCachingShapePhantom.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpPhantom.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpPhantomBroadPhaseListener.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpPhantomListener.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpPhantomOverlapListener.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpPhantomType.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpShapePhantom.h"></ClInclude>
+    <ClInclude Include="Phantom\hkpSimpleShapePhantom.h"></ClInclude>
+    <ClInclude Include="UnitTest\Tests.h"></ClInclude>
+    <ClInclude Include="World\BroadPhaseBorder\hkpBroadPhaseBorder.h"></ClInclude>
+    <ClInclude Include="World\CommandQueue\hkpPhysicsCommand.h"></ClInclude>
+    <ClInclude Include="World\CommandQueue\hkpPhysicsCommandQueue.h"></ClInclude>
+    <ClInclude Include="World\Extensions\hkpWorldExtension.h"></ClInclude>
+    <ClInclude Include="World\Listener\hkpIslandActivationListener.h"></ClInclude>
+    <ClInclude Include="World\Listener\hkpIslandPostCollideListener.h"></ClInclude>
+    <ClInclude Include="World\Listener\hkpIslandPostIntegrateListener.h"></ClInclude>
+    <ClInclude Include="World\Listener\hkpWorldDeletionListener.h"></ClInclude>
+    <ClInclude Include="World\Listener\hkpWorldPostCollideListener.h"></ClInclude>
+    <ClInclude Include="World\Listener\hkpWorldPostIntegrateListener.h"></ClInclude>
+    <ClInclude Include="World\Listener\hkpWorldPostSimulationListener.h"></ClInclude>
+    <ClInclude Include="World\Maintenance\Default\hkpDefaultWorldMaintenanceMgr.h"></ClInclude>
+    <ClInclude Include="World\Maintenance\hkpWorldMaintenanceMgr.h"></ClInclude>
+    <ClInclude Include="World\Memory\Default\hkpDefaultWorldMemoryWatchDog.h"></ClInclude>
+    <ClInclude Include="World\Memory\hkpWorldMemoryAvailableWatchDog.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Backstep\hkpBackstepSimulation.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Continuous\ToiResourceMgr\Default\hkpDefaultToiResourceMgr.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Continuous\ToiResourceMgr\hkpToiResourceMgr.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Continuous\hkpContinuousSimulation.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Continuous\hkpToiEvent.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuAgentSectorJob.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuBuildAccumulatorsJob.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuBuildJacobiansJob.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuIntegrateJob.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuIntegrateMotionJob.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuPostCollideJob.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuSingleThreadedJobsOnIsland.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuSolveConstraintsJobs.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuSplitSimulationIslandJob.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\hkpDeferredConstraintOwner.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\hkpDynamicsJobQueueUtils.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\hkpDynamicsJobs.h"></ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\hkpMultithreadedSimulation.h"></ClInclude>
+    <ClInclude Include="World\Simulation\hkpSimulation.h"></ClInclude>
+    <ClInclude Include="World\Util\BroadPhase\hkpBroadPhaseBorderListener.h"></ClInclude>
+    <ClInclude Include="World\Util\BroadPhase\hkpEntityEntityBroadPhaseListener.h"></ClInclude>
+    <ClInclude Include="World\Util\hkpBodyOperation.h"></ClInclude>
+    <ClInclude Include="World\Util\hkpNullAction.h"></ClInclude>
+    <ClInclude Include="World\Util\hkpWorldAgentUtil.h"></ClInclude>
+    <ClInclude Include="World\Util\hkpWorldCallbackUtil.h"></ClInclude>
+    <ClInclude Include="World\Util\hkpWorldConstraintUtil.h"></ClInclude>
+    <ClInclude Include="World\Util\hkpWorldMemoryUtil.h"></ClInclude>
+    <ClInclude Include="World\Util\hkpWorldOperationQueue.h"></ClInclude>
+    <ClInclude Include="World\Util\hkpWorldOperationUtil.h"></ClInclude>
+    <ClInclude Include="World\hkpPhysicsSystem.h"></ClInclude>
+    <ClInclude Include="World\hkpSimulationIsland.h"></ClInclude>
+    <ClInclude Include="World\hkpWorld.h"></ClInclude>
+    <ClInclude Include="World\hkpWorldCinfo.h"></ClInclude>
+    <ClInclude Include="World\hkpWorldObject.h"></ClInclude>
+    <ClInclude Include="_ExtraPreBuildIncludes\hkpDynamicsExtraIncludes.h"></ClInclude>
+    <ClInclude Include="hkpDynamics.h"></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  
+<!-- The order of elements here is CRITICAL -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <UsingTask TaskName="GenerateReflection" AssemblyFile="..\..\..\Build\MSBuild\Reflection\vs-reflection.Build.CPPTasks.Reflection-$(ReflectionDllVersion).dll" />
+  
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <BuildDependsOn>hkpDynamics_Debug_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpDynamics_Debug_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpDynamics_Debug_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpDynamics_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpDynamics_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpDynamics_reflection_Debug_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpDynamics_Debug_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpDynamics_IncludeAllTypes.cxx;_Auto\hkpDynamics_Tracker.cxx;_Auto\hkpDynamicsClassList.cxx;$(IntDir)buildCompleted_hkpDynamics_reflection"/>
+        </Target>
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <BuildDependsOn>hkpDynamics_Dev_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpDynamics_Dev_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpDynamics_Dev_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpDynamics_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpDynamics_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpDynamics_reflection_Dev_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpDynamics_Dev_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpDynamics_IncludeAllTypes.cxx;_Auto\hkpDynamics_Tracker.cxx;_Auto\hkpDynamicsClassList.cxx;$(IntDir)buildCompleted_hkpDynamics_reflection"/>
+        </Target>
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <BuildDependsOn>hkpDynamics_Release_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpDynamics_Release_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpDynamics_Release_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpDynamics_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpDynamics_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpDynamics_reflection_Release_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpDynamics_Release_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpDynamics_IncludeAllTypes.cxx;_Auto\hkpDynamics_Tracker.cxx;_Auto\hkpDynamicsClassList.cxx;$(IntDir)buildCompleted_hkpDynamics_reflection"/>
+        </Target>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>
