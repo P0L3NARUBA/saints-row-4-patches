@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    SOLUTION_FOLDER = "Reflection"
+    RUNTIME_DEPENDENCIES = "['hkBase_reflection_x64_vs2015.vcxproj']"
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "PHYSICS_2012"
+    
+    
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+  <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|x64">
+      <Configuration>Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7569CC89-569C-4975-9CC8-7569CC897569}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <Keyword>Reflection</Keyword>
+    <RootNamespace>Reflection</RootNamespace>
+    <ProjectName>hkpVehicle_reflection</ProjectName>
+    
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  </ImportGroup>
+  <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  <PropertyGroup>
+<TargetExt></TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Obj\x64_vs2015\debug\hkpVehicle_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hkpVehicle_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Obj\x64_vs2015\dev\hkpVehicle_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">hkpVehicle_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Obj\x64_vs2015\release\hkpVehicle_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hkpVehicle_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"></ClInclude>
+    <ClInclude Include="AeroDynamics\Default\hkpVehicleDefaultAerodynamics.h"></ClInclude>
+    <ClInclude Include="AeroDynamics\hkpVehicleAerodynamics.h"></ClInclude>
+    <ClInclude Include="Brake\Default\hkpVehicleDefaultBrake.h"></ClInclude>
+    <ClInclude Include="Brake\hkpVehicleBrake.h"></ClInclude>
+    <ClInclude Include="Camera\hkp1dAngularFollowCam.h"></ClInclude>
+    <ClInclude Include="Camera\hkp1dAngularFollowCamCinfo.h"></ClInclude>
+    <ClInclude Include="DriverInput\Default\hkpVehicleDefaultAnalogDriverInput.h"></ClInclude>
+    <ClInclude Include="DriverInput\hkpVehicleDriverInput.h"></ClInclude>
+    <ClInclude Include="Engine\Default\hkpVehicleDefaultEngine.h"></ClInclude>
+    <ClInclude Include="Engine\hkpVehicleEngine.h"></ClInclude>
+    <ClInclude Include="Manager\LinearCastBatchingManager\hkpVehicleLinearCastBatchingManager.h"></ClInclude>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpMultithreadedVehicleManager.h"></ClInclude>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleIntegrateJob.h"></ClInclude>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleJobQueueUtils.h"></ClInclude>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleJobs.h"></ClInclude>
+    <ClInclude Include="Manager\RayCastBatchingManager\hkpVehicleRayCastBatchingManager.h"></ClInclude>
+    <ClInclude Include="Manager\hkpVehicleCastBatchingManager.h"></ClInclude>
+    <ClInclude Include="Manager\hkpVehicleManager.h"></ClInclude>
+    <ClInclude Include="Simulation\Default\hkpVehicleDefaultSimulation.h"></ClInclude>
+    <ClInclude Include="Simulation\PerWheel\hkpVehiclePerWheelSimulation.h"></ClInclude>
+    <ClInclude Include="Simulation\hkpVehicleSimulation.h"></ClInclude>
+    <ClInclude Include="Steering\Ackerman\hkpVehicleSteeringAckerman.h"></ClInclude>
+    <ClInclude Include="Steering\Default\hkpVehicleDefaultSteering.h"></ClInclude>
+    <ClInclude Include="Steering\hkpVehicleSteering.h"></ClInclude>
+    <ClInclude Include="Suspension\Default\hkpVehicleDefaultSuspension.h"></ClInclude>
+    <ClInclude Include="Suspension\hkpVehicleSuspension.h"></ClInclude>
+    <ClInclude Include="Transmission\Default\hkpVehicleDefaultTransmission.h"></ClInclude>
+    <ClInclude Include="Transmission\hkpVehicleTransmission.h"></ClInclude>
+    <ClInclude Include="TyreMarks\hkpTyremarksInfo.h"></ClInclude>
+    <ClInclude Include="VelocityDamper\Default\hkpVehicleDefaultVelocityDamper.h"></ClInclude>
+    <ClInclude Include="VelocityDamper\hkpVehicleVelocityDamper.h"></ClInclude>
+    <ClInclude Include="WheelCollide\LinearCast\hkpVehicleLinearCastWheelCollide.h"></ClInclude>
+    <ClInclude Include="WheelCollide\RayCast\hkpVehicleRayCastWheelCollide.h"></ClInclude>
+    <ClInclude Include="WheelCollide\RejectChassisListener\hkpRejectChassisListener.h"></ClInclude>
+    <ClInclude Include="WheelCollide\hkpVehicleWheelCollide.h"></ClInclude>
+    <ClInclude Include="Wheel\hkpLinearCastWheel.h"></ClInclude>
+    <ClInclude Include="Wheel\hkpRaycastWheel.h"></ClInclude>
+    <ClInclude Include="Wheel\hkpWheel.h"></ClInclude>
+    <ClInclude Include="_ExtraPreBuildIncludes\hkpVehicleExtraIncludes.h"></ClInclude>
+    <ClInclude Include="hkpVehicle.h"></ClInclude>
+    <ClInclude Include="hkpVehicleData.h"></ClInclude>
+    <ClInclude Include="hkpVehicleInstance.h"></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  
+<!-- The order of elements here is CRITICAL -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <UsingTask TaskName="GenerateReflection" AssemblyFile="..\..\..\Build\MSBuild\Reflection\vs-reflection.Build.CPPTasks.Reflection-$(ReflectionDllVersion).dll" />
+  
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <BuildDependsOn>hkpVehicle_Debug_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpVehicle_Debug_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpVehicle_Debug_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpVehicle_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpVehicle_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpVehicle_reflection_Debug_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpVehicle_Debug_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpVehicle_IncludeAllTypes.cxx;_Auto\hkpVehicle_Tracker.cxx;_Auto\hkpVehicleClassList.cxx;$(IntDir)buildCompleted_hkpVehicle_reflection"/>
+        </Target>
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <BuildDependsOn>hkpVehicle_Dev_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpVehicle_Dev_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpVehicle_Dev_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpVehicle_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpVehicle_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpVehicle_reflection_Dev_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpVehicle_Dev_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpVehicle_IncludeAllTypes.cxx;_Auto\hkpVehicle_Tracker.cxx;_Auto\hkpVehicleClassList.cxx;$(IntDir)buildCompleted_hkpVehicle_reflection"/>
+        </Target>
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <BuildDependsOn>hkpVehicle_Release_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpVehicle_Release_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpVehicle_Release_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpVehicle_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpVehicle_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpVehicle_reflection_Release_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpVehicle_Release_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpVehicle_IncludeAllTypes.cxx;_Auto\hkpVehicle_Tracker.cxx;_Auto\hkpVehicleClassList.cxx;$(IntDir)buildCompleted_hkpVehicle_reflection"/>
+        </Target>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>
