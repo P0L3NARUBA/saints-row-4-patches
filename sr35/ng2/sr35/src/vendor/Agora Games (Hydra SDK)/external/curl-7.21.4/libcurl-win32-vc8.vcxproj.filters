@@ -189,9 +189,6 @@
     <ClCompile Include="lib\pingpong.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lib\polarssl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="lib\pop3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -438,9 +435,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lib\pingpong.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\polarssl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lib\pop3.h">

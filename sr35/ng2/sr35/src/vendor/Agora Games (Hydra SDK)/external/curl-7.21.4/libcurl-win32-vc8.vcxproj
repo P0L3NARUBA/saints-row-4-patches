@@ -399,7 +399,6 @@
     <ClCompile Include="lib\openldap.c" />
     <ClCompile Include="lib\parsedate.c" />
     <ClCompile Include="lib\pingpong.c" />
-    <ClCompile Include="lib\polarssl.c" />
     <ClCompile Include="lib\pop3.c" />
     <ClCompile Include="lib\progress.c" />
     <ClCompile Include="lib\qssl.c" />
@@ -484,7 +483,6 @@
     <ClInclude Include="lib\nssg.h" />
     <ClInclude Include="lib\parsedate.h" />
     <ClInclude Include="lib\pingpong.h" />
-    <ClInclude Include="lib\polarssl.h" />
     <ClInclude Include="lib\pop3.h" />
     <ClInclude Include="lib\progress.h" />
     <ClInclude Include="lib\qssl.h" />
