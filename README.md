@@ -2,7 +2,7 @@
 Saints Row 4 Patches and Additional Files for Building the Source Code
 
 ## How to set the patches?
-You need GDK so get it from the **[Extras](#extras)**
+You need GDK so get it from the **[Extras](#extras)**<br>
 Drag Microsoft GDK into **C:\Program Files (x86)**<br>
 And last thing to do is put the sr35 file to your Saints Row 4 Source Code Location<br>
 Make a new Environment Variable called **NINTENDO_SDK_ROOT** You can point this to an empty folder.
