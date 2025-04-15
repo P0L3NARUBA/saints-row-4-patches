@@ -23,12 +23,10 @@ Here's the source: https://gofile.io/d/PqdaAk<br>
 Password: ``LDFsvm36*q2236.cx-=312"5xc32-1236`12b_sx.[232#6-12cvw0s-``<br>
 You can just extract every folder except the data folder(which is 133GB) if you not gonna mess with assets.<br>
 
-### For assets (Not Required)
-[Perforce Visual Client and Server](https://mega.nz/file/HyYx3BzR#X_i0lWE1l_Lx-4wZSuwLo9X-Ec_L69OCZ2Im7Txz3w8)<br>
-[Python](https://www.python.org/downloads/)
-
 ### Building Assets
-1. Run **py pip install p4python**
+1. Install [Perforce Visual Client and Server](https://mega.nz/file/HyYx3BzR#X_i0lWE1l_Lx-4wZSuwLo9X-Ec_L69OCZ2Im7Txz3w8)
+and [Python](https://www.python.org/downloads/)
+2. Run **py pip install p4python**
 
 After you install the client and server you will need to run these 2 commands in CMD:<br>
 `p4 set P4PORT=(server ip):1666` Set server ip to what you set in P4V it will most likely be localhost:1666<br>
