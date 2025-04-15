@@ -5,7 +5,7 @@ Saints Row 4 Patches and Additional Files for Building the Source Code
 Drag Microsoft GDK folder into **C:\Program Files (x86)**<br>
 And last thing to do is put the sr35 file to your Saints Row 4 Source Code Location<br>
 Make a new Environment Variable called **NINTENDO_SDK_ROOT** You can point this to an empty folder.<br>
-Also download the real game from steam and put all the folders to the sr35/ng2/sr35 directory, do not replace the files.
+Also download the real game from steam and put all the folders to the sr35/ng2/sr35 directory, do not click replace the files just skip it.
 
 
 # Extras
@@ -17,7 +17,7 @@ Also download the real game from steam and put all the folders to the sr35/ng2/s
 
 Here's the source: https://gofile.io/d/PqdaAk<br>
 Password: ``LDFsvm36*q2236.cx-=312"5xc32-1236`12b_sx.[232#6-12cvw0s-``<br>
-You can just extract every folder except the data folder(which is 133GB) if you not gonna mess with assets.<br>
+You can just extract every folder except the data folder(which is 133GB) inside **SR4.7z\main\sr35\ng2\sr35** if you not gonna mess with assets.<br>
 
 ### Building Assets
 1. Install [Perforce Visual Client and Server](https://mega.nz/file/HyYx3BzR#X_i0lWE1l_Lx-4wZSuwLo9X-Ec_L69OCZ2Im7Txz3w8)
