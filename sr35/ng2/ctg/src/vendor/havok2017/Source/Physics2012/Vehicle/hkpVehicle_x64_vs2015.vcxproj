@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    
+    RUNTIME_DEPENDENCIES = "['hkBase_reflection_x64_vs2015.vcxproj']"
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "PHYSICS_2012"
+    
+    
+  -->
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|x64">
+      <Configuration>Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35E2ED54-5E2E-4435-2ED5-35E2ED5435E2}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <Keyword>StaticLibrary</Keyword>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>hkpVehicle</ProjectName>
+    <PlatformToolset>v143</PlatformToolset>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  <PropertyGroup>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Obj\x64_vs2015\debug\hkpVehicle\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Lib\x64_vs2015\debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hkpVehicle</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Obj\x64_vs2015\dev\hkpVehicle\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Lib\x64_vs2015\dev\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">hkpVehicle</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Obj\x64_vs2015\release\hkpVehicle\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Lib\x64_vs2015\release\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hkpVehicle</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Physics2012/Vehicle/hkpVehicle.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkpVehicle.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_CRT_NOT_ALLOWED;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DLL_BUILD=HK_PHYSICS_2012_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>
+      </StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Physics2012/Vehicle/hkpVehicle.h;Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>true</OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\debug</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\debug</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Physics2012/Vehicle/hkpVehicle.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkpVehicle.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_CRT_NOT_ALLOWED;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DLL_BUILD=HK_PHYSICS_2012_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Physics2012/Vehicle/hkpVehicle.h;Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>true</OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\dev</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\dev</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Physics2012/Vehicle/hkpVehicle.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkpVehicle.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;NDEBUG;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_CRT_NOT_ALLOWED;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DLL_BUILD=HK_PHYSICS_2012_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Physics2012/Vehicle/hkpVehicle.h;Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>true</OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\release</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\release</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AeroDynamics\Default\hkpVehicleDefaultAerodynamics.cpp">
+    </ClCompile>
+    <ClCompile Include="Brake\Default\hkpVehicleDefaultBrake.cpp">
+    </ClCompile>
+    <ClCompile Include="Camera\hkp1dAngularFollowCam.cpp">
+    </ClCompile>
+    <ClCompile Include="DriverInput\Default\hkpVehicleDefaultAnalogDriverInput.cpp">
+    </ClCompile>
+    <ClCompile Include="Engine\Default\hkpVehicleDefaultEngine.cpp">
+    </ClCompile>
+    <ClCompile Include="Manager\LinearCastBatchingManager\hkpVehicleLinearCastBatchingManager.cpp">
+    </ClCompile>
+    <ClCompile Include="Manager\MultithreadedVehicle\hkpMultithreadedVehicleManager.cpp">
+    </ClCompile>
+    <ClCompile Include="Manager\MultithreadedVehicle\hkpVehicleIntegrateJob.cpp">
+    </ClCompile>
+    <ClCompile Include="Manager\MultithreadedVehicle\hkpVehicleJobQueueUtils.cpp">
+    </ClCompile>
+    <ClCompile Include="Manager\MultithreadedVehicle\hkpVehicleJobs.cpp">
+    </ClCompile>
+    <ClCompile Include="Manager\RayCastBatchingManager\hkpVehicleRayCastBatchingManager.cpp">
+    </ClCompile>
+    <ClCompile Include="Manager\hkpVehicleCastBatchingManager.cpp">
+    </ClCompile>
+    <ClCompile Include="Manager\hkpVehicleManager.cpp">
+    </ClCompile>
+    <ClCompile Include="Simulation\Default\hkpVehicleDefaultSimulation.cpp">
+    </ClCompile>
+    <ClCompile Include="Simulation\PerWheel\hkpVehiclePerWheelSimulation.cpp">
+    </ClCompile>
+    <ClCompile Include="Steering\Ackerman\hkpVehicleSteeringAckerman.cpp">
+    </ClCompile>
+    <ClCompile Include="Steering\Default\hkpVehicleDefaultSteering.cpp">
+    </ClCompile>
+    <ClCompile Include="Suspension\Default\hkpVehicleDefaultSuspension.cpp">
+    </ClCompile>
+    <ClCompile Include="Transmission\Default\hkpVehicleDefaultTransmission.cpp">
+    </ClCompile>
+    <ClCompile Include="TyreMarks\hkpTyremarksInfo.cpp">
+    </ClCompile>
+    <ClCompile Include="VelocityDamper\Default\hkpVehicleDefaultVelocityDamper.cpp">
+    </ClCompile>
+    <ClCompile Include="WheelCollide\LinearCast\hkpVehicleLinearCastWheelCollide.cpp">
+    </ClCompile>
+    <ClCompile Include="WheelCollide\RayCast\hkpVehicleRayCastWheelCollide.cpp">
+    </ClCompile>
+    <ClCompile Include="WheelCollide\RejectChassisListener\hkpRejectChassisListener.cpp">
+    </ClCompile>
+    <ClCompile Include="Wheel\hkpLinearCastWheel.cpp">
+    </ClCompile>
+    <ClCompile Include="Wheel\hkpRaycastWheel.cpp">
+    </ClCompile>
+    <ClCompile Include="Wheel\hkpWheel.cpp">
+    </ClCompile>
+    <ClCompile Include="_Auto\hkpVehicle_IncludeAllTypes.cpp">
+    </ClCompile>
+    <ClCompile Include="_Auto\hkpVehicle_Tracker.cpp">
+    </ClCompile>
+    <ClCompile Include="hkpVehicle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hkpVehicleData.cpp">
+    </ClCompile>
+    <ClCompile Include="hkpVehicleInstance.cpp">
+    </ClCompile>
+    <ClInclude Include="AeroDynamics\Default\hkpVehicleDefaultAerodynamics.h">
+    </ClInclude>
+    <ClInclude Include="AeroDynamics\hkpVehicleAerodynamics.h">
+    </ClInclude>
+    <ClInclude Include="Brake\Default\hkpVehicleDefaultBrake.h">
+    </ClInclude>
+    <ClInclude Include="Brake\hkpVehicleBrake.h">
+    </ClInclude>
+    <ClInclude Include="Camera\hkp1dAngularFollowCam.h">
+    </ClInclude>
+    <ClInclude Include="Camera\hkp1dAngularFollowCamCinfo.h">
+    </ClInclude>
+    <ClInclude Include="DriverInput\Default\hkpVehicleDefaultAnalogDriverInput.h">
+    </ClInclude>
+    <ClInclude Include="DriverInput\hkpVehicleDriverInput.h">
+    </ClInclude>
+    <ClInclude Include="Engine\Default\hkpVehicleDefaultEngine.h">
+    </ClInclude>
+    <ClInclude Include="Engine\hkpVehicleEngine.h">
+    </ClInclude>
+    <ClInclude Include="Manager\LinearCastBatchingManager\hkpVehicleLinearCastBatchingManager.h">
+    </ClInclude>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpMultithreadedVehicleManager.h">
+    </ClInclude>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleIntegrateJob.h">
+    </ClInclude>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleJobQueueUtils.h">
+    </ClInclude>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleJobs.h">
+    </ClInclude>
+    <ClInclude Include="Manager\RayCastBatchingManager\hkpVehicleRayCastBatchingManager.h">
+    </ClInclude>
+    <ClInclude Include="Manager\hkpVehicleCastBatchingManager.h">
+    </ClInclude>
+    <ClInclude Include="Manager\hkpVehicleManager.h">
+    </ClInclude>
+    <ClInclude Include="Simulation\Default\hkpVehicleDefaultSimulation.h">
+    </ClInclude>
+    <ClInclude Include="Simulation\PerWheel\hkpVehiclePerWheelSimulation.h">
+    </ClInclude>
+    <ClInclude Include="Simulation\hkpVehicleSimulation.h">
+    </ClInclude>
+    <ClInclude Include="Steering\Ackerman\hkpVehicleSteeringAckerman.h">
+    </ClInclude>
+    <ClInclude Include="Steering\Default\hkpVehicleDefaultSteering.h">
+    </ClInclude>
+    <ClInclude Include="Steering\hkpVehicleSteering.h">
+    </ClInclude>
+    <ClInclude Include="Suspension\Default\hkpVehicleDefaultSuspension.h">
+    </ClInclude>
+    <ClInclude Include="Suspension\hkpVehicleSuspension.h">
+    </ClInclude>
+    <ClInclude Include="Transmission\Default\hkpVehicleDefaultTransmission.h">
+    </ClInclude>
+    <ClInclude Include="Transmission\hkpVehicleTransmission.h">
+    </ClInclude>
+    <ClInclude Include="TyreMarks\hkpTyremarksInfo.h">
+    </ClInclude>
+    <ClInclude Include="VelocityDamper\Default\hkpVehicleDefaultVelocityDamper.h">
+    </ClInclude>
+    <ClInclude Include="VelocityDamper\hkpVehicleVelocityDamper.h">
+    </ClInclude>
+    <ClInclude Include="WheelCollide\LinearCast\hkpVehicleLinearCastWheelCollide.h">
+    </ClInclude>
+    <ClInclude Include="WheelCollide\RayCast\hkpVehicleRayCastWheelCollide.h">
+    </ClInclude>
+    <ClInclude Include="WheelCollide\RejectChassisListener\hkpRejectChassisListener.h">
+    </ClInclude>
+    <ClInclude Include="WheelCollide\hkpVehicleWheelCollide.h">
+    </ClInclude>
+    <ClInclude Include="Wheel\hkpLinearCastWheel.h">
+    </ClInclude>
+    <ClInclude Include="Wheel\hkpRaycastWheel.h">
+    </ClInclude>
+    <ClInclude Include="Wheel\hkpWheel.h">
+    </ClInclude>
+    <ClInclude Include="_ExtraPreBuildIncludes\hkpVehicleExtraIncludes.h">
+    </ClInclude>
+    <ClInclude Include="hkpVehicle.h">
+    </ClInclude>
+    <ClInclude Include="hkpVehicleData.h">
+    </ClInclude>
+    <ClInclude Include="hkpVehicleInstance.h">
+    </ClInclude>
+    <Compile Include="_Auto\HABinding\hkpVehicle_HABinding.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <None Include="Manager\MultithreadedVehicle\hkpVehicleJobs.inl">
+    </None>
+    <None Include="Manager\hkpVehicleManager.inl">
+    </None>
+    <None Include="_Auto\HABinding\hkpVehicle_HABinding.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpMultithreadedVehicleManager_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpRejectChassisListener_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpTyremarksInfo_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleAerodynamics_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleBrake_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleCastBatchingManager_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleData_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultAerodynamics_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultAnalogDriverInput_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultBrake_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultEngine_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultSimulation_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultSteering_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultSuspension_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultTransmission_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultVelocityDamper_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleDriverInput_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleEngine_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleInstance_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleLinearCastBatchingManager_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleLinearCastWheelCollide_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleManager_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehiclePerWheelSimulation_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleRayCastBatchingManager_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleRayCastWheelCollide_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleSimulation_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleSteeringAckerman_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleSteering_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleSuspension_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleTransmission_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleVelocityDamper_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpVehicleWheelCollide_Types.cxx">
+    </None>
+    <None Include="_Auto\hkpVehicleClassList.cxx">
+    </None>
+    <None Include="_Auto\hkpVehicle_IncludeAllTypes.cxx">
+    </None>
+    <None Include="_Auto\hkpVehicle_Tracker.cxx">
+    </None>
+    <None Include="hkpVehicleInstance.inl">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="hkpVehicle_reflection_x64_vs2015.vcxproj">
+      <Project>{7569CC89-569C-4975-9CC8-7569CC897569}</Project>
+      <Name>hkpVehicle_reflection</Name>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- The order of elements here is CRITICAL -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

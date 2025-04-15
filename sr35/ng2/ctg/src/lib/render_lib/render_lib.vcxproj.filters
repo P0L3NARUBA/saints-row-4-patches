@@ -1,0 +1,1248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\precompiled_header">
+      <UniqueIdentifier>{f1f79045-81be-4f47-b2ae-ea3ac3f142b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mesh">
+      <UniqueIdentifier>{7b316e7f-8be3-441d-b4c0-725194145586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\handle">
+      <UniqueIdentifier>{aab551a5-86f0-4e85-9e03-6a7afc34b33a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer">
+      <UniqueIdentifier>{a087ff07-da2a-49e1-8e75-d12a4b7b1340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{1d0dd4df-20ff-4d85-af94-a76d591fa248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utility">
+      <UniqueIdentifier>{73e88f71-a6fb-4de3-857e-cad698c6fb05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{b144b3a5-1346-4a01-9fc7-0c8359feb5c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderable">
+      <UniqueIdentifier>{2c3c6c9f-e8d6-467e-a90d-50e598cb9ace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mesh renderable instance">
+      <UniqueIdentifier>{7a8e81da-7cf1-472c-bf6f-3cb2cf478547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mesh renderable instance\multimesh">
+      <UniqueIdentifier>{ea16d899-7531-467d-9c07-0652a5cbd65e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\camera">
+      <UniqueIdentifier>{1bc3aa64-c154-4ed6-aa91-cd7a1c7bdb48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene">
+      <UniqueIdentifier>{2464f71d-0c54-4d5b-9a3a-d05bdb387b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rtti">
+      <UniqueIdentifier>{4071418a-4958-4328-b7f5-4f6d5591c651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3d entity">
+      <UniqueIdentifier>{c22c3d13-63b8-4e60-b640-5c521617ed08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\visibility">
+      <UniqueIdentifier>{7ac3315a-535c-4930-bfcd-a0a4df97d4c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitives">
+      <UniqueIdentifier>{6a7b9212-1c46-4786-8149-9eb871f0e495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitives\frustum">
+      <UniqueIdentifier>{92bae81a-91a5-4b97-9139-6727956740d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitives\sphere">
+      <UniqueIdentifier>{555ca265-db31-4662-a464-1c4373a89614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitives\aabb">
+      <UniqueIdentifier>{7669c30f-9ccd-4b04-bd70-5451c928b362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitives\rect">
+      <UniqueIdentifier>{d897d12b-7533-49b1-a590-2fafaba6a8b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitives\bvolume">
+      <UniqueIdentifier>{ae2176f7-8a35-4e7d-b824-e53bab70e420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitives\fp_vector">
+      <UniqueIdentifier>{c19db8a9-4c2b-43f9-9833-e6ef444b20a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\light">
+      <UniqueIdentifier>{51868ce3-c232-42bd-b16e-bad150988ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\serialization">
+      <UniqueIdentifier>{b59d1031-de21-4240-8396-fe524b458cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\color">
+      <UniqueIdentifier>{da5c3ec6-bc08-4552-b898-c34fbaa1f667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fog">
+      <UniqueIdentifier>{4a1f5170-2214-4d1d-b25c-d13a89993298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\terrain">
+      <UniqueIdentifier>{0bc42f24-37c7-4d65-b29c-3410163ef0cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\terrain\texture gen">
+      <UniqueIdentifier>{600917dc-48a5-4675-9105-ff53d50f19cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\terrain\texture gen\layers">
+      <UniqueIdentifier>{d31edafb-2198-48ed-8aa4-5c48dcd54b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\terrain\growth">
+      <UniqueIdentifier>{d6f61fa3-2e0d-4b29-9142-f63746aed545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\terrain\growth\trees">
+      <UniqueIdentifier>{26c0a285-0dea-47e8-a7f9-e937c310d0ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\metrics">
+      <UniqueIdentifier>{26dc6788-b658-47df-a048-ea07cdb0c076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render_group">
+      <UniqueIdentifier>{17d37888-f1fa-42a7-af58-07b1090eb216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\material">
+      <UniqueIdentifier>{8dfc17c7-f136-4821-a79b-a0c5e1a40394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\batching">
+      <UniqueIdentifier>{b1fa4131-997d-4b0d-acf6-cf351572717f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shader">
+      <UniqueIdentifier>{8ec0bba1-d859-4a7e-8cd8-a3a31e03bcad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\particles">
+      <UniqueIdentifier>{b134e1f8-d40f-419d-82ca-a33fa7747262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\particles\renderable">
+      <UniqueIdentifier>{482dbbfb-cfae-44e8-8404-92af658cce27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\particles\batching">
+      <UniqueIdentifier>{59e5b4b6-b98e-486f-b939-536bbc6aab1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\particles\renderer">
+      <UniqueIdentifier>{d08024d7-e16b-4cb1-98ee-a602276ff197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\particles\particle">
+      <UniqueIdentifier>{827311e9-b310-4389-8ad4-fce429792df3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\particles\raycast">
+      <UniqueIdentifier>{777e3d1c-d339-4cb8-a107-66a9d437a226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shadows">
+      <UniqueIdentifier>{109aa312-e92e-4d2e-ad8e-e29c7747930a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\state">
+      <UniqueIdentifier>{3d2a79a9-1557-4c32-9c17-827543101b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render textures">
+      <UniqueIdentifier>{ad0205af-aa8c-476f-b0f2-d90d13aedcc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compositing">
+      <UniqueIdentifier>{aea292d9-3376-4747-a6f7-938d64e494e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compositing\effects">
+      <UniqueIdentifier>{3ce3fb44-2130-4b6f-9688-bdb16082348f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compositing\effects\hdr">
+      <UniqueIdentifier>{cab69230-eb08-4e8c-aafd-418376ff9a2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitive_rendering">
+      <UniqueIdentifier>{cdcf79a7-654e-43cd-b78b-32bd8a086585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\morph">
+      <UniqueIdentifier>{b3fa23ad-0e1d-4866-9b45-aa68946cb691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render_pass">
+      <UniqueIdentifier>{0592a852-cc5b-4f83-8500-63d9e5fd2216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decals">
+      <UniqueIdentifier>{e3f3c90f-78f9-4e2b-b722-e7d259ac123d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decals\floating decals">
+      <UniqueIdentifier>{bede5639-373a-4308-b0a7-c0f656d492a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\texture">
+      <UniqueIdentifier>{24ca128c-6c8e-43ab-889f-c211f34f3b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\skybox">
+      <UniqueIdentifier>{e8ced3df-b6ce-4441-87a1-88c8023e551e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\screen">
+      <UniqueIdentifier>{cb8cd80e-3c35-478a-a5f6-5d439ba0215c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stubs">
+      <UniqueIdentifier>{c0ddaaed-09f9-4065-ab8d-d00ddede91e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\profiler">
+      <UniqueIdentifier>{11e33291-65ca-4c62-9214-bf8c86c57ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\envmap">
+      <UniqueIdentifier>{e0a7b816-816a-46a5-8167-ed4cb6216be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compacting_texture_pool">
+      <UniqueIdentifier>{b8d1c4f9-42a2-4623-863a-a622498ce084}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rl.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="precompiled_header.h">
+      <Filter>Source Files\precompiled_header</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_mesh.h">
+      <Filter>Source Files\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_mesh_data.h">
+      <Filter>Source Files\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_mesh_data_defines.h">
+      <Filter>Source Files\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_vertex_data_types.h">
+      <Filter>Source Files\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_vertex_format.h">
+      <Filter>Source Files\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_vertex_format_defines.h">
+      <Filter>Source Files\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_vertex_format_library.h">
+      <Filter>Source Files\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_handle.h">
+      <Filter>Source Files\handle</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_feature_support.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_iframedump_processor.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_renderer.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_window_context.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_renderer_core.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="linked_list_p.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="pool_list.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_callback_widget.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_compressed_transform.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_four_point_curve.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_fp_kdtree.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_fp_rbb.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_lf_allocator.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_lf_hash.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_math_utils.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_object_id.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_simple_object_pool.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_singleton.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_util_defines.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_utility.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_base_object.h">
+      <Filter>Source Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_named_object.h">
+      <Filter>Source Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_renderable.h">
+      <Filter>Source Files\renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_clone_mesh_instance.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_compound_mesh_instance.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_deform_common.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_deformable_mesh_instance.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_destroyable_model_instance.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_fog_volume.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_lighting_category.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_mesh_instance.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_renderable_instance.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_skin_bone_manager.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_skin_instance.h">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_multi_mesh_instance.h">
+      <Filter>Source Files\mesh renderable instance\multimesh</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_camera.h">
+      <Filter>Source Files\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_scene.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_scene_entity.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_scene_renderer.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_factory_rtti.h">
+      <Filter>Source Files\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_3d_entity.h">
+      <Filter>Source Files\3d entity</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_gpu_visibility.h">
+      <Filter>Source Files\visibility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_occluder.h">
+      <Filter>Source Files\visibility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_shape_occluder.h">
+      <Filter>Source Files\visibility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_occluder.h">
+      <Filter>Source Files\visibility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_visibility_culling.h">
+      <Filter>Source Files\visibility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_visibility_group.h">
+      <Filter>Source Files\visibility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_visibility_manager.h">
+      <Filter>Source Files\visibility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_visibility_test_proxy.h">
+      <Filter>Source Files\visibility</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_frustum.h">
+      <Filter>Source Files\primitives\frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_sphere.h">
+      <Filter>Source Files\primitives\sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_aabb.h">
+      <Filter>Source Files\primitives\aabb</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_rect.h">
+      <Filter>Source Files\primitives\rect</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_bvolume.h">
+      <Filter>Source Files\primitives\bvolume</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_fp_vector.h">
+      <Filter>Source Files\primitives\fp_vector</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_light.h">
+      <Filter>Source Files\light</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_light_shader_const_block.h">
+      <Filter>Source Files\light</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_light_volumes.h">
+      <Filter>Source Files\light</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_reflected_light.h">
+      <Filter>Source Files\light</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_reflected_light_renderer.h">
+      <Filter>Source Files\light</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_serial_block.h">
+      <Filter>Source Files\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_stream.h">
+      <Filter>Source Files\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_color.h">
+      <Filter>Source Files\color</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_fog_state.h">
+      <Filter>Source Files\fog</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_height_mesh_instance.h">
+      <Filter>Source Files\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_low_lod_mesh_instance.h">
+      <Filter>Source Files\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_skirt_mesh_instance.h">
+      <Filter>Source Files\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_defines.h">
+      <Filter>Source Files\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_renderer.h">
+      <Filter>Source Files\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_texture_gen.h">
+      <Filter>Source Files\terrain\texture gen</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_texture_gen_defines.h">
+      <Filter>Source Files\terrain\texture gen</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_basic_layer.h">
+      <Filter>Source Files\terrain\texture gen\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_layer.h">
+      <Filter>Source Files\terrain\texture gen\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_legacy_layer.h">
+      <Filter>Source Files\terrain\texture gen\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_terrain_road_layer.h">
+      <Filter>Source Files\terrain\texture gen\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_growth_renderer.h">
+      <Filter>Source Files\terrain\growth</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_growth_wind.h">
+      <Filter>Source Files\terrain\growth</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_tree.h">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_tree_data.h">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_tree_instance.h">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_tree_lod_profile.h">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_metrics.h">
+      <Filter>Source Files\metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_renderer_metrics.h">
+      <Filter>Source Files\metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_smoothed_value.h">
+      <Filter>Source Files\metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_render_group.h">
+      <Filter>Source Files\render_group</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_dynamic_material.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_layered_material.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_material.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_material_data.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_material_defines.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_material_library.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_material_map.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_static_material.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_batch_defines.h">
+      <Filter>Source Files\batching</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_batched_pass.h">
+      <Filter>Source Files\batching</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_batched_pass_shared.h">
+      <Filter>Source Files\batching</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_instance_stream.h">
+      <Filter>Source Files\batching</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_one_pass_batch_job.h">
+      <Filter>Source Files\batching</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_shader.h">
+      <Filter>Source Files\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_shader_defines.h">
+      <Filter>Source Files\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_shader_library.h">
+      <Filter>Source Files\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_shader_util.h">
+      <Filter>Source Files\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_corona.h">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_corona_instance.h">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_renderable_particles.h">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_renderable_particles_instance.h">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_renderable_particles_instance_group.h">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_particle_batch.h">
+      <Filter>Source Files\particles\batching</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_particle_batched_pass.h">
+      <Filter>Source Files\particles\batching</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_particle_renderer.h">
+      <Filter>Source Files\particles\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_particle.h">
+      <Filter>Source Files\particles\particle</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_particle_lighting_state.h">
+      <Filter>Source Files\particles\particle</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_particle_material.h">
+      <Filter>Source Files\particles\particle</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_raycast_occluder.h">
+      <Filter>Source Files\particles\raycast</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_raycast_renderer.h">
+      <Filter>Source Files\particles\raycast</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_raycast_state.h">
+      <Filter>Source Files\particles\raycast</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_clb_projector.h">
+      <Filter>Source Files\shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_shadow_system.h">
+      <Filter>Source Files\shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_shadow_system_helpers.h">
+      <Filter>Source Files\shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_screen_info.h">
+      <Filter>Source Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_state_data.h">
+      <Filter>Source Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_state_defines.h">
+      <Filter>Source Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_state_manager.h">
+      <Filter>Source Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_render_texture_manager.h">
+      <Filter>Source Files\render textures</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_composite_pass.h">
+      <Filter>Source Files\compositing</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_compositor.h">
+      <Filter>Source Files\compositing</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_sampling_offsets.h">
+      <Filter>Source Files\compositing</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_color_correct_state.h">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_color_corrector.h">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_outline_compositor.h">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_outline_compositor_defines.h">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_rao.h">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_ssao.h">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_xray_material_manager.h">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_hdr_compositor.h">
+      <Filter>Source Files\compositing\effects\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_hdr_state.h">
+      <Filter>Source Files\compositing\effects\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_draw.h">
+      <Filter>Source Files\primitive_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_primitive_defines.h">
+      <Filter>Source Files\primitive_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_primitive_renderer.h">
+      <Filter>Source Files\primitive_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_primitive_state.h">
+      <Filter>Source Files\primitive_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_morph_data.h">
+      <Filter>Source Files\morph</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_morph_instance.h">
+      <Filter>Source Files\morph</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_morph_target.h">
+      <Filter>Source Files\morph</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_morph_weights.h">
+      <Filter>Source Files\morph</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_base_render_pass.h">
+      <Filter>Source Files\render_pass</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_conditional_render_pass.h">
+      <Filter>Source Files\render_pass</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_distortion_pass.h">
+      <Filter>Source Files\render_pass</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_motion_blur_mask_render_pass.h">
+      <Filter>Source Files\render_pass</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_render_pass.h">
+      <Filter>Source Files\render_pass</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_render_to_texture_pass.h">
+      <Filter>Source Files\render_pass</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_shadow_render_pass.h">
+      <Filter>Source Files\render_pass</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_xray_render_pass.h">
+      <Filter>Source Files\render_pass</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_clone_mesh_decal.h">
+      <Filter>Source Files\decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_decal.h">
+      <Filter>Source Files\decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_decal_defines.h">
+      <Filter>Source Files\decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_decal_internal.h">
+      <Filter>Source Files\decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_decal_parameters.h">
+      <Filter>Source Files\decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_planar_decal.h">
+      <Filter>Source Files\decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_zbias_decal.h">
+      <Filter>Source Files\decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_floating_decal.h">
+      <Filter>Source Files\decals\floating decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_floating_decal_renderer.h">
+      <Filter>Source Files\decals\floating decals</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_cached_dyn_texture.h">
+      <Filter>Source Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_dyn_texture.h">
+      <Filter>Source Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_texture.h">
+      <Filter>Source Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_texture_compress.h">
+      <Filter>Source Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_texture_defines.h">
+      <Filter>Source Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_texture_ultracompress.h">
+      <Filter>Source Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_uniform_stipple_pattern.h">
+      <Filter>Source Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_meteor_shower.h">
+      <Filter>Source Files\skybox</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_skybox_renderable_instance.h">
+      <Filter>Source Files\skybox</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_star_catalog.h">
+      <Filter>Source Files\skybox</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_star_field.h">
+      <Filter>Source Files\skybox</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_safe_area.h">
+      <Filter>Source Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_new.h">
+      <Filter>Source Files\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_gpu_marker.h">
+      <Filter>Source Files\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_gpu_profiler.h">
+      <Filter>Source Files\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_gpu_profiler_internal.h">
+      <Filter>Source Files\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_gpu_profiler_modes.h">
+      <Filter>Source Files\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_envmap_state.h">
+      <Filter>Source Files\envmap</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_compacting_texture_pool.h">
+      <Filter>Source Files\compacting_texture_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_light_shader_refs.h">
+      <Filter>Source Files\light</Filter>
+    </ClInclude>
+    <ClInclude Include="rl_post_effects.h">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="precompiled_header.cpp">
+      <Filter>Source Files\precompiled_header</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_mesh.cpp">
+      <Filter>Source Files\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_mesh_data.cpp">
+      <Filter>Source Files\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_vertex_format.cpp">
+      <Filter>Source Files\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_vertex_format_library.cpp">
+      <Filter>Source Files\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_feature_support.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_renderer.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_window_context.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_renderer_core.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_callback_widget.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_compressed_transform.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_fp_kdtree.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_fp_rbb.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_lf_allocator.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_lf_hash.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_math_utils.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_object_id.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_utility.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_base_object.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_renderable.cpp">
+      <Filter>Source Files\renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_clone_mesh_instance.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_compound_mesh_instance.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_deform_common.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_deformable_mesh_instance.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_destroyable_model_instance.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_fog_volume.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_lighting_category.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_mesh_instance.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_renderable_instance.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_skin_bone_manager.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_skin_instance.cpp">
+      <Filter>Source Files\mesh renderable instance</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_multi_mesh_instance.cpp">
+      <Filter>Source Files\mesh renderable instance\multimesh</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_camera.cpp">
+      <Filter>Source Files\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_scene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_scene_entity.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_scene_renderer.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_scene_renderer_lighting.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_factory_rtti.cpp">
+      <Filter>Source Files\rtti</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_3d_entity.cpp">
+      <Filter>Source Files\3d entity</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_occluder.cpp">
+      <Filter>Source Files\visibility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_shape_occluder.cpp">
+      <Filter>Source Files\visibility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_terrain_occluder.cpp">
+      <Filter>Source Files\visibility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_visibility_culling.cpp">
+      <Filter>Source Files\visibility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_visibility_group.cpp">
+      <Filter>Source Files\visibility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_visibility_manager.cpp">
+      <Filter>Source Files\visibility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_visibility_test_proxy.cpp">
+      <Filter>Source Files\visibility</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_frustum.cpp">
+      <Filter>Source Files\primitives\frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_sphere.cpp">
+      <Filter>Source Files\primitives\sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_aabb.cpp">
+      <Filter>Source Files\primitives\aabb</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_rect.cpp">
+      <Filter>Source Files\primitives\rect</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_bvolume.cpp">
+      <Filter>Source Files\primitives\bvolume</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_fp_vector.cpp">
+      <Filter>Source Files\primitives\fp_vector</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_light.cpp">
+      <Filter>Source Files\light</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_light_volumes.cpp">
+      <Filter>Source Files\light</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_reflected_light.cpp">
+      <Filter>Source Files\light</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_reflected_light_renderer.cpp">
+      <Filter>Source Files\light</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_serial_block.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_stream.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_color.cpp">
+      <Filter>Source Files\color</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_fog_state.cpp">
+      <Filter>Source Files\fog</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_height_mesh_instance.cpp">
+      <Filter>Source Files\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_low_lod_mesh_instance.cpp">
+      <Filter>Source Files\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_skirt_mesh_instance.cpp">
+      <Filter>Source Files\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_terrain_renderer.cpp">
+      <Filter>Source Files\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_terrain_texture_gen.cpp">
+      <Filter>Source Files\terrain\texture gen</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_terrain_basic_layer.cpp">
+      <Filter>Source Files\terrain\texture gen\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_terrain_layer.cpp">
+      <Filter>Source Files\terrain\texture gen\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_terrain_legacy_layer.cpp">
+      <Filter>Source Files\terrain\texture gen\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_terrain_road_layer.cpp">
+      <Filter>Source Files\terrain\texture gen\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_growth_renderer.cpp">
+      <Filter>Source Files\terrain\growth</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_growth_renderer_lod.cpp">
+      <Filter>Source Files\terrain\growth</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_growth_wind.cpp">
+      <Filter>Source Files\terrain\growth</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_tree.cpp">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_tree_data.cpp">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_tree_instance.cpp">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_tree_lod_profile.cpp">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_metrics.cpp">
+      <Filter>Source Files\metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_renderer_metrics.cpp">
+      <Filter>Source Files\metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_render_group.cpp">
+      <Filter>Source Files\render_group</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_dynamic_material.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_layered_material.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_material.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_material_data.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_material_library.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_material_map.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_static_material.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_batched_pass.cpp">
+      <Filter>Source Files\batching</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_instance_stream.cpp">
+      <Filter>Source Files\batching</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_one_pass_batch_job.cpp">
+      <Filter>Source Files\batching</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_shader.cpp">
+      <Filter>Source Files\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_shader_library.cpp">
+      <Filter>Source Files\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_shader_util.cpp">
+      <Filter>Source Files\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_corona.cpp">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_corona_instance.cpp">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_renderable_particles.cpp">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_renderable_particles_instance.cpp">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_renderable_particles_instance_group.cpp">
+      <Filter>Source Files\particles\renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_particle_batch.cpp">
+      <Filter>Source Files\particles\batching</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_particle_batched_pass.cpp">
+      <Filter>Source Files\particles\batching</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_particle_renderer.cpp">
+      <Filter>Source Files\particles\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_particle.cpp">
+      <Filter>Source Files\particles\particle</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_raycast_occluder.cpp">
+      <Filter>Source Files\particles\raycast</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_raycast_renderer.cpp">
+      <Filter>Source Files\particles\raycast</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_clb_projector.cpp">
+      <Filter>Source Files\shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_shadow_system.cpp">
+      <Filter>Source Files\shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_state_data.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_state_manager.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_render_texture_manager.cpp">
+      <Filter>Source Files\render textures</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_composite_pass.cpp">
+      <Filter>Source Files\compositing</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_compositor.cpp">
+      <Filter>Source Files\compositing</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_color_corrector.cpp">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_outline_compositor.cpp">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_rao.cpp">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_ssao.cpp">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_xray_material_manager.cpp">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_hdr_compositor.cpp">
+      <Filter>Source Files\compositing\effects\hdr</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_hdr_state.cpp">
+      <Filter>Source Files\compositing\effects\hdr</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_draw.cpp">
+      <Filter>Source Files\primitive_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_primitive_renderer.cpp">
+      <Filter>Source Files\primitive_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_primitive_state.cpp">
+      <Filter>Source Files\primitive_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_morph_data.cpp">
+      <Filter>Source Files\morph</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_morph_instance.cpp">
+      <Filter>Source Files\morph</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_morph_target.cpp">
+      <Filter>Source Files\morph</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_morph_weights.cpp">
+      <Filter>Source Files\morph</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_base_render_pass.cpp">
+      <Filter>Source Files\render_pass</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_conditional_render_pass.cpp">
+      <Filter>Source Files\render_pass</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_distortion_pass.cpp">
+      <Filter>Source Files\render_pass</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_motion_blur_mask_render_pass.cpp">
+      <Filter>Source Files\render_pass</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_render_pass.cpp">
+      <Filter>Source Files\render_pass</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_render_to_texture_pass.cpp">
+      <Filter>Source Files\render_pass</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_shadow_render_pass.cpp">
+      <Filter>Source Files\render_pass</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_xray_render_pass.cpp">
+      <Filter>Source Files\render_pass</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_clone_mesh_decal.cpp">
+      <Filter>Source Files\decals</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_decal.cpp">
+      <Filter>Source Files\decals</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_planar_decal.cpp">
+      <Filter>Source Files\decals</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_zbias_decal.cpp">
+      <Filter>Source Files\decals</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_floating_decal.cpp">
+      <Filter>Source Files\decals\floating decals</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_floating_decal_renderer.cpp">
+      <Filter>Source Files\decals\floating decals</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_cached_dyn_texture.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_dyn_texture.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_texture.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_texture_compress.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_texture_ultracompress.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_uniform_stipple_pattern.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_meteor_shower.cpp">
+      <Filter>Source Files\skybox</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_skybox_renderable_instance.cpp">
+      <Filter>Source Files\skybox</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_star_field.cpp">
+      <Filter>Source Files\skybox</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_safe_area.cpp">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_gpu_profiler.cpp">
+      <Filter>Source Files\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_gpu_profiler_modes.cpp">
+      <Filter>Source Files\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_envmap_state.cpp">
+      <Filter>Source Files\envmap</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_compacting_texture_pool.cpp">
+      <Filter>Source Files\compacting_texture_pool</Filter>
+    </ClCompile>
+    <ClCompile Include="rl_post_effects.cpp">
+      <Filter>Source Files\compositing\effects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rl_multi_mesh_instance.inl">
+      <Filter>Source Files\mesh renderable instance\multimesh</Filter>
+    </None>
+    <None Include="rl_terrain_renderer.inl">
+      <Filter>Source Files\terrain</Filter>
+    </None>
+    <None Include="rl_growth_renderer.inl">
+      <Filter>Source Files\terrain\growth</Filter>
+    </None>
+    <None Include="rl_tree_instance.inl">
+      <Filter>Source Files\terrain\growth\trees</Filter>
+    </None>
+    <None Include="rl_corona_instance.inl">
+      <Filter>Source Files\particles\renderable</Filter>
+    </None>
+    <None Include="rl_renderable_particles_instance.inl">
+      <Filter>Source Files\particles\renderable</Filter>
+    </None>
+  </ItemGroup>
+</Project>

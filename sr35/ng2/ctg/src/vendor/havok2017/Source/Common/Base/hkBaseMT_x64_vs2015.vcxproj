@@ -1,0 +1,3289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    SOLUTION_FOLDER = "SDK/BaseCRT"
+    RUNTIME_DEPENDENCIES = "['hkBase_reflection_x64_vs2015.vcxproj']"
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "COMMON"
+    
+    
+  -->
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|x64">
+      <Configuration>Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{602C419E-02C4-4E60-C419-602C419E602C}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <Keyword>StaticLibrary</Keyword>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>hkBaseMT</ProjectName>
+    <PlatformToolset>v143</PlatformToolset>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  <PropertyGroup>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Obj\x64_vs2015\debug\hkBaseMT\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Lib\x64_vs2015\debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hkBaseMT</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Obj\x64_vs2015\dev\hkBaseMT\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Lib\x64_vs2015\dev\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">hkBaseMT</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Obj\x64_vs2015\release\hkBaseMT\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Lib\x64_vs2015\release\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hkBaseMT</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common/Base/hkBase.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkBaseMT.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DISABLE_MIXED_FLOAT_DOUBLE_OPERATORS;HK_DLL_BUILD=HK_COMMON_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>_DEBUG</UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>
+      </StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Common/Base/hkBase.h;Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>
+      </OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\debug</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\debug</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common/Base/hkBase.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkBaseMT.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DISABLE_MIXED_FLOAT_DOUBLE_OPERATORS;HK_DLL_BUILD=HK_COMMON_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Common/Base/hkBase.h;Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>
+      </OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\dev</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\dev</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common/Base/hkBase.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkBaseMT.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;NDEBUG;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DISABLE_MIXED_FLOAT_DOUBLE_OPERATORS;HK_DLL_BUILD=HK_COMMON_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Common/Base/hkBase.h;Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>
+      </OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\release</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\release</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Algorithm\Collide\1AxisSweep16\hk1AxisSweep16.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Collide\1AxisSweep\hk1AxisSweep.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Collide\LineSegment\hkLineSegmentUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Compression\hkBufferCompression.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Compression\hkBufferCompressionHash.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Compression\hkBufferCompressionSuffixTree.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Compression\hkCompression.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Hash\hkHashCrc32.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Hash\hkHashCrc64.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Hash\hkHashFNV1.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Hash\hkHashMurmur3.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Heartbeat\hkHeartbeatAlgos.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\PseudoRandom\hkMT19937RandomGenerator.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\PseudoRandom\hkPseudoRandomGenerator.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Sort\hkMortonSort.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Sort\hkRadixSort.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\Sort\hkSort.cpp">
+    </ClCompile>
+    <ClCompile Include="Algorithm\UnionFind\hkUnionFind.cpp">
+    </ClCompile>
+    <ClCompile Include="Config\hkOptionalComponent.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\Array\hkArrayUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\Array\hkVariantArray.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\BlockStream\Allocator\Debug\hkDebugBlockStreamAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\BlockStream\Allocator\Dynamic\hkDynamicBlockStreamAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\BlockStream\Allocator\Fixed\hkFixedBlockStreamAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\BlockStream\Allocator\hkBlockStreamAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\BlockStream\Allocator\hkThreadLocalBlockStreamAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\BlockStream\hkBlockStream.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\BlockStream\hkBlockStreamIterators.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\BlockStream\hkBlockStreamRange.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\CommandStream\hkCommandStream.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\Hash\Detail\hkHashMapDetail.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\PointerMap\hkMap.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\PointerMultiMap\hkMultiMap.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\RelArray\hkRelArray.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\RelArray\hkRelArrayUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\Set\hkSet.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\StringDictionary\hkStringDictionary.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\StringMap\hkStringMap.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\StringView\hkStringView.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\String\Deprecated\hkStringOld.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\String\hkInternedStringRegistry.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\String\hkLoc.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\String\hkString.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\String\hkStringBuf.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\String\hkStringPtr.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\String\hkUtf8.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\Tree\hkAnderssonTree.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\Tree\hkTree.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\Tuple\hkTuple.cpp">
+    </ClCompile>
+    <ClCompile Include="Container\hkContainerAllocators.cpp">
+    </ClCompile>
+    <ClCompile Include="DebugUtil\DeterminismUtil\hkCheckDeterminismUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="DebugUtil\DeterminismUtil\hkNetworkedDeterminismUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="DebugUtil\GlobalProperties\hkGlobalProperties.cpp">
+    </ClCompile>
+    <ClCompile Include="DebugUtil\MemoryExceptionTestingUtil\hkMemoryExceptionTestingUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="DebugUtil\MultiThreadCheck\hkMultiThreadCheck.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\AxialTransform\hkAxialRotation.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\ExtendedMath\hkMpMath.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Float16Transform\hkFloat16Transform.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Functions\Sse\hkSseMathFuncs.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Functions\hkMathFuncs.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\LargeInt\hkInt64Vector4.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\LargeInt\hkLargeInt.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkMatrix3.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkMatrix4CameraUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkMatrix4f.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkMatrix6d.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkMatrix6f.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkMatrixdNm.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkMatrixfNm.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkRotation.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkTransformd.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Matrix\hkTransformf.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\QTransform\hkQTransformd.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\QTransform\hkQTransformf.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\QsTransform\hkQsTransformd.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\QsTransform\hkQsTransformf.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Quaternion\hkQuaterniond.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Quaternion\hkQuaternionf.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Types\hkMathTypes.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Util\hkVector2Util.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\Packing\hkVectorPackUtility.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\Packing\hkVectordPackUtility.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\Packing\hkVectorfPackUtility.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkFourTransposedPoints.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkIntVector.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkPackedVector3.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkSimdDouble64.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkSimdFloat32.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVector2d.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVector2f.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVector4Util.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVector4d.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVector4dComparison.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVector4f.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVector4fComparison.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVectorNd.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVectorNf.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\Vector\hkVectorSort.cpp">
+    </ClCompile>
+    <ClCompile Include="Math\hkMath.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Checking\hkDelayedFreeAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Checking\hkGuardingAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Checking\hkLeakDetectAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Checking\hkPaddedAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\FreeList\hkFixedSizeAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\FreeList\hkFreeList.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\FreeList\hkFreeListAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\LargeBlock\hkLargeBlockAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Lifo\hkLifoAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Linear\hkLinearAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Malloc\hkMallocAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Monitor\hkMonitorAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Pooled\hkPooledAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Recall\hkRecallAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Solver\hkSolverAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Stats\hkStatsAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\TempDetect\hkTempDetectAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Thread\hkThreadMemory.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\Transient\hkTransientAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Allocator\hkMemoryAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\MemoryClasses\hkMemoryClassesTable.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Router\hkMemoryRouter.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Checking\hkCheckingMemorySystem.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\FreeList\hkFreeListMemorySystem.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Optimizer\hkOptimizerMemorySystem.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Simple\hkSimpleMemorySystem.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Util\hkMemoryInitUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Util\hkMemoryInitUtil_Checking.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Util\hkMemoryInitUtil_FreeList.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Util\hkMemoryInitUtil_LeakDetect.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Util\hkMemoryInitUtil_Optimizer.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Util\hkMemoryInitUtil_Simple.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\Util\hkMemorySnapshot.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\System\hkMemorySystem.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Tracker\Default\hkDefaultMemoryTracker.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Tracker\hkMemoryTracker.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Tracker\hkMemoryTrackerRegistry.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Tracker\hkMemoryTrackerReportUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Tracker\hkMemoryTrackerSnapshot.cpp">
+    </ClCompile>
+    <ClCompile Include="Memory\Util\hkMemUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamAnalyzer.cpp">
+    </ClCompile>
+    <ClCompile Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamCache.cpp">
+    </ClCompile>
+    <ClCompile Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamContainer.cpp">
+    </ClCompile>
+    <ClCompile Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamFlameGraph.cpp">
+    </ClCompile>
+    <ClCompile Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamParser.cpp">
+    </ClCompile>
+    <ClCompile Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamParserNodes.cpp">
+    </ClCompile>
+    <ClCompile Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamParserUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Monitor\hkMonitorStream.cpp">
+    </ClCompile>
+    <ClCompile Include="Object\hkBaseObject.cpp">
+    </ClCompile>
+    <ClCompile Include="Object\hkReferencedObject.cpp">
+    </ClCompile>
+    <ClCompile Include="Object\hkReferencedObjectRegistry.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Attributes\hkAttributeParser.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Attributes\hkAttributes.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Builder\hkRecordLayout.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Builder\hkTypeBuilder.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Builder\hkTypeCopier.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Core\Detail\hkRecordPropertyDetail.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Core\Detail\hkReflectTypeDetail.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Core\hkReflectCallable.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Core\hkReflectFuncs.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Core\hkReflectImpl.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Core\hkReflectType.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Core\hkReflectValue.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Core\hkReflectVar.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Detail\hkTypeHasher.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Impl\Std\hkReflectStd.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Impl\hkBuiltinImpl.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Impl\hkHavokImpl.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\ReflectFile\hkReflectFileParser.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\ReflectFile\hkSimpleToken.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\ReflectFile\hkSimpleTokenizer.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\TypeReg\Detail\hkTypeRegDetail.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\TypeReg\Detail\hkTypeRegNode.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\TypeReg\hkTypeReg.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\TypeVm\hkTypeVmCompiler.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\TypeVm\hkTypeVmCompilerPasses.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\TypeVm\hkTypeVmFastCopyInterpreter.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkFieldSetterDetail.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkReflectAny.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkReflectClone.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkReflectCrc.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkReflectSyntheticUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkReflectUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkReflectVarMapOperations.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkReflectionCheckUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Util\hkVarCoerce.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Version\hkModifiableTypeSet.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Version\hkPatchesRegNode.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Version\hkReflectPatchRegistry.cpp">
+    </ClCompile>
+    <ClCompile Include="Reflect\Version\hkReflectVersionPatcher.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Core\hkSerializeCore.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Deprecated\hkSerializeUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Detail\hkIndexedBundle.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Detail\hkReadBuffer.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Detail\hkSerializeDetail.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Detail\hkUintVle.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Detail\hkWriteBuffer.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Compat\ContentTools\hkClass.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Compat\ContentTools\hkClassEnum.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Compat\ContentTools\hkClassMember.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Compat\hkCompatFormats.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Compression\hkCompressionReadFormat.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Compression\hkCompressionWriteFormat.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Tagfile2014\hkTagStringList.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Tagfile2014\hkTagfileCommon2014.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Tagfile2014\hkTagfileReadFormat2014.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Tagfile\hkTagfileReadFormat.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Tagfile\hkTagfileWriteFormat.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Xml\hkXmlReadFormat.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Format\Xml\hkXmlWriteFormat.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\ResourceHandle\hkResourceHandle.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Resource\hkObjectResource.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Resource\hkResource.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Resource\hkResourceLinker.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\Json\hkJson.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\Xml\hkParserBuffer.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\Xml\hkXmlLexAnalyzer.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\Xml\hkXmlObjectReader.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\Xml\hkXmlObjectWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\Xml\hkXmlParser.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\Xml\hkXmlStreamParser.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\hkExtraInplaceLoadUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\hkLoader.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Util\hkRootLevelContainer.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Version\hkVersionBundle.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Version\hkVersionBundleUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Version\hkVersionPatchChecker.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\hkSerialize.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Dll\DynamicLibrary\hkDynamicLibrary.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Dll\hkDllManager.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Error\hkAssert.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Error\hkDefaultError.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Error\hkError.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Error\hkErrorFwd.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Error\hkErrorRouter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Error\hkFilterError.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Hardware\hkHardwareInfo.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\FileSystem\Cache\hkCacheFileSystem.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\FileSystem\Server\hkFileServerStreamReader.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\FileSystem\Server\hkFileServerStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\FileSystem\Server\hkServerFileSystem.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\FileSystem\Server\hkServerFileSystemThread.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\FileSystem\Union\hkUnionFileSystem.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\FileSystem\Util\hkFileSystemCallbacks.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\FileSystem\hkFileSystem.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\IArchive\hkIArchive.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\IStream\hkIStream.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\OArchive\hkOArchive.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\OStream\hkOStream.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\OptionParser\hkOptionParser.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Platform\Bsd\hkBsdSocket.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Platform\Stdio\hkStdioPipeStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Platform\Stdio\hkStdioStreamReader.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Platform\Stdio\hkStdioStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Platform\Win32\hkDebugConsoleStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Platform\Win32\hkWin32FileSystem.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Platform\Win32\hkWin32StreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Reader\Buffered\hkBufferedStreamReader.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Reader\Compressed\hkCompressedStreamReader.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Reader\CrcStream\hkCrcStreamReader.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Reader\Memory\hkMemoryStreamReader.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Reader\hkStreamReader.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Socket\hkInetAddr.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Socket\hkNetLobby.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Socket\hkSocket.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Structured\hkStructuredStream.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Util\hkCopyUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Util\hkFloatParseUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Util\hkLoadUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Writer\Array\hkArrayStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Writer\Buffered\hkBufferedStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Writer\Compressed\hkCompressedStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Writer\MemCmp\hkMemCmpStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Writer\Memory\hkMemoryStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Writer\OffsetOnly\hkOffsetOnlyStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Writer\Printf\hkPrintfStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Io\Writer\hkStreamWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Log\hkLog.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Log\hkLogJsonOutput.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Platform\hkPlatformInfo.cpp">
+    </ClCompile>
+    <ClCompile Include="System\StackTracer\hkStackTracer.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Stopwatch\hkStopwatch.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Stopwatch\hkSystemClock.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Stopwatch\hkSystemDate.cpp">
+    </ClCompile>
+    <ClCompile Include="System\Stopwatch\hkSystemTime.cpp">
+    </ClCompile>
+    <ClCompile Include="System\hkBaseSystem.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Async\hkAsyncHeartbeat.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Async\hkAsyncHeartbeatInstrumenter.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Async\hkAsyncThreadPool.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Async\hkAsyncThreadPoolDetail.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Async\hkAsyncThreadPoolInstrumenter.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Async\hkAsyncThreadPoolLocking.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Async\hkRunningApproxMedian.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Atomic\hkAtomicPrimitives_Win32.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Atomic\hkIntegerDistributor.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Concurrency\hkConcurrency.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\CriticalSection\Win32\hkWin32CriticalSection.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\CriticalSection\hkCriticalSection.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\JobQueue\hkJobQueue.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Pool\hkCpuThreadPool.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\ReadersWriterLock\hkReadersWriterLock.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Semaphore\Win32\hkWin32Semaphore.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\TaskQueue\Default\hkDefaultTaskQueue.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\TaskQueue\Trivial\hkTrivialTaskQueue.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\TaskQueue\hkTask.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\TaskQueue\hkTaskGraph.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\TaskQueue\hkTaskQueue.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Thread\Win32\hkWin32Thread.cpp">
+    </ClCompile>
+    <ClCompile Include="Thread\Thread\hkWorkerThreadContext.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Color\hkColor.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Aabb16\hkAabb16.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Aabb24_16_24\hkAabb24_16_24.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Aabb24_16_24\hkAabb24_16_24_Codec.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Aabb\hkAabb.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Aabb\hkAabbHalf.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Aabb\hkAabbUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Connectivity\hkConnectivity.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Frustum\hkFrustum.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Geometry\hkGeometry.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\IntSpaceUtil\hkIntSpaceUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\LocalFrame\hkLocalFrame.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Geometry\Plane\hkPlane.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Physics\hkStepInfo.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Properties\hkDefaultPropertyBag.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Properties\hkPropertyBag.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Properties\hkPropertyRegistry.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Properties\hkRefCountedProperties.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Properties\hkSimpleProperty.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\Uuid\hkUuid.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkBaseTypes.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkEndian.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkFailureGenerator.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkRefVariant.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkScopedPtr.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkSignalSlots.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkUFloat8.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkVarArgs.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkVarArgsV.cpp">
+    </ClCompile>
+    <ClCompile Include="Types\hkWeakPtr.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Algorithm\1AxisSweep\1AxisSweep.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Algorithm\Algorithm.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Algorithm\FindIndex\findIndex.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Algorithm\Hash.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Algorithm\Maps.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Algorithm\ObjectArray.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Algorithm\Sort\sort.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Allocator\allocators.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\BaseSystem\basesystem.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\BaseTypes\BaseTypes\baseTypesUnitTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Binding\nonstandard.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Cloning\CloneTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Cloning\CloneTestClasses.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Cloning\ReflectCloneTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\Array.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\BitField.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\FreeListArray.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\LocalArray.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\MinHeap.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\MultiMap.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\OffsetBitField.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\PointerMap.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\Queue.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\Set.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\StringMap.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\Tree.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\Tuple.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Container\Utf8.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Debugutil\log.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Debugutil\monitors.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\FileSystem\fileops.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\AxialRotation.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\ConvertCS.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\DoubleToFloat.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\FloatDouble.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\FpMath.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\FourTransposedPoints.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\IntVector.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\LargeInt.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\divideByZero.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\mathfunc.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\matrix3.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\matrix4.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\misc.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\mxvector.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\qstransform.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\quaternion.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\simdreal.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\transform.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\vector3.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\vector3util.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Linear\vectorSort.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\MathStream.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Matrix6.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\MatrixCameraUtils.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\MatrixDecomposition.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Pack.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Math\Rotation.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Memory\allocator_tests.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Memory\lifoallocator.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Memory\mem_tests.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Memory\tracker_tests.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Multithread\multithread_tests.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\AttributeParser.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\ClangTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\ConstructDestruct.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\RecordPropertiesTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\ReflectFileTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\ReflectedDecls.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\ReflectedDetailCallableTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\ReflectedDetailCoercionTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\ReflectedTypesTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\TypeBuilderTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\TypeNameTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\TypeRegistryTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\TypeTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\TypeVm.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\VarTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Reflection\castsTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Detail\SerializeDetail.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Detail\SerializeErrors.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\DocExamples.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\PatchTest\TestTemplatePatches.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Tagfile\BundleLoadSave.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Tagfile\CrossPlatformSaveLoad.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Tagfile\MultiPacket.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Tagfile\RecordLayout.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Tagfile\TagFileSaveLoad.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Tagfile\TypeCompendium.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\TypeCopier.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\Unregistered\UnregisteredType.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\base64Test.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\urlObjects.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Serialize\xmlEntityTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Stopwatch\stopwatch.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Stream\ReadBufferTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Stream\WriteBufferTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Stream\crcStream.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Stream\filesystem.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Stream\memoryTrack.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Stream\stream.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Stream\structuredstream.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\String\internedStringTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\String\string.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\String\stringArrayTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\String\stringformat.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\String\stringutils.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\TestStatics.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Thread\AtomicPrimitivesTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Thread\TaskQueueTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Thread\ThreadSafeIntegerPoolTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\ColorTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\EnumTraitTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\Frustum.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\Plane.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\PropertyBagTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\PtrReferenceLogger.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\RefPtrTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\ScopedPtrTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\SignalTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\TraitTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\TypeConvertMachine.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\TypeConvertUtilTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\TypeVisitorTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\VarArgs.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\WeakPtrTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\aabb.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Types\aabb20UnitTest.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\UnitTestUtils.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\_blank\blank.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\hkUnitTest.cpp">
+    </ClCompile>
+    <ClCompile Include="_Auto\hkBase_IncludeAllTypes.cpp">
+    </ClCompile>
+    <ClCompile Include="_Auto\hkBase_Tracker.cpp">
+    </ClCompile>
+    <ClCompile Include="hkBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="Algorithm\Collide\1AxisSweep16\hk1AxisSweep16.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Collide\1AxisSweep\hk1AxisSweep.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Collide\LineSegment\hkLineSegmentUtil.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Compression\hkBufferCompression.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Compression\hkBufferCompressionInternal.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Compression\hkCompression.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\FindIndex\hkFindIndex.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Find\hkFind.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Graph\hkDirectedGraph.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Hash\hkHash.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Heartbeat\hkHeartbeatAlgos.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Noise\hkPerlinNoise2d.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\PseudoRandom\hkMT19937RandomGenerator.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\PseudoRandom\hkPseudoRandomGenerator.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Sort\hkMortonSort.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Sort\hkRadixSort.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\Sort\hkSort.h">
+    </ClInclude>
+    <ClInclude Include="Algorithm\UnionFind\hkUnionFind.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkConfigBranches.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkConfigMemory.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkConfigMemoryStats.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkConfigMonitors.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkConfigPackedKey.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkConfigSimd.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkConfigThread.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkConfigVersion.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkOptionalComponent.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkProductFeatures.h">
+    </ClInclude>
+    <ClInclude Include="Config\hkProductFeaturesNoPatchesOrCompat.h">
+    </ClInclude>
+    <ClInclude Include="Container\ArrayView\hkArrayView.h">
+    </ClInclude>
+    <ClInclude Include="Container\Array\hkArray.h">
+    </ClInclude>
+    <ClInclude Include="Container\Array\hkArrayUtil.h">
+    </ClInclude>
+    <ClInclude Include="Container\Array\hkFixedInplaceArray.h">
+    </ClInclude>
+    <ClInclude Include="Container\Array\hkVariantArray.h">
+    </ClInclude>
+    <ClInclude Include="Container\BitField\hkBitField.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\Allocator\Debug\hkDebugBlockStreamAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\Allocator\Dynamic\hkDynamicBlockStreamAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\Allocator\Fixed\hkFixedBlockStreamAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\Allocator\hkBlockStreamAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\Allocator\hkThreadLocalBlockStreamAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\hkBlockStream.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\hkBlockStreamIterators.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\hkBlockStreamRange.h">
+    </ClInclude>
+    <ClInclude Include="Container\BlockStream\hkTypedBlockStream.h">
+    </ClInclude>
+    <ClInclude Include="Container\CommandStream\hkCommandStream.h">
+    </ClInclude>
+    <ClInclude Include="Container\CommandStream\hkUnrollCaseMacro.h">
+    </ClInclude>
+    <ClInclude Include="Container\Enumerable\hkEnumerableClass.h">
+    </ClInclude>
+    <ClInclude Include="Container\FreeListArray\hkFreeListArray.h">
+    </ClInclude>
+    <ClInclude Include="Container\Hash\Detail\hkHashMapDetail.h">
+    </ClInclude>
+    <ClInclude Include="Container\Hash\hkHashBase.h">
+    </ClInclude>
+    <ClInclude Include="Container\Hash\hkHashMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\Hash\hkHashSet.h">
+    </ClInclude>
+    <ClInclude Include="Container\IntrusiveSlist\hkIntrusiveSlist.h">
+    </ClInclude>
+    <ClInclude Include="Container\LocalArray\hkLocalArray.h">
+    </ClInclude>
+    <ClInclude Include="Container\LocalArray\hkLocalBuffer.h">
+    </ClInclude>
+    <ClInclude Include="Container\MinHeap\hkMinHeap.h">
+    </ClInclude>
+    <ClInclude Include="Container\ObjectCache\hkObjectCache.h">
+    </ClInclude>
+    <ClInclude Include="Container\PointerMap\hkLocalPointerMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\PointerMap\hkMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\PointerMap\hkPointerMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\PointerMultiMap\hkMultiMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\PointerMultiMap\hkPointerMultiMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\Queue\hkQueue.h">
+    </ClInclude>
+    <ClInclude Include="Container\RelArray\hkRelArray.h">
+    </ClInclude>
+    <ClInclude Include="Container\RelArray\hkRelArrayUtil.h">
+    </ClInclude>
+    <ClInclude Include="Container\Set\hkSet.h">
+    </ClInclude>
+    <ClInclude Include="Container\StringDictionary\hkStringDictionary.h">
+    </ClInclude>
+    <ClInclude Include="Container\StringMap\hkCachedHashMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\StringMap\hkStorageStringMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\StringMap\hkStringMap.h">
+    </ClInclude>
+    <ClInclude Include="Container\StringView\hkStringView.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\Deprecated\hkStringOld.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkFixedString.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkInternedString.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkInternedStringRegistry.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkLoc.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkString.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkStringBuf.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkStringObject.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkStringPtr.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkUtf8.h">
+    </ClInclude>
+    <ClInclude Include="Container\String\hkUtf8Detail.h">
+    </ClInclude>
+    <ClInclude Include="Container\Tree\hkAnderssonTree.h">
+    </ClInclude>
+    <ClInclude Include="Container\Tree\hkSortedTree.h">
+    </ClInclude>
+    <ClInclude Include="Container\Tree\hkTree.h">
+    </ClInclude>
+    <ClInclude Include="Container\Tuple\hkTuple.h">
+    </ClInclude>
+    <ClInclude Include="Container\hkContainerAllocators.h">
+    </ClInclude>
+    <ClInclude Include="DebugUtil\DeterminismUtil\hkCheckDeterminismUtil.h">
+    </ClInclude>
+    <ClInclude Include="DebugUtil\DeterminismUtil\hkNetworkedDeterminismUtil.h">
+    </ClInclude>
+    <ClInclude Include="DebugUtil\GlobalProperties\hkGlobalProperties.h">
+    </ClInclude>
+    <ClInclude Include="DebugUtil\MemoryExceptionTestingUtil\hkMemoryExceptionTestingUtil.h">
+    </ClInclude>
+    <ClInclude Include="DebugUtil\MultiThreadCheck\hkMultiThreadCheck.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkcctype.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkcmalloc.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkcstdarg.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkcstdio.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkcstdlib.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkcstring.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkctime.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hksal.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkstandardheader.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkutility.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkwindows.h">
+    </ClInclude>
+    <ClInclude Include="Fwd\hkwinver.h">
+    </ClInclude>
+    <ClInclude Include="GlobalConfig.h">
+    </ClInclude>
+    <ClInclude Include="KeyCode.h">
+    </ClInclude>
+    <ClInclude Include="Math\AxialTransform\hkAxialRotation.h">
+    </ClInclude>
+    <ClInclude Include="Math\AxialTransform\hkAxialTransform.h">
+    </ClInclude>
+    <ClInclude Include="Math\ExtendedMath\hkFad.h">
+    </ClInclude>
+    <ClInclude Include="Math\ExtendedMath\hkFadDifferentiationRules.h">
+    </ClInclude>
+    <ClInclude Include="Math\ExtendedMath\hkFadSimplificationRules.h">
+    </ClInclude>
+    <ClInclude Include="Math\ExtendedMath\hkFpMath.h">
+    </ClInclude>
+    <ClInclude Include="Math\ExtendedMath\hkFpMathDetail.h">
+    </ClInclude>
+    <ClInclude Include="Math\ExtendedMath\hkMpMath.h">
+    </ClInclude>
+    <ClInclude Include="Math\Float16Transform\hkFloat16Transform.h">
+    </ClInclude>
+    <ClInclude Include="Math\Functions\hkMathFuncs.h">
+    </ClInclude>
+    <ClInclude Include="Math\Header\hkMathHeaderConstantDefinitions.h">
+    </ClInclude>
+    <ClInclude Include="Math\Header\hkMathHeaderEnums.h">
+    </ClInclude>
+    <ClInclude Include="Math\Header\hkMathHeaderForwardDeclarations.h">
+    </ClInclude>
+    <ClInclude Include="Math\Header\hkMathHeaderFuncs.h">
+    </ClInclude>
+    <ClInclude Include="Math\Header\hkMathHeaderMxClasses.h">
+    </ClInclude>
+    <ClInclude Include="Math\Header\hkMathHeaderPlatformImplementations.h">
+    </ClInclude>
+    <ClInclude Include="Math\Header\hkMathHeaderTypes.h">
+    </ClInclude>
+    <ClInclude Include="Math\Header\hkMathTypes2.h">
+    </ClInclude>
+    <ClInclude Include="Math\LargeInt\hkInt128Vector4.h">
+    </ClInclude>
+    <ClInclude Include="Math\LargeInt\hkInt64Vector4.h">
+    </ClInclude>
+    <ClInclude Include="Math\LargeInt\hkLargeInt.h">
+    </ClInclude>
+    <ClInclude Include="Math\LargeInt\hkLargeIntTypes.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrix3.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrix3Util.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrix4CameraUtil.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrix4Util.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrix4f.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrix6.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrix6d.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrix6f.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrixDecomposition.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrixNm.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrixdNm.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkMatrixfNm.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkRotation.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkTransformUtil.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkTransformd.h">
+    </ClInclude>
+    <ClInclude Include="Math\Matrix\hkTransformf.h">
+    </ClInclude>
+    <ClInclude Include="Math\QTransform\hkQTransform.h">
+    </ClInclude>
+    <ClInclude Include="Math\QTransform\hkQTransformd.h">
+    </ClInclude>
+    <ClInclude Include="Math\QTransform\hkQTransformf.h">
+    </ClInclude>
+    <ClInclude Include="Math\QsTransform\hkQsTransformd.h">
+    </ClInclude>
+    <ClInclude Include="Math\QsTransform\hkQsTransformf.h">
+    </ClInclude>
+    <ClInclude Include="Math\QsTransform\hkQsTransformf.hkReflect">
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion\hkQuaternionUtil.h">
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion\hkQuaterniond.h">
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion\hkQuaternionf.h">
+    </ClInclude>
+    <ClInclude Include="Math\Radians\hkRadians.h">
+    </ClInclude>
+    <ClInclude Include="Math\SymmetricMatrix\hkSymmetricMatrix3.h">
+    </ClInclude>
+    <ClInclude Include="Math\SymmetricMatrix\hkSymmetricMatrix3Util.h">
+    </ClInclude>
+    <ClInclude Include="Math\Types\Fpu\hkFpuCommonMathTypes.h">
+    </ClInclude>
+    <ClInclude Include="Math\Types\Fpu\hkFpuDoubleMathTypes.h">
+    </ClInclude>
+    <ClInclude Include="Math\Types\Fpu\hkFpuFloatMathTypes.h">
+    </ClInclude>
+    <ClInclude Include="Math\Types\Fpu\hkFpuMathTypes.h">
+    </ClInclude>
+    <ClInclude Include="Math\Types\Mx\hkMxMathTypes.h">
+    </ClInclude>
+    <ClInclude Include="Math\Types\Sse\hkSseMathTypes.h">
+    </ClInclude>
+    <ClInclude Include="Math\Util\hkConvertCoordinateSpace.h">
+    </ClInclude>
+    <ClInclude Include="Math\Util\hkPack.h">
+    </ClInclude>
+    <ClInclude Include="Math\Util\hkVector2Util.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxMask.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxMaskd.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxMaskf.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxQuaternion.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxQuaterniond.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxQuaternionf.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxReal.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxReald.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxRealf.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxSingle.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxSingled.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxSinglef.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxUnroll.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxVector.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxVectorUtil.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxVectord.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxVectordUtil.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxVectorf.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Mx\hkMxVectorfUtil.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Packing\hkVectorPackUtility.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Packing\hkVectorPackUtilityCommon.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Packing\hkVectordPackUtility.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\Packing\hkVectorfPackUtility.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hk4xVector2.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hk4xVector2d.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hk4xVector2f.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkFourTransposedPoints.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkIntVector.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkPackedTransform.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkPackedVector3.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkSimdDouble64.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkSimdFloat32.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector2.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector2d.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector2f.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector4Util.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector4UtilInternal.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector4d.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector4dComparison.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector4f.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVector4fComparison.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVectorN.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVectorNd.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVectorNf.h">
+    </ClInclude>
+    <ClInclude Include="Math\Vector\hkVectorSort.h">
+    </ClInclude>
+    <ClInclude Include="Math\hkMath.h">
+    </ClInclude>
+    <ClInclude Include="Math\hkMathMixedOperators.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Checking\hkDelayedFreeAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Checking\hkGuardingAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Checking\hkLeakDetectAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Checking\hkPaddedAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\FreeList\hkFixedSizeAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\FreeList\hkFreeList.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\FreeList\hkFreeListAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\LargeBlock\hkLargeBlockAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Lifo\hkLifoAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Linear\hkLinearAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Linear\hkLinearBuffer.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Malloc\hkMallocAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Monitor\hkMonitorAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Pooled\hkPooledAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Recall\hkRecallAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Solver\hkSolverAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Stats\hkStatsAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\TempDetect\hkTempDetectAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Thread\hkThreadMemory.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Transient\hkTransientAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\hkMemoryAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Memory\MemoryClasses\hkMemoryClassDefinitions.h">
+    </ClInclude>
+    <ClInclude Include="Memory\MemoryClasses\hkMemoryClasses.h">
+    </ClInclude>
+    <ClInclude Include="Memory\MemoryClasses\hkMemoryClassesTable.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Router\hkMemoryRouter.h">
+    </ClInclude>
+    <ClInclude Include="Memory\System\Checking\hkCheckingMemorySystem.h">
+    </ClInclude>
+    <ClInclude Include="Memory\System\Debug\hkDebugMemorySystem.h">
+    </ClInclude>
+    <ClInclude Include="Memory\System\FreeList\hkFreeListMemorySystem.h">
+    </ClInclude>
+    <ClInclude Include="Memory\System\Optimizer\hkOptimizerMemorySystem.h">
+    </ClInclude>
+    <ClInclude Include="Memory\System\Simple\hkSimpleMemorySystem.h">
+    </ClInclude>
+    <ClInclude Include="Memory\System\Util\hkMemoryInitUtil.h">
+    </ClInclude>
+    <ClInclude Include="Memory\System\Util\hkMemorySnapshot.h">
+    </ClInclude>
+    <ClInclude Include="Memory\System\hkMemorySystem.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Tracker\Default\hkDefaultMemoryTracker.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Tracker\hkMemoryTracker.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Tracker\hkMemoryTrackerRegistry.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Tracker\hkMemoryTrackerReportUtil.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Tracker\hkMemoryTrackerSnapshot.h">
+    </ClInclude>
+    <ClInclude Include="Memory\Util\hkMemUtil.h">
+    </ClInclude>
+    <ClInclude Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamAnalyzer.h">
+    </ClInclude>
+    <ClInclude Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamAttributes.h">
+    </ClInclude>
+    <ClInclude Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamCache.h">
+    </ClInclude>
+    <ClInclude Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamContainer.h">
+    </ClInclude>
+    <ClInclude Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamFlameGraph.h">
+    </ClInclude>
+    <ClInclude Include="Monitor\MonitorStreamAnalyzer\hkMonitorStreamParser.h">
+    </ClInclude>
+    <ClInclude Include="Monitor\hkMonitorStream.h">
+    </ClInclude>
+    <ClInclude Include="Object\hkBaseObject.h">
+    </ClInclude>
+    <ClInclude Include="Object\hkReferencedObject.h">
+    </ClInclude>
+    <ClInclude Include="Object\hkReferencedObjectRegistry.h">
+    </ClInclude>
+    <ClInclude Include="Object\hkSingleton.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\Values\hkPreProcessorAnd.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\Values\hkPreProcessorBool.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\Values\hkPreProcessorBoolExtra.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\Values\hkPreProcessorFor.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\Values\hkPreProcessorLsb.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\Values\hkPreProcessorOr.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\Values\hkPreProcessorShl.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\Values\hkPreProcessorShr.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\hkPreProcessor.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\hkPreProcessorBitwiseOps.h">
+    </ClInclude>
+    <ClInclude Include="PreProcessor\hkPreProcessorGetLocation.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Attributes\hkAttributeParser.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Attributes\hkAttributes.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Attributes\hkEngineAttributes.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Attributes\hkToolAttributes.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Builder\hkRecordLayout.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Builder\hkTypeBuilder.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Builder\hkTypeCopier.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\Detail\hkCallableDetail.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\Detail\hkPodPunsDetail.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\Detail\hkRecordPropertyDetail.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\Detail\hkReflectTypeDetail.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\hkReflectCallable.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\hkReflectDefs.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\hkReflectFuncs.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\hkReflectImpl.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\hkReflectType.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\hkReflectValue.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\hkReflectVar.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Core\hkReflectVarDetail.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Detail\hkTypeHasher.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Impl\Std\hkReflectStd.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Impl\hkBuiltinImpl.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Impl\hkHavokImpl.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\ReflectFile\hkReflectFileParser.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\ReflectFile\hkSimpleToken.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\ReflectFile\hkSimpleTokenizer.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\TypeReg\Detail\hkTypeRegDetail.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\TypeReg\Detail\hkTypeRegNode.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\TypeReg\hkTypeReg.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\TypeVm\hkTypeVmCompiler.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\TypeVm\hkTypeVmCompilerPasses.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\TypeVm\hkTypeVmCopyInterpreter.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\TypeVm\hkTypeVmFastCopyInterpreter.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\TypeVm\hkTypeVmInterpreter.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkFieldSetterDetail.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkReflectAny.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkReflectClone.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkReflectCrc.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkReflectSyntheticUtil.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkReflectUtil.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkReflectVarMapOperations.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkReflectionCheckUtil.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Util\hkVarCoerce.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Version\hkModifiableTypeSet.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Version\hkPatchesRegNode.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Version\hkReflectPatchRegistry.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Version\hkReflectVersionPatcher.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Version\hkReflectVersionPatches.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Visitor\Detail\hkReflectVisitorDetail.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\Visitor\hkReflectVisitor.h">
+    </ClInclude>
+    <ClInclude Include="Reflect\hkReflect.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Core\hkSerializeCore.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Deprecated\hkSerializeUtil.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Detail\hkIndexedBundle.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Detail\hkReadBuffer.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Detail\hkSerializeDetail.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Detail\hkUintVle.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Detail\hkWriteBuffer.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hclToolNamedObjectReference.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hctAttributeDescription.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hctClothSetup20141Options.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hctClothSetupClothData20141Options.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hctClothSetupObjectData.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hctFilterClothSetupStubOptions.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hctFilterConfigurationSet.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hkClass.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hkClassEnum.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\ContentTools\hkClassMember.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compat\hkCompatFormats.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compression\hkCompressionReadFormat.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Compression\hkCompressionWriteFormat.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Tagfile2014\hkLegacyType.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Tagfile2014\hkTagStringList.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Tagfile2014\hkTagfileCommon2014.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Tagfile2014\hkTagfileReadFormat2014.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Tagfile\Detail\hkTagfileDetail.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Tagfile\hkTagfileReadFormat.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Tagfile\hkTagfileWriteFormat.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Xml\hkXmlReadFormat.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Format\Xml\hkXmlWriteFormat.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\ResourceHandle\hkResourceHandle.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Resource\hkObjectResource.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Resource\hkResource.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Resource\hkResourceLinker.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\StructuredBinaryStream\hkStructuredBinaryStream.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\Json\hkJson.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\Xml\hkParserBuffer.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\Xml\hkXmlLexAnalyzer.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\Xml\hkXmlObjectReader.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\Xml\hkXmlObjectWriter.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\Xml\hkXmlParser.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\Xml\hkXmlStreamParser.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\hkExtraInplaceLoadUtil.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\hkLoader.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\hkRootLevelContainer.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Util\hkSerializeMultiMap.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Version\hkVersionBundle.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Version\hkVersionBundleUtil.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Version\hkVersionPatchChecker.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\hkSerialize.h">
+    </ClInclude>
+    <ClInclude Include="System\Dll\DynamicLibrary\hkDynamicLibrary.h">
+    </ClInclude>
+    <ClInclude Include="System\Dll\hkDllManager.h">
+    </ClInclude>
+    <ClInclude Include="System\Dll\hkDllModule.h">
+    </ClInclude>
+    <ClInclude Include="System\Error\hkAssert.h">
+    </ClInclude>
+    <ClInclude Include="System\Error\hkDefaultError.h">
+    </ClInclude>
+    <ClInclude Include="System\Error\hkError.h">
+    </ClInclude>
+    <ClInclude Include="System\Error\hkErrorFwd.h">
+    </ClInclude>
+    <ClInclude Include="System\Error\hkErrorRouter.h">
+    </ClInclude>
+    <ClInclude Include="System\Error\hkFilterError.h">
+    </ClInclude>
+    <ClInclude Include="System\Hardware\hkHardwareInfo.h">
+    </ClInclude>
+    <ClInclude Include="System\Init\PlatformInit.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\Cache\hkCacheFileSystem.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\Server\hkFileServerStreamReader.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\Server\hkFileServerStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\Server\hkServerFileSystem.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\Server\hkServerFileSystemThread.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\Union\hkUnionFileSystem.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\Util\hkFileSystemCallbacks.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\hkFileSystem.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\FileSystem\hkNativeFileSystem.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\IArchive\hkIArchive.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\IStream\hkIStream.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\OArchive\hkOArchive.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\OStream\hkOStream.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\OptionParser\hkOptionParser.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Platform\Bsd\hkBsdSocket.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Platform\Stdio\hkStdioPipeStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Platform\Stdio\hkStdioStreamReader.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Platform\Stdio\hkStdioStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Platform\Win32\hkDebugConsoleStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Platform\Win32\hkWin32FileSystem.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Platform\Win32\hkWin32StreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Reader\Buffered\hkBufferedStreamReader.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Reader\Compressed\hkCompressedStreamReader.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Reader\CrcStream\hkCrcStreamReader.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Reader\Memory\hkMemoryStreamReader.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Reader\hkStreamReader.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Socket\hkInetAddr.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Socket\hkNetLobby.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Socket\hkSocket.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Structured\hkStructuredStream.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Util\hkCopyUtil.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Util\hkFloatParseUtil.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Util\hkLoadUtil.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\Array\hkArrayStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\Buffered\hkBufferedStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\Compressed\hkCompressedStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\Crc\hkCrcStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\MemCmp\hkMemCmpStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\Memory\hkMemoryStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\OffsetOnly\hkOffsetOnlyStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\Printf\hkPrintfStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\SubStream\hkSubStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Io\Writer\hkStreamWriter.h">
+    </ClInclude>
+    <ClInclude Include="System\Log\hkLog.h">
+    </ClInclude>
+    <ClInclude Include="System\Log\hkLogJsonOutput.h">
+    </ClInclude>
+    <ClInclude Include="System\Main\hkMain.h">
+    </ClInclude>
+    <ClInclude Include="System\Platform\hkPlatformInfo.h">
+    </ClInclude>
+    <ClInclude Include="System\StackTracer\hkStackTracer.h">
+    </ClInclude>
+    <ClInclude Include="System\Stopwatch\Impl\hkWindowsSystemClock.h">
+    </ClInclude>
+    <ClInclude Include="System\Stopwatch\hkStopwatch.h">
+    </ClInclude>
+    <ClInclude Include="System\Stopwatch\hkSystemClock.h">
+    </ClInclude>
+    <ClInclude Include="System\Stopwatch\hkSystemDate.h">
+    </ClInclude>
+    <ClInclude Include="System\Stopwatch\hkSystemTime.h">
+    </ClInclude>
+    <ClInclude Include="System\Stopwatch\hkWindowedAverage.h">
+    </ClInclude>
+    <ClInclude Include="System\hkBaseSystem.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Async\hkAsyncHeartbeat.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Async\hkAsyncHeartbeatInstrumenter.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Async\hkAsyncThreadPool.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Async\hkAsyncThreadPoolDetail.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Async\hkAsyncThreadPoolInstrumenter.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Async\hkAsyncThreadPoolLocking.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Async\hkRunningApproxMedian.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Atomic\hkAtomicPrimitives.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Atomic\hkIntegerDistributor.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Concurrency\hkConcurrency.h">
+    </ClInclude>
+    <ClInclude Include="Thread\CriticalSection\hkCriticalSection.h">
+    </ClInclude>
+    <ClInclude Include="Thread\JobQueue\hkJobQueue.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Pool\hkCpuThreadPool.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Pool\hkThreadPool.h">
+    </ClInclude>
+    <ClInclude Include="Thread\ReadersWriterLock\hkReadersWriterLock.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Semaphore\hkSemaphore.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Semaphore\hkSemaphoreBusyWait.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\Default\hkDefaultTaskQueue.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\Default\hkDefaultTaskQueue_HandleAllocator.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\Default\hkDefaultTaskQueue_HandleGraph.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\Default\hkDefaultTaskQueue_HandleImpl.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\Default\hkDefaultTaskQueue_Logger.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\Trivial\hkTrivialTaskQueue.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\hkBatchTask.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\hkTask.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\hkTaskGraph.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\hkTaskQueue.h">
+    </ClInclude>
+    <ClInclude Include="Thread\TaskQueue\hkTaskType.h">
+    </ClInclude>
+    <ClInclude Include="Thread\ThreadSafeIntegerPool\hkThreadSafeIntegerPool.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Thread\hkThread.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Thread\hkThreadLocalData.h">
+    </ClInclude>
+    <ClInclude Include="Thread\Thread\hkWorkerThreadContext.h">
+    </ClInclude>
+    <ClInclude Include="Types\Color\hkColor.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Aabb16\hkAabb16.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Aabb24_16_24\hkAabb24_16_24.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Aabb24_16_24\hkAabb24_16_24_Codec.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Aabb\hkAabb.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Aabb\hkAabbHalf.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Aabb\hkAabbUtil.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Box\hkBox.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Connectivity\hkConnectivity.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Frustum\hkFrustum.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\IntSpaceUtil\hkIntSpaceUtil.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\LocalFrame\hkLocalFrame.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Plane\hkPlane.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Point\hkPoint.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Rect\hkRect.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\Sphere\hkSphere.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\hkGeometry.h">
+    </ClInclude>
+    <ClInclude Include="Types\Geometry\hkStridedVertices.h">
+    </ClInclude>
+    <ClInclude Include="Types\Physics\ContactPoint\hkContactPoint.h">
+    </ClInclude>
+    <ClInclude Include="Types\Physics\hkStepInfo.h">
+    </ClInclude>
+    <ClInclude Include="Types\Properties\hkDefaultPropertyBag.h">
+    </ClInclude>
+    <ClInclude Include="Types\Properties\hkProperty.h">
+    </ClInclude>
+    <ClInclude Include="Types\Properties\hkPropertyBag.h">
+    </ClInclude>
+    <ClInclude Include="Types\Properties\hkPropertyRegistry.h">
+    </ClInclude>
+    <ClInclude Include="Types\Properties\hkRefCountedProperties.h">
+    </ClInclude>
+    <ClInclude Include="Types\Properties\hkSimpleProperty.h">
+    </ClInclude>
+    <ClInclude Include="Types\Traits\hkTraitArithmetic.h">
+    </ClInclude>
+    <ClInclude Include="Types\Traits\hkTraitIsPod.h">
+    </ClInclude>
+    <ClInclude Include="Types\Traits\hkTraitModifier.h">
+    </ClInclude>
+    <ClInclude Include="Types\Traits\hkTraitOperators.h">
+    </ClInclude>
+    <ClInclude Include="Types\Uuid\hkUuid.h">
+    </ClInclude>
+    <ClInclude Include="Types\Ux\hkViewport.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkBaseDefs.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkBaseTypes.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkBinaryConst.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkEndian.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkExtraPragmas.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkFailureGenerator.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkHandle.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkIgnoreDeprecated.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkPtrAndInt.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkRefPtr.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkRefVariant.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkScopedPtr.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkSignalSlots.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkTrait.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkUFloat8.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkVarArgs.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkVarArgsV.h">
+    </ClInclude>
+    <ClInclude Include="Types\hkWeakPtr.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Cloning\CloneTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Cloning\CloneTestClasses.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Cloning\CloneTestClassesStl.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Math\Linear\mathtestutils.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Memory\tracker_tests.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Reflection\ClangTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Reflection\RecordPropertiesTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Reflection\TypeRegistryTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Reflection\TypeVm.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Reflection\VarTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Reflection\castsTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Serialize\PatchTest\TestTemplatePatches.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Serialize\Tagfile\BundleLoadSave.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Serialize\Tagfile\CrossPlatformSaveLoad.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Serialize\Unregistered\UnregisteredType.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Serialize\urlObjects.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\String\stringformat.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Tests.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Types\PropertyBagTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Types\PtrReferenceLogger.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Types\ScopedPtrTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Types\WeakPtrTest.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\UnitTestUtils.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\hkPath.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\hkUnitTest.h">
+    </ClInclude>
+    <ClInclude Include="hkBase.h">
+    </ClInclude>
+    <ClInclude Include="hkBaseHeartbeat.h">
+    </ClInclude>
+    <ClInclude Include="hkIncludeEnd.h">
+    </ClInclude>
+    <ClInclude Include="hkIncludeStart.h">
+    </ClInclude>
+    <Compile Include="Container\PointerMap\hkMap.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="Container\PointerMultiMap\hkMultiMap.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="Container\String\hkUtf8.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="Reflect\TypeReg\Detail\hkTypeRegNode.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="Reflect\Version\hkPatchesRegNode.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="System\Dll\DynamicLibrary\hkDynamicLibrary.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="System\Log\hkLog.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="System\hkBaseSystem.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="Types\Properties\hkPropertyRegistry.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="Types\hkSignalSlots.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="UnitTest\Serialize\PatchTest\TestTemplatePatches.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="_Auto\HABinding\hkBase_HABinding.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <MASM Include="Math\ExtendedMath\hkWideDiv.asm">
+    </MASM>
+    <Natvis Include="..\..\..\Tools\Addons\VisualStudio\Havok.common.natvis">
+      <DeploymentContent>True</DeploymentContent>
+    </Natvis>
+    <None Include="Algorithm\Collide\1AxisSweep\hk1AxisSweep.inl">
+    </None>
+    <None Include="Algorithm\Compression\hkBufferCompression.inl">
+    </None>
+    <None Include="Algorithm\FindIndex\hkFindIndex.inl">
+    </None>
+    <None Include="Algorithm\Find\hkFind.inl">
+    </None>
+    <None Include="Algorithm\Graph\hkDirectedGraph.inl">
+    </None>
+    <None Include="Algorithm\Hash\hkHash.inl">
+    </None>
+    <None Include="Algorithm\Heartbeat\hkHeartbeatAlgos.inl">
+    </None>
+    <None Include="Algorithm\Sort\hkMortonSort.inl">
+    </None>
+    <None Include="Algorithm\Sort\hkRadixSort.inl">
+    </None>
+    <None Include="Algorithm\Sort\hkSort.inl">
+    </None>
+    <None Include="ClassLists\hkAiClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkAnimationClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkBehaviorClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkClothClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkCommonClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkConvexDecompositionClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkDestruction2012ClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkDestructionClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkEditorClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkEngineClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkKeyCodeClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkMilSimClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkPhysics2012ClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkPhysicsClassLists.cxx">
+    </None>
+    <None Include="ClassLists\hkRegisterClasses.cxx">
+    </None>
+    <None Include="ClassLists\hkRendererClassLists.cxx">
+    </None>
+    <None Include="Config\hkProductFeatures.cxx">
+    </None>
+    <None Include="Config\hkProductFeatures.inl">
+    </None>
+    <None Include="Container\ArrayView\hkArrayView.inl">
+    </None>
+    <None Include="Container\Array\hkArray.inl">
+    </None>
+    <None Include="Container\Array\hkArrayUtil.inl">
+    </None>
+    <None Include="Container\Array\hkFixedInplaceArray.inl">
+    </None>
+    <None Include="Container\BitField\hkBitField.inl">
+    </None>
+    <None Include="Container\BlockStream\Allocator\Debug\hkDebugBlockStreamAllocatorWindows.cxx">
+    </None>
+    <None Include="Container\BlockStream\hkBlockStream.inl">
+    </None>
+    <None Include="Container\BlockStream\hkBlockStreamIterators.inl">
+    </None>
+    <None Include="Container\BlockStream\hkBlockStreamRange.inl">
+    </None>
+    <None Include="Container\BlockStream\hkTypedBlockStream.inl">
+    </None>
+    <None Include="Container\CommandStream\hkCommandStream.inl">
+    </None>
+    <None Include="Container\FreeListArray\hkFreeListArray.inl">
+    </None>
+    <None Include="Container\Hash\hkHashBase.inl">
+    </None>
+    <None Include="Container\Hash\hkHashMap.inl">
+    </None>
+    <None Include="Container\Hash\hkHashSet.inl">
+    </None>
+    <None Include="Container\MinHeap\hkMinHeap.inl">
+    </None>
+    <None Include="Container\ObjectCache\hkObjectCache.inl">
+    </None>
+    <None Include="Container\PointerMap\hkMap.inl">
+    </None>
+    <None Include="Container\Queue\hkQueue.inl">
+    </None>
+    <None Include="Container\RelArray\hkRelArray.inl">
+    </None>
+    <None Include="Container\RelArray\hkRelArrayUtil.inl">
+    </None>
+    <None Include="Container\Set\hkSet.inl">
+    </None>
+    <None Include="Container\StringDictionary\hkStringDictionary.inl">
+    </None>
+    <None Include="Container\StringMap\hkCachedHashMap.cxx">
+    </None>
+    <None Include="Container\StringMap\hkStringMap.inl">
+    </None>
+    <None Include="Container\String\Deprecated\hkStringOld.inl">
+    </None>
+    <None Include="Container\String\hkFixedString.inl">
+    </None>
+    <None Include="Container\String\hkInternedString.inl">
+    </None>
+    <None Include="Container\String\hkString.inl">
+    </None>
+    <None Include="Container\String\hkStringBuf.inl">
+    </None>
+    <None Include="Container\String\hkStringPtr.inl">
+    </None>
+    <None Include="Container\Tree\hkAnderssonTree.inl">
+    </None>
+    <None Include="Container\Tree\hkSortedTree.inl">
+    </None>
+    <None Include="Container\Tree\hkTree.inl">
+    </None>
+    <None Include="Container\Tuple\hkTupleMapOperations.cxx">
+    </None>
+    <None Include="Container\hkContainerAllocators.inl">
+    </None>
+    <None Include="DebugUtil\DeterminismUtil\hkCheckDeterminismUtil.inl">
+    </None>
+    <None Include="KeyCode.inl">
+    </None>
+    <None Include="Math\AxialTransform\hkAxialRotation.inl">
+    </None>
+    <None Include="Math\AxialTransform\hkAxialTransform.inl">
+    </None>
+    <None Include="Math\ExtendedMath\hkMpMath.inl">
+    </None>
+    <None Include="Math\Float16Transform\hkFloat16Transform.inl">
+    </None>
+    <None Include="Math\Functions\Fpu\hkFpuMathFuncs.inl">
+    </None>
+    <None Include="Math\Functions\Sse\hkSseMathFuncs.inl">
+    </None>
+    <None Include="Math\LargeInt\Fpu\hkFpuInt64Vector4.inl">
+    </None>
+    <None Include="Math\LargeInt\Sse\hkSseInt64Vector4.inl">
+    </None>
+    <None Include="Math\LargeInt\hkInt128Vector4.inl">
+    </None>
+    <None Include="Math\LargeInt\hkInt64Vector4.inl">
+    </None>
+    <None Include="Math\LargeInt\hkLargeInt.inl">
+    </None>
+    <None Include="Math\Matrix\hkMatrix3.inl">
+    </None>
+    <None Include="Math\Matrix\hkMatrix3Util.inl">
+    </None>
+    <None Include="Math\Matrix\hkMatrix4CameraUtil.inl">
+    </None>
+    <None Include="Math\Matrix\hkMatrix4Util.inl">
+    </None>
+    <None Include="Math\Matrix\hkMatrix4f.inl">
+    </None>
+    <None Include="Math\Matrix\hkMatrixDecomposition.inl">
+    </None>
+    <None Include="Math\Matrix\hkRotation.inl">
+    </None>
+    <None Include="Math\Matrix\hkTransformUtil.inl">
+    </None>
+    <None Include="Math\Matrix\hkTransformd.inl">
+    </None>
+    <None Include="Math\Matrix\hkTransformf.inl">
+    </None>
+    <None Include="Math\QTransform\hkQTransform.inl">
+    </None>
+    <None Include="Math\QTransform\hkQTransformd.inl">
+    </None>
+    <None Include="Math\QTransform\hkQTransformf.inl">
+    </None>
+    <None Include="Math\QsTransform\hkQsTransformd.inl">
+    </None>
+    <None Include="Math\QsTransform\hkQsTransformf.inl">
+    </None>
+    <None Include="Math\Quaternion\hkQuaternionUtil.inl">
+    </None>
+    <None Include="Math\Quaternion\hkQuaterniond.inl">
+    </None>
+    <None Include="Math\Quaternion\hkQuaternionf.inl">
+    </None>
+    <None Include="Math\Radians\hkRadians.inl">
+    </None>
+    <None Include="Math\SymmetricMatrix\hkSymmetricMatrix3.inl">
+    </None>
+    <None Include="Math\SymmetricMatrix\hkSymmetricMatrix3Util.inl">
+    </None>
+    <None Include="Math\Util\hkConvertCoordinateSpace.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuSimdReal.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuSimdReald.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuSimdRealf.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuVector4.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuVector4Comparison.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuVector4d.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuVector4dComparison.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuVector4f.inl">
+    </None>
+    <None Include="Math\Vector\Fpu\hkFpuVector4fComparison.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxMask.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxMaskd.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxMaskf.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxQuaternion.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxQuaterniond.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxQuaternionf.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxReal.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxReald.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxRealf.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxSingle.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxSingled.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxSinglef.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxVector.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxVectorUtil.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxVectord.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxVectordUtil.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxVectorf.inl">
+    </None>
+    <None Include="Math\Vector\Mx\hkMxVectorfUtil.inl">
+    </None>
+    <None Include="Math\Vector\Packing\hkVectorPackUtility.inl">
+    </None>
+    <None Include="Math\Vector\Packing\hkVectorPackUtilityCommon.inl">
+    </None>
+    <None Include="Math\Vector\Packing\hkVectordPackUtility.inl">
+    </None>
+    <None Include="Math\Vector\Packing\hkVectorfPackUtility.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseIntVector.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseSimdReal.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseSimdReal_D.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseVector4.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseVector4Comparison.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseVector4Comparison_D.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseVector4Util.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseVector4Util_D.inl">
+    </None>
+    <None Include="Math\Vector\Sse\hkSseVector4_D.inl">
+    </None>
+    <None Include="Math\Vector\hk4xVector2.inl">
+    </None>
+    <None Include="Math\Vector\hk4xVector2d.inl">
+    </None>
+    <None Include="Math\Vector\hk4xVector2f.inl">
+    </None>
+    <None Include="Math\Vector\hkFourTransposedPoints.inl">
+    </None>
+    <None Include="Math\Vector\hkIntVector.inl">
+    </None>
+    <None Include="Math\Vector\hkPackedVector3.inl">
+    </None>
+    <None Include="Math\Vector\hkSimdDouble64.inl">
+    </None>
+    <None Include="Math\Vector\hkSimdFloat32.inl">
+    </None>
+    <None Include="Math\Vector\hkVector2.inl">
+    </None>
+    <None Include="Math\Vector\hkVector2d.inl">
+    </None>
+    <None Include="Math\Vector\hkVector2f.inl">
+    </None>
+    <None Include="Math\Vector\hkVector4Util.inl">
+    </None>
+    <None Include="Math\Vector\hkVector4UtilInternal.inl">
+    </None>
+    <None Include="Math\Vector\hkVector4d.inl">
+    </None>
+    <None Include="Math\Vector\hkVector4dComparison.inl">
+    </None>
+    <None Include="Math\Vector\hkVector4f.inl">
+    </None>
+    <None Include="Math\Vector\hkVector4fComparison.inl">
+    </None>
+    <None Include="Math\Vector\hkVectorN.inl">
+    </None>
+    <None Include="Math\Vector\hkVectorNd.inl">
+    </None>
+    <None Include="Math\Vector\hkVectorNf.inl">
+    </None>
+    <None Include="Math\Vector\hkVectorSort.inl">
+    </None>
+    <None Include="Memory\Allocator\FreeList\hkFreeList.inl">
+    </None>
+    <None Include="Memory\Allocator\Lifo\hkLifoAllocator.inl">
+    </None>
+    <None Include="Memory\Allocator\Linear\hkLinearBuffer.inl">
+    </None>
+    <None Include="Memory\Tracker\hkMemoryTrackerSnapshot.inl">
+    </None>
+    <None Include="Memory\Util\hkMemUtil.inl">
+    </None>
+    <None Include="Monitor\hkMonitorStream.inl">
+    </None>
+    <None Include="Object\hkBaseObject.inl">
+    </None>
+    <None Include="Object\hkReferencedObject.inl">
+    </None>
+    <None Include="Reflect\Attributes\hkAttributeParser.inl">
+    </None>
+    <None Include="Reflect\Core\Detail\hkReflectTypeDetail.inl">
+    </None>
+    <None Include="Reflect\Core\hkReflectCallable.inl">
+    </None>
+    <None Include="Reflect\Core\hkReflectFuncs.inl">
+    </None>
+    <None Include="Reflect\Core\hkReflectType.inl">
+    </None>
+    <None Include="Reflect\Core\hkReflectValue.inl">
+    </None>
+    <None Include="Reflect\Core\hkReflectVar.inl">
+    </None>
+    <None Include="Reflect\Impl\Std\hkReflectStd.inl">
+    </None>
+    <None Include="Reflect\Impl\hkBuiltinImpl.inl">
+    </None>
+    <None Include="Reflect\ReflectFile\hkSimpleTokenizer.inl">
+    </None>
+    <None Include="Reflect\TypeVm\hkTypeVmCompiler.inl">
+    </None>
+    <None Include="Reflect\TypeVm\hkTypeVmCopyInterpreter.inl">
+    </None>
+    <None Include="Reflect\TypeVm\hkTypeVmFastCopyInterpreter.inl">
+    </None>
+    <None Include="Reflect\TypeVm\hkTypeVmInterpreter.inl">
+    </None>
+    <None Include="Reflect\Util\hkReflectAny.inl">
+    </None>
+    <None Include="Reflect\Version\hkReflectRegisterPatches.cxx">
+    </None>
+    <None Include="Serialize\Core\hkSerializeCore.inl">
+    </None>
+    <None Include="Serialize\Deprecated\hkSerializeUtil.inl">
+    </None>
+    <None Include="Serialize\Detail\hkIndexedBundle.inl">
+    </None>
+    <None Include="Serialize\Detail\hkWriteBuffer.inl">
+    </None>
+    <None Include="Serialize\Format\Compat\ContentTools\hkClassEnum.inl">
+    </None>
+    <None Include="Serialize\Format\Compat\ContentTools\hkClassMember.inl">
+    </None>
+    <None Include="Serialize\Resource\hkResource.inl">
+    </None>
+    <None Include="Serialize\StructuredBinaryStream\hkStructuredBinaryStream.inl">
+    </None>
+    <None Include="Serialize\Util\Xml\hkParserBuffer.inl">
+    </None>
+    <None Include="Serialize\Util\Xml\hkXmlParser.inl">
+    </None>
+    <None Include="Serialize\Util\Xml\hkXmlStreamParser.inl">
+    </None>
+    <None Include="Serialize\Util\hkRootLevelContainer.inl">
+    </None>
+    <None Include="Serialize\Util\hkSerializeMultiMap.inl">
+    </None>
+    <None Include="Serialize\hkSerialize.inl">
+    </None>
+    <None Include="System\Dll\DynamicLibrary\hkWindowsDynamicLibrary.cxx">
+    </None>
+    <None Include="System\Dll\hkDllMain.cxx">
+    </None>
+    <None Include="System\Error\hkErrorReport.cxx">
+    </None>
+    <None Include="System\Init\PlatformInit.cxx">
+    </None>
+    <None Include="System\Io\IArchive\hkIArchive.inl">
+    </None>
+    <None Include="System\Io\IStream\hkIStream.inl">
+    </None>
+    <None Include="System\Io\OStream\hkOStream.inl">
+    </None>
+    <None Include="System\Io\Writer\Crc\hkCrcStreamWriter.inl">
+    </None>
+    <None Include="System\Log\hkLogModule.cxx">
+    </None>
+    <None Include="System\Main\hkMain.cxx">
+    </None>
+    <None Include="System\Platform\hkPlatformInfo.inl">
+    </None>
+    <None Include="System\StackTracer\Impl\hkStackTracerGnu.cxx">
+    </None>
+    <None Include="System\StackTracer\Impl\hkStackTracerIa32.cxx">
+    </None>
+    <None Include="System\StackTracer\Impl\hkStackTracerNull.cxx">
+    </None>
+    <None Include="System\StackTracer\Impl\hkStackTracerWin32.cxx">
+    </None>
+    <None Include="System\Stopwatch\hkStopwatch.inl">
+    </None>
+    <None Include="Thread\Async\hkAsyncHeartbeat.inl">
+    </None>
+    <None Include="Thread\Atomic\hkAtomicPrimitives_Win32.inl">
+    </None>
+    <None Include="Thread\Atomic\hkIntegerDistributor.inl">
+    </None>
+    <None Include="Thread\Concurrency\hkConcurrency.inl">
+    </None>
+    <None Include="Thread\CriticalSection\Empty\hkEmptyCriticalSection.inl">
+    </None>
+    <None Include="Thread\CriticalSection\Win32\hkWin32CriticalSection.inl">
+    </None>
+    <None Include="Thread\JobQueue\hkJobQueue.inl">
+    </None>
+    <None Include="Thread\TaskQueue\hkTaskGraph.inl">
+    </None>
+    <None Include="Types\Color\hkColor.inl">
+    </None>
+    <None Include="Types\Geometry\Aabb16\hkAabb16.inl">
+    </None>
+    <None Include="Types\Geometry\Aabb24_16_24\hkAabb24_16_24.inl">
+    </None>
+    <None Include="Types\Geometry\Aabb24_16_24\hkAabb24_16_24_Codec.inl">
+    </None>
+    <None Include="Types\Geometry\Aabb\hkAabb.inl">
+    </None>
+    <None Include="Types\Geometry\Aabb\hkAabbUtil.inl">
+    </None>
+    <None Include="Types\Geometry\Box\hkBox.inl">
+    </None>
+    <None Include="Types\Geometry\Connectivity\hkConnectivity.inl">
+    </None>
+    <None Include="Types\Geometry\Frustum\hkFrustum.inl">
+    </None>
+    <None Include="Types\Geometry\Geometry\hkGeometry.inl">
+    </None>
+    <None Include="Types\Geometry\IntSpaceUtil\hkIntSpaceUtil.inl">
+    </None>
+    <None Include="Types\Geometry\Plane\hkPlane.inl">
+    </None>
+    <None Include="Types\Geometry\Point\hkPoint.inl">
+    </None>
+    <None Include="Types\Geometry\Rect\hkRect.inl">
+    </None>
+    <None Include="Types\Geometry\Sphere\hkSphere.inl">
+    </None>
+    <None Include="Types\Physics\ContactPoint\hkContactPoint.inl">
+    </None>
+    <None Include="Types\Properties\hkSimpleProperty.inl">
+    </None>
+    <None Include="Types\Uuid\hkUuid.inl">
+    </None>
+    <None Include="Types\Uuid\hkUuidMapOperations.cxx">
+    </None>
+    <None Include="Types\Uuid\hkUuidMultiMapOperations.cxx">
+    </None>
+    <None Include="Types\hkHandle.inl">
+    </None>
+    <None Include="Types\hkHandleMapOperations.cxx">
+    </None>
+    <None Include="Types\hkPtrAndInt.inl">
+    </None>
+    <None Include="Types\hkRefPtr.inl">
+    </None>
+    <None Include="Types\hkRefVariant.inl">
+    </None>
+    <None Include="Types\hkScopedPtr.inl">
+    </None>
+    <None Include="Types\hkWeakPtr.inl">
+    </None>
+    <None Include="UnitTest\Container\BitField.inl">
+    </None>
+    <None Include="_Auto\HABinding\hkBase_HABinding.cxx">
+    </None>
+    <None Include="_Auto\TemplateTypes\ClangTest_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\CloneTestClasses_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\TestTemplatePatches_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\TypeRegistryTest_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\VarTest_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\castsTest_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkArrayView_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkArray_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkAtomicPrimitives_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkAttributes_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkBaseTypes_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkBitField_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkBox_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkBuiltinImpl_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkContainerAllocators_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkFixedString_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkFourTransposedPoints_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkFreeListArray_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkHandle_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkHashBase_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkHashMapDetail_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkHashMap_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkHashSet_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkInternedString_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkMap_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkMatrix3_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkMatrix4f_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkMinHeap_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkMultiMap_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkPoint_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkPointerMap_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkPointerMultiMap_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkPtrAndInt_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkRect_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkRefPtr_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkReflectStd_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkReflectValue_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkRelArray_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkRotation_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkScopedPtr_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkSet_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkStorageStringMap_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkStringMap_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkTraitOperators_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkTuple_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\hkWeakPtr_Types.inl">
+    </None>
+    <None Include="_Auto\TemplateTypes\tracker_tests_Types.inl">
+    </None>
+    <None Include="_Auto\Types\BundleLoadSave_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\ClangTest_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\CloneTestClassesStl_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\CloneTestClasses_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\PropertyBagTest_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\RecordPropertiesTest_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\ScopedPtrTest_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\TestTemplatePatches_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\TypeRegistryTest_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\TypeVm_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\UnregisteredType_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\VarTest_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\WeakPtrTest_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\castsTest_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hclToolNamedObjectReference_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hctAttributeDescription_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hctClothSetup20141Options_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hctClothSetupClothData20141Options_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hctClothSetupObjectData_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hctFilterClothSetupStubOptions_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hctFilterConfigurationSet_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkAabb16_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkAabb24_16_24_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkAabbHalf_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkAabb_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkAsyncThreadPool_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkAttributes_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkAxialRotation_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkAxialTransform_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkBaseDefs_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkBaseObject_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkBaseTypes_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkBitField_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkColor_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkCommandStream_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkContactPoint_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkContainerAllocators_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkCpuThreadPool_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkDefaultPropertyBag_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkDllModule_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkEndian_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkEngineAttributes_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkFileSystem_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkFloat16Transform_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkFourTransposedPoints_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkFrustum_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkGeometry_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkHashMapDetail_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkInetAddr_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkIntVector_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkJobQueue_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkLocalFrame_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkLog_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMathHeaderForwardDeclarations_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMathTypes2_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMath_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMatrix3_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMatrix4f_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMonitorStreamAnalyzer_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMonitorStreamAttributes_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMonitorStreamContainer_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMonitorStreamParser_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMonitorStream_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMpMath_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkMultiThreadCheck_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkObjectResource_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkPackedVector3_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkPlane_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkPropertyBag_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkProperty_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkPseudoRandomGenerator_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkQTransformd_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkQTransformf_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkQsTransformd_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkQsTransformf_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkQuaterniond_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkQuaternionf_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkRadians_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkRefCountedProperties_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkRefVariant_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkReferencedObject_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkReflectAny_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkReflectCallable_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkReflectDefs_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkReflectSyntheticUtil_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkReflectTypeDetail_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkReflectType_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkReflectVar_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkResourceHandle_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkResource_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkRootLevelContainer_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkRotation_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkSerializeCore_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkSet_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkSimdDouble64_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkSimdFloat32_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkSimpleProperty_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkSphere_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkStringBuf_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkStringObject_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkStringPtr_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkStringView_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkTask_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkThreadPool_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkToolAttributes_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkTraitOperators_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkTransformd_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkTransformf_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkTuple_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkTypeVmCompiler_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkUFloat8_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkUuid_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkVariantArray_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkVector2_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkVector2d_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkVector2f_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkVector4d_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkVector4f_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkVersionBundle_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkViewport_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\stringformat_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\tracker_tests_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\urlObjects_Types.cxx">
+    </None>
+    <None Include="_Auto\hkBaseClassList.cxx">
+    </None>
+    <None Include="_Auto\hkBase_IncludeAllTypes.cxx">
+    </None>
+    <None Include="_Auto\hkBase_Tracker.cxx">
+    </None>
+    <None Include="keycode.cxx">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <!-- The order of elements here is CRITICAL -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

@@ -843,7 +843,6 @@ multi_session_op_status multi_session_op_join::pcgp_joining_start()
 			V_ASSERT_MSG(false, "Failed to convert the session id to a string.");
 			return MULTI_SOS_FAILED;
 		}
-
 	}
 
 	pcgp_state = PCGP_JOIN_STATE_JOINING;

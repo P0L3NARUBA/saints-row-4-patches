@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="objects">
+      <UniqueIdentifier>{3ee0ae79-0547-4112-adfb-fe67c5da136e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\drawing">
+      <UniqueIdentifier>{3d10f0ca-ca38-446c-b9d7-006e6b3fd633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\noninteractive">
+      <UniqueIdentifier>{439e07f0-9cea-4214-8377-542e9c06d21c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\interactive">
+      <UniqueIdentifier>{48df2066-dc40-456d-8063-d24ff4c3d617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\animation">
+      <UniqueIdentifier>{c8c59c5d-9677-4f11-8e0b-612a02055710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="internal">
+      <UniqueIdentifier>{bbf03367-2ddf-407b-a89e-a57d7b34b4cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{d6c62bd4-0eca-4062-9936-df622eed09fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripting">
+      <UniqueIdentifier>{fadc0b3d-bd35-42f7-8fdf-31105926576d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="objects\vint_object_base.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\vint_object_override_manager.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\vint_object_template.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\vint_object_types.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\drawing\vint_element_point.cpp">
+      <Filter>objects\drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\vint_element_base.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_bitmap.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_bitmap_circle.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_clip.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_document.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_gradient.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_group.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_sr2_map.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_text.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\noninteractive\vint_element_video.cpp">
+      <Filter>objects\noninteractive</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\animation\vint_object_animation.cpp">
+      <Filter>objects\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="objects\animation\vint_object_tween.cpp">
+      <Filter>objects\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="internal\vint_memory.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\vint_resource_bitmap.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\vint_resource_font.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\vint_resource_sound.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\vint_resource_video.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting\vint_lua_actions.cpp">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="bitmap_sheets.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="vint_callback.cpp" />
+    <ClCompile Include="vint_data_group.cpp" />
+    <ClCompile Include="vint_data_responder.cpp" />
+    <ClCompile Include="vint_document.cpp" />
+    <ClCompile Include="vint_external.cpp" />
+    <ClCompile Include="vint_input_internal.cpp" />
+    <ClCompile Include="vint_project.cpp" />
+    <ClCompile Include="vint_string_processing.cpp" />
+    <ClCompile Include="vint_variant.cpp" />
+    <ClCompile Include="vint_bitmap_animator.cpp" />
+    <ClCompile Include="vint_script_event.cpp" />
+	<ClCompile Include="vint_glitch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="objects\vint_object_base.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\vint_object_factory.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\vint_object_template.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\vint_object_types.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\drawing\vint_element_point.h">
+      <Filter>objects\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\vint_element_base.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\noninteractive\vint_element_bitmap.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\noninteractive\vint_element_bitmap_circle.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\noninteractive\vint_element_clip.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\noninteractive\vint_element_document.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\noninteractive\vint_element_gradient.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\noninteractive\vint_element_group.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\noninteractive\vint_element_text.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\noninteractive\vint_element_video.h">
+      <Filter>objects\noninteractive</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\animation\vint_object_animation.h">
+      <Filter>objects\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="objects\animation\vint_object_tween.h">
+      <Filter>objects\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\vint_memory.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\vint_resource_base.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\vint_resource_bitmap.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\vint_resource_font.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\vint_resource_sound.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\vint_resource_video.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="scripting\vint_lua_actions.h">
+      <Filter>scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="bitmap_sheets.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="vint_callback.h" />
+    <ClInclude Include="vint_config.h" />
+    <ClInclude Include="vint_data_group.h" />
+    <ClInclude Include="vint_data_internal.h" />
+    <ClInclude Include="vint_data_item.h" />
+    <ClInclude Include="vint_data_responder.h" />
+    <ClInclude Include="vint_document.h" />
+    <ClInclude Include="vint_external.h" />
+    <ClInclude Include="vint_input.h" />
+    <ClInclude Include="vint_input_internal.h" />
+    <ClInclude Include="vint_project.h" />
+    <ClInclude Include="vint_variant.h" />
+    <ClInclude Include="vint_bitmap_animator.h" />
+    <ClInclude Include="vint_script_event.h" />
+	<ClInclude Include="vint_glitch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="objects\vint_object_override_manager.h">
+      <Filter>objects</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

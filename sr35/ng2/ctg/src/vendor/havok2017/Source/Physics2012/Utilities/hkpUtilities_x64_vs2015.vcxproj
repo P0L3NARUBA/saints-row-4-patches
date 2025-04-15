@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    
+    RUNTIME_DEPENDENCIES = "['hkBase_reflection_x64_vs2015.vcxproj']"
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "PHYSICS_2012"
+    
+    
+  -->
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|x64">
+      <Configuration>Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1F037EA4-F037-441F-37EA-1F037EA41F03}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <Keyword>StaticLibrary</Keyword>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>hkpUtilities</ProjectName>
+    <PlatformToolset>v143</PlatformToolset>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  <PropertyGroup>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Obj\x64_vs2015\debug\hkpUtilities\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Lib\x64_vs2015\debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hkpUtilities</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Obj\x64_vs2015\dev\hkpUtilities\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Lib\x64_vs2015\dev\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">hkpUtilities</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Obj\x64_vs2015\release\hkpUtilities\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Lib\x64_vs2015\release\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hkpUtilities</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>disabled</Optimization>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkpUtilities.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_CRT_NOT_ALLOWED;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DLL_BUILD=HK_PHYSICS_2012_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>
+      </StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>true</OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\debug</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\debug</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkpUtilities.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_CRT_NOT_ALLOWED;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DLL_BUILD=HK_PHYSICS_2012_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>true</OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\dev</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\dev</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm119</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>
+      </SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast>
+      </EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hkpUtilities.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;NDEBUG;_LIB;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_TARGET_NAME=X64Vs2015;_HAS_EXCEPTIONS=0;HK_CRT_NOT_ALLOWED;HK_DISABLE_MATH_CONSTRUCTORS;HK_DISABLE_OLD_VECTOR4_INTERFACE;HK_DISABLE_IMPLICIT_SIMDREAL_FLOAT_CONVERSION;HK_DLL_BUILD=HK_PHYSICS_2012_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Common/Base/Types/hkExtraPragmas.h</ForcedIncludeFiles>
+      <OmitDefaultLibName>true</OmitDefaultLibName>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir);../..;$(HAVOK_THIRDPARTY_DIR)/sdks/win32/win_internal_sdk;;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\release</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Lib\x64_vs2015\release</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221 /ignore:4049</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_link.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actions\AngularDashpot\hkpAngularDashpotAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\Dashpot\hkpDashpotAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\EaseConstraints\hkpEaseConstraintsAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\EasePenetration\hkpEasePenetrationAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\Motor\hkpMotorAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\MouseSpring\hkpMouseSpringAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\Reorient\hkpReorientAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\Spring\hkpSpringAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\Wind\hkpPrevailingWind.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\Wind\hkpWind.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\Wind\hkpWindAction.cpp">
+    </ClCompile>
+    <ClCompile Include="Actions\Wind\hkpWindRegion.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyCollector.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyIntegrateJob.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterProxy\Multithreaded\physics_character_proxy_callbacks.cpp" />
+    <ClCompile Include="CharacterControl\CharacterProxy\Multithreaded\Util\hkpCharacterProxyJobUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterProxy\Multithreaded\hkpCharacterProxyJobQueueUtils.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterProxy\Multithreaded\hkpCharacterProxyJobs.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterProxy\hkpCharacterProxy.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterRigidBody\hkpCharacterRigidBody.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\CharacterRigidBody\hkpCharacterRigidBodyListener.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\FirstPersonCharacter\hkpFirstPersonCharacter.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\Climbing\hkpCharacterStateClimbing.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\Flying\hkpCharacterStateFlying.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\InAir\hkpCharacterStateInAir.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\Jumping\hkpCharacterStateJumping.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\OnGround\hkpCharacterStateOnGround.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\Util\hkpCharacterMovementUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\hkpCharacterContext.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\hkpCharacterState.cpp">
+    </ClCompile>
+    <ClCompile Include="CharacterControl\StateMachine\hkpCharacterStateManager.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ContactModifiers\CenterOfMassChanger\hkpCenterOfMassChangerUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ContactModifiers\MassChanger\hkpCollisionMassChangerUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ContactModifiers\SoftContact\hkpSoftContactUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ContactModifiers\SurfaceVelocity\Filtered\hkpFilteredSurfaceVelocityUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ContactModifiers\SurfaceVelocity\hkpSurfaceVelocityUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ContactModifiers\ViscoseSurface\hkpViscoseSurfaceUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\Filter\GroupFilter\hkpGroupFilterUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\RemoveContact\hkpRemoveContactUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\CollapseTransform\hkpTransformCollapseUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\CreateShape\hkpCreateShapeUtility.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\MoppCodeStreamer\hkpMoppCodeStreamer.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\ShapeConverter\hkpShapeConverter.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\ShapeKeyPath\hkpShapeKeyPath.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\ShapeMerger\hkpShapeMergeUtility.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\ShapeScaling\hkpShapeScalingUtility.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\ShapeSharing\hkpShapeSharingUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\ShapeToMeshConverter\hkpShapeToMeshConverter.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\ShapeUtils\SimpleMeshTklStreamer\hkpSimpleMeshTklStreamer.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\TriggerVolume\hkpTriggerVolume.cpp">
+    </ClCompile>
+    <ClCompile Include="Collide\hkpShapeGenerator.cpp">
+    </ClCompile>
+    <ClCompile Include="Constraint\Bilateral\hkpConstraintUtils.cpp">
+    </ClCompile>
+    <ClCompile Include="Constraint\Chain\hkpConstraintChainUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Constraint\Chain\hkpPoweredChainMapper.cpp">
+    </ClCompile>
+    <ClCompile Include="Constraint\Chain\hkpPoweredChainMapperUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Deprecated\ConstrainedSystem\hkpConstrainedSystemFilter.cpp">
+    </ClCompile>
+    <ClCompile Include="Deprecated\DisableEntity\hkpDisableEntityCollisionFilter.cpp">
+    </ClCompile>
+    <ClCompile Include="Deprecated\H1Group\hkpGroupCollisionFilter.cpp">
+    </ClCompile>
+    <ClCompile Include="Deprecated\hkpCollapseTransformsDeprecated.cpp">
+    </ClCompile>
+    <ClCompile Include="Destruction\BreakOffParts\hkpBreakOffPartsUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\EntityContactCollector\hkpEntityContactCollector.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\ImpulseAccumulator\hkpImpulseAccumulator.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\Inertia\hkpAccurateInertiaTensorComputer.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\Inertia\hkpInertiaTensorComputer.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\KeyFrame\hkpKeyFrameUtility.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\Lazyadd\hkpLazyAddToWorld.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\PhantomBatchMove\hkpPhantomBatchMoveUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\RigidBodyReset\hkpRigidBodyResetUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\SaveContactPoints\hkpPhysicsSystemWithContacts.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\SaveContactPoints\hkpSaveContactPointsEndianUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\SaveContactPoints\hkpSaveContactPointsUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\SaveContactPoints\hkpSerializedAgentNnEntry.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\ScaleSystem\hkpSystemScalingUtility.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\SuspendInactiveAgents\hkpSuspendInactiveAgentsUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\TimeSteppers\hkpAsynchronousTimestepper.cpp">
+    </ClCompile>
+    <ClCompile Include="Dynamics\TimeSteppers\hkpVariableTimestepper.cpp">
+    </ClCompile>
+    <ClCompile Include="Geometry\hkpGeometryConverter.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\Display\hkpSerializedDisplayRbTransforms.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\hkpHavokSnapshot.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\hkpPhysicsData.cpp">
+    </ClCompile>
+    <ClCompile Include="Serialize\hkpPhysicsToSceneDataBridge.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Collide\collapse.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Collide\shapekeypath.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Collide\shareshapes.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Inertia\inertia.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\Inertia\inertiahelper.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\TriggerVolume\addRemoveTriggerVolume.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\TriggerVolume\overlappingBodiesRemoval.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\TriggerVolume\overlappingCollisions.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\TriggerVolume\teleportTriggerVolume.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\TriggerVolume\triggerVolumeContinuousCollision.cpp">
+    </ClCompile>
+    <ClCompile Include="UnitTest\WorldSnapshot\worldSnapshot.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\ShapeHash\hkpShapeHashUtil.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpActiveContactPointViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpBroadphaseViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpContactPointViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpConvexRadiusBuilder.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpConvexRadiusViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpInactiveContactPointViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpInconsistentWindingViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpMidphaseViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpShapeDisplayViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpToiContactPointViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpToiCountViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Collide\hkpWeldingViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\Constraint\Drawer\hkpConstraintChainDrawer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpConstraintViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpPhantomDisplayViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyCentreOfMassViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyInertiaViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyLocalFrameViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpSimulationIslandViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpSingleBodyConstraintViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpSweptTransformDisplayViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpWorldSnapshotViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Dynamics\hkpWorldViewerBase.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Utilities\hkpMousePickingViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\Vehicle\hkpVehicleViewer.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\Viewer\hkpShapeDisplayBuilder.cpp">
+    </ClCompile>
+    <ClCompile Include="VisualDebugger\hkpPhysicsContext.cpp">
+    </ClCompile>
+    <ClCompile Include="Weapons\hkpBallGun.cpp">
+    </ClCompile>
+    <ClCompile Include="Weapons\hkpFirstPersonGun.cpp">
+    </ClCompile>
+    <ClCompile Include="Weapons\hkpGravityGun.cpp">
+    </ClCompile>
+    <ClCompile Include="Weapons\hkpMountedBallGun.cpp">
+    </ClCompile>
+    <ClCompile Include="Weapons\hkpProjectileGun.cpp">
+    </ClCompile>
+    <ClCompile Include="_Auto\hkpUtilities_IncludeAllTypes.cpp">
+    </ClCompile>
+    <ClCompile Include="_Auto\hkpUtilities_Tracker.cpp">
+    </ClCompile>
+    <ClInclude Include="Actions\AngularDashpot\hkpAngularDashpotAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\Dashpot\hkpDashpotAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\EaseConstraints\hkpEaseConstraintsAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\EasePenetration\hkpEasePenetrationAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\Motor\hkpMotorAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\MouseSpring\hkpMouseSpringAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\Reorient\hkpReorientAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\Spring\hkpSpringAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\Wind\hkpPrevailingWind.h">
+    </ClInclude>
+    <ClInclude Include="Actions\Wind\hkpWind.h">
+    </ClInclude>
+    <ClInclude Include="Actions\Wind\hkpWindAction.h">
+    </ClInclude>
+    <ClInclude Include="Actions\Wind\hkpWindRegion.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyCollector.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyIntegrateJob.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyUtil.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\physics_character_proxy_callbacks.h" />
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\Util\hkpCharacterProxyJobUtil.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\hkpCharacterProxyJobQueueUtils.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\Multithreaded\hkpCharacterProxyJobs.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\hkpCharacterProxy.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\hkpCharacterProxyCinfo.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterProxy\hkpCharacterProxyListener.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterRigidBody\hkpCharacterRigidBody.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterRigidBody\hkpCharacterRigidBodyCinfo.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\CharacterRigidBody\hkpCharacterRigidBodyListener.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\FirstPersonCharacter\hkpFirstPersonCharacter.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\Climbing\hkpCharacterStateClimbing.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\Flying\hkpCharacterStateFlying.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\InAir\hkpCharacterStateInAir.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\Jumping\hkpCharacterStateJumping.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\OnGround\hkpCharacterStateOnGround.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\Util\hkpCharacterMovementUtil.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\hkpCharacterContext.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\hkpCharacterState.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\hkpCharacterStateManager.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\StateMachine\hkpDefaultCharacterStates.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\hkpCharacterControl.h">
+    </ClInclude>
+    <ClInclude Include="CharacterControl\hkpCharacterControllerCinfo.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\CenterOfMassChanger\hkpCenterOfMassChangerUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\MassChanger\hkpCollisionMassChangerUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\SoftContact\hkpSoftContactUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\SurfaceVelocity\Filtered\hkpFilteredSurfaceVelocityUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\SurfaceVelocity\hkpSurfaceVelocityUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ContactModifiers\ViscoseSurface\hkpViscoseSurfaceUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\Filter\GroupFilter\hkpGroupFilterUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\RemoveContact\hkpRemoveContactUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\CollapseTransform\hkpTransformCollapseUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\CreateShape\hkpCreateShapeUtility.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\MoppCodeStreamer\hkpMoppCodeStreamer.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeConverter\hkpShapeConverter.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeKeyPath\hkpShapeKeyPath.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeMerger\hkpShapeMergeUtility.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeScaling\hkpShapeScalingUtility.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeSharing\hkpShapeSharingUtil.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\ShapeToMeshConverter\hkpShapeToMeshConverter.h">
+    </ClInclude>
+    <ClInclude Include="Collide\ShapeUtils\SimpleMeshTklStreamer\hkpSimpleMeshTklStreamer.h">
+    </ClInclude>
+    <ClInclude Include="Collide\TriggerVolume\hkpTriggerVolume.h">
+    </ClInclude>
+    <ClInclude Include="Collide\hkpShapeGenerator.h">
+    </ClInclude>
+    <ClInclude Include="Constraint\Bilateral\hkpConstraintUtils.h">
+    </ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpConstraintChainUtil.h">
+    </ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpPoweredChainMapper.h">
+    </ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpPoweredChainMapperUtil.h">
+    </ClInclude>
+    <ClInclude Include="Deprecated\ConstrainedSystem\hkpConstrainedSystemFilter.h">
+    </ClInclude>
+    <ClInclude Include="Deprecated\DisableEntity\hkpDisableEntityCollisionFilter.h">
+    </ClInclude>
+    <ClInclude Include="Deprecated\H1Group\hkpGroupCollisionFilter.h">
+    </ClInclude>
+    <ClInclude Include="Deprecated\hkpCollapseTransformsDeprecated.h">
+    </ClInclude>
+    <ClInclude Include="Destruction\BreakOffParts\hkpBreakOffPartsUtil.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\EntityContactCollector\hkpEntityContactCollector.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\ImpulseAccumulator\hkpImpulseAccumulator.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\Inertia\hkpAccurateInertiaTensorComputer.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\Inertia\hkpInertiaTensorComputer.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\KeyFrame\hkpKeyFrameUtility.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\Lazyadd\hkpLazyAddToWorld.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\PhantomBatchMove\hkpPhantomBatchMoveUtil.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\RigidBodyReset\hkpRigidBodyResetUtil.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\SaveContactPoints\hkpPhysicsSystemWithContacts.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\SaveContactPoints\hkpSaveContactPointsEndianUtil.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\SaveContactPoints\hkpSaveContactPointsUtil.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\SaveContactPoints\hkpSerializedAgentNnEntry.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\ScaleSystem\hkpSystemScalingUtility.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\SuspendInactiveAgents\hkpSuspendInactiveAgentsUtil.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\TimeSteppers\hkpAsynchronousTimestepper.h">
+    </ClInclude>
+    <ClInclude Include="Dynamics\TimeSteppers\hkpVariableTimestepper.h">
+    </ClInclude>
+    <ClInclude Include="Geometry\hkpGeometryConverter.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Display\hkpSerializedDisplayMarker.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Display\hkpSerializedDisplayMarkerList.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\Display\hkpSerializedDisplayRbTransforms.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\hkpDisplayBindingData.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\hkpHavokSnapshot.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\hkpPhysicsData.h">
+    </ClInclude>
+    <ClInclude Include="Serialize\hkpPhysicsToSceneDataBridge.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\Tests.h">
+    </ClInclude>
+    <ClInclude Include="UnitTest\TriggerVolume\unitTestTriggerVolume.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\ShapeHash\hkpShapeHashUtil.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpActiveContactPointViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpBroadphaseViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpCollideDebugUtil.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpContactPointViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpConvexRadiusBuilder.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpConvexRadiusViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpInactiveContactPointViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpInconsistentWindingViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpMidphaseViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpShapeDisplayViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpToiContactPointViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpToiCountViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Collide\hkpWeldingViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\Constraint\Drawer\hkpConstraintChainDrawer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpConstraintViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpPhantomDisplayViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyCentreOfMassViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyInertiaViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpRigidBodyLocalFrameViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpSimulationIslandViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpSingleBodyConstraintViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpSweptTransformDisplayViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpWorldSnapshotViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Dynamics\hkpWorldViewerBase.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Utilities\hkpMousePickingViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\Vehicle\hkpVehicleViewer.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\Viewer\hkpShapeDisplayBuilder.h">
+    </ClInclude>
+    <ClInclude Include="VisualDebugger\hkpPhysicsContext.h">
+    </ClInclude>
+    <ClInclude Include="Weapons\hkpBallGun.h">
+    </ClInclude>
+    <ClInclude Include="Weapons\hkpFirstPersonGun.h">
+    </ClInclude>
+    <ClInclude Include="Weapons\hkpGravityGun.h">
+    </ClInclude>
+    <ClInclude Include="Weapons\hkpMountedBallGun.h">
+    </ClInclude>
+    <ClInclude Include="Weapons\hkpProjectileGun.h">
+    </ClInclude>
+    <ClInclude Include="_ExtraPreBuildIncludes\hkpUtilitiesExtraIncludes.h">
+    </ClInclude>
+    <Compile Include="_Auto\HABinding\hkpUtilities_HABinding.hxx">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <None Include="Actions\AngularDashpot\hkpAngularDashpotAction.inl">
+    </None>
+    <None Include="Actions\Dashpot\hkpDashpotAction.inl">
+    </None>
+    <None Include="Actions\Motor\hkpMotorAction.inl">
+    </None>
+    <None Include="Actions\Spring\hkpSpringAction.inl">
+    </None>
+    <None Include="CharacterControl\CharacterProxy\Multithreaded\Cpu\hkpCpuCharacterProxyUtil.inl">
+    </None>
+    <None Include="CharacterControl\CharacterProxy\Multithreaded\hkpCharacterProxyJobs.inl">
+    </None>
+    <None Include="CharacterControl\CharacterProxy\hkpCharacterProxy.inl">
+    </None>
+    <None Include="Collide\ContactModifiers\SurfaceVelocity\hkpSurfaceVelocityUtil.inl">
+    </None>
+    <None Include="Collide\ShapeUtils\ShapeKeyPath\hkpShapeKeyPath.inl">
+    </None>
+    <None Include="Collide\TriggerVolume\hkpTriggerVolume.inl">
+    </None>
+    <None Include="Constraint\Chain\hkpPoweredChainMapper.inl">
+    </None>
+    <None Include="Destruction\BreakOffParts\hkpBreakOffPartsUtil.inl">
+    </None>
+    <None Include="Dynamics\ImpulseAccumulator\hkpImpulseAccumulator.inl">
+    </None>
+    <None Include="Dynamics\SaveContactPoints\hkpPhysicsSystemWithContacts.inl">
+    </None>
+    <None Include="Serialize\Display\hkpSerializedDisplayMarker.inl">
+    </None>
+    <None Include="Serialize\Display\hkpSerializedDisplayMarkerList.inl">
+    </None>
+    <None Include="Serialize\Display\hkpSerializedDisplayRbTransforms.inl">
+    </None>
+    <None Include="Serialize\hkpPhysicsData.inl">
+    </None>
+    <None Include="VisualDebugger\ShapeHash\hkpShapeHashUtil.inl">
+    </None>
+    <None Include="_Auto\HABinding\hkpUtilities_HABinding.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpAngularDashpotAction_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpBallGun_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpCharacterControllerCinfo_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpCharacterProxyCinfo_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpCharacterRigidBodyCinfo_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpConstrainedSystemFilter_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpDashpotAction_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpDisableEntityCollisionFilter_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpDisplayBindingData_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpFirstPersonGun_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpGravityGun_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpGroupCollisionFilter_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpMotorAction_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpMountedBallGun_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpMouseSpringAction_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpPhysicsData_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpPhysicsSystemWithContacts_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpPoweredChainMapper_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpProjectileGun_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpReorientAction_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpSerializedAgentNnEntry_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpSerializedDisplayMarkerList_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpSerializedDisplayMarker_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpSerializedDisplayRbTransforms_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpSpringAction_Types.cxx">
+    </None>
+    <None Include="_Auto\Types\hkpTriggerVolume_Types.cxx">
+    </None>
+    <None Include="_Auto\hkpUtilitiesClassList.cxx">
+    </None>
+    <None Include="_Auto\hkpUtilities_IncludeAllTypes.cxx">
+    </None>
+    <None Include="_Auto\hkpUtilities_Tracker.cxx">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="hkpUtilities_reflection_x64_vs2015.vcxproj">
+      <Project>{50CFFD99-0CFF-4950-FFD9-50CFFD9950CF}</Project>
+      <Name>hkpUtilities_reflection</Name>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- The order of elements here is CRITICAL -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RunCodeAnalysis>
+    </RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

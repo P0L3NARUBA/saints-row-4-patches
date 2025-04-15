@@ -1,0 +1,1850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\cfile">
+      <UniqueIdentifier>{9a45649c-7daf-4ba8-8d18-5527c4fbd2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{a9ab2d56-b253-4797-a897-3e8c8232554b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debug">
+      <UniqueIdentifier>{7e628679-2ebf-447a-becf-6790536ba0c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{15e215b7-036e-43dd-9f2e-c0bec1a49670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\os">
+      <UniqueIdentifier>{13b1ab12-f4d1-4a58-a261-35c065b53ac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\os\disabled">
+      <UniqueIdentifier>{051cb4b1-7141-4aaf-81a2-ac8de91faccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\os\disabled\ps3">
+      <UniqueIdentifier>{6f84e785-aa45-4aae-91f6-a19c8fe45df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\memory">
+      <UniqueIdentifier>{3ddbb75d-2433-45b3-a03f-2d3df5de92ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{b40a9ad2-cb14-480a-b521-2f1384225809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vlib_core">
+      <UniqueIdentifier>{54706d6e-a918-401b-80ca-d4126d09a7d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\time">
+      <UniqueIdentifier>{b0351d78-16ae-4d81-a8e8-889de0c9ad95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bmpman">
+      <UniqueIdentifier>{4e716dd6-be8c-4ee5-bbbe-c26be5d8c68b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parse">
+      <UniqueIdentifier>{5b6eb578-da6f-4cbf-88de-1b586a556ed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network">
+      <UniqueIdentifier>{55aa10d1-83d9-4a95-9a09-89cdcf534dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\source_control">
+      <UniqueIdentifier>{91b80e96-90c6-4db1-b656-0460e6537c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stubs">
+      <UniqueIdentifier>{4160eacc-da31-430c-9a31-95cef4501eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zlib">
+      <UniqueIdentifier>{1dfbf4c9-1e92-42e6-a87d-5283908cac10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\appmon">
+      <UniqueIdentifier>{a81563d1-a0ce-440e-938f-1b39d15be23d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vlib_dll">
+      <UniqueIdentifier>{1284b474-5f9d-4e87-b5d1-076af1a7485b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stream2">
+      <UniqueIdentifier>{a50b3d50-6f90-4872-898c-27e8e752cacb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jpeg">
+      <UniqueIdentifier>{58748ea4-8b96-4c2d-ac51-20ca39873e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jpeg\ijg_library">
+      <UniqueIdentifier>{367f1c57-9a41-488c-8ccb-b8ad78652ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\input">
+      <UniqueIdentifier>{8cf5e690-2d3c-4617-a734-c200bfd0c096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zstd">
+      <UniqueIdentifier>{74e61dda-10b7-4a60-80ec-10f7f72c1cff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\precompiled_header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\cfile.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\packfile.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\packfile_write.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\pc_cfile.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\vdir.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\vdir_internal.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\vdir_tools.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\image_writer.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\debug\debug.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\debug\pc_callstack.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\debug\pc_debug.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\debug\ps3_debug.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\debug\xbox2_debug.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\bbox.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\bbox2d.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\crc.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\floating.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\fp_aabb.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\ik_2link.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\ix.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\matrix.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\matrix_double.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\matrix_interpolate.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\md5.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\oc_plane_set.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\oc_shape.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\plane.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\polyclip.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\quaternion.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\rand.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\spline.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\triangulate.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vec_intrinsics.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vector.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vector2.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vector3.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vector3_double.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vector4.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vm_vector2.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\cmdline.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\cs_wrapper.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\file_change_monitor.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\frametime.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\lockfree_queues.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\mutex.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\os.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\perfmon.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\pix_events.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\registry.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\scheduler.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\semaphore.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\skynetui_client.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\spawn.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\sync_event.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\systray.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\thread.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\timer.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\vac_utils.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\vconsole.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\vkeyboard.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\vlib_devkit.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\gpu_monitor.cpp">
+      <Filter>Source Files\os\disabled</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\Lockfree.cpp">
+      <Filter>Source Files\os\disabled</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\ps3_gamedata.cpp">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\ps3_spu.cpp">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\ps3_spu_utility.cpp">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\ps3_spurs.cpp">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\ps3_spurs_jm_ppu.cpp">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\ps3_spurs_jm_spu.cpp">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\async_mempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\async_virtual_mempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\compacting_mempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\dynamic_mempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\dynamic_thread_local_memory.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\hash_page_memmgr.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\memory_test.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\memory_tools.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\object_pool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\page_mempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\page_pool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\rfg_memblk.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\rfg_memmgr.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\split_mempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\system_memmgr.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\v_allocator.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\v_memmgr_base.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\v_mempool_base.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\virtual_mempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\vmemory.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\xbase_memmgr.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\asset_cache.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\bit_stream.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\bit_util.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\color.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\crunch_file_io.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\crunch_util.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\datamon.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\endian_file.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\endian_type.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\fastxml.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\hash_table.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\llp_allocator.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\log.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\log_ctg_client.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\lzx_test.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\lzx_vlib.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\priority_queue_linear.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\recursive_bbox.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\rule_file.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\solid_bsp.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\solid_bsp_builder.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\string_comp.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\string_pool.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\string_util.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\unicode_tools.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\v_file_header.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\varray.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\vfont.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\vlib_compress.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\vlib_version.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\xml_table_tools.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\xml_util.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vlib_core\vlib_core.cpp">
+      <Filter>Source Files\vlib_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\time\timestamp.cpp">
+      <Filter>Source Files\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmpman\bitmap_writer.cpp">
+      <Filter>Source Files\bmpman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmpman\bmpman.cpp">
+      <Filter>Source Files\bmpman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmpman\peg_assemble.cpp">
+      <Filter>Source Files\bmpman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmpman\targautils.cpp">
+      <Filter>Source Files\bmpman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bmpman\tga_writer.cpp">
+      <Filter>Source Files\bmpman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\parse\parse.cpp">
+      <Filter>Source Files\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\net_lag.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\pipe.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\pipe_pc.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\pipe_xbdm.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source_control\source_control.cpp">
+      <Filter>Source Files\source_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stubs\vlib_stubs.cpp">
+      <Filter>Source Files\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\adler32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\compress.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\crc32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\deflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\gzio.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\infback.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\inffast.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\inflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\inftrees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\trees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\uncompr.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\zlib_vlib.cpp">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zlib\zutil.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\appmon.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\appmon_msg.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\appmon_msg_ut.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\appmon_recv.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\appmon_udp.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\appmon_udp_ut.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\appmon_ut.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\perfmon_spu_scope.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\perfmon_spu_trace.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\appmon\xperfmon.cpp">
+      <Filter>Source Files\appmon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vlib_dll\vlib_dll.cpp">
+      <Filter>Source Files\vlib_dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stream2\stream2.cpp">
+      <Filter>Source Files\stream2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stream2\stream2_allocator.cpp">
+      <Filter>Source Files\stream2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stream2\stream2_container.cpp">
+      <Filter>Source Files\stream2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stream2\stream2_memory_report.cpp">
+      <Filter>Source Files\stream2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stream2\stream2_os.cpp">
+      <Filter>Source Files\stream2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stream2\stream2_prim.cpp">
+      <Filter>Source Files\stream2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\jmemnobs.cpp">
+      <Filter>Source Files\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\jpeg_writer.cpp">
+      <Filter>Source Files\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcapimin.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcapistd.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jccoefct.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jccolor.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcdctmgr.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jchuff.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcinit.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcmainct.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcmarker.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcmaster.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcomapi.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcparam.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcphuff.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcprepct.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jcsample.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jctrans.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdapimin.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdapistd.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdatadst.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdatasrc.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdcoefct.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdcolor.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jddctmgr.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdhuff.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdinput.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdmainct.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdmarker.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdmaster.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdmerge.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdphuff.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdpostct.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdsample.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jdtrans.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jerror.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jfdctflt.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jfdctfst.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jfdctint.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jidctflt.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jidctfst.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jidctint.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jidctred.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jmemmgr.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jquant1.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jquant2.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jpeg\ijg_library\jutils.cpp">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input\descent_physics.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input\input.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input\input_pc.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input\key.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input\mouse.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input\mouse_pc.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\filename_entry.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cfile\cfile_cache.cpp">
+      <Filter>Source Files\cfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\dlmalloc_memmgr.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memory\dlmalloc.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\dev_config.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\common\debug.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\common\entropy_common.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\common\error_private.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\common\fse_decompress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\common\pool.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\common\threading.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\common\xxhash.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\common\zstd_common.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\fse_compress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\hist.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\huf_compress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\zstdmt_compress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\zstd_compress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\zstd_double_fast.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\zstd_fast.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\zstd_lazy.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\zstd_ldm.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\compress\zstd_opt.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\decompress\huf_decompress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\decompress\zstd_ddict.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\decompress\zstd_decompress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\decompress\zstd_decompress_block.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\deprecated\zbuff_common.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\deprecated\zbuff_compress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\deprecated\zbuff_decompress.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\dictBuilder\cover.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\dictBuilder\divsufsort.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\dictBuilder\fastcover.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\dictBuilder\zdict.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\legacy\zstd_v01.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\legacy\zstd_v02.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\legacy\zstd_v03.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\legacy\zstd_v04.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\legacy\zstd_v05.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\legacy\zstd_v06.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zstd\legacy\zstd_v07.c">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\zstd_vlib.cpp">
+      <Filter>Source Files\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\net_gamepass.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\precompiled_header.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vlib_base.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\cfile.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\cfile_common.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\packfile.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\packfile_write.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\pc_cfile.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\vdir.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\vdir_internal.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\vdir_tools.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\image_writer.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\vlib_pragmas.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\vtypes.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\debug\debug.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\debug\pc_callstack.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\debug\pc_debug.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\bbox.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\bbox2d.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\crc.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\floating.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\fp_aabb.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\ik_2link.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\ix.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\line.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\matrix.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\matrix_double.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\matrix_float.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\matrix_interpolate.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\md5.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\min_max.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\oc_plane_set.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\oc_shape.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\plane.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\polyclip.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\quaternion.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\quaternion_float.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\rand.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\sphere.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\spline.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\triangulate.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vec_intrinsics.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vec_intrinsics_trig_functions.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vector.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vector2.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vector3.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vector3_double.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vector4.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vm_vector2.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\atomic.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\cmdline.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\cs_wrapper.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\file_change_monitor.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\frametime.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\intrinsics.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\lockfree_queues.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\os.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\perf_marker.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\perfmon.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\registry.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\scheduler.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\semaphore.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\skynetui_client.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\spawn.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\sync_event.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\systray.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\thread.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\timer.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\vac_utils.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\vconsole.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\vkeyboard.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\vlib_devkit.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\windows.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\async_mempool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\async_virtual_mempool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\bmem_allocator.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\compacting_mempool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\dynamic_mempool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\dynamic_thread_local_memory.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\hash_page_memmgr.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\memmgr_track.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\memory_test.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\memory_tools.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\mempool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\object_pool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\object_pool_deprecated.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\page_mempool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\page_pool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\rfg_memblk.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\rfg_memmgr.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\small_block_allocator.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\split_mempool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\system_memmgr.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\v_allocator.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\v_memmgr_base.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\v_mempool_base.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\v_stl_allocator.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\virtual_mempool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\vmemory.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\xbase_memmgr.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\aa_tree.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\align.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\asset_cache.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\bit_stream.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\bit_util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\bitarray.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\color.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\crunch_file_io.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\crunch_util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\datamon.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\endian_file.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\endian_type.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\enum_to_string.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\et_bbox.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\et_matrix.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\et_plane.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\et_quaternion.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\et_vector.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\fastxml.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\hash_table.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\hierarchy.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\linklist.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\llp_allocator.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\log.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\log_ctg_client.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\log_skynetui_client.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\lzx_test.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\lzx_vlib.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\max_defines.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\metap_union.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\pointer_util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\priority_queue_linear.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\recursive_bbox.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\rule_file.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\solid_bsp.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\solid_bsp_builder.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\string_comp.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\string_pool.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\string_util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\unicode_tools.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\unicode_types.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\v_file_header.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\v_string.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\v_wide_ptr.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\varray.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\vfont.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\vhashtable.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\vhashtable_inplace.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\vlib_compress.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\vlib_version.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\xml_table_tools.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\xml_util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\xsafe_array.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vlib_core\vlib_core.h">
+      <Filter>Source Files\vlib_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\time\timestamp.h">
+      <Filter>Source Files\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmpman\bitmap_writer.h">
+      <Filter>Source Files\bmpman</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmpman\bmpman.h">
+      <Filter>Source Files\bmpman</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmpman\bmpman_defs.h">
+      <Filter>Source Files\bmpman</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmpman\peg_assemble.h">
+      <Filter>Source Files\bmpman</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmpman\targautils.h">
+      <Filter>Source Files\bmpman</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bmpman\tga_writer.h">
+      <Filter>Source Files\bmpman</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\parse.h">
+      <Filter>Source Files\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\net.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\net_lag.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\pipe.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\pipe_xbdm.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_control\source_control.h">
+      <Filter>Source Files\source_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_control\Ssauto.h">
+      <Filter>Source Files\source_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stubs\vlib_stubs.h">
+      <Filter>Source Files\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\crc32.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\deflate.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inffast.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inffixed.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inflate.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inftrees.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\trees.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zconf.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zconf.in.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zlib.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\zlib_job_shared.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\zlib_vlib.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zutil.h">
+      <Filter>Source Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\appmon.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\appmon_msg_i.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\appmon_recv.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\appmon_recv_i.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\appmon_udp.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\appmon_udp_i.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\appmon_xmit_types.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\perfmon_i.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\perfmon_spu_scope.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\perfmon_spu_scope_i.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\perfmon_spu_trace_i.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\perfmon_spu_trace_types.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\appmon\xperfmon.h">
+      <Filter>Source Files\appmon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vlib_dll\vlib_dll.h">
+      <Filter>Source Files\vlib_dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stream2\stream2.h">
+      <Filter>Source Files\stream2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stream2\stream2_allocator.h">
+      <Filter>Source Files\stream2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stream2\stream2_container.h">
+      <Filter>Source Files\stream2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stream2\stream2_internal.h">
+      <Filter>Source Files\stream2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stream2\stream2_memory_report.h">
+      <Filter>Source Files\stream2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stream2\stream2_os.h">
+      <Filter>Source Files\stream2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stream2\stream2_prim.h">
+      <Filter>Source Files\stream2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\jpeg_writer.h">
+      <Filter>Source Files\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jchuff.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jconfig.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jdct.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jdhuff.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jerror.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jinclude.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jmemsys.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jmorecfg.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jpegint.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jpeglib.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jpeg\ijg_library\jversion.h">
+      <Filter>Source Files\jpeg\ijg_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\input\descent_physics.h">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\input\input.h">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\input\input_internal.h">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\input\key.h">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\input\mouse.h">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\filename_entry.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\filename_finder.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cfile\cfile_cache.h">
+      <Filter>Source Files\cfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\dlmalloc.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memory\dlmalloc_memmgr.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\strong_typedef.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\dev_config.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\bitstream.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\compiler.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\cpu.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\debug.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\error_private.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\fse.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\huf.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\mem.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\pool.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\threading.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\xxhash.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\zstd_errors.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\common\zstd_internal.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\compress\hist.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\compress\zstdmt_compress.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\compress\zstd_compress_internal.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\compress\zstd_double_fast.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\compress\zstd_fast.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\compress\zstd_lazy.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\compress\zstd_ldm.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\compress\zstd_opt.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\decompress\zstd_ddict.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\decompress\zstd_decompress_block.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\decompress\zstd_decompress_internal.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\deprecated\zbuff.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\dictBuilder\cover.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\dictBuilder\divsufsort.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\dictBuilder\zdict.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\legacy\zstd_legacy.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\legacy\zstd_v01.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\legacy\zstd_v02.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\legacy\zstd_v03.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\legacy\zstd_v04.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\legacy\zstd_v05.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\legacy\zstd_v06.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\legacy\zstd_v07.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zstd\zstd.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\zstd_vlib.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\net_gamepass.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\math\bbox.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\matrix.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\quaternion.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\rand.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\sphere.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\spline.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\vec_intrinsics.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\vec_intrinsics_pc.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\vec_intrinsics_reference.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\vec_intrinsics_trig_functions.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\vector.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\math\vm_vector2.inl">
+      <Filter>Source Files\math</Filter>
+    </None>
+    <None Include="..\memory\bmem_allocator.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\dynamic_mempool.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\hash_page_memmgr.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\memmgr_track.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\mempool.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\object_pool.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\object_pool_deprecated.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\page_mempool.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\rfg_memmgr.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\small_block_allocator.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\split_mempool.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\system_memmgr.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\v_allocator.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\v_allocator_new.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\v_memmgr_base.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\v_mempool_base.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\memory\xbase_memmgr.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+    <None Include="..\util\aa_tree.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\align.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\bitarray.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\color.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\endian_file.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\endian_type.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\hash_table.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\llp_allocator.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\string_util.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\v_wide_ptr.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\vfont_template.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\vhashtable.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\vhashtable_inplace.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\util\xsafe_array.inl">
+      <Filter>Source Files\util</Filter>
+    </None>
+    <None Include="..\stream2\stream2_allocator.inl">
+      <Filter>Source Files\stream2</Filter>
+    </None>
+    <None Include="..\cfile\filename_finder.inl">
+      <Filter>Source Files\cfile</Filter>
+    </None>
+    <None Include="..\memory\dlmalloc_memmgr.inl">
+      <Filter>Source Files\memory</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\debug\ps3_debug.h">
+      <Filter>Source Files\debug</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\debug\ps3_sn_markers.h">
+      <Filter>Source Files\debug</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\debug\xbox2_debug.h">
+      <Filter>Source Files\debug</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\mutex.h">
+      <Filter>Source Files\os</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\pix_events.h">
+      <Filter>Source Files\os</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\gpu_monitor.h">
+      <Filter>Source Files\os\disabled</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\ps3_gamedata.h">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\ps3_spu.h">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\ps3_spu_utility.h">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\ps3_spu_vector.h">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\ps3_spurs.h">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\ps3_spurs_jm_ppu.h">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\os\ps3_spurs_jm_spu.h">
+      <Filter>Source Files\os\disabled\ps3</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

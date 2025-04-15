@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Action">
+        <UniqueIdentifier>37D5B2A8-7D5B-4837-5B2A-37D5B2A837D5</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide">
+        <UniqueIdentifier>6E720A2D-E720-4D6E-20A2-6E720A2D6E72</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactListener">
+        <UniqueIdentifier>7D0CBF79-D0CB-497D-CBF7-7D0CBF797D0C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\ContactListener\Util">
+        <UniqueIdentifier>5A1C4C1E-A1C4-4E5A-C4C1-5A1C4C1E5A1C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\Deprecated">
+        <UniqueIdentifier>5B40F497-B40F-475B-0F49-5B40F4975B40</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\Deprecated\Dispatch">
+        <UniqueIdentifier>2A93FAB2-A93F-422A-3FAB-2A93FAB22A93</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\Filter">
+        <UniqueIdentifier>9C4A9BE9-4A9B-4C4A-BE9C-A9BE9C4A9BE9</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\Filter\Constraint">
+        <UniqueIdentifier>5CC18548-CC18-485C-1854-5CC185485CC1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Collide\Filter\Pair">
+        <UniqueIdentifier>42354A85-2354-4542-54A8-42354A854235</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Common">
+        <UniqueIdentifier>2EF353D5-EF35-452E-353D-2EF353D52EF3</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Common\SmallArray">
+        <UniqueIdentifier>2DE4C414-DE4C-442D-4C41-2DE4C4142DE4</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Common\TraceStream">
+        <UniqueIdentifier>2B70559E-B705-4E2B-0559-2B70559E2B70</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint">
+        <UniqueIdentifier>66D536B9-6D53-4966-536B-66D536B966D5</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Atom">
+        <UniqueIdentifier>F333655F-3365-4333-55F3-3655F333655F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Breakable">
+        <UniqueIdentifier>64913E30-4913-4064-13E3-64913E306491</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Chain">
+        <UniqueIdentifier>1CD1432A-CD14-4A1C-1432-1CD1432A1CD1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Chain\BallSocket">
+        <UniqueIdentifier>48EE9E35-8EE9-4548-E9E3-48EE9E3548EE</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Chain\Powered">
+        <UniqueIdentifier>D94F3F6D-4F3F-494F-F6D9-F3F6D94F3F6D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Chain\Rope">
+        <UniqueIdentifier>4652675F-6526-4F46-2675-4652675F4652</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Chain\StiffSpring">
+        <UniqueIdentifier>16558475-6558-4516-5847-165584751655</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\ConstraintKit">
+        <UniqueIdentifier>5EBAD172-EBAD-425E-AD17-5EBAD1725EBA</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Contact">
+        <UniqueIdentifier>749C4421-49C4-4174-C442-749C4421749C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Malleable">
+        <UniqueIdentifier>3DA9AB2E-DA9A-4E3D-9AB2-3DA9AB2E3DA9</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Response">
+        <UniqueIdentifier>52FB8F53-2FB8-4352-B8F5-52FB8F5352FB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Setup">
+        <UniqueIdentifier>7A0015A6-A001-467A-015A-7A0015A67A00</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Constraint\Util">
+        <UniqueIdentifier>6D0F7300-D0F7-406D-F730-6D0F73006D0F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction">
+        <UniqueIdentifier>363B2413-3B24-463B-4136-B241363B2413</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakableBody">
+        <UniqueIdentifier>6CF40438-CF40-486C-4043-6CF404386CF4</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakableMaterial">
+        <UniqueIdentifier>2260FD3B-260F-4B22-0FD3-2260FD3B2260</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakableMaterial\MultiMaterial">
+        <UniqueIdentifier>3384801D-3848-4D33-4801-3384801D3384</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakableMaterial\MultiMaterial\CompoundShape">
+        <UniqueIdentifier>4C8BCF0F-C8BC-4F4C-BCF0-4C8BCF0F4C8B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakableMaterial\MultiMaterial\ExtendedMeshShape">
+        <UniqueIdentifier>4F9F48B0-F9F4-404F-F48B-4F9F48B04F9F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakableMaterial\MultiMaterial\ListShape">
+        <UniqueIdentifier>526C57FC-26C5-4C52-C57F-526C57FC526C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakableMaterial\Simple">
+        <UniqueIdentifier>7C1C1024-C1C1-447C-C102-7C1C10247C1C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\BreakableShape">
+        <UniqueIdentifier>674F02D6-74F0-4667-F02D-674F02D6674F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Destruction\Utilities">
+        <UniqueIdentifier>6E41D371-E41D-416E-1D37-6E41D3716E41</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Entity">
+        <UniqueIdentifier>4FDEF914-DEF9-4FDE-914F-EF914FDEF914</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Entity\Util">
+        <UniqueIdentifier>4A371D98-A371-484A-71D9-4A371D984A37</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Motion">
+        <UniqueIdentifier>365FDDB0-65FD-4036-FDDB-365FDDB0365F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Motion\MotionState">
+        <UniqueIdentifier>24C1DB15-4C1D-4524-1DB1-24C1DB1524C1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Motion\Rigid">
+        <UniqueIdentifier>3DC4C289-DC4C-493D-4C28-3DC4C2893DC4</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Motion\Rigid\ThinBoxMotion">
+        <UniqueIdentifier>9A06AB9A-6AB9-46AB-A06A-9A06AB9A06AB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Motion\SweptTransform">
+        <UniqueIdentifier>464B24DA-64B2-4A46-B24D-464B24DA464B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Motion\Util">
+        <UniqueIdentifier>285F8801-85F8-4128-F880-285F8801285F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Phantom">
+        <UniqueIdentifier>54C17180-4C17-4054-1718-54C1718054C1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest">
+        <UniqueIdentifier>1D4E8DF6-D4E8-461D-E8DF-1D4E8DF61D4E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest\Activation">
+        <UniqueIdentifier>5AA438F5-A438-4AA4-8F5A-438F5AA438F5</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest\Collision">
+        <UniqueIdentifier>60DF7868-0DF7-4860-F786-60DF786860DF</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest\Container">
+        <UniqueIdentifier>73F5EDD3-3F5E-4373-5EDD-73F5EDD373F5</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest\Entity">
+        <UniqueIdentifier>2AB82AC0-AB82-402A-82AC-2AB82AC02AB8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest\Motion">
+        <UniqueIdentifier>B55C0BBB-5C0B-455C-BBB5-C0BBB55C0BBB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest\World">
+        <UniqueIdentifier>4729BC84-29BC-4729-C847-9BC84729BC84</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World">
+        <UniqueIdentifier>29254A39-9254-4929-54A3-29254A392925</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\BroadPhaseBorder">
+        <UniqueIdentifier>60B3456F-0B34-4F60-3456-60B3456F60B3</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\CommandQueue">
+        <UniqueIdentifier>99A81569-A815-49A8-5699-815699A81569</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Extensions">
+        <UniqueIdentifier>1822EDC6-822E-4618-2EDC-1822EDC61822</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Listener">
+        <UniqueIdentifier>3A0816DE-A081-4E3A-816D-3A0816DE3A08</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Maintenance">
+        <UniqueIdentifier>145CFB8C-45CF-4C14-CFB8-145CFB8C145C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Maintenance\Default">
+        <UniqueIdentifier>730B7989-30B7-4973-B798-730B7989730B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Memory">
+        <UniqueIdentifier>6B51AB0B-B51A-4B6B-1AB0-6B51AB0B6B51</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Memory\Default">
+        <UniqueIdentifier>6D5A055E-D5A0-4E6D-A055-6D5A055E6D5A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Simulation">
+        <UniqueIdentifier>AA61F1DA-61F1-4A61-1DAA-1F1DAA61F1DA</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Simulation\Backstep">
+        <UniqueIdentifier>7EB4105D-EB41-4D7E-4105-7EB4105D7EB4</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Simulation\Continuous">
+        <UniqueIdentifier>287E1487-87E1-4728-E148-287E1487287E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Simulation\Continuous\ToiResourceMgr">
+        <UniqueIdentifier>D95945AD-5945-4959-5AD9-945AD95945AD</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Simulation\Continuous\ToiResourceMgr\Default">
+        <UniqueIdentifier>6C33CB51-C33C-416C-3CB5-6C33CB516C33</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Simulation\Multithreaded">
+        <UniqueIdentifier>45BBC4BF-5BBC-4F45-BC4B-45BBC4BF45BB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Simulation\Multithreaded\Cpu">
+        <UniqueIdentifier>37140B49-7140-4937-40B4-37140B493714</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Util">
+        <UniqueIdentifier>488BE5CA-88BE-4A48-BE5C-488BE5CA488B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="World\Util\BroadPhase">
+        <UniqueIdentifier>4B3DB91C-B3DB-4C4B-DB91-4B3DB91C4B3D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_Auto">
+        <UniqueIdentifier>32F74ED1-2F74-4132-74ED-32F74ED132F7</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_Auto\HABinding">
+        <UniqueIdentifier>339AE743-39AE-4333-AE74-339AE743339A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_Auto\Types">
+        <UniqueIdentifier>1D6A378E-D6A3-4E1D-A378-1D6A378E1D6A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_ExtraPreBuildIncludes">
+        <UniqueIdentifier>2696D3B1-696D-4126-6D3B-2696D3B12696</UniqueIdentifier>
+        </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Action\hkpAction.h">
+        <Filter>Action</Filter>
+        </ClInclude>
+    <None Include="Action\hkpAction.inl">
+        <Filter>Action</Filter>
+        </None>
+    <ClInclude Include="Action\hkpActionListener.h">
+        <Filter>Action</Filter>
+        </ClInclude>
+    <ClCompile Include="Action\hkpArrayAction.cpp">
+        <Filter>Action</Filter>
+        </ClCompile>
+    <ClInclude Include="Action\hkpArrayAction.h">
+        <Filter>Action</Filter>
+        </ClInclude>
+    <ClCompile Include="Action\hkpBinaryAction.cpp">
+        <Filter>Action</Filter>
+        </ClCompile>
+    <ClInclude Include="Action\hkpBinaryAction.h">
+        <Filter>Action</Filter>
+        </ClInclude>
+    <None Include="Action\hkpBinaryAction.inl">
+        <Filter>Action</Filter>
+        </None>
+    <ClCompile Include="Action\hkpUnaryAction.cpp">
+        <Filter>Action</Filter>
+        </ClCompile>
+    <ClInclude Include="Action\hkpUnaryAction.h">
+        <Filter>Action</Filter>
+        </ClInclude>
+    <None Include="Action\hkpUnaryAction.inl">
+        <Filter>Action</Filter>
+        </None>
+    <ClCompile Include="Collide\ContactListener\Util\hkpAddModifierUtil.cpp">
+        <Filter>Collide\ContactListener\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\ContactListener\Util\hkpAddModifierUtil.h">
+        <Filter>Collide\ContactListener\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Collide\ContactListener\Util\hkpCollisionCallbackUtil.cpp">
+        <Filter>Collide\ContactListener\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\ContactListener\Util\hkpCollisionCallbackUtil.h">
+        <Filter>Collide\ContactListener\Util</Filter>
+        </ClInclude>
+    <None Include="Collide\ContactListener\Util\hkpCollisionCallbackUtil.inl">
+        <Filter>Collide\ContactListener\Util</Filter>
+        </None>
+    <ClCompile Include="Collide\ContactListener\Util\hkpEndOfStepCallbackUtil.cpp">
+        <Filter>Collide\ContactListener\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\ContactListener\Util\hkpEndOfStepCallbackUtil.h">
+        <Filter>Collide\ContactListener\Util</Filter>
+        </ClInclude>
+    <ClInclude Include="Collide\ContactListener\hkpCollisionEvent.h">
+        <Filter>Collide\ContactListener</Filter>
+        </ClInclude>
+    <None Include="Collide\ContactListener\hkpCollisionEvent.inl">
+        <Filter>Collide\ContactListener</Filter>
+        </None>
+    <ClCompile Include="Collide\ContactListener\hkpContactListener.cpp">
+        <Filter>Collide\ContactListener</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\ContactListener\hkpContactListener.h">
+        <Filter>Collide\ContactListener</Filter>
+        </ClInclude>
+    <ClCompile Include="Collide\ContactListener\hkpContactPointEvent.cpp">
+        <Filter>Collide\ContactListener</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\ContactListener\hkpContactPointEvent.h">
+        <Filter>Collide\ContactListener</Filter>
+        </ClInclude>
+    <None Include="Collide\ContactListener\hkpContactPointEvent.inl">
+        <Filter>Collide\ContactListener</Filter>
+        </None>
+    <ClInclude Include="Collide\Deprecated\Dispatch\hkpCollideCallbackDispatcher.h">
+        <Filter>Collide\Deprecated\Dispatch</Filter>
+        </ClInclude>
+    <None Include="Collide\Deprecated\Dispatch\hkpCollideCallbackDispatcher.inl">
+        <Filter>Collide\Deprecated\Dispatch</Filter>
+        </None>
+    <ClCompile Include="Collide\Deprecated\hkpCollisionEvents.cpp">
+        <Filter>Collide\Deprecated</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\Deprecated\hkpCollisionEvents.h">
+        <Filter>Collide\Deprecated</Filter>
+        </ClInclude>
+    <None Include="Collide\Deprecated\hkpCollisionEvents.inl">
+        <Filter>Collide\Deprecated</Filter>
+        </None>
+    <ClCompile Include="Collide\Deprecated\hkpCollisionListener.cpp">
+        <Filter>Collide\Deprecated</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\Deprecated\hkpCollisionListener.h">
+        <Filter>Collide\Deprecated</Filter>
+        </ClInclude>
+    <ClCompile Include="Collide\Deprecated\hkpContactUpdater.cpp">
+        <Filter>Collide\Deprecated</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\Deprecated\hkpContactUpdater.h">
+        <Filter>Collide\Deprecated</Filter>
+        </ClInclude>
+    <ClCompile Include="Collide\Deprecated\hkpReportContactMgr.cpp">
+        <Filter>Collide\Deprecated</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\Deprecated\hkpReportContactMgr.h">
+        <Filter>Collide\Deprecated</Filter>
+        </ClInclude>
+    <ClCompile Include="Collide\Filter\Constraint\hkpConstraintCollisionFilter.cpp">
+        <Filter>Collide\Filter\Constraint</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\Filter\Constraint\hkpConstraintCollisionFilter.h">
+        <Filter>Collide\Filter\Constraint</Filter>
+        </ClInclude>
+    <ClCompile Include="Collide\Filter\Pair\hkpPairCollisionFilter.cpp">
+        <Filter>Collide\Filter\Pair</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\Filter\Pair\hkpPairCollisionFilter.h">
+        <Filter>Collide\Filter\Pair</Filter>
+        </ClInclude>
+    <None Include="Collide\Filter\Pair\hkpPairCollisionFilter.inl">
+        <Filter>Collide\Filter\Pair</Filter>
+        </None>
+    <ClInclude Include="Collide\hkpDynamicsContactMgr.h">
+        <Filter>Collide</Filter>
+        </ClInclude>
+    <ClCompile Include="Collide\hkpResponseModifier.cpp">
+        <Filter>Collide</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\hkpResponseModifier.h">
+        <Filter>Collide</Filter>
+        </ClInclude>
+    <None Include="Collide\hkpResponseModifier.inl">
+        <Filter>Collide</Filter>
+        </None>
+    <ClCompile Include="Collide\hkpSimpleConstraintContactMgr.cpp">
+        <Filter>Collide</Filter>
+        </ClCompile>
+    <ClInclude Include="Collide\hkpSimpleConstraintContactMgr.h">
+        <Filter>Collide</Filter>
+        </ClInclude>
+    <ClCompile Include="Common\SmallArray\hkSmallArray.cpp">
+        <Filter>Common\SmallArray</Filter>
+        </ClCompile>
+    <ClInclude Include="Common\SmallArray\hkSmallArray.h">
+        <Filter>Common\SmallArray</Filter>
+        </ClInclude>
+    <None Include="Common\SmallArray\hkSmallArray.inl">
+        <Filter>Common\SmallArray</Filter>
+        </None>
+    <ClCompile Include="Common\TraceStream\hkTraceStream.cpp">
+        <Filter>Common\TraceStream</Filter>
+        </ClCompile>
+    <ClInclude Include="Common\TraceStream\hkTraceStream.h">
+        <Filter>Common\TraceStream</Filter>
+        </ClInclude>
+    <ClInclude Include="Common\hkpMaterial.h">
+        <Filter>Common</Filter>
+        </ClInclude>
+    <None Include="Common\hkpMaterial.inl">
+        <Filter>Common</Filter>
+        </None>
+    <ClInclude Include="Common\hkpProperty.h">
+        <Filter>Common</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Atom\hkpModifierConstraintAtom.cpp">
+        <Filter>Constraint\Atom</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Atom\hkpModifierConstraintAtom.h">
+        <Filter>Constraint\Atom</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Atom\hkpSimpleContactConstraintAtom.cpp">
+        <Filter>Constraint\Atom</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Atom\hkpSimpleContactConstraintAtom.h">
+        <Filter>Constraint\Atom</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Atom\hkpSimpleContactConstraintAtomUtil.cpp">
+        <Filter>Constraint\Atom</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Atom\hkpSimpleContactConstraintAtomUtil.h">
+        <Filter>Constraint\Atom</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Breakable\hkpBreakableConstraintData.cpp">
+        <Filter>Constraint\Breakable</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Breakable\hkpBreakableConstraintData.h">
+        <Filter>Constraint\Breakable</Filter>
+        </ClInclude>
+    <None Include="Constraint\Breakable\hkpBreakableConstraintData.inl">
+        <Filter>Constraint\Breakable</Filter>
+        </None>
+    <ClInclude Include="Constraint\Breakable\hkpBreakableListener.h">
+        <Filter>Constraint\Breakable</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Chain\BallSocket\hkpBallSocketChainData.cpp">
+        <Filter>Constraint\Chain\BallSocket</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Chain\BallSocket\hkpBallSocketChainData.h">
+        <Filter>Constraint\Chain\BallSocket</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Chain\Powered\hkpPoweredChainData.cpp">
+        <Filter>Constraint\Chain\Powered</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Chain\Powered\hkpPoweredChainData.h">
+        <Filter>Constraint\Chain\Powered</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Chain\Rope\hkpSegmentedRope.cpp">
+        <Filter>Constraint\Chain\Rope</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Chain\Rope\hkpSegmentedRope.h">
+        <Filter>Constraint\Chain\Rope</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Chain\StiffSpring\hkpStiffSpringChainData.cpp">
+        <Filter>Constraint\Chain\StiffSpring</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Chain\StiffSpring\hkpStiffSpringChainData.h">
+        <Filter>Constraint\Chain\StiffSpring</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\Chain\hkpConstraintChainData.h">
+        <Filter>Constraint\Chain</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Chain\hkpConstraintChainInstance.cpp">
+        <Filter>Constraint\Chain</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Chain\hkpConstraintChainInstance.h">
+        <Filter>Constraint\Chain</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Chain\hkpConstraintChainInstanceAction.cpp">
+        <Filter>Constraint\Chain</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Chain\hkpConstraintChainInstanceAction.h">
+        <Filter>Constraint\Chain</Filter>
+        </ClInclude>
+    <None Include="Constraint\ConstraintKit\ConstraintConstructionKit.svg">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </None>
+    <ClCompile Include="Constraint\ConstraintKit\hkpConstraintConstructionKit.cpp">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\ConstraintKit\hkpConstraintConstructionKit.h">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\ConstraintKit\hkpConstraintModifier.h">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\ConstraintKit\hkpGenericConstraintData.cpp">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\ConstraintKit\hkpGenericConstraintData.h">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\ConstraintKit\hkpGenericConstraintParameters.h">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\ConstraintKit\hkpGenericConstraintScheme.cpp">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\ConstraintKit\hkpGenericConstraintScheme.h">
+        <Filter>Constraint\ConstraintKit</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\Contact\hkContactPointMaterial.h">
+        <Filter>Constraint\Contact</Filter>
+        </ClInclude>
+    <None Include="Constraint\Contact\hkContactPointMaterial.inl">
+        <Filter>Constraint\Contact</Filter>
+        </None>
+    <ClInclude Include="Constraint\Contact\hkpContactImpulseLimitBreachedListener.h">
+        <Filter>Constraint\Contact</Filter>
+        </ClInclude>
+    <None Include="Constraint\Contact\hkpContactImpulseLimitBreachedListener.inl">
+        <Filter>Constraint\Contact</Filter>
+        </None>
+    <ClInclude Include="Constraint\Contact\hkpContactPointProperties.h">
+        <Filter>Constraint\Contact</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\Contact\hkpDynamicsCpIdMgr.h">
+        <Filter>Constraint\Contact</Filter>
+        </ClInclude>
+    <None Include="Constraint\Contact\hkpDynamicsCpIdMgr.inl">
+        <Filter>Constraint\Contact</Filter>
+        </None>
+    <ClCompile Include="Constraint\Contact\hkpSimpleContactConstraintData.cpp">
+        <Filter>Constraint\Contact</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Contact\hkpSimpleContactConstraintData.h">
+        <Filter>Constraint\Contact</Filter>
+        </ClInclude>
+    <None Include="Constraint\Contact\hkpSimpleContactConstraintData.inl">
+        <Filter>Constraint\Contact</Filter>
+        </None>
+    <ClCompile Include="Constraint\Contact\hkpSimpleContactConstraintUtil.cpp">
+        <Filter>Constraint\Contact</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Contact\hkpSimpleContactConstraintUtil.h">
+        <Filter>Constraint\Contact</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Malleable\hkpMalleableConstraintData.cpp">
+        <Filter>Constraint\Malleable</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Malleable\hkpMalleableConstraintData.h">
+        <Filter>Constraint\Malleable</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Response\hkpSimpleCollisionResponse.cpp">
+        <Filter>Constraint\Response</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Response\hkpSimpleCollisionResponse.h">
+        <Filter>Constraint\Response</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Setup\hkpConstraintSolverSetup.cpp">
+        <Filter>Constraint\Setup</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Setup\hkpConstraintSolverSetup.h">
+        <Filter>Constraint\Setup</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Util\hkpConstraintCallbackUtil.cpp">
+        <Filter>Constraint\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Util\hkpConstraintCallbackUtil.h">
+        <Filter>Constraint\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Util\hkpConstraintChainLengthUtil.cpp">
+        <Filter>Constraint\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Util\hkpConstraintChainLengthUtil.h">
+        <Filter>Constraint\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Util\hkpConstraintDataCloningUtil.cpp">
+        <Filter>Constraint\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Util\hkpConstraintDataCloningUtil.h">
+        <Filter>Constraint\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Util\hkpConstraintPivotsUtil.cpp">
+        <Filter>Constraint\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Util\hkpConstraintPivotsUtil.h">
+        <Filter>Constraint\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\Util\hkpConstraintStabilizationUtil.cpp">
+        <Filter>Constraint\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\Util\hkpConstraintStabilizationUtil.h">
+        <Filter>Constraint\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Constraint\hkpConstraintInstance.cpp">
+        <Filter>Constraint</Filter>
+        </ClCompile>
+    <ClInclude Include="Constraint\hkpConstraintInstance.h">
+        <Filter>Constraint</Filter>
+        </ClInclude>
+    <None Include="Constraint\hkpConstraintInstance.inl">
+        <Filter>Constraint</Filter>
+        </None>
+    <ClInclude Include="Constraint\hkpConstraintListener.h">
+        <Filter>Constraint</Filter>
+        </ClInclude>
+    <ClInclude Include="Constraint\hkpConstraintOwner.h">
+        <Filter>Constraint</Filter>
+        </ClInclude>
+    <ClInclude Include="Destruction\BreakableBody\hkpBreakableBody.h">
+        <Filter>Destruction\BreakableBody</Filter>
+        </ClInclude>
+    <None Include="Destruction\BreakableBody\hkpBreakableBody.inl">
+        <Filter>Destruction\BreakableBody</Filter>
+        </None>
+    <ClCompile Include="Destruction\BreakableMaterial\MultiMaterial\CompoundShape\hkpScsBreakableMaterial.cpp">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial\CompoundShape</Filter>
+        </ClCompile>
+    <ClInclude Include="Destruction\BreakableMaterial\MultiMaterial\CompoundShape\hkpScsBreakableMaterial.h">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial\CompoundShape</Filter>
+        </ClInclude>
+    <ClCompile Include="Destruction\BreakableMaterial\MultiMaterial\ExtendedMeshShape\hkpEmsBreakableMaterial.cpp">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial\ExtendedMeshShape</Filter>
+        </ClCompile>
+    <ClInclude Include="Destruction\BreakableMaterial\MultiMaterial\ExtendedMeshShape\hkpEmsBreakableMaterial.h">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial\ExtendedMeshShape</Filter>
+        </ClInclude>
+    <None Include="Destruction\BreakableMaterial\MultiMaterial\ExtendedMeshShape\hkpEmsBreakableMaterial.inl">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial\ExtendedMeshShape</Filter>
+        </None>
+    <ClCompile Include="Destruction\BreakableMaterial\MultiMaterial\ListShape\hkpListShapeBreakableMaterial.cpp">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial\ListShape</Filter>
+        </ClCompile>
+    <ClInclude Include="Destruction\BreakableMaterial\MultiMaterial\ListShape\hkpListShapeBreakableMaterial.h">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial\ListShape</Filter>
+        </ClInclude>
+    <None Include="Destruction\BreakableMaterial\MultiMaterial\ListShape\hkpListShapeBreakableMaterial.inl">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial\ListShape</Filter>
+        </None>
+    <ClCompile Include="Destruction\BreakableMaterial\MultiMaterial\hkpBreakableMultiMaterial.cpp">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial</Filter>
+        </ClCompile>
+    <ClInclude Include="Destruction\BreakableMaterial\MultiMaterial\hkpBreakableMultiMaterial.h">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial</Filter>
+        </ClInclude>
+    <None Include="Destruction\BreakableMaterial\MultiMaterial\hkpBreakableMultiMaterial.inl">
+        <Filter>Destruction\BreakableMaterial\MultiMaterial</Filter>
+        </None>
+    <ClCompile Include="Destruction\BreakableMaterial\Simple\hkpSimpleBreakableMaterial.cpp">
+        <Filter>Destruction\BreakableMaterial\Simple</Filter>
+        </ClCompile>
+    <ClInclude Include="Destruction\BreakableMaterial\Simple\hkpSimpleBreakableMaterial.h">
+        <Filter>Destruction\BreakableMaterial\Simple</Filter>
+        </ClInclude>
+    <ClCompile Include="Destruction\BreakableMaterial\hkpBreakableMaterial.cpp">
+        <Filter>Destruction\BreakableMaterial</Filter>
+        </ClCompile>
+    <ClInclude Include="Destruction\BreakableMaterial\hkpBreakableMaterial.h">
+        <Filter>Destruction\BreakableMaterial</Filter>
+        </ClInclude>
+    <None Include="Destruction\BreakableMaterial\hkpBreakableMaterial.inl">
+        <Filter>Destruction\BreakableMaterial</Filter>
+        </None>
+    <ClCompile Include="Destruction\BreakableMaterial\hkpBreakableMaterialUtil.cpp">
+        <Filter>Destruction\BreakableMaterial</Filter>
+        </ClCompile>
+    <ClInclude Include="Destruction\BreakableMaterial\hkpBreakableMaterialUtil.h">
+        <Filter>Destruction\BreakableMaterial</Filter>
+        </ClInclude>
+    <None Include="Destruction\BreakableMaterial\hkpBreakableMaterialUtil.inl">
+        <Filter>Destruction\BreakableMaterial</Filter>
+        </None>
+    <ClInclude Include="Destruction\BreakableShape\hkpBreakableShape.h">
+        <Filter>Destruction\BreakableShape</Filter>
+        </ClInclude>
+    <None Include="Destruction\BreakableShape\hkpBreakableShape.inl">
+        <Filter>Destruction\BreakableShape</Filter>
+        </None>
+    <ClCompile Include="Destruction\Utilities\hkpDestructionBreakOffUtil.cpp">
+        <Filter>Destruction\Utilities</Filter>
+        </ClCompile>
+    <ClInclude Include="Destruction\Utilities\hkpDestructionBreakOffUtil.h">
+        <Filter>Destruction\Utilities</Filter>
+        </ClInclude>
+    <None Include="Destruction\Utilities\hkpDestructionBreakOffUtil.inl">
+        <Filter>Destruction\Utilities</Filter>
+        </None>
+    <ClInclude Include="Destruction\Utilities\hkpDestructionSpuUtil.h">
+        <Filter>Destruction\Utilities</Filter>
+        </ClInclude>
+    <ClCompile Include="Entity\Util\hkpEntityAabbUtil.cpp">
+        <Filter>Entity\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Entity\Util\hkpEntityAabbUtil.h">
+        <Filter>Entity\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Entity\Util\hkpEntityCallbackUtil.cpp">
+        <Filter>Entity\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Entity\Util\hkpEntityCallbackUtil.h">
+        <Filter>Entity\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Entity\hkpEntity.cpp">
+        <Filter>Entity</Filter>
+        </ClCompile>
+    <ClInclude Include="Entity\hkpEntity.h">
+        <Filter>Entity</Filter>
+        </ClInclude>
+    <None Include="Entity\hkpEntity.inl">
+        <Filter>Entity</Filter>
+        </None>
+    <ClInclude Include="Entity\hkpEntityActivationListener.h">
+        <Filter>Entity</Filter>
+        </ClInclude>
+    <ClInclude Include="Entity\hkpEntityListener.h">
+        <Filter>Entity</Filter>
+        </ClInclude>
+    <ClCompile Include="Entity\hkpRigidBody.cpp">
+        <Filter>Entity</Filter>
+        </ClCompile>
+    <ClInclude Include="Entity\hkpRigidBody.h">
+        <Filter>Entity</Filter>
+        </ClInclude>
+    <None Include="Entity\hkpRigidBody.inl">
+        <Filter>Entity</Filter>
+        </None>
+    <ClCompile Include="Entity\hkpRigidBodyCinfo.cpp">
+        <Filter>Entity</Filter>
+        </ClCompile>
+    <ClInclude Include="Entity\hkpRigidBodyCinfo.h">
+        <Filter>Entity</Filter>
+        </ClInclude>
+    <ClCompile Include="Motion\MotionState\hkMotionState.cpp">
+        <Filter>Motion\MotionState</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\MotionState\hkMotionState.h">
+        <Filter>Motion\MotionState</Filter>
+        </ClInclude>
+    <None Include="Motion\MotionState\hkMotionState.inl">
+        <Filter>Motion\MotionState</Filter>
+        </None>
+    <ClCompile Include="Motion\Rigid\ThinBoxMotion\hkpThinBoxMotion.cpp">
+        <Filter>Motion\Rigid\ThinBoxMotion</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\Rigid\ThinBoxMotion\hkpThinBoxMotion.h">
+        <Filter>Motion\Rigid\ThinBoxMotion</Filter>
+        </ClInclude>
+    <ClCompile Include="Motion\Rigid\hkpBoxMotion.cpp">
+        <Filter>Motion\Rigid</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\Rigid\hkpBoxMotion.h">
+        <Filter>Motion\Rigid</Filter>
+        </ClInclude>
+    <ClCompile Include="Motion\Rigid\hkpCharacterMotion.cpp">
+        <Filter>Motion\Rigid</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\Rigid\hkpCharacterMotion.h">
+        <Filter>Motion\Rigid</Filter>
+        </ClInclude>
+    <ClCompile Include="Motion\Rigid\hkpFixedRigidMotion.cpp">
+        <Filter>Motion\Rigid</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\Rigid\hkpFixedRigidMotion.h">
+        <Filter>Motion\Rigid</Filter>
+        </ClInclude>
+    <ClCompile Include="Motion\Rigid\hkpKeyframedRigidMotion.cpp">
+        <Filter>Motion\Rigid</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\Rigid\hkpKeyframedRigidMotion.h">
+        <Filter>Motion\Rigid</Filter>
+        </ClInclude>
+    <ClCompile Include="Motion\Rigid\hkpSphereMotion.cpp">
+        <Filter>Motion\Rigid</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\Rigid\hkpSphereMotion.h">
+        <Filter>Motion\Rigid</Filter>
+        </ClInclude>
+    <ClCompile Include="Motion\SweptTransform\hkSweptTransform.cpp">
+        <Filter>Motion\SweptTransform</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\SweptTransform\hkSweptTransform.h">
+        <Filter>Motion\SweptTransform</Filter>
+        </ClInclude>
+    <None Include="Motion\SweptTransform\hkSweptTransform.inl">
+        <Filter>Motion\SweptTransform</Filter>
+        </None>
+    <ClCompile Include="Motion\SweptTransform\hkSweptTransformUtil.cpp">
+        <Filter>Motion\SweptTransform</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\SweptTransform\hkSweptTransformUtil.h">
+        <Filter>Motion\SweptTransform</Filter>
+        </ClInclude>
+    <None Include="Motion\SweptTransform\hkSweptTransformUtil.inl">
+        <Filter>Motion\SweptTransform</Filter>
+        </None>
+    <ClCompile Include="Motion\Util\hkpRigidMotionUtil.cpp">
+        <Filter>Motion\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\Util\hkpRigidMotionUtil.h">
+        <Filter>Motion\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="Motion\hkpMotion.cpp">
+        <Filter>Motion</Filter>
+        </ClCompile>
+    <ClInclude Include="Motion\hkpMotion.h">
+        <Filter>Motion</Filter>
+        </ClInclude>
+    <None Include="Motion\hkpMotion.inl">
+        <Filter>Motion</Filter>
+        </None>
+    <ClCompile Include="Phantom\hkpAabbPhantom.cpp">
+        <Filter>Phantom</Filter>
+        </ClCompile>
+    <ClInclude Include="Phantom\hkpAabbPhantom.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <None Include="Phantom\hkpAabbPhantom.inl">
+        <Filter>Phantom</Filter>
+        </None>
+    <ClCompile Include="Phantom\hkpCachingShapePhantom.cpp">
+        <Filter>Phantom</Filter>
+        </ClCompile>
+    <ClInclude Include="Phantom\hkpCachingShapePhantom.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <None Include="Phantom\hkpCachingShapePhantom.inl">
+        <Filter>Phantom</Filter>
+        </None>
+    <ClCompile Include="Phantom\hkpPhantom.cpp">
+        <Filter>Phantom</Filter>
+        </ClCompile>
+    <ClInclude Include="Phantom\hkpPhantom.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <None Include="Phantom\hkpPhantom.inl">
+        <Filter>Phantom</Filter>
+        </None>
+    <ClCompile Include="Phantom\hkpPhantomBroadPhaseListener.cpp">
+        <Filter>Phantom</Filter>
+        </ClCompile>
+    <ClInclude Include="Phantom\hkpPhantomBroadPhaseListener.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <ClInclude Include="Phantom\hkpPhantomListener.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <ClInclude Include="Phantom\hkpPhantomOverlapListener.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <ClInclude Include="Phantom\hkpPhantomType.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <ClCompile Include="Phantom\hkpShapePhantom.cpp">
+        <Filter>Phantom</Filter>
+        </ClCompile>
+    <ClInclude Include="Phantom\hkpShapePhantom.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <None Include="Phantom\hkpShapePhantom.inl">
+        <Filter>Phantom</Filter>
+        </None>
+    <ClCompile Include="Phantom\hkpSimpleShapePhantom.cpp">
+        <Filter>Phantom</Filter>
+        </ClCompile>
+    <ClInclude Include="Phantom\hkpSimpleShapePhantom.h">
+        <Filter>Phantom</Filter>
+        </ClInclude>
+    <None Include="Phantom\hkpSimpleShapePhantom.inl">
+        <Filter>Phantom</Filter>
+        </None>
+    <ClCompile Include="UnitTest\Activation\activation.cpp">
+        <Filter>UnitTest\Activation</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\Collision\hkpPairwiseCollisionTest.cpp">
+        <Filter>UnitTest\Collision</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\Container\SmallArray.cpp">
+        <Filter>UnitTest\Container</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\Entity\rigidbodyclone.cpp">
+        <Filter>UnitTest\Entity</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\Motion\SweptTransform.cpp">
+        <Filter>UnitTest\Motion</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\Motion\keyframedmotion.cpp">
+        <Filter>UnitTest\Motion</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\Motion\rigidmotion.cpp">
+        <Filter>UnitTest\Motion</Filter>
+        </ClCompile>
+    <ClInclude Include="UnitTest\Tests.h">
+        <Filter>UnitTest</Filter>
+        </ClInclude>
+    <ClCompile Include="UnitTest\World\ActionManagement.cpp">
+        <Filter>UnitTest\World</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\World\EntityManagement.cpp">
+        <Filter>UnitTest\World</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\World\FilterChangeUnitTest.cpp">
+        <Filter>UnitTest\World</Filter>
+        </ClCompile>
+    <ClCompile Include="UnitTest\World\addremove.cpp">
+        <Filter>UnitTest\World</Filter>
+        </ClCompile>
+    <ClCompile Include="World\BroadPhaseBorder\hkpBroadPhaseBorder.cpp">
+        <Filter>World\BroadPhaseBorder</Filter>
+        </ClCompile>
+    <ClInclude Include="World\BroadPhaseBorder\hkpBroadPhaseBorder.h">
+        <Filter>World\BroadPhaseBorder</Filter>
+        </ClInclude>
+    <ClInclude Include="World\CommandQueue\hkpPhysicsCommand.h">
+        <Filter>World\CommandQueue</Filter>
+        </ClInclude>
+    <ClCompile Include="World\CommandQueue\hkpPhysicsCommandMachine.cpp">
+        <Filter>World\CommandQueue</Filter>
+        </ClCompile>
+    <ClInclude Include="World\CommandQueue\hkpPhysicsCommandQueue.h">
+        <Filter>World\CommandQueue</Filter>
+        </ClInclude>
+    <None Include="World\CommandQueue\hkpPhysicsCommandQueue.inl">
+        <Filter>World\CommandQueue</Filter>
+        </None>
+    <ClCompile Include="World\Extensions\hkpWorldExtension.cpp">
+        <Filter>World\Extensions</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Extensions\hkpWorldExtension.h">
+        <Filter>World\Extensions</Filter>
+        </ClInclude>
+    <None Include="World\Extensions\hkpWorldExtension.inl">
+        <Filter>World\Extensions</Filter>
+        </None>
+    <ClInclude Include="World\Listener\hkpIslandActivationListener.h">
+        <Filter>World\Listener</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Listener\hkpIslandPostCollideListener.h">
+        <Filter>World\Listener</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Listener\hkpIslandPostIntegrateListener.h">
+        <Filter>World\Listener</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Listener\hkpWorldDeletionListener.h">
+        <Filter>World\Listener</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Listener\hkpWorldPostCollideListener.h">
+        <Filter>World\Listener</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Listener\hkpWorldPostIntegrateListener.h">
+        <Filter>World\Listener</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Listener\hkpWorldPostSimulationListener.h">
+        <Filter>World\Listener</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Maintenance\Default\hkpDefaultWorldMaintenanceMgr.cpp">
+        <Filter>World\Maintenance\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Maintenance\Default\hkpDefaultWorldMaintenanceMgr.h">
+        <Filter>World\Maintenance\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Maintenance\hkpWorldMaintenanceMgr.h">
+        <Filter>World\Maintenance</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Memory\Default\hkpDefaultWorldMemoryWatchDog.cpp">
+        <Filter>World\Memory\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Memory\Default\hkpDefaultWorldMemoryWatchDog.h">
+        <Filter>World\Memory\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Memory\hkpWorldMemoryAvailableWatchDog.h">
+        <Filter>World\Memory</Filter>
+        </ClInclude>
+    <None Include="World\Memory\hkpWorldMemoryAvailableWatchdog.inl">
+        <Filter>World\Memory</Filter>
+        </None>
+    <ClCompile Include="World\Simulation\Backstep\hkpBackstepSimulation.cpp">
+        <Filter>World\Simulation\Backstep</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Backstep\hkpBackstepSimulation.h">
+        <Filter>World\Simulation\Backstep</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Continuous\ToiResourceMgr\Default\hkpDefaultToiResourceMgr.cpp">
+        <Filter>World\Simulation\Continuous\ToiResourceMgr\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Continuous\ToiResourceMgr\Default\hkpDefaultToiResourceMgr.h">
+        <Filter>World\Simulation\Continuous\ToiResourceMgr\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Simulation\Continuous\ToiResourceMgr\hkpToiResourceMgr.h">
+        <Filter>World\Simulation\Continuous\ToiResourceMgr</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Continuous\hkpContinuousSimulation.cpp">
+        <Filter>World\Simulation\Continuous</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Continuous\hkpContinuousSimulation.h">
+        <Filter>World\Simulation\Continuous</Filter>
+        </ClInclude>
+    <None Include="World\Simulation\Continuous\hkpContinuousSimulation.inl">
+        <Filter>World\Simulation\Continuous</Filter>
+        </None>
+    <ClInclude Include="World\Simulation\Continuous\hkpToiEvent.h">
+        <Filter>World\Simulation\Continuous</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuAgentSectorJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuAgentSectorJob.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuBroadPhaseJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuBuildAccumulatorsJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuBuildAccumulatorsJob.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuBuildJacobiansJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuBuildJacobiansJob.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuFireJacobianSetupCallbackJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuIntegrateJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuIntegrateJob.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuIntegrateMotionJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuIntegrateMotionJob.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuPostCollideJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuPostCollideJob.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuSingleThreadedJobsOnIsland.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuSolveConstraintsJobs.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuSolveConstraintsJobs.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\Cpu\hkpCpuSplitSimulationIslandJob.cpp">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\Cpu\hkpCpuSplitSimulationIslandJob.h">
+        <Filter>World\Simulation\Multithreaded\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Simulation\Multithreaded\hkpDeferredConstraintOwner.h">
+        <Filter>World\Simulation\Multithreaded</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\hkpDynamicsJobQueueUtils.cpp">
+        <Filter>World\Simulation\Multithreaded</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\hkpDynamicsJobQueueUtils.h">
+        <Filter>World\Simulation\Multithreaded</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\Multithreaded\hkpDynamicsJobs.cpp">
+        <Filter>World\Simulation\Multithreaded</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\hkpDynamicsJobs.h">
+        <Filter>World\Simulation\Multithreaded</Filter>
+        </ClInclude>
+    <None Include="World\Simulation\Multithreaded\hkpDynamicsJobs.inl">
+        <Filter>World\Simulation\Multithreaded</Filter>
+        </None>
+    <ClCompile Include="World\Simulation\Multithreaded\hkpMultithreadedSimulation.cpp">
+        <Filter>World\Simulation\Multithreaded</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\Multithreaded\hkpMultithreadedSimulation.h">
+        <Filter>World\Simulation\Multithreaded</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Simulation\hkpSimulation.cpp">
+        <Filter>World\Simulation</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Simulation\hkpSimulation.h">
+        <Filter>World\Simulation</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Util\BroadPhase\hkpBroadPhaseBorderListener.cpp">
+        <Filter>World\Util\BroadPhase</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Util\BroadPhase\hkpBroadPhaseBorderListener.h">
+        <Filter>World\Util\BroadPhase</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Util\BroadPhase\hkpEntityEntityBroadPhaseListener.cpp">
+        <Filter>World\Util\BroadPhase</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Util\BroadPhase\hkpEntityEntityBroadPhaseListener.h">
+        <Filter>World\Util\BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Util\hkpBodyOperation.h">
+        <Filter>World\Util</Filter>
+        </ClInclude>
+    <ClInclude Include="World\Util\hkpNullAction.h">
+        <Filter>World\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Util\hkpWorldAgentUtil.cpp">
+        <Filter>World\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Util\hkpWorldAgentUtil.h">
+        <Filter>World\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Util\hkpWorldCallbackUtil.cpp">
+        <Filter>World\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Util\hkpWorldCallbackUtil.h">
+        <Filter>World\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Util\hkpWorldConstraintUtil.cpp">
+        <Filter>World\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Util\hkpWorldConstraintUtil.h">
+        <Filter>World\Util</Filter>
+        </ClInclude>
+    <None Include="World\Util\hkpWorldConstraintUtil.inl">
+        <Filter>World\Util</Filter>
+        </None>
+    <ClCompile Include="World\Util\hkpWorldMemoryUtil.cpp">
+        <Filter>World\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Util\hkpWorldMemoryUtil.h">
+        <Filter>World\Util</Filter>
+        </ClInclude>
+    <ClCompile Include="World\Util\hkpWorldOperationQueue.cpp">
+        <Filter>World\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Util\hkpWorldOperationQueue.h">
+        <Filter>World\Util</Filter>
+        </ClInclude>
+    <None Include="World\Util\hkpWorldOperationQueue.inl">
+        <Filter>World\Util</Filter>
+        </None>
+    <ClCompile Include="World\Util\hkpWorldOperationUtil.cpp">
+        <Filter>World\Util</Filter>
+        </ClCompile>
+    <ClInclude Include="World\Util\hkpWorldOperationUtil.h">
+        <Filter>World\Util</Filter>
+        </ClInclude>
+    <None Include="World\Util\hkpWorldOperationUtil.inl">
+        <Filter>World\Util</Filter>
+        </None>
+    <ClCompile Include="World\hkpPhysicsSystem.cpp">
+        <Filter>World</Filter>
+        </ClCompile>
+    <ClInclude Include="World\hkpPhysicsSystem.h">
+        <Filter>World</Filter>
+        </ClInclude>
+    <None Include="World\hkpPhysicsSystem.inl">
+        <Filter>World</Filter>
+        </None>
+    <ClCompile Include="World\hkpSimulationIsland.cpp">
+        <Filter>World</Filter>
+        </ClCompile>
+    <ClInclude Include="World\hkpSimulationIsland.h">
+        <Filter>World</Filter>
+        </ClInclude>
+    <None Include="World\hkpSimulationIsland.inl">
+        <Filter>World</Filter>
+        </None>
+    <ClCompile Include="World\hkpWorld.cpp">
+        <Filter>World</Filter>
+        </ClCompile>
+    <ClInclude Include="World\hkpWorld.h">
+        <Filter>World</Filter>
+        </ClInclude>
+    <None Include="World\hkpWorld.inl">
+        <Filter>World</Filter>
+        </None>
+    <ClCompile Include="World\hkpWorldCinfo.cpp">
+        <Filter>World</Filter>
+        </ClCompile>
+    <ClInclude Include="World\hkpWorldCinfo.h">
+        <Filter>World</Filter>
+        </ClInclude>
+    <ClCompile Include="World\hkpWorldObject.cpp">
+        <Filter>World</Filter>
+        </ClCompile>
+    <ClInclude Include="World\hkpWorldObject.h">
+        <Filter>World</Filter>
+        </ClInclude>
+    <None Include="World\hkpWorldObject.inl">
+        <Filter>World</Filter>
+        </None>
+    <None Include="_Auto\HABinding\hkpDynamics_HABinding.cxx">
+        <Filter>_Auto\HABinding</Filter>
+        </None>
+    <Compile Include="_Auto\HABinding\hkpDynamics_HABinding.hxx">
+        <DeploymentContent>False</DeploymentContent>
+        <Filter>_Auto\HABinding</Filter>
+        </Compile>
+    <None Include="_Auto\Types\hkContactPointMaterial_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkMotionState_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkSweptTransform_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkTraceStream_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpAabbPhantom_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpAction_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpArrayAction_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpBallSocketChainData_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpBinaryAction_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpBoxMotion_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpBreakableBody_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpBreakableConstraintData_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpBreakableMaterial_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpBreakableMultiMaterial_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpBreakableShape_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpCachingShapePhantom_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpCharacterMotion_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpConstraintChainData_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpConstraintChainInstanceAction_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpConstraintChainInstance_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpConstraintCollisionFilter_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpConstraintInstance_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpConstraintListener_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpContactListener_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpDefaultWorldMemoryWatchDog_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpEmsBreakableMaterial_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpEntityListener_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpEntity_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpFixedRigidMotion_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpGenericConstraintData_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpGenericConstraintScheme_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpKeyframedRigidMotion_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpListShapeBreakableMaterial_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpMalleableConstraintData_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpMaterial_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpModifierConstraintAtom_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpMotion_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpPairCollisionFilter_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpPhantomOverlapListener_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpPhantom_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpPhysicsSystem_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpPoweredChainData_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpRigidBody_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpScsBreakableMaterial_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpShapePhantom_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpSimpleBreakableMaterial_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpSimpleContactConstraintAtom_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpSimpleShapePhantom_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpSimulation_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpSphereMotion_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpStiffSpringChainData_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpThinBoxMotion_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpUnaryAction_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpWorldCinfo_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpWorldDeletionListener_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpWorldMemoryAvailableWatchDog_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpWorldObject_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpWorldPostSimulationListener_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpWorld_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\hkpDynamicsClassList.cxx">
+        <Filter>_Auto</Filter>
+        </None>
+    <ClCompile Include="_Auto\hkpDynamics_IncludeAllTypes.cpp">
+        <Filter>_Auto</Filter>
+        </ClCompile>
+    <None Include="_Auto\hkpDynamics_IncludeAllTypes.cxx">
+        <Filter>_Auto</Filter>
+        </None>
+    <ClCompile Include="_Auto\hkpDynamics_Tracker.cpp">
+        <Filter>_Auto</Filter>
+        </ClCompile>
+    <None Include="_Auto\hkpDynamics_Tracker.cxx">
+        <Filter>_Auto</Filter>
+        </None>
+    <ClInclude Include="_ExtraPreBuildIncludes\hkpDynamicsExtraIncludes.h">
+        <Filter>_ExtraPreBuildIncludes</Filter>
+        </ClInclude>
+    <ClCompile Include="hkpDynamics.cpp">
+        <Filter></Filter>
+        </ClCompile>
+    <ClInclude Include="hkpDynamics.h">
+        <Filter></Filter>
+        </ClInclude>
+  </ItemGroup>
+</Project>

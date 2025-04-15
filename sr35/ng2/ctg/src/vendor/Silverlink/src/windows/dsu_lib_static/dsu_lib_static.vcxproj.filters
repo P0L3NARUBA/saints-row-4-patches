@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\dsu_lib\source\c_api.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dsu_lib\source\commonutils.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dsu_lib\source\logger.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dsu_lib\source\networkmanager.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dsu_lib\source\protocolImplementation.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dsu_lib\header\strong_type.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\c_api.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\c_api_private.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\commonutils.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\defines.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\exception.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\logger.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\networkmanager.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\protocolDefinition.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\protocolImplementation.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dsu_lib\header\singleton.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{9dafe2a0-dd2b-4f93-98d1-ce0f0f2b8158}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

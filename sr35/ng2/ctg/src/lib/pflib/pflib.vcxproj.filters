@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{f11c65b7-91f3-4ed5-9def-7334c8198275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="navmesh">
+      <UniqueIdentifier>{f4f23521-3343-444c-bf7c-cfecbe834018}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\pf_common.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\pf_level.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\pf_repulsor.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_nav_cell.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_navmesh.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_navmesh_detour.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_navmesh_follow.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_navmesh_gen.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_navmesh_load.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_navmesh_search.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_navmesh_search_closest.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="navmesh\pf_navmesh_search_los.cpp">
+      <Filter>navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\pf_common.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\pf_generic_heap.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\pf_generic_nodes.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\pf_level.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\pf_repulsor.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="navmesh\pf_nav_cell.h">
+      <Filter>navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="navmesh\pf_navmesh.h">
+      <Filter>navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="navmesh\pf_navmesh_detour.h">
+      <Filter>navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="navmesh\pf_navmesh_follow.h">
+      <Filter>navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="navmesh\pf_navmesh_gen.h">
+      <Filter>navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="navmesh\pf_navmesh_load.h">
+      <Filter>navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="navmesh\pf_navmesh_search.h">
+      <Filter>navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="core\pf_generic_heap.inl">
+      <Filter>core</Filter>
+    </None>
+    <None Include="core\pf_generic_nodes.inl">
+      <Filter>core</Filter>
+    </None>
+  </ItemGroup>
+</Project>

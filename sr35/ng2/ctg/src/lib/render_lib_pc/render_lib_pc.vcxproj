@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Optimized|Win32">
+      <Configuration>Debug Optimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Optimized|x64">
+      <Configuration>Debug Optimized</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Final|Win32">
+      <Configuration>Release Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Final|x64">
+      <Configuration>Release Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DE94ABB-D496-44E6-9168-FF00B7F3B33D}</ProjectGuid>
+    <RootNamespace>render_lib_pc</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Final|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Final|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\branch_root_2013.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_props.props" />
+    <Import Project="..\..\ctg_release_props.props" />
+    <Import Project="..\..\ctg_wide_data.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Final|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\branch_root_2013.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_props.props" />
+    <Import Project="..\..\ctg_release_props.props" />
+    <Import Project="..\..\ctg_wide_data.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\branch_root_2013.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_props.props" />
+    <Import Project="..\..\ctg_debug_props.props" />
+    <Import Project="..\..\ctg_wide_data.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\branch_root_2013.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_props.props" />
+    <Import Project="..\..\ctg_debug_props.props" />
+    <Import Project="..\..\ctg_wide_data.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\branch_root_2013.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_props.props" />
+    <Import Project="..\..\ctg_release_props.props" />
+    <Import Project="..\..\ctg_wide_data.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\branch_root_2013.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_props.props" />
+    <Import Project="..\..\ctg_release_props.props" />
+    <Import Project="..\..\ctg_wide_data.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\branch_root_2013.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_props.props" />
+    <Import Project="..\..\ctg_debug_props.props" />
+    <Import Project="..\..\ctg_wide_data.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\branch_root_2013.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_props.props" />
+    <Import Project="..\..\ctg_debug_props.props" />
+    <Import Project="..\..\ctg_wide_data.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|Win32'">$(VolOutputRoot)\$(Platform)\lib\$(ProjectName)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|x64'">$(VolOutputRoot)\$(Platform)\lib\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|Win32'">$(VolObjRoot)\$(PlatformName)\lib\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|x64'">$(VolObjRoot)\$(PlatformName)\lib\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Final|Win32'">$(VolOutputRoot)\$(Platform)\lib\$(ProjectName)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Final|x64'">$(VolOutputRoot)\$(Platform)\lib\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Final|Win32'">$(VolObjRoot)\$(PlatformName)\lib\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Final|x64'">$(VolObjRoot)\$(PlatformName)\lib\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VolOutputRoot)\$(Platform)\lib\$(ProjectName)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VolOutputRoot)\$(Platform)\lib\$(ProjectName)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VolOutputRoot)\$(Platform)\lib\$(ProjectName)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(VolOutputRoot)\$(Platform)\lib\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VolObjRoot)\$(PlatformName)\lib\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VolObjRoot)\$(PlatformName)\lib\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VolObjRoot)\$(PlatformName)\lib\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(VolObjRoot)\$(PlatformName)\lib\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|Win32'">$(ProjectName)$(CTG_PostFix)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|x64'">$(ProjectName)$(CTG_PostFix)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)$(CTG_PostFix)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)$(CTG_PostFix)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)$(CTG_PostFix)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)$(CTG_PostFix)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release Final|Win32'">$(ProjectName)$(CTG_PostFix)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release Final|x64'">$(ProjectName)$(CTG_PostFix)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\render_lib;..\..\vendor\directx\Include;..\..\vendor\atimgpud;..\..\vendor\nvapi;%(AdditionalIncludeDirectories);$(GAME_SRC_FOLDER)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;__PC;__PC_DX11;D3D_DEBUG_DEVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>precompiled_header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>atimgpud_s_x86.lib;nvapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\directx\Lib\x86;..\..\vendor\atimgpud;..\..\vendor\nvapi\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\render_lib;..\..\vendor\directx\Include;..\..\vendor\atimgpud;..\..\vendor\nvapi;%(AdditionalIncludeDirectories);$(GAME_SRC_FOLDER)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;__PC;__PC_DX11;D3D_DEBUG_DEVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>precompiled_header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>atimgpud_s_x64.lib;nvapi64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\directx\Lib\x64;..\..\vendor\atimgpud;..\..\vendor\nvapi\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\;..\render_lib;..\..\vendor\directx\Include;..\..\vendor\atimgpud;..\..\vendor\nvapi;%(AdditionalIncludeDirectories);$(GAME_SRC_FOLDER)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;__PC;__PC_DX11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>precompiled_header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>atimgpud_s_x86.lib;nvapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\directx\Lib\x86;..\..\vendor\atimgpud;..\..\vendor\nvapi\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\;..\render_lib;..\..\vendor\directx\Include;..\..\vendor\atimgpud;..\..\vendor\nvapi;%(AdditionalIncludeDirectories);$(GAME_SRC_FOLDER)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;__PC;__PC_DX11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>precompiled_header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>atimgpud_s_x64.lib;nvapi64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\directx\Lib\x64;..\..\vendor\atimgpud;..\..\vendor\nvapi\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\;..\render_lib;..\..\vendor\directx\Include;..\..\vendor\atimgpud;..\..\vendor\nvapi;$(CTG_VENDOR_FOLDER)\yebis\include\pc;%(AdditionalIncludeDirectories);$(GAME_SRC_FOLDER)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;__PC;__PC_DX11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>precompiled_header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>atimgpud_s_x86.lib;nvapi.lib;ppfx_dx11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\directx\Lib\x86;..\..\vendor\atimgpud;..\..\vendor\nvapi\x86;$(CTG_VENDOR_FOLDER)\yebis\lib\pc\2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\;..\render_lib;..\..\vendor\directx\Include;..\..\vendor\atimgpud;..\..\vendor\nvapi;$(CTG_VENDOR_FOLDER)\yebis\include\pc;%(AdditionalIncludeDirectories);$(GAME_SRC_FOLDER)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;__PC;__PC_DX11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>precompiled_header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>atimgpud_s_x64.lib;nvapi64.lib;ppfxs_dx11_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\directx\Lib\x64;..\..\vendor\atimgpud;..\..\vendor\nvapi\amd64;$(CTG_VENDOR_FOLDER)\yebis\lib\pc\2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Final|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\;..\render_lib;..\..\vendor\directx\Include;..\..\vendor\atimgpud;..\..\vendor\nvapi;%(AdditionalIncludeDirectories);$(GAME_SRC_FOLDER)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;__PC;__PC_DX11;__RELEASE_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>precompiled_header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>atimgpud_s_x86.lib;nvapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\directx\Lib\x86;..\..\vendor\atimgpud;..\..\vendor\nvapi\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Final|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\;..\render_lib;..\..\vendor\directx\Include;..\..\vendor\atimgpud;..\..\vendor\nvapi;%(AdditionalIncludeDirectories);$(GAME_SRC_FOLDER)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;__PC;__PC_DX11;__RELEASE_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>precompiled_header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>atimgpud_s_x64.lib;nvapi64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\directx\Lib\x64;..\..\vendor\atimgpud;..\..\vendor\nvapi\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="precompiled_header.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Optimized|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Final|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Final|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="rl_pc_feature_support.cpp" />
+    <ClCompile Include="rl_pc_gpu_profiler.cpp" />
+    <ClCompile Include="rl_pc_gpu_visibility.cpp" />
+    <ClCompile Include="rl_pc_occlusion_query.cpp" />
+    <ClCompile Include="rl_pc_renderer.cpp" />
+    <ClCompile Include="rl_pc_renderer_init.cpp" />
+    <ClCompile Include="rl_pc_renderer_screen_pc.cpp" />
+    <ClCompile Include="rl_pc_swap_chain.cpp" />
+    <ClCompile Include="rl_pc_window_context.cpp" />
+    <ClCompile Include="rl_pc_cached_dyn_texture.cpp" />
+    <ClCompile Include="rl_pc_dyn_texture.cpp" />
+    <ClCompile Include="rl_pc_texture.cpp" />
+    <ClCompile Include="rl_pc_texture_compress.cpp" />
+    <ClCompile Include="rl_pc_texture_ultracompress.cpp" />
+    <ClCompile Include="rl_pc_uniform_stipple_pattern.cpp" />
+    <ClCompile Include="rl_pc_shader.cpp" />
+    <ClCompile Include="rl_pc_shader_constant_buffer.cpp" />
+    <ClCompile Include="rl_pc_shader_constants.cpp" />
+    <ClCompile Include="rl_pc_shader_library.cpp" />
+    <ClCompile Include="rl_pc_shader_prog.cpp" />
+    <ClCompile Include="rl_pc_render_state.cpp" />
+    <ClCompile Include="rl_pc_state_cache.cpp" />
+    <ClCompile Include="rl_pc_state_data.cpp" />
+    <ClCompile Include="rl_pc_state_manager.cpp" />
+    <ClCompile Include="rl_pc_state_stack.cpp" />
+    <ClCompile Include="rl_pc_state_utils.cpp" />
+    <ClCompile Include="rl_pc_morph_instance.cpp" />
+    <ClCompile Include="rl_pc_morph_target.cpp" />
+    <ClCompile Include="rl_pc_base_render_pass.cpp" />
+    <ClCompile Include="rl_pc_motion_blur_render_pass.cpp" />
+    <ClCompile Include="rl_pc_render_to_texture_pass.cpp" />
+    <ClCompile Include="rl_pc_shadow_render_pass.cpp" />
+    <ClCompile Include="rl_pc_xray_render_pass.cpp" />
+    <ClCompile Include="rl_pc_batched_pass.cpp" />
+    <ClCompile Include="rl_pc_compiled_render_group.cpp" />
+    <ClCompile Include="rl_pc_instance_stream.cpp" />
+    <ClCompile Include="rl_pc_mesh.cpp" />
+    <ClCompile Include="rl_pc_vertex_format.cpp" />
+    <ClCompile Include="rl_pc_vertex_format_library.cpp" />
+    <ClCompile Include="rl_pc_gpu_marker.cpp" />
+    <ClCompile Include="rl_pc_clb_projector.cpp" />
+    <ClCompile Include="rl_pc_shadow_system.cpp" />
+    <ClCompile Include="rl_pc_decal.cpp" />
+    <ClCompile Include="rl_pc_floating_decal_renderer.cpp" />
+    <ClCompile Include="rl_pc_meteor_shower.cpp" />
+    <ClCompile Include="rl_pc_star_field.cpp" />
+    <ClCompile Include="rl_pc_color_corrector.cpp" />
+    <ClCompile Include="rl_pc_compositor.cpp" />
+    <ClCompile Include="rl_pc_rao.cpp" />
+    <ClCompile Include="rl_pc_ssao.cpp" />
+    <ClCompile Include="rl_pc_outline_compositor.cpp" />
+    <ClCompile Include="rl_pc_hdr_compositor.cpp" />
+    <ClCompile Include="rl_pc_distortion.cpp" />
+    <ClCompile Include="rl_pc_depth_of_field.cpp" />
+    <ClCompile Include="rl_pc_motion_blur.cpp" />
+    <ClCompile Include="rl_pc_god_rays.cpp" />
+    <ClCompile Include="rl_pc_particle_renderer.cpp" />
+    <ClCompile Include="rl_pc_particle_renderer_buffers.cpp" />
+    <ClCompile Include="rl_pc_particle_renderer_coronas.cpp" />
+    <ClCompile Include="rl_pc_particle_renderer_deferred.cpp" />
+    <ClCompile Include="rl_pc_particle_renderer_shaders.cpp" />
+    <ClCompile Include="rl_pc_raycast_renderer.cpp" />
+    <ClCompile Include="rl_pc_particle_filler_billboard.cpp" />
+    <ClCompile Include="rl_pc_particle_filler_drop.cpp" />
+    <ClCompile Include="rl_pc_particle_filler_oriented.cpp" />
+    <ClCompile Include="rl_pc_particle_filler_radial.cpp" />
+    <ClCompile Include="rl_pc_particle_filler_ribbon.cpp" />
+    <ClCompile Include="rl_pc_light_volumes.cpp" />
+    <ClCompile Include="rl_pc_reflected_light_renderer.cpp" />
+    <ClCompile Include="rl_pc_clone_mesh_instance.cpp" />
+    <ClCompile Include="rl_pc_fog_volume.cpp" />
+    <ClCompile Include="rl_pc_terrain_renderer.cpp" />
+    <ClCompile Include="rl_pc_scene_renderer.cpp" />
+    <ClCompile Include="rl_pc_primitive_renderer.cpp" />
+    <ClCompile Include="rl_pc_render_surface.cpp" />
+    <ClCompile Include="rl_pc_render_texture.cpp" />
+    <ClCompile Include="rl_pc_render_texture_manager.cpp" />
+    <ClCompile Include="rl_pc_render_texture_manager_descs.cpp" />
+    <ClCompile Include="rl_pc_index_buffer.cpp" />
+    <ClCompile Include="rl_pc_vertex_buffer.cpp" />
+    <ClCompile Include="rl_pc_visibility_manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="precompiled_header.h" />
+    <ClInclude Include="rl_pc_gpu_profiler.h" />
+    <ClInclude Include="rl_pc_occlusion_query.h" />
+    <ClInclude Include="rl_pc_renderer.h" />
+    <ClInclude Include="rl_pc_swap_chain.h" />
+    <ClInclude Include="rl_pc_window_context.h" />
+    <ClInclude Include="rl_pc_cached_dyn_texture.h" />
+    <ClInclude Include="rl_pc_dyn_texture.h" />
+    <ClInclude Include="rl_pc_texture.h" />
+    <ClInclude Include="rl_pc_texture_compress.h" />
+    <ClInclude Include="rl_pc_texture_ultracompress.h" />
+    <ClInclude Include="rl_pc_uniform_stipple_pattern.h" />
+    <ClInclude Include="rl_pc_shader.h" />
+    <ClInclude Include="rl_pc_shader_constant_buffer.h" />
+    <ClInclude Include="rl_pc_shader_constants.h" />
+    <ClInclude Include="rl_pc_shader_library.h" />
+    <ClInclude Include="rl_pc_shader_prog.h" />
+    <ClInclude Include="rl_pc_render_state.h" />
+    <ClInclude Include="rl_pc_state_cache.h" />
+    <ClInclude Include="rl_pc_state_data.h" />
+    <ClInclude Include="rl_pc_state_defines.h" />
+    <ClInclude Include="rl_pc_state_manager.h" />
+    <ClInclude Include="rl_pc_state_stack.h" />
+    <ClInclude Include="rl_pc_state_utils.h" />
+    <ClInclude Include="rl_pc_morph_instance.h" />
+    <ClInclude Include="rl_pc_morph_target.h" />
+    <ClInclude Include="rl_pc_base_render_pass.h" />
+    <ClInclude Include="rl_pc_motion_blur_mask_render_pass.h" />
+    <ClInclude Include="rl_pc_render_to_texture_pass.h" />
+    <ClInclude Include="rl_pc_shadow_render_pass.h" />
+    <ClInclude Include="rl_pc_xray_render_pass.h" />
+    <ClInclude Include="rl_pc_batched_pass.h" />
+    <ClInclude Include="rl_pc_compiled_render_group.h" />
+    <ClInclude Include="rl_pc_instance_stream.h" />
+    <ClInclude Include="rl_pc_mesh.h" />
+    <ClInclude Include="rl_pc_vertex_format.h" />
+    <ClInclude Include="rl_pc_vertex_format_library.h" />
+    <ClInclude Include="rl_pc_gpu_marker.h" />
+    <ClInclude Include="rl_pc_clb_projector.h" />
+    <ClInclude Include="rl_pc_shadow_system.h" />
+    <ClInclude Include="rl_pc_floating_decal_renderer.h" />
+    <ClInclude Include="rl_pc_meteor_shower.h" />
+    <ClInclude Include="rl_pc_star_field.h" />
+    <ClInclude Include="rl_pc_color_corrector.h" />
+    <ClInclude Include="rl_pc_compositor.h" />
+    <ClInclude Include="rl_pc_rao.h" />
+    <ClInclude Include="rl_pc_ssao.h" />
+    <ClInclude Include="rl_pc_outline_compositor.h" />
+    <ClInclude Include="rl_pc_hdr_compositor.h" />
+    <ClInclude Include="rl_pc_distortion.h" />
+    <ClInclude Include="rl_pc_depth_of_field.h" />
+    <ClInclude Include="rl_pc_motion_blur.h" />
+    <ClInclude Include="rl_pc_god_rays.h" />
+    <ClInclude Include="rl_pc_particle_renderer.h" />
+    <ClInclude Include="rl_pc_raycast_renderer.h" />
+    <ClInclude Include="rl_pc_light_volumes.h" />
+    <ClInclude Include="rl_pc_reflected_light_renderer.h" />
+    <ClInclude Include="rl_pc_clone_mesh_instance.h" />
+    <ClInclude Include="rl_pc_terrain_renderer.h" />
+    <ClInclude Include="rl_pc_scene_renderer.h" />
+    <ClInclude Include="rl_pc_primitive_renderer.h" />
+    <ClInclude Include="rl_pc_render_surface.h" />
+    <ClInclude Include="rl_pc_render_texture.h" />
+    <ClInclude Include="rl_pc_render_texture_manager.h" />
+    <ClInclude Include="rl_pc_index_buffer.h" />
+    <ClInclude Include="rl_pc_vertex_buffer.h" />
+    <ClInclude Include="rl_pc_visibility_manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\render_lib\render_lib.vcxproj">
+      <Project>{2a4d6f50-9a9a-40fc-91d4-ec91e1d0f808}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\vlib\build_pc\vlib.vcxproj">
+      <Project>{b5a41a5a-0ea2-47b2-add1-39ef8fbe4f45}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

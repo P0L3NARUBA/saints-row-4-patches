@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AeroDynamics">
+        <UniqueIdentifier>4B16B749-B16B-494B-6B74-4B16B7494B16</UniqueIdentifier>
+        </Filter>
+    <Filter Include="AeroDynamics\Default">
+        <UniqueIdentifier>538013A6-3801-4653-013A-538013A65380</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Brake">
+        <UniqueIdentifier>6FEA6B74-FEA6-446F-A6B7-6FEA6B746FEA</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Brake\Default">
+        <UniqueIdentifier>611A976F-11A9-4F61-A976-611A976F611A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Camera">
+        <UniqueIdentifier>5FE5C76D-FE5C-4D5F-5C76-5FE5C76D5FE5</UniqueIdentifier>
+        </Filter>
+    <Filter Include="DriverInput">
+        <UniqueIdentifier>43F96E13-3F96-4343-96E1-43F96E1343F9</UniqueIdentifier>
+        </Filter>
+    <Filter Include="DriverInput\Default">
+        <UniqueIdentifier>C313D3EC-13D3-4313-3EC3-3D3EC313D3EC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Engine">
+        <UniqueIdentifier>45A54D60-5A54-4045-54D6-45A54D6045A5</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Engine\Default">
+        <UniqueIdentifier>2CEAC1D2-EAC1-4CEA-1D2C-AC1D2CEAC1D2</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Manager">
+        <UniqueIdentifier>670465F2-7046-4267-465F-670465F26704</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Manager\LinearCastBatchingManager">
+        <UniqueIdentifier>327983EF-2798-4F32-983E-327983EF3279</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Manager\MultithreadedVehicle">
+        <UniqueIdentifier>17750DE1-7750-4117-50DE-17750DE11775</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Manager\RayCastBatchingManager">
+        <UniqueIdentifier>4E6BD991-E6BD-414E-BD99-4E6BD9914E6B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Simulation">
+        <UniqueIdentifier>127E424F-27E4-4F12-E424-127E424F127E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Simulation\Default">
+        <UniqueIdentifier>470CA8A4-70CA-4447-CA8A-470CA8A4470C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Simulation\PerWheel">
+        <UniqueIdentifier>224D8672-24D8-4222-D867-224D8672224D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Steering">
+        <UniqueIdentifier>3904603D-9046-4D39-4603-3904603D3904</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Steering\Ackerman">
+        <UniqueIdentifier>586303F8-8630-4858-303F-586303F85863</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Steering\Default">
+        <UniqueIdentifier>22D7FA32-2D7F-4222-7FA3-22D7FA3222D7</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Suspension">
+        <UniqueIdentifier>7C291667-C291-477C-9166-7C2916677C29</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Suspension\Default">
+        <UniqueIdentifier>627A5C46-27A5-4662-A5C4-627A5C46627A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Transmission">
+        <UniqueIdentifier>45B0B5C8-5B0B-4845-0B5C-45B0B5C845B0</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Transmission\Default">
+        <UniqueIdentifier>1A5DE895-A5DE-451A-DE89-1A5DE8951A5D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="TyreMarks">
+        <UniqueIdentifier>3A0DA683-A0DA-433A-DA68-3A0DA6833A0D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VelocityDamper">
+        <UniqueIdentifier>4C153118-C153-484C-5311-4C1531184C15</UniqueIdentifier>
+        </Filter>
+    <Filter Include="VelocityDamper\Default">
+        <UniqueIdentifier>686165C5-8616-4568-165C-686165C56861</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Wheel">
+        <UniqueIdentifier>654E9E60-54E9-4065-E9E6-654E9E60654E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="WheelCollide">
+        <UniqueIdentifier>374B9043-74B9-4337-B904-374B9043374B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="WheelCollide\LinearCast">
+        <UniqueIdentifier>7B18EBF6-B18E-467B-8EBF-7B18EBF67B18</UniqueIdentifier>
+        </Filter>
+    <Filter Include="WheelCollide\RayCast">
+        <UniqueIdentifier>1DFBCCBC-DFBC-4C1D-BCCB-1DFBCCBC1DFB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="WheelCollide\RejectChassisListener">
+        <UniqueIdentifier>6B017154-B017-446B-1715-6B0171546B01</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_Auto">
+        <UniqueIdentifier>32F74ED1-2F74-4132-74ED-32F74ED132F7</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_Auto\HABinding">
+        <UniqueIdentifier>339AE743-39AE-4333-AE74-339AE743339A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_Auto\Types">
+        <UniqueIdentifier>1D6A378E-D6A3-4E1D-A378-1D6A378E1D6A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="_ExtraPreBuildIncludes">
+        <UniqueIdentifier>2696D3B1-696D-4126-6D3B-2696D3B12696</UniqueIdentifier>
+        </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AeroDynamics\Default\hkpVehicleDefaultAerodynamics.cpp">
+        <Filter>AeroDynamics\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="AeroDynamics\Default\hkpVehicleDefaultAerodynamics.h">
+        <Filter>AeroDynamics\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="AeroDynamics\hkpVehicleAerodynamics.h">
+        <Filter>AeroDynamics</Filter>
+        </ClInclude>
+    <ClCompile Include="Brake\Default\hkpVehicleDefaultBrake.cpp">
+        <Filter>Brake\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="Brake\Default\hkpVehicleDefaultBrake.h">
+        <Filter>Brake\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="Brake\hkpVehicleBrake.h">
+        <Filter>Brake</Filter>
+        </ClInclude>
+    <ClCompile Include="Camera\hkp1dAngularFollowCam.cpp">
+        <Filter>Camera</Filter>
+        </ClCompile>
+    <ClInclude Include="Camera\hkp1dAngularFollowCam.h">
+        <Filter>Camera</Filter>
+        </ClInclude>
+    <ClInclude Include="Camera\hkp1dAngularFollowCamCinfo.h">
+        <Filter>Camera</Filter>
+        </ClInclude>
+    <ClCompile Include="DriverInput\Default\hkpVehicleDefaultAnalogDriverInput.cpp">
+        <Filter>DriverInput\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="DriverInput\Default\hkpVehicleDefaultAnalogDriverInput.h">
+        <Filter>DriverInput\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="DriverInput\hkpVehicleDriverInput.h">
+        <Filter>DriverInput</Filter>
+        </ClInclude>
+    <ClCompile Include="Engine\Default\hkpVehicleDefaultEngine.cpp">
+        <Filter>Engine\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="Engine\Default\hkpVehicleDefaultEngine.h">
+        <Filter>Engine\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="Engine\hkpVehicleEngine.h">
+        <Filter>Engine</Filter>
+        </ClInclude>
+    <ClCompile Include="Manager\LinearCastBatchingManager\hkpVehicleLinearCastBatchingManager.cpp">
+        <Filter>Manager\LinearCastBatchingManager</Filter>
+        </ClCompile>
+    <ClInclude Include="Manager\LinearCastBatchingManager\hkpVehicleLinearCastBatchingManager.h">
+        <Filter>Manager\LinearCastBatchingManager</Filter>
+        </ClInclude>
+    <ClCompile Include="Manager\MultithreadedVehicle\hkpMultithreadedVehicleManager.cpp">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </ClCompile>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpMultithreadedVehicleManager.h">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </ClInclude>
+    <ClCompile Include="Manager\MultithreadedVehicle\hkpVehicleIntegrateJob.cpp">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </ClCompile>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleIntegrateJob.h">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </ClInclude>
+    <ClCompile Include="Manager\MultithreadedVehicle\hkpVehicleJobQueueUtils.cpp">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </ClCompile>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleJobQueueUtils.h">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </ClInclude>
+    <ClCompile Include="Manager\MultithreadedVehicle\hkpVehicleJobs.cpp">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </ClCompile>
+    <ClInclude Include="Manager\MultithreadedVehicle\hkpVehicleJobs.h">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </ClInclude>
+    <None Include="Manager\MultithreadedVehicle\hkpVehicleJobs.inl">
+        <Filter>Manager\MultithreadedVehicle</Filter>
+        </None>
+    <ClCompile Include="Manager\RayCastBatchingManager\hkpVehicleRayCastBatchingManager.cpp">
+        <Filter>Manager\RayCastBatchingManager</Filter>
+        </ClCompile>
+    <ClInclude Include="Manager\RayCastBatchingManager\hkpVehicleRayCastBatchingManager.h">
+        <Filter>Manager\RayCastBatchingManager</Filter>
+        </ClInclude>
+    <ClCompile Include="Manager\hkpVehicleCastBatchingManager.cpp">
+        <Filter>Manager</Filter>
+        </ClCompile>
+    <ClInclude Include="Manager\hkpVehicleCastBatchingManager.h">
+        <Filter>Manager</Filter>
+        </ClInclude>
+    <ClCompile Include="Manager\hkpVehicleManager.cpp">
+        <Filter>Manager</Filter>
+        </ClCompile>
+    <ClInclude Include="Manager\hkpVehicleManager.h">
+        <Filter>Manager</Filter>
+        </ClInclude>
+    <None Include="Manager\hkpVehicleManager.inl">
+        <Filter>Manager</Filter>
+        </None>
+    <ClCompile Include="Simulation\Default\hkpVehicleDefaultSimulation.cpp">
+        <Filter>Simulation\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="Simulation\Default\hkpVehicleDefaultSimulation.h">
+        <Filter>Simulation\Default</Filter>
+        </ClInclude>
+    <ClCompile Include="Simulation\PerWheel\hkpVehiclePerWheelSimulation.cpp">
+        <Filter>Simulation\PerWheel</Filter>
+        </ClCompile>
+    <ClInclude Include="Simulation\PerWheel\hkpVehiclePerWheelSimulation.h">
+        <Filter>Simulation\PerWheel</Filter>
+        </ClInclude>
+    <ClInclude Include="Simulation\hkpVehicleSimulation.h">
+        <Filter>Simulation</Filter>
+        </ClInclude>
+    <ClCompile Include="Steering\Ackerman\hkpVehicleSteeringAckerman.cpp">
+        <Filter>Steering\Ackerman</Filter>
+        </ClCompile>
+    <ClInclude Include="Steering\Ackerman\hkpVehicleSteeringAckerman.h">
+        <Filter>Steering\Ackerman</Filter>
+        </ClInclude>
+    <ClCompile Include="Steering\Default\hkpVehicleDefaultSteering.cpp">
+        <Filter>Steering\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="Steering\Default\hkpVehicleDefaultSteering.h">
+        <Filter>Steering\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="Steering\hkpVehicleSteering.h">
+        <Filter>Steering</Filter>
+        </ClInclude>
+    <ClCompile Include="Suspension\Default\hkpVehicleDefaultSuspension.cpp">
+        <Filter>Suspension\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="Suspension\Default\hkpVehicleDefaultSuspension.h">
+        <Filter>Suspension\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="Suspension\hkpVehicleSuspension.h">
+        <Filter>Suspension</Filter>
+        </ClInclude>
+    <ClCompile Include="Transmission\Default\hkpVehicleDefaultTransmission.cpp">
+        <Filter>Transmission\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="Transmission\Default\hkpVehicleDefaultTransmission.h">
+        <Filter>Transmission\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="Transmission\hkpVehicleTransmission.h">
+        <Filter>Transmission</Filter>
+        </ClInclude>
+    <ClCompile Include="TyreMarks\hkpTyremarksInfo.cpp">
+        <Filter>TyreMarks</Filter>
+        </ClCompile>
+    <ClInclude Include="TyreMarks\hkpTyremarksInfo.h">
+        <Filter>TyreMarks</Filter>
+        </ClInclude>
+    <ClCompile Include="VelocityDamper\Default\hkpVehicleDefaultVelocityDamper.cpp">
+        <Filter>VelocityDamper\Default</Filter>
+        </ClCompile>
+    <ClInclude Include="VelocityDamper\Default\hkpVehicleDefaultVelocityDamper.h">
+        <Filter>VelocityDamper\Default</Filter>
+        </ClInclude>
+    <ClInclude Include="VelocityDamper\hkpVehicleVelocityDamper.h">
+        <Filter>VelocityDamper</Filter>
+        </ClInclude>
+    <ClCompile Include="WheelCollide\LinearCast\hkpVehicleLinearCastWheelCollide.cpp">
+        <Filter>WheelCollide\LinearCast</Filter>
+        </ClCompile>
+    <ClInclude Include="WheelCollide\LinearCast\hkpVehicleLinearCastWheelCollide.h">
+        <Filter>WheelCollide\LinearCast</Filter>
+        </ClInclude>
+    <ClCompile Include="WheelCollide\RayCast\hkpVehicleRayCastWheelCollide.cpp">
+        <Filter>WheelCollide\RayCast</Filter>
+        </ClCompile>
+    <ClInclude Include="WheelCollide\RayCast\hkpVehicleRayCastWheelCollide.h">
+        <Filter>WheelCollide\RayCast</Filter>
+        </ClInclude>
+    <ClCompile Include="WheelCollide\RejectChassisListener\hkpRejectChassisListener.cpp">
+        <Filter>WheelCollide\RejectChassisListener</Filter>
+        </ClCompile>
+    <ClInclude Include="WheelCollide\RejectChassisListener\hkpRejectChassisListener.h">
+        <Filter>WheelCollide\RejectChassisListener</Filter>
+        </ClInclude>
+    <ClInclude Include="WheelCollide\hkpVehicleWheelCollide.h">
+        <Filter>WheelCollide</Filter>
+        </ClInclude>
+    <ClCompile Include="Wheel\hkpLinearCastWheel.cpp">
+        <Filter>Wheel</Filter>
+        </ClCompile>
+    <ClInclude Include="Wheel\hkpLinearCastWheel.h">
+        <Filter>Wheel</Filter>
+        </ClInclude>
+    <ClCompile Include="Wheel\hkpRaycastWheel.cpp">
+        <Filter>Wheel</Filter>
+        </ClCompile>
+    <ClInclude Include="Wheel\hkpRaycastWheel.h">
+        <Filter>Wheel</Filter>
+        </ClInclude>
+    <ClCompile Include="Wheel\hkpWheel.cpp">
+        <Filter>Wheel</Filter>
+        </ClCompile>
+    <ClInclude Include="Wheel\hkpWheel.h">
+        <Filter>Wheel</Filter>
+        </ClInclude>
+    <None Include="_Auto\HABinding\hkpVehicle_HABinding.cxx">
+        <Filter>_Auto\HABinding</Filter>
+        </None>
+    <Compile Include="_Auto\HABinding\hkpVehicle_HABinding.hxx">
+        <DeploymentContent>False</DeploymentContent>
+        <Filter>_Auto\HABinding</Filter>
+        </Compile>
+    <None Include="_Auto\Types\hkpMultithreadedVehicleManager_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpRejectChassisListener_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpTyremarksInfo_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleAerodynamics_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleBrake_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleCastBatchingManager_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleData_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultAerodynamics_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultAnalogDriverInput_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultBrake_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultEngine_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultSimulation_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultSteering_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultSuspension_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultTransmission_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDefaultVelocityDamper_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleDriverInput_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleEngine_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleInstance_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleLinearCastBatchingManager_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleLinearCastWheelCollide_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleManager_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehiclePerWheelSimulation_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleRayCastBatchingManager_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleRayCastWheelCollide_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleSimulation_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleSteeringAckerman_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleSteering_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleSuspension_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleTransmission_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleVelocityDamper_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\Types\hkpVehicleWheelCollide_Types.cxx">
+        <Filter>_Auto\Types</Filter>
+        </None>
+    <None Include="_Auto\hkpVehicleClassList.cxx">
+        <Filter>_Auto</Filter>
+        </None>
+    <ClCompile Include="_Auto\hkpVehicle_IncludeAllTypes.cpp">
+        <Filter>_Auto</Filter>
+        </ClCompile>
+    <None Include="_Auto\hkpVehicle_IncludeAllTypes.cxx">
+        <Filter>_Auto</Filter>
+        </None>
+    <ClCompile Include="_Auto\hkpVehicle_Tracker.cpp">
+        <Filter>_Auto</Filter>
+        </ClCompile>
+    <None Include="_Auto\hkpVehicle_Tracker.cxx">
+        <Filter>_Auto</Filter>
+        </None>
+    <ClInclude Include="_ExtraPreBuildIncludes\hkpVehicleExtraIncludes.h">
+        <Filter>_ExtraPreBuildIncludes</Filter>
+        </ClInclude>
+    <ClCompile Include="hkpVehicle.cpp">
+        <Filter></Filter>
+        </ClCompile>
+    <ClInclude Include="hkpVehicle.h">
+        <Filter></Filter>
+        </ClInclude>
+    <ClCompile Include="hkpVehicleData.cpp">
+        <Filter></Filter>
+        </ClCompile>
+    <ClInclude Include="hkpVehicleData.h">
+        <Filter></Filter>
+        </ClInclude>
+    <ClCompile Include="hkpVehicleInstance.cpp">
+        <Filter></Filter>
+        </ClCompile>
+    <ClInclude Include="hkpVehicleInstance.h">
+        <Filter></Filter>
+        </ClInclude>
+    <None Include="hkpVehicleInstance.inl">
+        <Filter></Filter>
+        </None>
+  </ItemGroup>
+</Project>

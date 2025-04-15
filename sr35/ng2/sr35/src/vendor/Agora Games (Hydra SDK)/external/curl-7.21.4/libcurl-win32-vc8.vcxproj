@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Dynamic|Win32">
+      <Configuration>Debug Dynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Dynamic|x64">
+      <Configuration>Debug Dynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Static|Win32">
+      <Configuration>Debug Static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Static|x64">
+      <Configuration>Debug Static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Dynamic|Win32">
+      <Configuration>Release Dynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Dynamic|x64">
+      <Configuration>Release Dynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Static|Win32">
+      <Configuration>Release Static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Static|x64">
+      <Configuration>Release Static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>curl-7.21.4</ProjectName>
+    <ProjectGuid>{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|Win32'">../../lib/Win32/Debug Dynamic/\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|x64'">../../lib/Win32/Debug Dynamic/\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|Win32'">../../obj/Win32/Debug Dynamic/libcurlD/\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|x64'">../../obj/Win32/Debug Dynamic/libcurlD/\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">../../lib/Win32/Debug Static/\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'">../../lib/$(Platform)/Debug Static/\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">../../obj/Win32/Debug Static/libcurlD/\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'">../../obj/$(Platform)/Debug Static/libcurlD/\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|Win32'">../../lib/Win32/Release Dynamic/\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|x64'">../../lib/Win32/Release Dynamic/\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|Win32'">../../obj/Win32/Release Dynamic/libcurl/\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|x64'">../../obj/Win32/Release Dynamic/libcurl/\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">../../lib/Win32/Release Static/\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'">../../lib/$(Platform)/Release Static/\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">../../obj/Win32/Release Static/libcurl/\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'">../../obj/$(Platform)/Release Static/libcurl/\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">libcurlD</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'">libcurlD</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|Win32'">libcurlD</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|x64'">libcurlD</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|Win32'">libcurl</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|x64'">libcurl</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">libcurl</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'">libcurl</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;../../external/curl-7.21.4/include;../../external/openssl-1.0.0c/include;../../external/curlAgoraConfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;CURL_STATICLIB;CURL_DISABLE_LDAP;USE_POLARSSL;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>../../obj/Win32/Debug Dynamic/libcurlD/libcurlD.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>../../obj/Win32/Debug Dynamic/libcurlD/</AssemblerListingLocation>
+      <ObjectFileName>../../obj/Win32/Debug Dynamic/libcurlD/</ObjectFileName>
+      <ProgramDataBaseFileName>../../lib/Win32/Debug Dynamic/libcurlD/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/Win32/Debug Dynamic/libcurlD.dll</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Dynamic|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;../../external/curl-7.21.4/include;../../external/openssl-1.0.0c/include;../../external/curlAgoraConfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;CURL_STATICLIB;CURL_DISABLE_LDAP;USE_POLARSSL;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>../../obj/Win32/Debug Dynamic/libcurlD/libcurlD.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>../../obj/Win32/Debug Dynamic/libcurlD/</AssemblerListingLocation>
+      <ObjectFileName>../../obj/Win32/Debug Dynamic/libcurlD/</ObjectFileName>
+      <ProgramDataBaseFileName>../../lib/Win32/Debug Dynamic/libcurlD/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/Win32/Debug Dynamic/libcurlD.dll</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;../../external/curl-7.21.4/include;../../../openssl-1.0.0c/include;../../external/curlAgoraConfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;CURL_STATICLIB;CURL_DISABLE_LDAP;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>../../obj/Win32/Debug Static/libcurlD/libcurlD.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>../../obj/Win32/Debug Static/libcurlD/</AssemblerListingLocation>
+      <ObjectFileName>../../obj/Win32/Debug Static/libcurlD/</ObjectFileName>
+      <ProgramDataBaseFileName>../../lib/Win32/Debug Static/libcurlD/</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/Win32/Debug Static/libcurlD.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;../../external/curl-7.21.4/include;../../../openssl-1.0.0c/include;../../external/curlAgoraConfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;CURL_STATICLIB;CURL_DISABLE_LDAP;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>../../obj/$(Platform)/Debug Static/libcurlD/libcurlD.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>../../obj/$(Platform)/Debug Static/libcurlD/</AssemblerListingLocation>
+      <ObjectFileName>../../obj/$(Platform)/Debug Static/libcurlD/</ObjectFileName>
+      <ProgramDataBaseFileName>../../lib/$(Platform)/Debug Static/libcurlD/</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4127;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/$(Platform)/Debug Static/libcurlD.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;../../external/curl-7.21.4/include;../../external/openssl-1.0.0c/include;../../external/curlAgoraConfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;_LIB;CURL_STATICLIB;CURL_DISABLE_LDAP;USE_POLARSSL;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>../../obj/Win32/Release Dynamic/libcurl/libcurl.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>../../obj/Win32/Release Dynamic/libcurl/</AssemblerListingLocation>
+      <ObjectFileName>../../obj/Win32/Release Dynamic/libcurl/</ObjectFileName>
+      <ProgramDataBaseFileName>../../lib/Win32/Release Dynamic/libcurl/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/Win32/Release Dynamic/libcurl.dll</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Dynamic|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;../../external/curl-7.21.4/include;../../external/openssl-1.0.0c/include;../../external/curlAgoraConfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;_LIB;CURL_STATICLIB;CURL_DISABLE_LDAP;USE_POLARSSL;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>../../obj/Win32/Release Dynamic/libcurl/libcurl.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>../../obj/Win32/Release Dynamic/libcurl/</AssemblerListingLocation>
+      <ObjectFileName>../../obj/Win32/Release Dynamic/libcurl/</ObjectFileName>
+      <ProgramDataBaseFileName>../../lib/Win32/Release Dynamic/libcurl/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/Win32/Release Dynamic/libcurl.dll</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;../../external/curl-7.21.4/include;../../external/openssl-1.0.0c/include;../../external/curlAgoraConfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;_LIB;CURL_STATICLIB;CURL_DISABLE_LDAP;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>../../obj/Win32/Release Static/libcurl/libcurl.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>../../obj/Win32/Release Static/libcurl/</AssemblerListingLocation>
+      <ObjectFileName>../../obj/Win32/Release Static/libcurl/</ObjectFileName>
+      <ProgramDataBaseFileName>../../lib/Win32/Release Static/libcurl/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/Win32/Release Static/libcurl.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)../;../../external/curl-7.21.4/include;../../external/openssl-1.0.0c/include;../../external/curlAgoraConfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;_LIB;CURL_STATICLIB;CURL_DISABLE_LDAP;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>../../obj/$(Platform)/Release Static/libcurl/libcurl.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>../../obj/$(Platform)/Release Static/libcurl/</AssemblerListingLocation>
+      <ObjectFileName>../../obj/$(Platform)/Release Static/libcurl/</ObjectFileName>
+      <ProgramDataBaseFileName>../../lib/$(Platform)/Release Static/libcurl/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4127;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/$(Platform)/Release Static/libcurl.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\base64.c" />
+    <ClCompile Include="lib\connect.c" />
+    <ClCompile Include="lib\content_encoding.c" />
+    <ClCompile Include="lib\cookie.c" />
+    <ClCompile Include="lib\curl_addrinfo.c" />
+    <ClCompile Include="lib\curl_fnmatch.c" />
+    <ClCompile Include="lib\curl_gethostname.c" />
+    <ClCompile Include="lib\curl_memrchr.c" />
+    <ClCompile Include="lib\curl_rand.c" />
+    <ClCompile Include="lib\curl_rtmp.c" />
+    <ClCompile Include="lib\curl_sspi.c" />
+    <ClCompile Include="lib\curl_threads.c" />
+    <ClCompile Include="lib\dict.c" />
+    <ClCompile Include="lib\easy.c" />
+    <ClCompile Include="lib\escape.c" />
+    <ClCompile Include="lib\file.c" />
+    <ClCompile Include="lib\fileinfo.c" />
+    <ClCompile Include="lib\formdata.c" />
+    <ClCompile Include="lib\ftp.c" />
+    <ClCompile Include="lib\ftplistparser.c" />
+    <ClCompile Include="lib\getenv.c" />
+    <ClCompile Include="lib\getinfo.c" />
+    <ClCompile Include="lib\gopher.c" />
+    <ClCompile Include="lib\gtls.c" />
+    <ClCompile Include="lib\hash.c" />
+    <ClCompile Include="lib\hmac.c" />
+    <ClCompile Include="lib\hostares.c" />
+    <ClCompile Include="lib\hostasyn.c" />
+    <ClCompile Include="lib\hostip.c" />
+    <ClCompile Include="lib\hostip4.c" />
+    <ClCompile Include="lib\hostip6.c" />
+    <ClCompile Include="lib\hostsyn.c" />
+    <ClCompile Include="lib\hostthre.c" />
+    <ClCompile Include="lib\http.c" />
+    <ClCompile Include="lib\http_chunks.c" />
+    <ClCompile Include="lib\http_digest.c" />
+    <ClCompile Include="lib\http_negotiate.c" />
+    <ClCompile Include="lib\http_ntlm.c" />
+    <ClCompile Include="lib\if2ip.c" />
+    <ClCompile Include="lib\imap.c" />
+    <ClCompile Include="lib\inet_ntop.c" />
+    <ClCompile Include="lib\inet_pton.c" />
+    <ClCompile Include="lib\krb4.c" />
+    <ClCompile Include="lib\krb5.c" />
+    <ClCompile Include="lib\ldap.c" />
+    <ClCompile Include="lib\llist.c" />
+    <ClCompile Include="lib\md4.c" />
+    <ClCompile Include="lib\md5.c" />
+    <ClCompile Include="lib\memdebug.c" />
+    <ClCompile Include="lib\mprintf.c" />
+    <ClCompile Include="lib\multi.c" />
+    <ClCompile Include="lib\netrc.c" />
+    <ClCompile Include="lib\nonblock.c" />
+    <ClCompile Include="lib\nss.c" />
+    <ClCompile Include="lib\nwlib.c" />
+    <ClCompile Include="lib\nwos.c" />
+    <ClCompile Include="lib\openldap.c" />
+    <ClCompile Include="lib\parsedate.c" />
+    <ClCompile Include="lib\pingpong.c" />
+    <ClCompile Include="lib\polarssl.c" />
+    <ClCompile Include="lib\pop3.c" />
+    <ClCompile Include="lib\progress.c" />
+    <ClCompile Include="lib\qssl.c" />
+    <ClCompile Include="lib\rawstr.c" />
+    <ClCompile Include="lib\rtsp.c" />
+    <ClCompile Include="lib\security.c" />
+    <ClCompile Include="lib\select.c" />
+    <ClCompile Include="lib\sendf.c" />
+    <ClCompile Include="lib\share.c" />
+    <ClCompile Include="lib\slist.c" />
+    <ClCompile Include="lib\smtp.c" />
+    <ClCompile Include="lib\socks.c" />
+    <ClCompile Include="lib\socks_gssapi.c" />
+    <ClCompile Include="lib\socks_sspi.c" />
+    <ClCompile Include="lib\speedcheck.c" />
+    <ClCompile Include="lib\splay.c" />
+    <ClCompile Include="lib\ssh.c" />
+    <ClCompile Include="lib\sslgen.c" />
+    <ClCompile Include="lib\ssluse.c" />
+    <ClCompile Include="lib\strdup.c" />
+    <ClCompile Include="lib\strequal.c" />
+    <ClCompile Include="lib\strerror.c" />
+    <ClCompile Include="lib\strtok.c" />
+    <ClCompile Include="lib\strtoofft.c" />
+    <ClCompile Include="lib\telnet.c" />
+    <ClCompile Include="lib\tftp.c" />
+    <ClCompile Include="lib\timeval.c" />
+    <ClCompile Include="lib\transfer.c" />
+    <ClCompile Include="lib\url.c" />
+    <ClCompile Include="lib\version.c" />
+    <ClCompile Include="lib\warnless.c" />
+    <ClCompile Include="lib\wildcard.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\arpa_telnet.h" />
+    <ClInclude Include="lib\config-win32.h" />
+    <ClInclude Include="lib\connect.h" />
+    <ClInclude Include="lib\content_encoding.h" />
+    <ClInclude Include="lib\cookie.h" />
+    <ClInclude Include="lib\curl_addrinfo.h" />
+    <ClInclude Include="lib\curl_base64.h" />
+    <ClInclude Include="lib\curl_fnmatch.h" />
+    <ClInclude Include="lib\curl_gethostname.h" />
+    <ClInclude Include="lib\curl_hmac.h" />
+    <ClInclude Include="lib\curl_ldap.h" />
+    <ClInclude Include="lib\curl_md4.h" />
+    <ClInclude Include="lib\curl_md5.h" />
+    <ClInclude Include="lib\curl_memory.h" />
+    <ClInclude Include="lib\curl_memrchr.h" />
+    <ClInclude Include="lib\curl_rand.h" />
+    <ClInclude Include="lib\curl_rtmp.h" />
+    <ClInclude Include="lib\curl_sspi.h" />
+    <ClInclude Include="lib\curl_threads.h" />
+    <ClInclude Include="lib\curlx.h" />
+    <ClInclude Include="lib\dict.h" />
+    <ClInclude Include="lib\easyif.h" />
+    <ClInclude Include="lib\escape.h" />
+    <ClInclude Include="lib\file.h" />
+    <ClInclude Include="lib\fileinfo.h" />
+    <ClInclude Include="lib\formdata.h" />
+    <ClInclude Include="lib\ftp.h" />
+    <ClInclude Include="lib\ftplistparser.h" />
+    <ClInclude Include="lib\getinfo.h" />
+    <ClInclude Include="lib\gtls.h" />
+    <ClInclude Include="lib\hash.h" />
+    <ClInclude Include="lib\hostip.h" />
+    <ClInclude Include="lib\http.h" />
+    <ClInclude Include="lib\http_chunks.h" />
+    <ClInclude Include="lib\http_digest.h" />
+    <ClInclude Include="lib\http_negotiate.h" />
+    <ClInclude Include="lib\http_ntlm.h" />
+    <ClInclude Include="lib\if2ip.h" />
+    <ClInclude Include="lib\imap.h" />
+    <ClInclude Include="lib\inet_ntop.h" />
+    <ClInclude Include="lib\inet_pton.h" />
+    <ClInclude Include="lib\krb4.h" />
+    <ClInclude Include="lib\llist.h" />
+    <ClInclude Include="lib\memdebug.h" />
+    <ClInclude Include="lib\multiif.h" />
+    <ClInclude Include="lib\netrc.h" />
+    <ClInclude Include="lib\nonblock.h" />
+    <ClInclude Include="lib\nssg.h" />
+    <ClInclude Include="lib\parsedate.h" />
+    <ClInclude Include="lib\pingpong.h" />
+    <ClInclude Include="lib\polarssl.h" />
+    <ClInclude Include="lib\pop3.h" />
+    <ClInclude Include="lib\progress.h" />
+    <ClInclude Include="lib\qssl.h" />
+    <ClInclude Include="lib\rawstr.h" />
+    <ClInclude Include="lib\rtsp.h" />
+    <ClInclude Include="lib\select.h" />
+    <ClInclude Include="lib\sendf.h" />
+    <ClInclude Include="lib\setup.h" />
+    <ClInclude Include="lib\setup_once.h" />
+    <ClInclude Include="lib\share.h" />
+    <ClInclude Include="lib\slist.h" />
+    <ClInclude Include="lib\smtp.h" />
+    <ClInclude Include="lib\sockaddr.h" />
+    <ClInclude Include="lib\socks.h" />
+    <ClInclude Include="lib\speedcheck.h" />
+    <ClInclude Include="lib\splay.h" />
+    <ClInclude Include="lib\ssh.h" />
+    <ClInclude Include="lib\sslgen.h" />
+    <ClInclude Include="lib\ssluse.h" />
+    <ClInclude Include="lib\strdup.h" />
+    <ClInclude Include="lib\strequal.h" />
+    <ClInclude Include="lib\strerror.h" />
+    <ClInclude Include="lib\strtok.h" />
+    <ClInclude Include="lib\strtoofft.h" />
+    <ClInclude Include="lib\telnet.h" />
+    <ClInclude Include="lib\tftp.h" />
+    <ClInclude Include="lib\timeval.h" />
+    <ClInclude Include="lib\transfer.h" />
+    <ClInclude Include="lib\url.h" />
+    <ClInclude Include="lib\urldata.h" />
+    <ClInclude Include="lib\warnless.h" />
+    <ClInclude Include="lib\wildcard.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

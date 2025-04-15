@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Wwise">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audiolib.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_buffer_manager.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_debug.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_default_io_blocking.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_fov.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_game_callbacks.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_packfile.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_pch.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_persona_slot_allocator.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_play.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_prefetch.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_sound_input.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_soundbank_slot_allocator.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_soundbanks.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_soundframe.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_stream_manager.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_thread.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_voice.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_wwise.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Wwise\samples\SoundEngine\Common\AkFileLocationBase.cpp">
+      <Filter>Wwise</Filter>
+    </ClCompile>
+    <ClCompile Include="Wwise\samples\SoundEngine\Common\AkFilePackage.cpp">
+      <Filter>Wwise</Filter>
+    </ClCompile>
+    <ClCompile Include="Wwise\samples\SoundEngine\Common\AkFilePackageLUT.cpp">
+      <Filter>Wwise</Filter>
+    </ClCompile>
+    <ClCompile Include="shape_calc.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_emitter_shared.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audiolib_compacting_cache_pool.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audiolib_api.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_buffer_manager.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_default_io_blocking.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_game_callbacks.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_internal.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_pch.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_persona_slot_allocator.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_shared_header.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_soundbank_slot_allocator.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_soundbanks.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_soundframe.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_wwise.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="shape_calc.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_emitter_shared.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audiolib_compacting_cache_pool.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1189,7 +1189,6 @@ multi_session_op_status multi_session_op_create::pcgp_create_start()
 	Live_user_added = false;
 	Live_host_changed = false;
 
-
 	pcgp_state = PCGP_CREATE_STATE_CREATING;
 
 	return MULTI_SOS_IN_PROGRESS;

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\anim_catalog">
+      <UniqueIdentifier>{3a3ef0c1-ce50-4771-b46b-6e1505bac5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\anim_core">
+      <UniqueIdentifier>{fc8244bc-87b6-47af-8438-433d842fa392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\anim_manager">
+      <UniqueIdentifier>{cac2bd73-1f3b-47e9-a1ac-73611bd59325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\anim_network">
+      <UniqueIdentifier>{5aa7981f-9672-49ae-98c0-bf1f42f81611}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_catalog\anim_catalog.cpp">
+      <Filter>Source Files\anim_catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_catalog\animation_tag.cpp">
+      <Filter>Source Files\anim_catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_core\anim_core.cpp">
+      <Filter>Source Files\anim_core</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_core\core_animation.cpp">
+      <Filter>Source Files\anim_core</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_core\core_base.cpp">
+      <Filter>Source Files\anim_core</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_core\core_instance.cpp">
+      <Filter>Source Files\anim_core</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_core\core_instance_manager.cpp">
+      <Filter>Source Files\anim_core</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_core\core_spinebend.cpp">
+      <Filter>Source Files\anim_core</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_manager\anim.cpp">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_manager\anim_group.cpp">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_manager\anim_manager.cpp">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_manager\attachment_manipulation.cpp">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_manager\vanim.cpp">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_manager\vanim_error_correction.cpp">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_network\anim_network.cpp">
+      <Filter>Source Files\anim_network</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_network\anim_network_info.cpp">
+      <Filter>Source Files\anim_network</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_network\control_filter.cpp">
+      <Filter>Source Files\anim_network</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_network\control_parameter.cpp">
+      <Filter>Source Files\anim_network</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_network\parameter.cpp">
+      <Filter>Source Files\anim_network</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_network\parameter_interpreter.cpp">
+      <Filter>Source Files\anim_network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="animlib.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_catalog\anim_catalog.h">
+      <Filter>Source Files\anim_catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_catalog\animation_tag.h">
+      <Filter>Source Files\anim_catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_catalog\catalog_enums.h">
+      <Filter>Source Files\anim_catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_core\anim_core.h">
+      <Filter>Source Files\anim_core</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_core\core_internal.h">
+      <Filter>Source Files\anim_core</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_core\core_spinebend.h">
+      <Filter>Source Files\anim_core</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_core\core_types.h">
+      <Filter>Source Files\anim_core</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_manager\anim.h">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_manager\anim_enums.h">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_manager\anim_group.h">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_manager\anim_manager.h">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_manager\attachment_manipulation.h">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_manager\vanim.h">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_manager\vanim_error_correction.h">
+      <Filter>Source Files\anim_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_network\anim_network.h">
+      <Filter>Source Files\anim_network</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_network\anim_network_info.h">
+      <Filter>Source Files\anim_network</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_network\control_filter.h">
+      <Filter>Source Files\anim_network</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_network\control_parameter.h">
+      <Filter>Source Files\anim_network</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_network\parameter.h">
+      <Filter>Source Files\anim_network</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_network\parameter_interpreter.h">
+      <Filter>Source Files\anim_network</Filter>
+    </ClInclude>
+    <ClInclude Include="animlib_export.h" />
+  </ItemGroup>
+</Project>

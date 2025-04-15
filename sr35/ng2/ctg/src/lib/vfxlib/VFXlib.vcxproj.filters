@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="particle_system">
+      <UniqueIdentifier>{8b169eb1-48fd-4a9e-b82c-3c89d3e6df48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\manager">
+      <UniqueIdentifier>{faca4e79-161c-40c7-8a2e-f3d407876beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\emitters">
+      <UniqueIdentifier>{37f8c06e-cab9-4ea8-8d00-f93bee6baa0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\emitters\point">
+      <UniqueIdentifier>{8f94f97b-1875-4b08-bbd3-1f2cf7fea67a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\emitters\plane">
+      <UniqueIdentifier>{c042a753-25c1-446a-b777-2a6dca34d61b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\emitters\line">
+      <UniqueIdentifier>{6c9d4d1e-e723-42d6-b64d-62de6325f31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\emitters\sphere">
+      <UniqueIdentifier>{87a498b5-b7d8-49fd-abd1-a4cfba5a9471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\emitters\box">
+      <UniqueIdentifier>{7f75cb23-b0b3-4855-90df-4ccab1d44ed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\emitters\cylinder">
+      <UniqueIdentifier>{95f66d18-6b80-4c47-85e8-06b247367c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\renderer">
+      <UniqueIdentifier>{ec68a56c-4f9e-4233-bc13-0fbf889cf237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters">
+      <UniqueIdentifier>{fe4f2614-3da5-4611-a5c4-8293fa070cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\deflectors">
+      <UniqueIdentifier>{05e69a91-0490-4685-8aeb-aba560144d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\interactors">
+      <UniqueIdentifier>{4d7252c8-33bf-4204-97aa-e7988ab392b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\interactors\gravity">
+      <UniqueIdentifier>{1d33872a-118a-4f77-8e0b-122811035457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\interactors\wind">
+      <UniqueIdentifier>{1397fbcc-b669-4aca-91a8-269dc4088626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\interactors\vortex">
+      <UniqueIdentifier>{b9cdfa6f-b72b-4686-bfd5-b12dd7e41c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\interactors\atmosphere">
+      <UniqueIdentifier>{f4218774-f33f-4ee3-a561-737c3bc05d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\interactors\magnet">
+      <UniqueIdentifier>{147bb3dc-a250-485c-bf6d-b736f9981953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\interactors\turbulence">
+      <UniqueIdentifier>{891963b6-164c-4064-8290-73f8a1a86908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\filters\interactors\orientor">
+      <UniqueIdentifier>{20d36f8b-263f-4076-ad93-6da0c23f20a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\serialization">
+      <UniqueIdentifier>{0a263e53-6616-49d1-8790-6563f1426c9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particle_system\particle">
+      <UniqueIdentifier>{7d92a581-4112-4f98-8891-258b6207d225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX">
+      <UniqueIdentifier>{9c1e9749-6a31-4af4-9eb8-eb25a66f5826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="precompiled headers">
+      <UniqueIdentifier>{bbb9a309-cf5d-481a-88a1-6ca9590c0e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="effect">
+      <UniqueIdentifier>{951024ed-cfdf-4e50-91f4-52c0bc0bfaaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="effect\template">
+      <UniqueIdentifier>{5da549a5-c0f0-4385-9ea2-694ce6fa958a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="effect\renderable filter">
+      <UniqueIdentifier>{006697f1-9656-4a21-8e62-09b5ea20b9dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="animation">
+      <UniqueIdentifier>{54f9c981-9900-475d-aca3-ae0ca5f7a1b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mesh">
+      <UniqueIdentifier>{bb766a15-5d80-4748-a50d-de7c3dbde5d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vfx_particle_system_manager.cpp">
+      <Filter>particle_system\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_emitter.cpp">
+      <Filter>particle_system\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_emitter_instance.cpp">
+      <Filter>particle_system\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_emitter_point.cpp">
+      <Filter>particle_system\emitters\point</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_emitter_plane.cpp">
+      <Filter>particle_system\emitters\plane</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_emitter_line.cpp">
+      <Filter>particle_system\emitters\line</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_emitter_sphere.cpp">
+      <Filter>particle_system\emitters\sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_emitter_box.cpp">
+      <Filter>particle_system\emitters\box</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_emitter_cylinder.cpp">
+      <Filter>particle_system\emitters\cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter.cpp">
+      <Filter>particle_system\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter_instance.cpp">
+      <Filter>particle_system\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter_gravity.cpp">
+      <Filter>particle_system\filters\interactors\gravity</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter_wind.cpp">
+      <Filter>particle_system\filters\interactors\wind</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter_vortex.cpp">
+      <Filter>particle_system\filters\interactors\vortex</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter_atmosphere.cpp">
+      <Filter>particle_system\filters\interactors\atmosphere</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter_magnet.cpp">
+      <Filter>particle_system\filters\interactors\magnet</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter_turbulence.cpp">
+      <Filter>particle_system\filters\interactors\turbulence</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_particle_system_filter_orientor.cpp">
+      <Filter>particle_system\filters\interactors\orientor</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx.cpp">
+      <Filter>VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="precompiled_header.cpp">
+      <Filter>precompiled headers</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_effect.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_effect_expressions.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_effect_manager.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_effect_template.cpp">
+      <Filter>effect\template</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_renderable_filter_instance.cpp">
+      <Filter>effect\renderable filter</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_float_controller.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_quaternion_controller.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_vector_controller.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="vfx_mesh_instance.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vfx_particle_system_manager.h">
+      <Filter>particle_system\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_emitter.h">
+      <Filter>particle_system\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_emitter_instance.h">
+      <Filter>particle_system\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_emitter_point.h">
+      <Filter>particle_system\emitters\point</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_emitter_plane.h">
+      <Filter>particle_system\emitters\plane</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_emitter_line.h">
+      <Filter>particle_system\emitters\line</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_emitter_sphere.h">
+      <Filter>particle_system\emitters\sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_emitter_box.h">
+      <Filter>particle_system\emitters\box</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_emitter_cylinder.h">
+      <Filter>particle_system\emitters\cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_fx.h">
+      <Filter>particle_system\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter.h">
+      <Filter>particle_system\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter_instance.h">
+      <Filter>particle_system\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter_gravity.h">
+      <Filter>particle_system\filters\interactors\gravity</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter_wind.h">
+      <Filter>particle_system\filters\interactors\wind</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter_vortex.h">
+      <Filter>particle_system\filters\interactors\vortex</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter_atmosphere.h">
+      <Filter>particle_system\filters\interactors\atmosphere</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter_magnet.h">
+      <Filter>particle_system\filters\interactors\magnet</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter_turbulence.h">
+      <Filter>particle_system\filters\interactors\turbulence</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle_system_filter_orientor.h">
+      <Filter>particle_system\filters\interactors\orientor</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_particle.h">
+      <Filter>particle_system\particle</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx.h">
+      <Filter>VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_render_category.h">
+      <Filter>VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="vfxlib.h">
+      <Filter>VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="precompiled_header.h">
+      <Filter>precompiled headers</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_effect.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_effect_manager.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_effect_template.h">
+      <Filter>effect\template</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_renderable_filter_instance.h">
+      <Filter>effect\renderable filter</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_animation.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_controller.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_float_controller.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_quaternion_controller.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_vector_controller.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="vfx_mesh_instance.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vfx_particle_system_emitter.inl">
+      <Filter>particle_system\emitters</Filter>
+    </None>
+    <None Include="vfx_particle_system_emitter_instance.inl">
+      <Filter>particle_system\emitters</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>
