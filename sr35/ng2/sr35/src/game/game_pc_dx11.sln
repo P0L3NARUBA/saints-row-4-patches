@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "animlib_pc", "..\..\..\ctg\src\lib\animlib\animlib_pc.vcxproj", "{DB934221-0B7F-49C4-8DE7-E12BFC8C9623}"
 EndProject
@@ -368,7 +368,7 @@ Global
 		{38FD3AEA-B2DF-49EA-BACF-79F4E56060BF}.Release DX11|x86.ActiveCfg = Release Final|Win32
 		{38FD3AEA-B2DF-49EA-BACF-79F4E56060BF}.Release DX11|x86.Build.0 = Release Final|Win32
 		{38FD3AEA-B2DF-49EA-BACF-79F4E56060BF}.Release Final DRM DX11|x64.ActiveCfg = Debug|x64
-		{38FD3AEA-B2DF-49EA-BACF-79F4E56060BF}.Release Final DRM DX11|x64.Build.0 = Release Final|x64
+		{38FD3AEA-B2DF-49EA-BACF-79F4E56060BF}.Release Final DRM DX11|x64.Build.0 = Debug|x64
 		{38FD3AEA-B2DF-49EA-BACF-79F4E56060BF}.Release Final DRM DX11|x86.ActiveCfg = Release Final|Win32
 		{38FD3AEA-B2DF-49EA-BACF-79F4E56060BF}.Release Final DRM DX11|x86.Build.0 = Release Final|Win32
 		{38FD3AEA-B2DF-49EA-BACF-79F4E56060BF}.Release Final DX11|x64.ActiveCfg = Release Final|x64
@@ -428,7 +428,7 @@ Global
 		{2A4D6F50-9A9A-40FC-91D4-EC91E1D0F808}.Release DX11|x86.ActiveCfg = Release DX11|Win32
 		{2A4D6F50-9A9A-40FC-91D4-EC91E1D0F808}.Release DX11|x86.Build.0 = Release DX11|Win32
 		{2A4D6F50-9A9A-40FC-91D4-EC91E1D0F808}.Release Final DRM DX11|x64.ActiveCfg = Debug DX11|x64
-		{2A4D6F50-9A9A-40FC-91D4-EC91E1D0F808}.Release Final DRM DX11|x64.Build.0 = Release Final DX11|x64
+		{2A4D6F50-9A9A-40FC-91D4-EC91E1D0F808}.Release Final DRM DX11|x64.Build.0 = Debug DX11|x64
 		{2A4D6F50-9A9A-40FC-91D4-EC91E1D0F808}.Release Final DRM DX11|x86.ActiveCfg = Release Final DX11|Win32
 		{2A4D6F50-9A9A-40FC-91D4-EC91E1D0F808}.Release Final DRM DX11|x86.Build.0 = Release Final DX11|Win32
 		{2A4D6F50-9A9A-40FC-91D4-EC91E1D0F808}.Release Final DX11|x64.ActiveCfg = Release Final DX11|x64
@@ -488,7 +488,7 @@ Global
 		{F41196FE-BC1A-427C-B71B-5491900EEDC9}.Release DX11|x86.ActiveCfg = Release Outsource|Win32
 		{F41196FE-BC1A-427C-B71B-5491900EEDC9}.Release DX11|x86.Build.0 = Release Outsource|Win32
 		{F41196FE-BC1A-427C-B71B-5491900EEDC9}.Release Final DRM DX11|x64.ActiveCfg = Debug|x64
-		{F41196FE-BC1A-427C-B71B-5491900EEDC9}.Release Final DRM DX11|x64.Build.0 = Release Final|x64
+		{F41196FE-BC1A-427C-B71B-5491900EEDC9}.Release Final DRM DX11|x64.Build.0 = Debug|x64
 		{F41196FE-BC1A-427C-B71B-5491900EEDC9}.Release Final DRM DX11|x86.ActiveCfg = Release Final|Win32
 		{F41196FE-BC1A-427C-B71B-5491900EEDC9}.Release Final DRM DX11|x86.Build.0 = Release Final|Win32
 		{F41196FE-BC1A-427C-B71B-5491900EEDC9}.Release Final DX11|x64.ActiveCfg = Release Final|x64
@@ -785,7 +785,7 @@ Global
 		{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}.Release DX11|x86.ActiveCfg = Release Dynamic|Win32
 		{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}.Release DX11|x86.Build.0 = Release Dynamic|Win32
 		{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}.Release Final DRM DX11|x64.ActiveCfg = Debug Dynamic|x64
-		{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}.Release Final DRM DX11|x64.Build.0 = Release Dynamic|x64
+		{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}.Release Final DRM DX11|x64.Build.0 = Debug Dynamic|x64
 		{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}.Release Final DRM DX11|x86.ActiveCfg = Release Static|Win32
 		{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}.Release Final DRM DX11|x86.Build.0 = Release Static|Win32
 		{F537960E-4FCE-4716-B6A0-4F2A36E87C9F}.Release Final DX11|x64.ActiveCfg = Release Static|x64
@@ -843,7 +843,7 @@ Global
 		{8A9BE442-86E9-4298-8933-C3938E442C28}.Release DX11|x86.ActiveCfg = Release DX11|Win32
 		{8A9BE442-86E9-4298-8933-C3938E442C28}.Release DX11|x86.Build.0 = Release DX11|Win32
 		{8A9BE442-86E9-4298-8933-C3938E442C28}.Release Final DRM DX11|x64.ActiveCfg = Debug DX11|x64
-		{8A9BE442-86E9-4298-8933-C3938E442C28}.Release Final DRM DX11|x64.Build.0 = Release Final DX11|x64
+		{8A9BE442-86E9-4298-8933-C3938E442C28}.Release Final DRM DX11|x64.Build.0 = Debug DX11|x64
 		{8A9BE442-86E9-4298-8933-C3938E442C28}.Release Final DRM DX11|x86.ActiveCfg = Release Final DX11|Win32
 		{8A9BE442-86E9-4298-8933-C3938E442C28}.Release Final DRM DX11|x86.Build.0 = Release Final DX11|Win32
 		{8A9BE442-86E9-4298-8933-C3938E442C28}.Release Final DX11|x64.ActiveCfg = Release Final DX11|x64
@@ -900,7 +900,7 @@ Global
 		{7832D397-F107-4648-9851-EF8D7B1E4A96}.Release DX11|x86.ActiveCfg = Release|Win32
 		{7832D397-F107-4648-9851-EF8D7B1E4A96}.Release DX11|x86.Build.0 = Release|Win32
 		{7832D397-F107-4648-9851-EF8D7B1E4A96}.Release Final DRM DX11|x64.ActiveCfg = Debug|x64
-		{7832D397-F107-4648-9851-EF8D7B1E4A96}.Release Final DRM DX11|x64.Build.0 = Release|x64
+		{7832D397-F107-4648-9851-EF8D7B1E4A96}.Release Final DRM DX11|x64.Build.0 = Debug|x64
 		{7832D397-F107-4648-9851-EF8D7B1E4A96}.Release Final DRM DX11|x86.ActiveCfg = Release|Win32
 		{7832D397-F107-4648-9851-EF8D7B1E4A96}.Release Final DRM DX11|x86.Build.0 = Release|Win32
 		{7832D397-F107-4648-9851-EF8D7B1E4A96}.Release Final DX11|x64.ActiveCfg = Release|x64
@@ -957,7 +957,7 @@ Global
 		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release DX11|x86.ActiveCfg = Release|Win32
 		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release DX11|x86.Build.0 = Release|Win32
 		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release Final DRM DX11|x64.ActiveCfg = Debug|x64
-		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release Final DRM DX11|x64.Build.0 = Release|x64
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release Final DRM DX11|x64.Build.0 = Debug|x64
 		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release Final DRM DX11|x86.ActiveCfg = Release|Win32
 		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release Final DRM DX11|x86.Build.0 = Release|Win32
 		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release Final DX11|x64.ActiveCfg = Release|x64
