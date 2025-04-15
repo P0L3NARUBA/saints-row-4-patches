@@ -9,13 +9,9 @@ Also download the real game from steam and put all the folders to the sr35/ng2/s
 
 
 # Extras
-Visual Studio 2022
+[Visual Studio 2022](https://visualstudio.microsoft.com/tr/vs/)
 - with Desktop C++ Development and C++ Game Development selected as well as Visual C++ MFC for x86 and x64.
 
-<<<<<<< HEAD
-=======
-[Microsoft GDK October 2023 Update 7](https://github.com/microsoft/GDK/archive/refs/tags/October_2023_Update_7.zip)<br>
->>>>>>> 6203400 (Big changes)
 [Vulkan SDK](https://sdk.lunarg.com/sdk/download/1.3.296.0/windows/VulkanSDK-1.3.296.0-Installer.exe)<br>
 [Volition .reg file](/volition.reg)
 
