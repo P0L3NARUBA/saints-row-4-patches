@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Agent">
+        <UniqueIdentifier>B09DB92B-9DB9-409D-92B0-DB92B09DB92B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3">
+        <UniqueIdentifier>4BEBE1CC-BEBE-4C4B-BE1C-4BEBE1CC4BEB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\BoxBox">
+        <UniqueIdentifier>2C0D5227-C0D5-472C-D522-2C0D52272C0D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\BvTree3">
+        <UniqueIdentifier>22DF8DB9-2DF8-4922-F8DB-22DF8DB922DF</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\CapsuleTriangle">
+        <UniqueIdentifier>100A6D2D-00A6-4D10-A6D2-100A6D2D100A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\Collection3">
+        <UniqueIdentifier>67ECD039-7ECD-4967-CD03-67ECD03967EC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\CollectionCollection3">
+        <UniqueIdentifier>ACD00BFA-D00B-4CD0-BFAC-00BFACD00BFA</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\ConvexList3">
+        <UniqueIdentifier>3421369C-4213-4C34-1369-3421369C3421</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\List3">
+        <UniqueIdentifier>65DEB33B-5DEB-4B65-EB33-65DEB33B65DE</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\Machine">
+        <UniqueIdentifier>43157223-3157-4343-5722-431572234315</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\Machine\1n">
+        <UniqueIdentifier>1563E961-563E-4115-3E96-1563E9611563</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\Machine\Midphase">
+        <UniqueIdentifier>759CEAE3-59CE-4375-CEAE-759CEAE3759C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\Machine\Nn">
+        <UniqueIdentifier>11A29ADE-1A29-4E11-29AD-11A29ADE11A2</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\PredGskAgent3">
+        <UniqueIdentifier>3A94339A-A943-4A3A-4339-3A94339A3A94</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent3\PredGskCylinderAgent3">
+        <UniqueIdentifier>5FC1A044-FC1A-445F-1A04-5FC1A0445FC1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Collidable">
+        <UniqueIdentifier>722B512C-22B5-4C72-B512-722B512C722B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\CompoundAgent">
+        <UniqueIdentifier>2AB9ACE2-B9AC-4AB9-CE2A-9ACE2AB9ACE2</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\CompoundAgent\BvTree">
+        <UniqueIdentifier>1C3867D9-C386-491C-867D-1C3867D91C38</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\CompoundAgent\BvTreeStream">
+        <UniqueIdentifier>1FDD3025-FDD3-451F-D302-1FDD30251FDD</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\CompoundAgent\List">
+        <UniqueIdentifier>48DECE7B-8DEC-4B48-ECE7-48DECE7B48DE</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\CompoundAgent\ShapeCollection">
+        <UniqueIdentifier>29ACD581-9ACD-4129-CD58-29ACD58129AC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ContactMgr">
+        <UniqueIdentifier>87DBAD58-DBAD-47DB-D587-BAD587DBAD58</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent">
+        <UniqueIdentifier>52F8476E-2F84-4E52-8476-52F8476E52F8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent\BoxBox">
+        <UniqueIdentifier>7D1B70D9-D1B7-497D-B70D-7D1B70D97D1B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent\CapsuleCapsule">
+        <UniqueIdentifier>3167DAA5-167D-4531-7DAA-3167DAA53167</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent\CapsuleTriangle">
+        <UniqueIdentifier>62381AFD-2381-4D62-81AF-62381AFD6238</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent\Gjk">
+        <UniqueIdentifier>27F86FEC-7F86-4C27-86FE-27F86FEC27F8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent\SphereBox">
+        <UniqueIdentifier>6AAB7232-AAB7-426A-B723-6AAB72326AAB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent\SphereCapsule">
+        <UniqueIdentifier>6CE6A71C-CE6A-4C6C-6A71-6CE6A71C6CE6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent\SphereSphere">
+        <UniqueIdentifier>4D12C427-D12C-474D-2C42-4D12C4274D12</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\ConvexAgent\SphereTriangle">
+        <UniqueIdentifier>2CEE73FA-CEE7-4A2C-E73F-2CEE73FA2CEE</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Deprecated">
+        <UniqueIdentifier>6FFBD7F6-FFBD-466F-BD7F-6FFBD7F66FFB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Deprecated\ConvexList">
+        <UniqueIdentifier>5275CC2C-275C-4C52-5CC2-5275CC2C5275</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Deprecated\MultiSphere">
+        <UniqueIdentifier>7148B172-148B-4271-8B17-7148B1727148</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Deprecated\MultiSphereTriangle">
+        <UniqueIdentifier>780EFAA2-80EF-4278-EFAA-780EFAA2780E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\FullManifoldAgent">
+        <UniqueIdentifier>427461F2-2746-4242-461F-427461F24274</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\HeightFieldAgent">
+        <UniqueIdentifier>53CDE395-CDE3-43CD-3953-DE3953CDE395</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\MiscAgent">
+        <UniqueIdentifier>31AE37C1-1AE3-4131-E37C-31AE37C131AE</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\MiscAgent\Bv">
+        <UniqueIdentifier>2FAC9F6A-FAC9-4A2F-C9F6-2FAC9F6A2FAC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\MiscAgent\MultirayConvex">
+        <UniqueIdentifier>2813F96E-813F-4E28-3F96-2813F96E2813</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\MiscAgent\Phantom">
+        <UniqueIdentifier>2C0FF28C-C0FF-4C2C-FF28-2C0FF28C2C0F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\MiscAgent\Transform">
+        <UniqueIdentifier>529D0297-29D0-4752-D029-529D0297529D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Query">
+        <UniqueIdentifier>5DCB19CC-DCB1-4C5D-B19C-5DCB19CC5DCB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Util">
+        <UniqueIdentifier>14667F1B-4667-4B14-67F1-14667F1B1466</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Util\LinearCast">
+        <UniqueIdentifier>3322DE28-322D-4833-2DE2-3322DE283322</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Util\Null">
+        <UniqueIdentifier>6BE1796B-BE17-4B6B-1796-6BE1796B6BE1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Agent\Util\Symmetric">
+        <UniqueIdentifier>9C54FF49-54FF-4C54-F49C-4FF49C54FF49</UniqueIdentifier>
+        </Filter>
+    <Filter Include="BoxBox">
+        <UniqueIdentifier>220D1F94-20D1-4422-D1F9-220D1F94220D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="BroadPhase">
+        <UniqueIdentifier>7FD09CDD-FD09-4D7F-09CD-7FD09CDD7FD0</UniqueIdentifier>
+        </Filter>
+    <Filter Include="BroadPhase\3AxisSweep">
+        <UniqueIdentifier>2A9200FE-A920-4E2A-200F-2A9200FE2A92</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dispatch">
+        <UniqueIdentifier>49913B92-9913-4249-13B9-49913B924991</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dispatch\Agent3Bridge">
+        <UniqueIdentifier>4BC01224-C012-4BC0-224B-01224BC01224</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dispatch\BroadPhase">
+        <UniqueIdentifier>6FCC4474-FCC4-446F-C447-6FCC44746FCC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Dispatch\ContactMgr">
+        <UniqueIdentifier>3284B1C1-284B-4132-4B1C-3284B1C13284</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External">
+        <UniqueIdentifier>283B594B-83B5-4B28-B594-283B594B283B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External\Tools">
+        <UniqueIdentifier>58A1BCD2-8A1B-4258-1BCD-58A1BCD258A1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External\Tools\PreBuild">
+        <UniqueIdentifier>7D03B0F2-D03B-427D-3B0F-7D03B0F27D03</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External\Tools\PreBuild\bin">
+        <UniqueIdentifier>1EB66A9F-EB66-4F1E-66A9-1EB66A9F1EB6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="External\Tools\PreBuild\bin\windows">
+        <UniqueIdentifier>677C36E6-77C3-4667-C36E-677C36E6677C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Filter">
+        <UniqueIdentifier>21B45750-1B45-4021-4575-21B4575021B4</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Filter\DefaultConvexList">
+        <UniqueIdentifier>49483DB4-9483-4449-83DB-49483DB44948</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Filter\Group">
+        <UniqueIdentifier>623F19A3-23F1-4362-F19A-623F19A3623F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Filter\List">
+        <UniqueIdentifier>5F37A8D7-F37A-475F-7A8D-5F37A8D75F37</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Filter\Null">
+        <UniqueIdentifier>45C44A82-5C44-4245-44A8-45C44A8245C4</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query">
+        <UniqueIdentifier>7CC614F9-CC61-497C-614F-7CC614F97CC6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\CastUtil">
+        <UniqueIdentifier>357B027F-57B0-4F35-B027-357B027F357B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Collector">
+        <UniqueIdentifier>375D0162-75D0-4237-D016-375D0162375D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Collector\BodyPairCollector">
+        <UniqueIdentifier>5E12811F-E128-4F5E-2811-5E12811F5E12</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Collector\PointCollector">
+        <UniqueIdentifier>18B7601E-8B76-4E18-7601-18B7601E18B7</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Collector\RayCollector">
+        <UniqueIdentifier>3F1FEF4E-F1FE-4E3F-FEF4-3F1FEF4E3F1F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Multithreaded">
+        <UniqueIdentifier>52FD853D-2FD8-4D52-D853-52FD853D52FD</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Multithreaded\CollisionQuery">
+        <UniqueIdentifier>642EB356-42EB-4664-EB35-642EB356642E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Multithreaded\CollisionQuery\Cpu">
+        <UniqueIdentifier>3A7B4644-A7B4-443A-B464-3A7B46443A7B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Multithreaded\RayCastQuery">
+        <UniqueIdentifier>7D2FAA27-D2FA-477D-FAA2-7D2FAA277D2F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Multithreaded\RayCastQuery\Cpu">
+        <UniqueIdentifier>7E571E87-E571-477E-71E8-7E571E877E57</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Query\Multithreaded\RayCastQuery\Util">
+        <UniqueIdentifier>17F86130-7F86-4017-8613-17F8613017F8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape">
+        <UniqueIdentifier>7C866D0E-C866-4E7C-66D0-7C866D0E7C86</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound">
+        <UniqueIdentifier>47D0FC50-7D0F-4047-0FC5-47D0FC5047D0</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Collection">
+        <UniqueIdentifier>12310F01-2310-4112-10F0-12310F011231</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Collection\ExtendedMeshShape">
+        <UniqueIdentifier>56F6A796-6F6A-4656-6A79-56F6A79656F6</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Collection\List">
+        <UniqueIdentifier>DE1C1D4D-1C1D-4E1C-D4DE-C1D4DE1C1D4D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Collection\Mesh">
+        <UniqueIdentifier>D7C81E1D-C81E-47C8-E1D7-81E1D7C81E1D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Collection\SimpleMesh">
+        <UniqueIdentifier>28DDAAB5-8DDA-4528-DAAB-28DDAAB528DD</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Collection\StorageExtendedMesh">
+        <UniqueIdentifier>3471EF60-471E-4034-1EF6-3471EF603471</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree">
+        <UniqueIdentifier>7E53EDD9-E53E-497E-3EDD-7E53EDD97E53</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp">
+        <UniqueIdentifier>7F74BEDA-F74B-4A7F-4BED-7F74BEDA7F74</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Builder">
+        <UniqueIdentifier>1ABBD311-ABBD-411A-BD31-1ABBD3111ABB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Builder\Assembler">
+        <UniqueIdentifier>152D845D-52D8-4D15-D845-152D845D152D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Builder\Compiler">
+        <UniqueIdentifier>80E725B8-E725-40E7-5B80-725B80E725B8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Builder\Mediator">
+        <UniqueIdentifier>4E0DBEC1-E0DB-414E-DBEC-4E0DBEC14E0D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Builder\Mediator\CachedShape">
+        <UniqueIdentifier>2702B3D6-702B-4627-2B3D-2702B3D62702</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Builder\Mediator\Shape">
+        <UniqueIdentifier>59035AC2-9035-4259-35AC-59035AC25903</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Builder\Splitter">
+        <UniqueIdentifier>45025173-5025-4345-2517-450251734502</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Code">
+        <UniqueIdentifier>7050A9B8-050A-4870-0A9B-7050A9B87050</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Machine">
+        <UniqueIdentifier>C2B1AC9C-B1AC-42B1-C9C2-1AC9C2B1AC9C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Modifiers">
+        <UniqueIdentifier>6CEA3172-CEA3-426C-A317-6CEA31726CEA</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Compound\Tree\Mopp\Utility">
+        <UniqueIdentifier>4314009E-3140-4E43-4009-4314009E4314</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex">
+        <UniqueIdentifier>4D77EF44-77EF-4D77-F44D-7EF44D77EF44</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex\Box">
+        <UniqueIdentifier>459DC894-9DC8-459D-8945-DC89459DC894</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex\Capsule">
+        <UniqueIdentifier>7D930D53-D930-437D-30D5-7D930D537D93</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex\ConvexTransform">
+        <UniqueIdentifier>6C26B837-C26B-476C-6B83-6C26B8376C26</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex\ConvexTranslate">
+        <UniqueIdentifier>26B04E79-6B04-4926-04E7-26B04E7926B0</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex\ConvexVertices">
+        <UniqueIdentifier>7315B29D-315B-4D73-5B29-7315B29D7315</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex\Cylinder">
+        <UniqueIdentifier>6EE74045-EE74-456E-7404-6EE740456EE7</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex\Sphere">
+        <UniqueIdentifier>4C7DB2D8-C7DB-484C-DB2D-4C7DB2D84C7D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Convex\Triangle">
+        <UniqueIdentifier>43608DA3-3608-4343-08DA-43608DA34360</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Deprecated">
+        <UniqueIdentifier>62289836-2289-4662-8983-622898366228</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Deprecated\CompressedMesh">
+        <UniqueIdentifier>61229B55-1229-4561-29B5-61229B556122</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Deprecated\ConvexList">
+        <UniqueIdentifier>300EC260-00EC-4030-EC26-300EC260300E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Deprecated\ConvexPieceMesh">
+        <UniqueIdentifier>37F13914-7F13-4437-1391-37F1391437F1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Deprecated\FastMesh">
+        <UniqueIdentifier>3B494E6E-B494-4E3B-94E6-3B494E6E3B49</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Deprecated\Mesh">
+        <UniqueIdentifier>4F59C7AC-F59C-4C4F-9C7A-4F59C7AC4F59</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Deprecated\MultiSphere">
+        <UniqueIdentifier>1B1444D2-B144-421B-444D-1B1444D21B14</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Deprecated\StorageMesh">
+        <UniqueIdentifier>746A7C46-46A7-4674-A7C4-746A7C46746A</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\HeightField">
+        <UniqueIdentifier>442B4F97-42B4-4744-B4F9-442B4F97442B</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\HeightField\CompressedSampledHeightField">
+        <UniqueIdentifier>44CCABC4-CCAB-44CC-BC44-CABC44CCABC4</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\HeightField\Plane">
+        <UniqueIdentifier>55B19C03-5B19-4355-19C0-55B19C0355B1</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\HeightField\SampledHeightField">
+        <UniqueIdentifier>1023FDF1-023F-4110-3FDF-1023FDF11023</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\HeightField\StorageSampledHeightField">
+        <UniqueIdentifier>424C57A5-24C5-4542-C57A-424C57A5424C</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\HeightField\TriSampledHeightField">
+        <UniqueIdentifier>50768779-0768-4950-6877-507687795076</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Misc">
+        <UniqueIdentifier>16550B71-6550-4116-50B7-16550B711655</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Misc\Bv">
+        <UniqueIdentifier>145E0EF6-45E0-4614-E0EF-145E0EF6145E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Misc\MultiRay">
+        <UniqueIdentifier>3DB876AB-DB87-4B3D-876A-3DB876AB3DB8</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Misc\PhantomCallback">
+        <UniqueIdentifier>6DFBA3EF-DFBA-4F6D-BA3E-6DFBA3EF6DFB</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Misc\Transform">
+        <UniqueIdentifier>3E39D071-E39D-413E-9D07-3E39D0713E39</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Shape\Query">
+        <UniqueIdentifier>4B419CF8-B419-484B-19CF-4B419CF84B41</UniqueIdentifier>
+        </Filter>
+    <Filter Include="UnitTest">
+        <UniqueIdentifier>1D4E8DF6-D4E8-461D-E8DF-1D4E8DF61D4E</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util">
+        <UniqueIdentifier>6310CE50-310C-4063-0CE5-6310CE506310</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\Deprecated">
+        <UniqueIdentifier>7B7FED8C-B7FE-4C7B-FED8-7B7FED8C7B7F</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\Deprecated\ConvexHull">
+        <UniqueIdentifier>6E4DABD3-E4DA-436E-DABD-6E4DABD36E4D</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\ShapeCutter">
+        <UniqueIdentifier>1FFCD47E-FFCD-4E1F-CD47-1FFCD47E1FFC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\ShapeDepth">
+        <UniqueIdentifier>78CCDA51-8CCD-4178-CDA5-78CCDA5178CC</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\ShapeInfo">
+        <UniqueIdentifier>408120E9-0812-4940-120E-408120E94081</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\ShapeShrinker">
+        <UniqueIdentifier>7B684EDF-B684-4F7B-84ED-7B684EDF7B68</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\ShapeSkinning">
+        <UniqueIdentifier>5F39E0E8-F39E-485F-9E0E-5F39E0E85F39</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\ShapeVirtualTable">
+        <UniqueIdentifier>223061CA-2306-4A22-061C-223061CA2230</UniqueIdentifier>
+        </Filter>
+    <Filter Include="Util\Welding">
+        <UniqueIdentifier>6C00FC14-C00F-446C-0FC1-6C00FC146C00</UniqueIdentifier>
+        </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shape\Deprecated\Mesh\hkpMeshShape.h">
+        <Filter>Shape\Deprecated\Mesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpTypedBroadPhaseDispatcher.h">
+        <Filter>Dispatch\BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpWorldLinearCaster.h">
+        <Filter>Query\CastUtil</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Mediator\hkpMoppMediator.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Mediator</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\hkpCollisionQueryJobs.h">
+        <Filter>Query\Multithreaded\CollisionQuery</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\RayCollector\hkpAllRayHitCollector.h">
+        <Filter>Query\Collector\RayCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpRootCdPoint.h">
+        <Filter>Query\Collector\PointCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Utility\hkpMoppDebugger.h">
+        <Filter>Shape\Compound\Tree\Mopp\Utility</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\SphereCapsule\hkpSphereCapsuleAgent.h">
+        <Filter>Agent\ConvexAgent\SphereCapsule</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\MiscAgent\Transform\hkpTransformAgent.h">
+        <Filter>Agent\MiscAgent\Transform</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\BodyPairCollector\hkpFlagCdBodyPairCollector.h">
+        <Filter>Query\Collector\BodyPairCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\FastMesh\hkpFastMeshShape.h">
+        <Filter>Shape\Deprecated\FastMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="BroadPhase\hkpBroadPhaseHandle.h">
+        <Filter>BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\Midphase\hkpShapeKeyTrack.h">
+        <Filter>Agent3\Machine\Midphase</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Util\LinearCast\hkpIterativeLinearCastAgent.h">
+        <Filter>Agent\Util\LinearCast</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Query\hkpCdBodyPairCollector.h">
+        <Filter>Agent\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuPairGetClosestPointsJob.h">
+        <Filter>Query\Multithreaded\CollisionQuery\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Splitter\hkpMoppCostFunction.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Splitter</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpGskBaseAgent.h">
+        <Filter>Agent\ConvexAgent\Gjk</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\hkpProcessCollisionOutput.h">
+        <Filter>Agent</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Assembler\hkpMoppAssembler.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Assembler</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\CompressedMesh\hkpCompressedMeshShapeBuilder.h">
+        <Filter>Shape\Deprecated\CompressedMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\hkpBvTreeShape.h">
+        <Filter>Shape\Compound\Tree</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\hkpAgentRegisterUtil.h">
+        <Filter>Dispatch</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Collection3\hkpCollectionAgent3.h">
+        <Filter>Agent3\Collection3</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\hkpConvexListFilter.h">
+        <Filter>Filter</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\BodyPairCollector\hkpFirstCdBodyPairCollector.h">
+        <Filter>Query\Collector\BodyPairCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Mediator\Shape\hkpMoppShapeMediator.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Mediator\Shape</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\BodyPairCollector\hkpRootCdBodyPair.h">
+        <Filter>Query\Collector\BodyPairCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Query\hkpRayShapeCollectionFilter.h">
+        <Filter>Shape\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\hkpRayCollidableFilter.h">
+        <Filter>Filter</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\CapsuleCapsule\hkpCapsuleCapsuleAgent.h">
+        <Filter>Agent\ConvexAgent\CapsuleCapsule</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomEdge.h">
+        <Filter>Util\Deprecated\ConvexHull</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuWorldLinearCastJob.h">
+        <Filter>Query\Multithreaded\CollisionQuery\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\ShapeCollection\hkpShapeCollectionAgent.h">
+        <Filter>Agent\CompoundAgent\ShapeCollection</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Splitter\hkpMoppSplitter.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Splitter</Filter>
+        </ClInclude>
+    <ClInclude Include="BoxBox\hkpBoxBoxCollisionDetection.h">
+        <Filter>BoxBox</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\CompressedSampledHeightField\hkpCompressedSampledHeightFieldShape.h">
+        <Filter>Shape\HeightField\CompressedSampledHeightField</Filter>
+        </ClInclude>
+    <ClInclude Include="BroadPhase\3AxisSweep\hkp3AxisSweep.h">
+        <Filter>BroadPhase\3AxisSweep</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\Mesh\hkpMeshMaterial.h">
+        <Filter>Shape\Compound\Collection\Mesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomHull.h">
+        <Filter>Util\Deprecated\ConvexHull</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\PredGskCylinderAgent3\hkpPredGskCylinderAgent3.h">
+        <Filter>Agent3\PredGskCylinderAgent3</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ContactMgr\hkpContactMgr.h">
+        <Filter>Agent\ContactMgr</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\ShapeVirtualTable\hkcdShapeVirtualTableUtil.h">
+        <Filter>Util\ShapeVirtualTable</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\hkpShapeBuffer.h">
+        <Filter>Shape</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexVertices\hkpConvexVerticesConnectivity.h">
+        <Filter>Shape\Convex\ConvexVertices</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Query\hkpShapeRayCastCollectorOutput.h">
+        <Filter>Shape\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Util\Symmetric\hkpSymmetricAgent.h">
+        <Filter>Agent\Util\Symmetric</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\Util\hkpCollisionQueryUtil.h">
+        <Filter>Query\Multithreaded\RayCastQuery\Util</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpTypedBroadPhaseHandle.h">
+        <Filter>Dispatch\BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppModifier.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Splitter\hkpMoppDefaultSplitter.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Splitter</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\Nn\hkpAgentNnTrack.h">
+        <Filter>Agent3\Machine\Nn</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppRayBundleVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\BoxBox\hkpBoxBoxAgent3.h">
+        <Filter>Agent3\BoxBox</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Collidable\hkpCollidableQualityType.h">
+        <Filter>Agent\Collidable</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpGskfAgent.h">
+        <Filter>Agent\ConvexAgent\Gjk</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\1n\hkpAgent1nTrack.h">
+        <Filter>Agent3\Machine\1n</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\Cylinder\hkpCylinderShape.h">
+        <Filter>Shape\Convex\Cylinder</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\MultiSphere\hkpMultiSphereShape.h">
+        <Filter>Shape\Deprecated\MultiSphere</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\Midphase\hkpMidphaseAgentData.h">
+        <Filter>Agent3\Machine\Midphase</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\RayCollector\hkpClosestRayHitCollector.h">
+        <Filter>Query\Collector\RayCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\StorageExtendedMesh\hkpStorageExtendedMeshShape.h">
+        <Filter>Shape\Compound\Collection\StorageExtendedMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Query\hkpRayHitCollector.h">
+        <Filter>Shape\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="BoxBox\hkpBoxBoxContactPoint.h">
+        <Filter>BoxBox</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\hkpAgent3.h">
+        <Filter>Agent3</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppEarlyExitObbVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\hkpShapeType.h">
+        <Filter>Shape</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Util\Null\hkpNullAgent.h">
+        <Filter>Agent\Util\Null</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\CollectionCollection3\hkpCollectionCollectionAgent3.h">
+        <Filter>Agent3\CollectionCollection3</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Collidable\hkpCdBody.h">
+        <Filter>Agent\Collidable</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\hkpCollisionQueryJobQueueUtils.h">
+        <Filter>Query\Multithreaded\CollisionQuery</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\Mesh\hkpNamedMeshMaterial.h">
+        <Filter>Shape\Compound\Collection\Mesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Collidable\hkpCdPoint.h">
+        <Filter>Agent\Collidable</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexTransform\hkpConvexTransformShape.h">
+        <Filter>Shape\Convex\ConvexTransform</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpBroadPhaseListener.h">
+        <Filter>Dispatch\BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpWorldRayCaster.h">
+        <Filter>Query\CastUtil</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\TriSampledHeightField\hkpTriSampledHeightFieldCollection.h">
+        <Filter>Shape\HeightField\TriSampledHeightField</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\MiscAgent\Phantom\hkpPhantomAgent.h">
+        <Filter>Agent\MiscAgent\Phantom</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\Group\hkpGroupFilterSetup.h">
+        <Filter>Filter\Group</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\List\hkpCollisionFilterList.h">
+        <Filter>Filter\List</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\ContactMgr\hkpContactMgrFactory.h">
+        <Filter>Dispatch\ContactMgr</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\BvTree3\hkpBvTreeAgent3.h">
+        <Filter>Agent3\BvTree3</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\ContactMgr\hkpNullContactMgr.h">
+        <Filter>Dispatch\ContactMgr</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomConvexHullBuilder.h">
+        <Filter>Util\Deprecated\ConvexHull</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\hkpProcessCdPoint.h">
+        <Filter>Agent</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\1n\hkpCpuDoubleContainerIterator.h">
+        <Filter>Agent3\Machine\1n</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\hkpRayCastQueryJobQueueUtils.h">
+        <Filter>Query\Multithreaded\RayCastQuery</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Misc\Bv\hkpBvShape.h">
+        <Filter>Shape\Misc\Bv</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\SphereTriangle\hkpSphereTriangleAgent.h">
+        <Filter>Agent\ConvexAgent\SphereTriangle</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\hkpCollisionAgent.h">
+        <Filter>Agent</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\ConvexList3\hkpConvexListAgent3.h">
+        <Filter>Agent3\ConvexList3</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\hkpCollisionQualityInfo.h">
+        <Filter>Agent</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\hkpProcessCollisionInput.h">
+        <Filter>Agent</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Assembler\hkpMoppNodeInfoTypes.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Assembler</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTreeStream\hkpMoppBvTreeStreamAgent.h">
+        <Filter>Agent\CompoundAgent\BvTreeStream</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\CompressedMesh\hkTjunctionDetector.h">
+        <Filter>Shape\Deprecated\CompressedMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\1n\hkpCpuSingleContainerIterator.h">
+        <Filter>Agent3\Machine\1n</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\CompressedMesh\hkpCompressedMeshShape.h">
+        <Filter>Shape\Deprecated\CompressedMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpAllCdPointCollector.h">
+        <Filter>Query\Collector\PointCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\Sphere\hkpSphereShape.h">
+        <Filter>Shape\Convex\Sphere</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\hkpShapeCollectionFilter.h">
+        <Filter>Filter</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Assembler\hkpMoppDefaultAssembler.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Assembler</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\hkpShapeBase.h">
+        <Filter>Shape</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\Null\hkpNullCollisionFilter.h">
+        <Filter>Filter\Null</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\ShapeVirtualTable\hkpShapeVirtualTableUtil.h">
+        <Filter>Util\ShapeVirtualTable</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTree\hkpBvCompressedMeshAgent.h">
+        <Filter>Agent\CompoundAgent\BvTree</Filter>
+        </ClInclude>
+    <ClInclude Include="UnitTest\Tests.h">
+        <Filter>UnitTest</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\hkpCollidableCollidableFilter.h">
+        <Filter>Filter</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\ConvexPieceMesh\hkpConvexPieceShape.h">
+        <Filter>Shape\Deprecated\ConvexPieceMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppAabbCastVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\1n\hkpAgent1nMachine.h">
+        <Filter>Agent3\Machine\1n</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\hkpConvexShape.h">
+        <Filter>Shape\Convex</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuWorldGetClosestPointsJob.h">
+        <Filter>Query\Multithreaded\CollisionQuery\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppKDopGeometriesVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpNullBroadPhaseListener.h">
+        <Filter>Dispatch\BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\hkpAgentDispatchUtil.h">
+        <Filter>Dispatch</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Code\hkpMoppCommands.h">
+        <Filter>Shape\Compound\Tree\Mopp\Code</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkp26Dop.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Deprecated\ConvexList\hkpConvexListUtils.h">
+        <Filter>Agent\Deprecated\ConvexList</Filter>
+        </ClInclude>
+    <ClInclude Include="BroadPhase\hkpBroadPhaseHandlePair.h">
+        <Filter>BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\Nn\hkpAgentNnMachine.h">
+        <Filter>Agent3\Machine\Nn</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\StorageMesh\hkpStorageMeshShape.h">
+        <Filter>Shape\Deprecated\StorageMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpClosestPointManifold.h">
+        <Filter>Agent\ConvexAgent\Gjk</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpSimpleWorldRayCaster.h">
+        <Filter>Query\CastUtil</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\Nn\hkpLinkedCollidable.h">
+        <Filter>Agent3\Machine\Nn</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Collidable\hkpCollidable.h">
+        <Filter>Agent\Collidable</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\BoxBox\hkpBoxBoxAgent.h">
+        <Filter>Agent\ConvexAgent\BoxBox</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\hkpMoppBvTreeShape.h">
+        <Filter>Shape\Compound\Tree\Mopp</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Mediator\CachedShape\hkpMoppCachedShapeMediator.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Mediator\CachedShape</Filter>
+        </ClInclude>
+    <ClInclude Include="BroadPhase\hkpBroadPhaseCastCollector.h">
+        <Filter>BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\Welding\hkpMeshWeldingUtility.h">
+        <Filter>Util\Welding</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Modifiers\hkpRemoveTerminalsMoppModifier.h">
+        <Filter>Shape\Compound\Tree\Mopp\Modifiers</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\Agent3Bridge\hkpAgent3Bridge.h">
+        <Filter>Dispatch\Agent3Bridge</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\DefaultConvexList\hkpDefaultConvexListFilter.h">
+        <Filter>Filter\DefaultConvexList</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomConvexHullTolerances.h">
+        <Filter>Util\Deprecated\ConvexHull</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\BodyPairCollector\hkpAllCdBodyPairCollector.h">
+        <Filter>Query\Collector\BodyPairCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Deprecated\ConvexList\hkpConvexListAgent.h">
+        <Filter>Agent\Deprecated\ConvexList</Filter>
+        </ClInclude>
+    <ClInclude Include="hkpTypes.h">
+        <Filter></Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\hkbuilder.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\ConvexPieceMesh\hkpConvexPieceMeshShape.h">
+        <Filter>Shape\Deprecated\ConvexPieceMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\Cpu\hkpCpuWorldRaycastJob.h">
+        <Filter>Query\Multithreaded\RayCastQuery\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppVirtualMachineMacros.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpWorldRayCastOutput.h">
+        <Filter>Query\CastUtil</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Assembler\hkpMoppCodeGenerator.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Assembler</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTreeStream\hkpBvTreeStreamAgent.h">
+        <Filter>Agent\CompoundAgent\BvTreeStream</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTree\hkpMoppAgent.h">
+        <Filter>Agent\CompoundAgent\BvTree</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\hkpShapeContainer.h">
+        <Filter>Shape</Filter>
+        </ClInclude>
+    <ClInclude Include="hkpExport.h">
+        <Filter></Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppStatisticsVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppUsingFloatAabbVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Query\hkpShapeRayBundleCastInput.h">
+        <Filter>Shape\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\hkpCollisionDispatcher.h">
+        <Filter>Dispatch</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\Plane\hkpPlaneShape.h">
+        <Filter>Shape\HeightField\Plane</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\Box\hkpBoxShape.h">
+        <Filter>Shape\Convex\Box</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Query\hkpCdPointCollector.h">
+        <Filter>Agent\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\Machine\Midphase\hkpBlockList.h">
+        <Filter>Agent3\Machine\Midphase</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuMoppAabbJob.h">
+        <Filter>Query\Multithreaded\CollisionQuery\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\HeightFieldAgent\hkpHeightFieldAgent.h">
+        <Filter>Agent\HeightFieldAgent</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppIntAabbVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpGskConvexConvexAgent.h">
+        <Filter>Agent\ConvexAgent\Gjk</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\hkpHeightFieldShape.h">
+        <Filter>Shape\HeightField</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppFindAllVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\hkpCollisionFilter.h">
+        <Filter>Filter</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\ShapeInfo\hkpShapeInfo.h">
+        <Filter>Util\ShapeInfo</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\StorageSampledHeightField\hkpStorageSampledHeightFieldShape.h">
+        <Filter>Shape\HeightField\StorageSampledHeightField</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\Cpu\hkpCpuShapeRaycastJob.h">
+        <Filter>Query\Multithreaded\RayCastQuery\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\hkpLegacyShapeType.h">
+        <Filter>Shape</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTree\hkpStaticCompoundAgent.h">
+        <Filter>Agent\CompoundAgent\BvTree</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\SphereBox\hkpSphereBoxAgent.h">
+        <Filter>Agent\ConvexAgent\SphereBox</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\SphereSphere\hkpSphereSphereAgent.h">
+        <Filter>Agent\ConvexAgent\SphereSphere</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\RayCollector\hkpFixedBufferRayHitCollector.h">
+        <Filter>Query\Collector\RayCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpTypedBroadPhaseHandlePair.h">
+        <Filter>Dispatch\BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\hkpShape.h">
+        <Filter>Shape</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Query\hkpShapeRayCastOutput.h">
+        <Filter>Shape\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Misc\MultiRay\hkpMultiRayShape.h">
+        <Filter>Shape\Misc\MultiRay</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\CapsuleTriangle\hkpCapsuleTriangleAgent.h">
+        <Filter>Agent\ConvexAgent\CapsuleTriangle</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\ExtendedMeshShape\hkpExtendedMeshShape.h">
+        <Filter>Shape\Compound\Collection\ExtendedMeshShape</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\Triangle\hkpTriangleShape.h">
+        <Filter>Shape\Convex\Triangle</Filter>
+        </ClInclude>
+    <ClInclude Include="Dispatch\ContactMgr\hkpNullContactMgrFactory.h">
+        <Filter>Dispatch\ContactMgr</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Util\Symmetric\hkpSymmetricAgentLinearCast.h">
+        <Filter>Agent\Util\Symmetric</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppRayVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\hkcdShape.h">
+        <Filter>Shape</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\hkpProcessCollisionData.h">
+        <Filter>Agent</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Compiler\hkpMoppCompiler.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Compiler</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppObbVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Misc\PhantomCallback\hkpPhantomCallbackShape.h">
+        <Filter>Shape\Misc\PhantomCallback</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpFixedBufferCdPointCollector.h">
+        <Filter>Query\Collector\PointCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\Capsule\hkpCapsuleShape.h">
+        <Filter>Shape\Convex\Capsule</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Code\hkpMoppCode.h">
+        <Filter>Shape\Compound\Tree\Mopp\Code</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\hkpShapeCollection.h">
+        <Filter>Shape\Compound\Collection</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\SimpleMesh\hkpSimpleMeshShape.h">
+        <Filter>Shape\Compound\Collection\SimpleMesh</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Deprecated\ConvexList\hkpConvexListShape.h">
+        <Filter>Shape\Deprecated\ConvexList</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\hkpCollisionAgentConfig.h">
+        <Filter>Agent</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\FullManifoldAgent\hkpFullManifoldAgent.h">
+        <Filter>Agent\FullManifoldAgent</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\hkpRayCastQueryJobs.h">
+        <Filter>Query\Multithreaded\RayCastQuery</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\hkpMoppUtility.h">
+        <Filter>Shape\Compound\Tree\Mopp</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Splitter\hkpMoppSplitTypes.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Splitter</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\List\hkpListShape.h">
+        <Filter>Shape\Compound\Collection\List</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\Welding\hkpWeldingUtility.h">
+        <Filter>Util\Welding</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\MiscAgent\MultirayConvex\hkpMultiRayConvexAgent.h">
+        <Filter>Agent\MiscAgent\MultirayConvex</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Query\hkpAabbCastCollector.h">
+        <Filter>Shape\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\List\hkpListAgent.h">
+        <Filter>Agent\CompoundAgent\List</Filter>
+        </ClInclude>
+    <ClInclude Include="BoxBox\hkpBoxBoxManifold.h">
+        <Filter>BoxBox</Filter>
+        </ClInclude>
+    <ClInclude Include="BroadPhase\hkpBroadPhase.h">
+        <Filter>BroadPhase</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpSimpleClosestContactCollector.h">
+        <Filter>Query\Collector\PointCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\ShapeDepth\hkpShapeDepthUtil.h">
+        <Filter>Util\ShapeDepth</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomConvexHullTester.h">
+        <Filter>Util\Deprecated\ConvexHull</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpLinearCastInput.h">
+        <Filter>Query\CastUtil</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexTranslate\hkpConvexTranslateShape.h">
+        <Filter>Shape\Convex\ConvexTranslate</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Compiler\hkpPrimitiveCompressor.h">
+        <Filter>Shape\Compound\Tree\Mopp\Builder\Compiler</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\ShapeSkinning\hkpShapeSkinningUtil.h">
+        <Filter>Util\ShapeSkinning</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\List3\hkpListAgent3.h">
+        <Filter>Agent3\List3</Filter>
+        </ClInclude>
+    <ClInclude Include="Filter\Group\hkpGroupFilter.h">
+        <Filter>Filter\Group</Filter>
+        </ClInclude>
+    <ClInclude Include="hkpCollide.h">
+        <Filter></Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\SampledHeightField\hkpSampledHeightFieldShape.h">
+        <Filter>Shape\HeightField\SampledHeightField</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\hkpCollideCapsuleUtil.h">
+        <Filter>Util</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpClosestCdPointCollector.h">
+        <Filter>Query\Collector\PointCollector</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\CapsuleTriangle\hkpCapsuleTriangleAgent3.h">
+        <Filter>Agent3\CapsuleTriangle</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\hkpSphereRepShape.h">
+        <Filter>Shape\HeightField</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Deprecated\MultiSphereTriangle\hkpMultiSphereTriangleAgent.h">
+        <Filter>Agent\Deprecated\MultiSphereTriangle</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Misc\Transform\hkpTransformShape.h">
+        <Filter>Shape\Misc\Transform</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\MiscAgent\Bv\hkpBvAgent.h">
+        <Filter>Agent\MiscAgent\Bv</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\hkpSphereUtil.h">
+        <Filter>Util</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Deprecated\MultiSphere\hkpMultiSphereAgent.h">
+        <Filter>Agent\Deprecated\MultiSphere</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppModifyVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTree\hkpBvTreeAgent.h">
+        <Filter>Agent\CompoundAgent\BvTree</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpPredGskfAgent.h">
+        <Filter>Agent\ConvexAgent\Gjk</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexVertices\hkpConvexVerticesShape.h">
+        <Filter>Shape\Convex\ConvexVertices</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Query\hkpShapeRayCastInput.h">
+        <Filter>Shape\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuPairLinearCastJob.h">
+        <Filter>Query\Multithreaded\CollisionQuery\Cpu</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\hkpCollideTriangleUtil.h">
+        <Filter>Util</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent3\PredGskAgent3\hkpPredGskAgent3.h">
+        <Filter>Agent3\PredGskAgent3</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\ShapeShrinker\hkpShapeShrinker.h">
+        <Filter>Util\ShapeShrinker</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\hkpMoppCompilerInput.h">
+        <Filter>Shape\Compound\Tree\Mopp</Filter>
+        </ClInclude>
+    <ClInclude Include="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe">
+        <Filter>External\Tools\PreBuild\bin\windows</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\hkpTriangleUtil.h">
+        <Filter>Util</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\SampledHeightField\hkpSampledHeightFieldBaseCinfo.h">
+        <Filter>Shape\HeightField\SampledHeightField</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppSphereVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\HeightField\TriSampledHeightField\hkpTriSampledHeightFieldBvTreeShape.h">
+        <Filter>Shape\HeightField\TriSampledHeightField</Filter>
+        </ClInclude>
+    <ClInclude Include="Util\ShapeCutter\hkpShapeCutterUtil.h">
+        <Filter>Util\ShapeCutter</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexVertices\hkpConvexVerticesConnectivityUtil.h">
+        <Filter>Shape\Convex\ConvexVertices</Filter>
+        </ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpWorldRayCastInput.h">
+        <Filter>Query\CastUtil</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\Query\hkpLinearCastCollisionInput.h">
+        <Filter>Agent\Query</Filter>
+        </ClInclude>
+    <ClInclude Include="Agent\hkpCollisionInput.h">
+        <Filter>Agent</Filter>
+        </ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppLongRayVirtualMachine.h">
+        <Filter>Shape\Compound\Tree\Mopp\Machine</Filter>
+        </ClInclude>
+  </ItemGroup>
+</Project>

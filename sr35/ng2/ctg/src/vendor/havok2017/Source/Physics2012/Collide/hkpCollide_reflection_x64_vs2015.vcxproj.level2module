@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    SOLUTION_FOLDER = "Reflection"
+    RUNTIME_DEPENDENCIES = "['hkBase_reflection_x64_vs2015.vcxproj']"
+    SOURCE_LEVEL = "CLIENT"
+    REQUIRED_HAVOK_PRODUCTS = "PHYSICS_2012"
+    
+    
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|x64">
+      <Configuration>Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1185B6DF-185B-4F11-5B6D-1185B6DF1185}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <Keyword>Reflection</Keyword>
+    <RootNamespace>Reflection</RootNamespace>
+    <ProjectName>hkpCollide_reflection</ProjectName>
+    
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+      <CharacterSet>Unicode</CharacterSet>
+      <ConfigurationType>Utility</ConfigurationType>
+      <CLRSupport>false</CLRSupport>
+      <UseOfMfc>false</UseOfMfc>
+    </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  </ImportGroup>
+  <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  <PropertyGroup>
+<TargetExt></TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Obj\x64_vs2015\debug\hkpCollide_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hkpCollide_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">..\..\..\Obj\x64_vs2015\dev\hkpCollide_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">hkpCollide_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Obj\x64_vs2015\release\hkpCollide_reflection\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_Auto\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hkpCollide_reflection</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile></ClCompile>
+    <ResourceCompile></ResourceCompile>
+    <Lib></Lib>
+    <Link></Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"></ClInclude>
+    <ClInclude Include="Agent3\BoxBox\hkpBoxBoxAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\BvTree3\hkpBvTreeAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\CapsuleTriangle\hkpCapsuleTriangleAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\Collection3\hkpCollectionAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\CollectionCollection3\hkpCollectionCollectionAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\ConvexList3\hkpConvexListAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\List3\hkpListAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\1n\hkpAgent1nMachine.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\1n\hkpAgent1nTrack.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\1n\hkpCpuDoubleContainerIterator.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\1n\hkpCpuSingleContainerIterator.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\Midphase\hkpBlockList.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\Midphase\hkpMidphaseAgentData.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\Midphase\hkpShapeKeyTrack.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\Nn\hkpAgentNnMachine.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\Nn\hkpAgentNnTrack.h"></ClInclude>
+    <ClInclude Include="Agent3\Machine\Nn\hkpLinkedCollidable.h"></ClInclude>
+    <ClInclude Include="Agent3\PredGskAgent3\hkpPredGskAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\PredGskCylinderAgent3\hkpPredGskCylinderAgent3.h"></ClInclude>
+    <ClInclude Include="Agent3\hkpAgent3.h"></ClInclude>
+    <ClInclude Include="Agent\Collidable\hkpCdBody.h"></ClInclude>
+    <ClInclude Include="Agent\Collidable\hkpCdPoint.h"></ClInclude>
+    <ClInclude Include="Agent\Collidable\hkpCollidable.h"></ClInclude>
+    <ClInclude Include="Agent\Collidable\hkpCollidableQualityType.h"></ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTreeStream\hkpBvTreeStreamAgent.h"></ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTreeStream\hkpMoppBvTreeStreamAgent.h"></ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTree\hkpBvCompressedMeshAgent.h"></ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTree\hkpBvTreeAgent.h"></ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTree\hkpMoppAgent.h"></ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\BvTree\hkpStaticCompoundAgent.h"></ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\List\hkpListAgent.h"></ClInclude>
+    <ClInclude Include="Agent\CompoundAgent\ShapeCollection\hkpShapeCollectionAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ContactMgr\hkpContactMgr.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\BoxBox\hkpBoxBoxAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\CapsuleCapsule\hkpCapsuleCapsuleAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\CapsuleTriangle\hkpCapsuleTriangleAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpClosestPointManifold.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpGskBaseAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpGskConvexConvexAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpGskfAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\Gjk\hkpPredGskfAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\SphereBox\hkpSphereBoxAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\SphereCapsule\hkpSphereCapsuleAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\SphereSphere\hkpSphereSphereAgent.h"></ClInclude>
+    <ClInclude Include="Agent\ConvexAgent\SphereTriangle\hkpSphereTriangleAgent.h"></ClInclude>
+    <ClInclude Include="Agent\Deprecated\ConvexList\hkpConvexListAgent.h"></ClInclude>
+    <ClInclude Include="Agent\Deprecated\ConvexList\hkpConvexListUtils.h"></ClInclude>
+    <ClInclude Include="Agent\Deprecated\MultiSphereTriangle\hkpMultiSphereTriangleAgent.h"></ClInclude>
+    <ClInclude Include="Agent\Deprecated\MultiSphere\hkpMultiSphereAgent.h"></ClInclude>
+    <ClInclude Include="Agent\FullManifoldAgent\hkpFullManifoldAgent.h"></ClInclude>
+    <ClInclude Include="Agent\HeightFieldAgent\hkpHeightFieldAgent.h"></ClInclude>
+    <ClInclude Include="Agent\MiscAgent\Bv\hkpBvAgent.h"></ClInclude>
+    <ClInclude Include="Agent\MiscAgent\MultirayConvex\hkpMultiRayConvexAgent.h"></ClInclude>
+    <ClInclude Include="Agent\MiscAgent\Phantom\hkpPhantomAgent.h"></ClInclude>
+    <ClInclude Include="Agent\MiscAgent\Transform\hkpTransformAgent.h"></ClInclude>
+    <ClInclude Include="Agent\Query\hkpCdBodyPairCollector.h"></ClInclude>
+    <ClInclude Include="Agent\Query\hkpCdPointCollector.h"></ClInclude>
+    <ClInclude Include="Agent\Query\hkpLinearCastCollisionInput.h"></ClInclude>
+    <ClInclude Include="Agent\Util\LinearCast\hkpIterativeLinearCastAgent.h"></ClInclude>
+    <ClInclude Include="Agent\Util\Null\hkpNullAgent.h"></ClInclude>
+    <ClInclude Include="Agent\Util\Symmetric\hkpSymmetricAgent.h"></ClInclude>
+    <ClInclude Include="Agent\Util\Symmetric\hkpSymmetricAgentLinearCast.h"></ClInclude>
+    <ClInclude Include="Agent\hkpCollisionAgent.h"></ClInclude>
+    <ClInclude Include="Agent\hkpCollisionAgentConfig.h"></ClInclude>
+    <ClInclude Include="Agent\hkpCollisionInput.h"></ClInclude>
+    <ClInclude Include="Agent\hkpCollisionQualityInfo.h"></ClInclude>
+    <ClInclude Include="Agent\hkpProcessCdPoint.h"></ClInclude>
+    <ClInclude Include="Agent\hkpProcessCollisionData.h"></ClInclude>
+    <ClInclude Include="Agent\hkpProcessCollisionInput.h"></ClInclude>
+    <ClInclude Include="Agent\hkpProcessCollisionOutput.h"></ClInclude>
+    <ClInclude Include="BoxBox\hkpBoxBoxCollisionDetection.h"></ClInclude>
+    <ClInclude Include="BoxBox\hkpBoxBoxContactPoint.h"></ClInclude>
+    <ClInclude Include="BoxBox\hkpBoxBoxManifold.h"></ClInclude>
+    <ClInclude Include="BroadPhase\3AxisSweep\hkp3AxisSweep.h"></ClInclude>
+    <ClInclude Include="BroadPhase\hkpBroadPhase.h"></ClInclude>
+    <ClInclude Include="BroadPhase\hkpBroadPhaseCastCollector.h"></ClInclude>
+    <ClInclude Include="BroadPhase\hkpBroadPhaseHandle.h"></ClInclude>
+    <ClInclude Include="BroadPhase\hkpBroadPhaseHandlePair.h"></ClInclude>
+    <ClInclude Include="Dispatch\Agent3Bridge\hkpAgent3Bridge.h"></ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpBroadPhaseListener.h"></ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpNullBroadPhaseListener.h"></ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpTypedBroadPhaseDispatcher.h"></ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpTypedBroadPhaseHandle.h"></ClInclude>
+    <ClInclude Include="Dispatch\BroadPhase\hkpTypedBroadPhaseHandlePair.h"></ClInclude>
+    <ClInclude Include="Dispatch\ContactMgr\hkpContactMgrFactory.h"></ClInclude>
+    <ClInclude Include="Dispatch\ContactMgr\hkpNullContactMgr.h"></ClInclude>
+    <ClInclude Include="Dispatch\ContactMgr\hkpNullContactMgrFactory.h"></ClInclude>
+    <ClInclude Include="Dispatch\hkpAgentDispatchUtil.h"></ClInclude>
+    <ClInclude Include="Dispatch\hkpAgentRegisterUtil.h"></ClInclude>
+    <ClInclude Include="Dispatch\hkpCollisionDispatcher.h"></ClInclude>
+    <ClInclude Include="Filter\DefaultConvexList\hkpDefaultConvexListFilter.h"></ClInclude>
+    <ClInclude Include="Filter\Group\hkpGroupFilter.h"></ClInclude>
+    <ClInclude Include="Filter\Group\hkpGroupFilterSetup.h"></ClInclude>
+    <ClInclude Include="Filter\List\hkpCollisionFilterList.h"></ClInclude>
+    <ClInclude Include="Filter\Null\hkpNullCollisionFilter.h"></ClInclude>
+    <ClInclude Include="Filter\hkpCollidableCollidableFilter.h"></ClInclude>
+    <ClInclude Include="Filter\hkpCollisionFilter.h"></ClInclude>
+    <ClInclude Include="Filter\hkpConvexListFilter.h"></ClInclude>
+    <ClInclude Include="Filter\hkpRayCollidableFilter.h"></ClInclude>
+    <ClInclude Include="Filter\hkpShapeCollectionFilter.h"></ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpLinearCastInput.h"></ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpSimpleWorldRayCaster.h"></ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpWorldLinearCaster.h"></ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpWorldRayCastInput.h"></ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpWorldRayCastOutput.h"></ClInclude>
+    <ClInclude Include="Query\CastUtil\hkpWorldRayCaster.h"></ClInclude>
+    <ClInclude Include="Query\Collector\BodyPairCollector\hkpAllCdBodyPairCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\BodyPairCollector\hkpFirstCdBodyPairCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\BodyPairCollector\hkpFlagCdBodyPairCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\BodyPairCollector\hkpRootCdBodyPair.h"></ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpAllCdPointCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpClosestCdPointCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpFixedBufferCdPointCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpRootCdPoint.h"></ClInclude>
+    <ClInclude Include="Query\Collector\PointCollector\hkpSimpleClosestContactCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\RayCollector\hkpAllRayHitCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\RayCollector\hkpClosestRayHitCollector.h"></ClInclude>
+    <ClInclude Include="Query\Collector\RayCollector\hkpFixedBufferRayHitCollector.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuMoppAabbJob.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuPairGetClosestPointsJob.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuPairLinearCastJob.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuWorldGetClosestPointsJob.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\Cpu\hkpCpuWorldLinearCastJob.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\hkpCollisionQueryJobQueueUtils.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\CollisionQuery\hkpCollisionQueryJobs.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\Cpu\hkpCpuShapeRaycastJob.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\Cpu\hkpCpuWorldRaycastJob.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\Util\hkpCollisionQueryUtil.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\hkpRayCastQueryJobQueueUtils.h"></ClInclude>
+    <ClInclude Include="Query\Multithreaded\RayCastQuery\hkpRayCastQueryJobs.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\ExtendedMeshShape\hkpExtendedMeshShape.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\List\hkpListShape.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\Mesh\hkpMeshMaterial.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\Mesh\hkpNamedMeshMaterial.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\SimpleMesh\hkpSimpleMeshShape.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\StorageExtendedMesh\hkpStorageExtendedMeshShape.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Collection\hkpShapeCollection.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Assembler\hkpMoppAssembler.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Assembler\hkpMoppCodeGenerator.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Assembler\hkpMoppDefaultAssembler.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Assembler\hkpMoppNodeInfoTypes.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Compiler\hkpMoppCompiler.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Compiler\hkpPrimitiveCompressor.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Mediator\CachedShape\hkpMoppCachedShapeMediator.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Mediator\Shape\hkpMoppShapeMediator.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Mediator\hkpMoppMediator.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Splitter\hkpMoppCostFunction.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Splitter\hkpMoppDefaultSplitter.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Splitter\hkpMoppSplitTypes.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\Splitter\hkpMoppSplitter.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Builder\hkbuilder.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Code\hkpMoppCode.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Code\hkpMoppCommands.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkp26Dop.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppAabbCastVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppEarlyExitObbVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppFindAllVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppIntAabbVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppKDopGeometriesVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppLongRayVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppModifier.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppModifyVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppObbVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppRayBundleVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppRayVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppSphereVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppStatisticsVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppUsingFloatAabbVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppVirtualMachine.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Machine\hkpMoppVirtualMachineMacros.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Modifiers\hkpRemoveTerminalsMoppModifier.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\Utility\hkpMoppDebugger.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\hkpMoppBvTreeShape.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\hkpMoppCompilerInput.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\Mopp\hkpMoppUtility.h"></ClInclude>
+    <ClInclude Include="Shape\Compound\Tree\hkpBvTreeShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\Box\hkpBoxShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\Capsule\hkpCapsuleShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexTransform\hkpConvexTransformShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexTranslate\hkpConvexTranslateShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexVertices\hkpConvexVerticesConnectivity.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexVertices\hkpConvexVerticesConnectivityUtil.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\ConvexVertices\hkpConvexVerticesShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\Cylinder\hkpCylinderShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\Sphere\hkpSphereShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\Triangle\hkpTriangleShape.h"></ClInclude>
+    <ClInclude Include="Shape\Convex\hkpConvexShape.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\CompressedMesh\hkTjunctionDetector.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\CompressedMesh\hkpCompressedMeshShape.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\CompressedMesh\hkpCompressedMeshShapeBuilder.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\ConvexList\hkpConvexListShape.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\ConvexPieceMesh\hkpConvexPieceMeshShape.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\ConvexPieceMesh\hkpConvexPieceShape.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\FastMesh\hkpFastMeshShape.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\Mesh\hkpMeshShape.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\MultiSphere\hkpMultiSphereShape.h"></ClInclude>
+    <ClInclude Include="Shape\Deprecated\StorageMesh\hkpStorageMeshShape.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\CompressedSampledHeightField\hkpCompressedSampledHeightFieldShape.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\Plane\hkpPlaneShape.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\SampledHeightField\hkpSampledHeightFieldBaseCinfo.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\SampledHeightField\hkpSampledHeightFieldShape.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\StorageSampledHeightField\hkpStorageSampledHeightFieldShape.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\TriSampledHeightField\hkpTriSampledHeightFieldBvTreeShape.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\TriSampledHeightField\hkpTriSampledHeightFieldCollection.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\hkpHeightFieldShape.h"></ClInclude>
+    <ClInclude Include="Shape\HeightField\hkpSphereRepShape.h"></ClInclude>
+    <ClInclude Include="Shape\Misc\Bv\hkpBvShape.h"></ClInclude>
+    <ClInclude Include="Shape\Misc\MultiRay\hkpMultiRayShape.h"></ClInclude>
+    <ClInclude Include="Shape\Misc\PhantomCallback\hkpPhantomCallbackShape.h"></ClInclude>
+    <ClInclude Include="Shape\Misc\Transform\hkpTransformShape.h"></ClInclude>
+    <ClInclude Include="Shape\Query\hkpAabbCastCollector.h"></ClInclude>
+    <ClInclude Include="Shape\Query\hkpRayHitCollector.h"></ClInclude>
+    <ClInclude Include="Shape\Query\hkpRayShapeCollectionFilter.h"></ClInclude>
+    <ClInclude Include="Shape\Query\hkpShapeRayBundleCastInput.h"></ClInclude>
+    <ClInclude Include="Shape\Query\hkpShapeRayCastCollectorOutput.h"></ClInclude>
+    <ClInclude Include="Shape\Query\hkpShapeRayCastInput.h"></ClInclude>
+    <ClInclude Include="Shape\Query\hkpShapeRayCastOutput.h"></ClInclude>
+    <ClInclude Include="Shape\hkcdShape.h"></ClInclude>
+    <ClInclude Include="Shape\hkpLegacyShapeType.h"></ClInclude>
+    <ClInclude Include="Shape\hkpShape.h"></ClInclude>
+    <ClInclude Include="Shape\hkpShapeBase.h"></ClInclude>
+    <ClInclude Include="Shape\hkpShapeBuffer.h"></ClInclude>
+    <ClInclude Include="Shape\hkpShapeContainer.h"></ClInclude>
+    <ClInclude Include="Shape\hkpShapeType.h"></ClInclude>
+    <ClInclude Include="UnitTest\Tests.h"></ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomConvexHullBuilder.h"></ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomConvexHullTester.h"></ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomConvexHullTolerances.h"></ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomEdge.h"></ClInclude>
+    <ClInclude Include="Util\Deprecated\ConvexHull\hkGeomHull.h"></ClInclude>
+    <ClInclude Include="Util\ShapeCutter\hkpShapeCutterUtil.h"></ClInclude>
+    <ClInclude Include="Util\ShapeDepth\hkpShapeDepthUtil.h"></ClInclude>
+    <ClInclude Include="Util\ShapeInfo\hkpShapeInfo.h"></ClInclude>
+    <ClInclude Include="Util\ShapeShrinker\hkpShapeShrinker.h"></ClInclude>
+    <ClInclude Include="Util\ShapeSkinning\hkpShapeSkinningUtil.h"></ClInclude>
+    <ClInclude Include="Util\ShapeVirtualTable\hkcdShapeVirtualTableUtil.h"></ClInclude>
+    <ClInclude Include="Util\ShapeVirtualTable\hkpShapeVirtualTableUtil.h"></ClInclude>
+    <ClInclude Include="Util\Welding\hkpMeshWeldingUtility.h"></ClInclude>
+    <ClInclude Include="Util\Welding\hkpWeldingUtility.h"></ClInclude>
+    <ClInclude Include="Util\hkpCollideCapsuleUtil.h"></ClInclude>
+    <ClInclude Include="Util\hkpCollideTriangleUtil.h"></ClInclude>
+    <ClInclude Include="Util\hkpSphereUtil.h"></ClInclude>
+    <ClInclude Include="Util\hkpTriangleUtil.h"></ClInclude>
+    <ClInclude Include="hkpCollide.h"></ClInclude>
+    <ClInclude Include="hkpExport.h"></ClInclude>
+    <ClInclude Include="hkpTypes.h"></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  
+<!-- The order of elements here is CRITICAL -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <UsingTask TaskName="GenerateReflection" AssemblyFile="..\..\..\Build\MSBuild\Reflection\vs-reflection.Build.CPPTasks.Reflection-$(ReflectionDllVersion).dll" />
+  
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <BuildDependsOn>hkpCollide_Debug_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpCollide_Debug_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpCollide_Debug_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpCollide_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpCollide_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpCollide_reflection_Debug_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpCollide_Debug_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpCollide_IncludeAllTypes.cxx;_Auto\hkpCollide_Tracker.cxx;_Auto\hkpCollideClassList.cxx;$(IntDir)buildCompleted_hkpCollide_reflection"/>
+        </Target>
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <BuildDependsOn>hkpCollide_Dev_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpCollide_Dev_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpCollide_Dev_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpCollide_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpCollide_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpCollide_reflection_Dev_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpCollide_Dev_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpCollide_IncludeAllTypes.cxx;_Auto\hkpCollide_Tracker.cxx;_Auto\hkpCollideClassList.cxx;$(IntDir)buildCompleted_hkpCollide_reflection"/>
+        </Target>
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <BuildDependsOn>hkpCollide_Release_x64_RegenerateReflections;$(BuildDependsOn)</BuildDependsOn>
+            <CleanDependsOn>hkpCollide_Release_x64_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+            <TrackFileAccess>true</TrackFileAccess>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='11.0'">vs2012</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='12.0'">vs2013</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='14.0'">vs2015</ReflectionDllVersion>
+            <ReflectionDllVersion Condition="'$(VisualStudioVersion)'=='15.0'">vs2017</ReflectionDllVersion>
+            
+        </PropertyGroup>
+        <Target Name="hkpCollide_Release_x64_RegenerateReflections" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <GenerateReflection
+                MinimalRebuildFromTracking="true"
+                ClangParserPath="..\..\..\Tools\PreBuild\bin\windows\hkPreBuild.exe"
+                TargetProject="$(MSBuildProjectDirectory)"
+                EchoCommandLines="true"
+                Sources="..\..\..\Source\Common\Base\hkBase.h"
+                Output="$(IntDir)buildCompleted_hkpCollide_reflection"
+                TrackFileAccess="true"
+                TrackerLogDirectory="$(TlogLocation)"
+                IncludeTrackingFile="$(IntDir)hkReflectionParser.d"
+                PreBuildOptions="--HATBinding @&quot;$(MSBuildProjectDirectory)\hkPreBuild_args.txt&quot; --clean-output-path --timestamp-file &quot;$(IntDir)buildCompleted_hkpCollide_reflection&quot; --include-tracking-file &quot;$(IntDir)hkReflectionParser.d&quot; --output-path &quot;_Auto&quot; --log-path &quot;$(IntDir)Log&quot;  --tkbms-scan ."
+                ProjectName="hkpCollide_reflection_Release_x64_vs2015"/>
+        </Target>
+        <Target Name="hkpCollide_Release_x64_CleanReflections" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+            <MakeDir Directories="$(OutDir)"/>
+            <RemoveDir Directories="$(OutDir)Types;$(OutDir)TemplateTypes;$(OutDir)HABinding"/>
+            <Delete Files="_Auto\hkpCollide_IncludeAllTypes.cxx;_Auto\hkpCollide_Tracker.cxx;_Auto\hkpCollideClassList.cxx;$(IntDir)buildCompleted_hkpCollide_reflection"/>
+        </Target>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|x64'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>
