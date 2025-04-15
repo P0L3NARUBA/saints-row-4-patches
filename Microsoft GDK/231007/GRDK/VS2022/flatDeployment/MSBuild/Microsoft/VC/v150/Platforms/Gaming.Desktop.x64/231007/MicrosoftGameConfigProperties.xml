@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+
+<Rule
+      Name="MGCConfigurationProperties"
+      DisplayName="Microsoft Game Config"
+      PageTemplate="Tool"
+      Description="Microsoft Game Config item properties"
+      xmlns="http://schemas.microsoft.com/build/2009/properties">
+  <Rule.DataSource>
+    <DataSource Persistence="ProjectFile"
+                ItemType="MGCCompile"
+                HasConfigurationCondition="true" />
+  </Rule.DataSource>
+  <Rule.Categories>
+    <Category Name="General" DisplayName="General" />
+  </Rule.Categories>
+
+  <BoolProperty Name="ApplyTo" Visible="false" />
+  <BoolProperty Name="DefaultApplyTo" Visible="false">
+    <BoolProperty.DataSource>
+      <DataSource Persistence="ProjectFile"
+                  ItemType="MGCCompile"
+                  HasConfigurationCondition="false" />
+    </BoolProperty.DataSource>
+  </BoolProperty>
+</Rule>

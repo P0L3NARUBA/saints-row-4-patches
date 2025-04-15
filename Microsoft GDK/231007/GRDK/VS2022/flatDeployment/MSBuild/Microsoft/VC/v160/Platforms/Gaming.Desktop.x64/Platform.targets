@@ -1,0 +1,22 @@
+﻿<!--
+***********************************************************************************************
+Platform.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="_GdkEditionCheck">
+
+    <Target Name="_GdkEditionCheck">
+      <Error Condition="!Exists('$(XdkEditionRootVS2022)$(XdkEdition)\Platform.Edition.targets')"
+           Text="Cannot locate Microsoft GDK edition MSBuild files. Make sure you have the correct Microsoft GDK installed, or have the correct properties set for BWOI. Microsoft GDK Edition value set to '$(XdkEdition)'" />
+    </Target>
+
+    <Import Condition="Exists('$(XdkEditionRootVS2022)$(XdkEdition)\Platform.Edition.targets')"
+            Project="$(XdkEditionRootVS2022)$(XdkEdition)\Platform.Edition.targets" />
+</Project>

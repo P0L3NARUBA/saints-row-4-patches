@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Console_SdkIncludeRoot>$(MSBuildThisFileDirectory)Include;$(Console_SdkIncludeRoot)</Console_SdkIncludeRoot>
+    <Console_SdkLibPath>$(MSBuildThisFileDirectory)Lib;$(Console_SdkLibPath)</Console_SdkLibPath>
+  </PropertyGroup>
+
+  <!--Add XCurl if we haven't already imported XCurl props -->
+  <ImportGroup Condition="'$(XCurlDllPropsImported)' == ''">
+    <Import Project="$(MSBuildThisFileDirectory)\..\..\..\..\Xbox.XCurl.API\DesignTime\CommonConfiguration\neutral\XCurlDll.props"/>
+  </ImportGroup>
+
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>PlayFabCore.GDK.lib;PlayFabServices.GDK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <XboxExtensionsDependencies>PlayFabCore.GDK.lib;PlayFabServices.GDK.lib%(XboxExtensionsDependencies)</XboxExtensionsDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+
+  <ItemGroup>
+    <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\..\Redist\CommonConfiguration\neutral\PlayFabCore.GDK.dll" />
+	<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\..\Redist\CommonConfiguration\neutral\PlayFabServices.GDK.dll" />
+  </ItemGroup>
+
+</Project>

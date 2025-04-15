@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Debug" Condition="'$(XblExtensionConfiguration)' == '' AND '$(Configuration.ToLower())' == 'debug'">
+    <XblExtensionConfiguration>Debug</XblExtensionConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Label="Non_Debug" Condition="'$(XblExtensionConfiguration)' == '' AND '$(Configuration.ToLower())' != 'debug'">
+    <XblExtensionConfiguration>Release</XblExtensionConfiguration>
+  </PropertyGroup>
+
+
+  <!--Support for older XsapiBuildFromSource prop name that controlled both XSAPI & libHttpClient -->
+  <PropertyGroup Condition="'$(XsapiBuildFromSource)' != '' AND '$(XsapiLibBuildFromSource)' == ''">
+    <XsapiLibBuildFromSource>$(XsapiBuildFromSource)</XsapiLibBuildFromSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(XsapiBuildFromSource)' != '' AND '$(LibHttpClientBuildFromSource)' == ''">
+    <LibHttpClientBuildFromSource>$(XsapiBuildFromSource)</LibHttpClientBuildFromSource>
+  </PropertyGroup>
+
+  <!--Add XCurl when not building libHttpClient from source, and not using XSAPI DLL and haven't already imported XCurl props -->
+  <ImportGroup Condition="'$(LibHttpClientBuildFromSource)' == '' AND '$(XsapiBuildWithDll)'=='' AND '$(XCurlPropsImported)' == ''">
+    <Import Project="$(MSBuildThisFileDirectory)\..\..\..\..\Xbox.XCurl.API\DesignTime\CommonConfiguration\neutral\XCurlLibrary.props"/>
+  </ImportGroup>
+
+  <!--Add lib & include paths when not building either XSAPI or libHttpClient from source, and not using XSAPI DLL -->
+  <PropertyGroup Condition="('$(XsapiLibBuildFromSource)' == '' OR '$(LibHttpClientBuildFromSource)' == '') AND '$(XsapiBuildWithDll)'==''">
+    <ExtensionPlatformToolset Condition="'$(ExtensionPlatformToolset)'==''">$(PlatformToolset)</ExtensionPlatformToolset>
+    <ExtensionPlatformToolset Condition="'$(ExtensionPlatformToolset)'=='v141'">141</ExtensionPlatformToolset>
+    <ExtensionPlatformToolset Condition="'$(ExtensionPlatformToolset)'=='v142'">142</ExtensionPlatformToolset>
+    <!-- We can safely use the v142 version of the extension libraries with v143 and ClangCL -->
+    <ExtensionPlatformToolset Condition="'$(ExtensionPlatformToolset)'=='v143'">142</ExtensionPlatformToolset>
+    <ExtensionPlatformToolset Condition="'$(ExtensionPlatformToolset.ToLower())'=='clangcl'">142</ExtensionPlatformToolset>
+    <XsapiExtensionSdkPath Condition="'$(XsapiExtensionSdkPath)' == ''">$(MSBuildThisFileDirectory)</XsapiExtensionSdkPath>
+    <Console_SdkIncludeRoot>$(XsapiExtensionSdkPath)Include;$(Console_SdkIncludeRoot)</Console_SdkIncludeRoot>
+    <Console_SdkLibPath>$(XsapiExtensionSdkPath)Lib\$(XblExtensionConfiguration)\v$(ExtensionPlatformToolset);$(Console_SdkLibPath)</Console_SdkLibPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(XsapiLibBuildFromSource)' == '' AND '$(XsapiBuildWithDll)'==''">
+    <IncludePath>$(Console_SdkIncludeRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  
+  <ItemDefinitionGroup Condition="'$(XsapiLibBuildFromSource)' == '' AND '$(XsapiBuildWithDll)'==''">
+    <Link>
+      <AdditionalDependencies>Appnotify.lib;Microsoft.Xbox.Services.$(ExtensionPlatformToolset).GDK.C.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <XboxExtensionsDependencies>Appnotify.lib;Microsoft.Xbox.Services.$(ExtensionPlatformToolset).GDK.C.lib;%(XboxExtensionsDependencies)</XboxExtensionsDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+
+  <ItemDefinitionGroup Condition="'$(LibHttpClientBuildFromSource)' == '' AND '$(XsapiBuildWithDll)'==''">
+    <Link>
+      <AdditionalDependencies>Appnotify.lib;winhttp.lib;crypt32.lib;libHttpClient.$(ExtensionPlatformToolset).GDK.C.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <XboxExtensionsDependencies>Appnotify.lib;winhttp.lib;crypt32.lib;libHttpClient.$(ExtensionPlatformToolset).GDK.C.lib;%(XboxExtensionsDependencies)</XboxExtensionsDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+
+  <PropertyGroup Condition="'$(XsapiBuildWithDll)'!=''">
+    <XsapiExtensionSdkPath Condition="'$(XsapiExtensionSdkPath)' == ''">$(MSBuildThisFileDirectory)</XsapiExtensionSdkPath>
+    <Console_SdkIncludeRoot>$(XsapiExtensionSdkPath)Include;$(Console_SdkIncludeRoot)</Console_SdkIncludeRoot>
+    <Console_SdkLibPath>$(XsapiExtensionSdkPath)Lib\$(XblExtensionConfiguration);$(Console_SdkLibPath)</Console_SdkLibPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(XsapiBuildWithDll)'!=''">
+    <IncludePath>$(Console_SdkIncludeRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+
+  <ItemDefinitionGroup Condition="'$(XsapiBuildWithDll)'!=''">
+    <Link>
+      <AdditionalDependencies>Appnotify.lib;winhttp.lib;crypt32.lib;../Microsoft.Xbox.Services.GDK.C.Thunks.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <XboxExtensionsDependencies>Appnotify.lib;winhttp.lib;crypt32.lib;../Microsoft.Xbox.Services.GDK.C.Thunks.lib;%(XboxExtensionsDependencies)</XboxExtensionsDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectSchemaDefinitions xmlns="http://schemas.microsoft.com/build/2009/properties">
+
+  <ContentType
+     Name="MGC"
+     DisplayName="Microsoft Game Config"
+     ItemType="MGCCompile">
+  </ContentType>    
+
+  <ItemType Name="MGCCompile" DisplayName="Microsoft Game Config"/>
+
+  <FileExtension Name=".mgc" ContentType="MGC"/>
+
+</ProjectSchemaDefinitions>

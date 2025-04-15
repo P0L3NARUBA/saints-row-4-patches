@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+
+<Rule
+      Name="DesktopConfigurationProperties"
+      DisplayName="Gaming Desktop"
+      PageTemplate="Tool"
+      Description="Gaming Desktop project properties"
+      xmlns="http://schemas.microsoft.com/build/2009/properties">
+    <Rule.DataSource>
+        <DataSource Persistence="ProjectFile" />
+    </Rule.DataSource>
+    <Rule.Categories>
+        <Category Name="General" DisplayName="General" />
+    </Rule.Categories>
+
+    <StringListProperty Name="GDKExtLibNames"
+                           DisplayName="Gaming Extension Libraries"
+                           Description="Selected Gaming Extension Libraries to use."
+                           Category="General">
+      <StringListProperty.ValueEditors>
+        <ValueEditor EditorType="GamingDesktopExtensionLibrariesPropertyEditor" DisplayName="&lt;Select...&gt;"/>
+      </StringListProperty.ValueEditors>
+      <StringListProperty.DataSource>
+        <DataSource Persistence="ProjectFile" Label="Globals" HasConfigurationCondition="false" />
+      </StringListProperty.DataSource>
+  </StringListProperty>
+
+    <!-- Must exist to support single StringListProperty entry -->
+    <StringProperty Name="Empty"
+                    Visible="false"
+                    Category="General" />
+</Rule>

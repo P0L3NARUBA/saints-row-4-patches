@@ -1,0 +1,5 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+      <XdkEdition Condition="'$(XdkEdition)'==''">231007</XdkEdition>
+    </PropertyGroup>
+</Project>

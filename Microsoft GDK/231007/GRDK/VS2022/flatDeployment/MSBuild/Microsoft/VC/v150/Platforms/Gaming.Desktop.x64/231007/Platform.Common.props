@@ -1,0 +1,57 @@
+﻿<!--
+***********************************************************************************************
+Platform.common.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup Condition="'$(ConfigurationType)'=='Application' or '$(ConfigurationType)'=='Makefile'">
+        <LocalDebuggerDebuggerType>NativeOnly</LocalDebuggerDebuggerType>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(ConfigurationType)'=='Application' or '$(ConfigurationType)'=='Makefile'">
+        <PropertyPageSchema Include="$(XdkEditionRootVS2022)$(XdkEdition)\DesktopConfigurationProperties.xml" />
+        <PropertyPageSchema Include="$(XdkEditionRootVS2022)$(XdkEdition)\MicrosoftGameConfigProperties.xml"  />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(ConfigurationType)'=='StaticLibrary' or '$(ConfigurationType)'=='DynamicLibrary' ">
+        <PropertyPageSchema Include="$(XdkEditionRootVS2022)$(XdkEdition)\DesktopConfigurationPropertiesLib.xml">
+            <Context>Project</Context>
+        </PropertyPageSchema>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <MGCToolExe>$(DurangoXdkTools)makepkg.exe</MGCToolExe>
+    </PropertyGroup>
+  
+    <PropertyGroup Condition="'$(ConfigurationType)'=='Makefile'">
+        <CLToolExe Condition="'$(CLToolExe)'==''">$(VC_ExecutablePath_x64_x64)\cl.exe</CLToolExe>
+        <LinkToolExe Condition="'$(LinkToolExe)'==''">$(VC_ExecutablePath_x64_x64)\link.exe</LinkToolExe>
+        <LibToolExe Condition="'$(LibToolExe)'==''">$(VC_ExecutablePath_x64_x64)\bin\amd64\lib.exe</LibToolExe>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvailableItemName Include="MGCCompile">
+            <Targets>MGCCompile</Targets>
+        </AvailableItemName>
+    </ItemGroup>
+
+    <ItemDefinitionGroup>
+        <ClCompile>
+            <PreprocessorDefinitions>_GAMING_DESKTOP;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+        </ClCompile>
+        <FxCompile>
+            <ShaderModel>5.1</ShaderModel>
+        </FxCompile>
+        <MGCCompile>
+            <Command>localize</Command>
+        </MGCCompile>
+    </ItemDefinitionGroup>
+</Project>

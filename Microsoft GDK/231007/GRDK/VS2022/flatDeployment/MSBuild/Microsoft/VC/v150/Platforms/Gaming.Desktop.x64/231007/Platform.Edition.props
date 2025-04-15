@@ -1,0 +1,36 @@
+<!--
+***********************************************************************************************
+Platform.Edition.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(VCTargetsPath)\Platforms\x64\Platform.props" />
+    <PropertyGroup>
+        <Console_EndpointLibRoot>$(DurangoXdkInstallPath)GRDK\gameKit\Lib\amd64</Console_EndpointLibRoot>
+        <Console_EndpointIncludeRoot>$(DurangoXdkInstallPath)GRDK\gameKit\Include\</Console_EndpointIncludeRoot>
+        <Console_EndpointIncludeRoot Condition="'$(TargetPlatformVersion)'=='10.0.19041.0'">$(Console_EndpointIncludeRoot);$(DurangoXdkInstallPath)GRDK\gameKit\Include\patch\</Console_EndpointIncludeRoot>
+        <Console_Libs>dxguid.lib;d3d12.lib;dxgi.lib;runtimeobject.lib;xgameruntime.lib;gameinput.lib</Console_Libs>
+        <Console_UCRTRedistDebug>$(WindowsSDKDir)bin\$(TargetPlatformVersion)\x64\ucrt\</Console_UCRTRedistDebug>
+
+        <Console_SdkRoot>$(DurangoXdkInstallRoot)</Console_SdkRoot>
+        <Console_SdkIncludeRoot>$(Console_EndpointIncludeRoot);$(WindowsSDK_IncludePath);$(UniversalCRT_IncludePath);$(VC_VC_IncludePath);</Console_SdkIncludeRoot>
+        <Console_SdkLibPath>$(Console_EndpointLibRoot);$(WindowsSDK_LibraryPath_x64);$(UniversalCRT_LibraryPath_x64)</Console_SdkLibPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GDKExtLibNames Condition="'$(GDKExtLibNames)'==''">Xbox.Services.API.C</GDKExtLibNames>
+        <Console_GRDKExtLibRoot>$(DurangoXdkInstallPath)GRDK\ExtensionLibraries\</Console_GRDKExtLibRoot>
+        <Console_GRDKExtLibNamesString>$([System.String]::Join('|', $([System.IO.Directory]::GetDirectories(&quot;$(Console_GRDKExtLibRoot)&quot;))).Replace('$(Console_GRDKExtLibRoot)',''))</Console_GRDKExtLibNamesString>
+        <Console_ExtLibPathsString>$([System.Text.RegularExpressions.Regex]::Replace($(GDKExtLibNames), '($(Console_GRDKExtLibNamesString))','$(Console_GRDKExtLibRoot)%24%26\DesignTime\CommonConfiguration\neutral\ExtensionLibrary.props', RegexOptions.IgnoreCase))</Console_ExtLibPathsString>
+        <Console_ExtLibPaths>$([MSBuild]::Unescape($(Console_ExtLibPathsString)))</Console_ExtLibPaths>
+    </PropertyGroup>
+
+    <Import Condition="'$(Console_ExtLibPaths)' != '' and Exists($(Console_ExtLibPaths))" Project="$(Console_ExtLibPaths)"/>
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Console_SdkIncludeRoot>$(MSBuildThisFileDirectory)Include;$(Console_SdkIncludeRoot)</Console_SdkIncludeRoot>
+    <Console_SdkLibPath>$(MSBuildThisFileDirectory)Lib;$(Console_SdkLibPath)</Console_SdkLibPath>
+    <PlayFabPartyPropsImported>true</PlayFabPartyPropsImported>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>Party.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <XboxExtensionsDependencies>Party.lib;%(XboxExtensionsDependencies)</XboxExtensionsDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\..\Redist\CommonConfiguration\neutral\Party.dll" />
+  </ItemGroup>
+</Project>

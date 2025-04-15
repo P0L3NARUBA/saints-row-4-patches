@@ -1,0 +1,36 @@
+﻿<!--
+***********************************************************************************************
+Platform.default.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <!-- This property allows for relocation of the Xbox One Platform Edition files outside of the MSBuild directory. -->
+        <DefaultXdkEditionRootVS2022 Condition="'$(DefaultXdkEditionRootVS2022)' == ''">$(VCTargetsPath)Platforms\Gaming.Desktop.x64\</DefaultXdkEditionRootVS2022>
+        <DefaultXdkEditionRootVS2022 Condition="!HasTrailingSlash('$(DefaultXdkEditionRootVS2022)')">$(DefaultXdkEditionRootVS2022)\</DefaultXdkEditionRootVS2022>
+
+        <XdkDefaultTarget Condition="'$(XdkDefaultTarget)' == ''">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\GDK', 'GRDKLatest', null, RegistryView.Registry32, RegistryView.Default))</XdkDefaultTarget>
+        <!-- Protect against uninstalled targets, remember invalid version and float to default to allow for Project loading. -->
+        <XdkNotInstalled Condition="'$(XdkEditionTarget)' != '' And !Exists('$(DefaultXdkEditionRootVS2022)$(XdkEditionTarget)\Platform.Edition.default.props')">$(XdkEditionTarget)</XdkNotInstalled>
+        <XdkEditionTarget Condition="'$(XdkEditionTarget)' == '' Or '$(XdkNotInstalled)' != ''">$(XdkDefaultTarget)</XdkEditionTarget>
+    </PropertyGroup>
+
+    <!-- Fail build if Project has declared an XDK Edition that is not installed. -->
+    <Target Name="XdkValidateEdition"
+            Condition="'$(XdkNotInstalled)' != ''"
+            BeforeTargets="_CheckForInvalidConfigurationAndPlatform">
+        <Error Text="This project targets GXDK edition $(XdkNotInstalled), which is not installed on this computer." />
+    </Target>
+
+    <!-- This import will set $(XdkEdition). Further Edition identifier queries should be made against this
+         property rather than $(XdkEditionTarget), which is a Project file setting. -->
+    <Import Condition="Exists('$(DefaultXdkEditionRootVS2022)$(XdkEditionTarget)\Platform.Edition.default.props')"
+            Project="$(DefaultXdkEditionRootVS2022)$(XdkEditionTarget)\Platform.Edition.default.props" />
+</Project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Debug" Condition="'$(XblExtensionConfiguration)' == '' AND '$(Configuration.ToLower())' == 'debug'">
+    <XblExtensionConfiguration>Debug</XblExtensionConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Label="Non_Debug" Condition="'$(XblExtensionConfiguration)' == '' AND '$(Configuration.ToLower())' != 'debug'">
+    <XblExtensionConfiguration>Release</XblExtensionConfiguration>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Platform)'=='X64'">
+    <XsapiExtensionSdkPath Condition="'$(XsapiExtensionSdkPath)' == ''">$(MSBuildThisFileDirectory)</XsapiExtensionSdkPath>
+    <GameKitRoot>$(XsapiExtensionSdkPath)..\..\..\..\..\GameKit\</GameKitRoot>
+
+    <GdkIncludeRoot>$(XsapiExtensionSdkPath)Include;$(GameKitRoot)Include</GdkIncludeRoot>
+    <GdkLibPath>$(XsapiExtensionSdkPath)Lib\$(XblExtensionConfiguration);$(GameKitRoot)Lib\amd64</GdkLibPath>
+
+    <GdkDependencies>Microsoft.Xbox.Services.GDK.C.Thunks.lib;xGameRuntime.lib</GdkDependencies>
+    <IncludePath>$(GdkIncludeRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(GdkLibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='X64'">
+    <Link>
+      <AdditionalDependencies>$(GdkDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>_GAMING_DESKTOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+</Project>

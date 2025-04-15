@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Console_SdkIncludeRoot>$(MSBuildThisFileDirectory)Include;$(Console_SdkIncludeRoot)</Console_SdkIncludeRoot>
+    <Console_SdkLibPath>$(MSBuildThisFileDirectory)Lib;$(Console_SdkLibPath)</Console_SdkLibPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>PartyXboxLive.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <XboxExtensionsDependencies>PartyXboxLive.lib;%(XboxExtensionsDependencies)</XboxExtensionsDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\..\Redist\CommonConfiguration\neutral\PartyXboxLive.dll" />
+  </ItemGroup>
+  <Target Name="PlayFabPartyXboxLiveCppDepCheck" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(PlayFabPartyPropsImported)'!='true'"
+           Text="PlayFab.Party.XboxLive.Cpp extension library requires PlayFab.Party.Cpp extension library."/>
+  </Target>
+</Project>

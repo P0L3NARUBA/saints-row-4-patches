@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Console_SdkIncludeRoot>$(MSBuildThisFileDirectory)Include;$(Console_SdkIncludeRoot)</Console_SdkIncludeRoot>
+    <Console_SdkLibPath>$(MSBuildThisFileDirectory)Lib;$(Console_SdkLibPath)</Console_SdkLibPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>GameChat2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <XboxExtensionsDependencies>GameChat2.lib;%(XboxExtensionsDependencies)</XboxExtensionsDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\..\Redist\CommonConfiguration\neutral\GameChat2.dll" />
+  </ItemGroup>
+</Project>

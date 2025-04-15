@@ -1,0 +1,3 @@
+The GDK Unity plugin has moved to https://aka.ms/GDKUnityPackage.
+
+The PlayFab Party Unity plugin has moved to https://aka.ms/PlayFabPartyUnity.

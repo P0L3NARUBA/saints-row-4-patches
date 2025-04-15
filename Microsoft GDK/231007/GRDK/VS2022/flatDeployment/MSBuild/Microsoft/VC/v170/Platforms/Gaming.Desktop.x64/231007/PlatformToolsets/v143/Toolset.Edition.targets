@@ -1,0 +1,241 @@
+<!--
+***********************************************************************************************
+Toolset.Edition.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(XdkEditionRootVS2022)$(XdkEdition)\PlatformToolsets\v143\ImportBefore\*.targets"
+            Condition="Exists('$(XdkEditionRootVS2022)$(XdkEdition)\PlatformToolsets\v143\ImportBefore')" />
+
+
+
+    <Import Project="$(VCTargetsPath)\Platforms\x64\PlatformToolsets\v143\toolset.targets"
+            Condition="Exists('$(VCTargetsPath)\Platforms\x64\PlatformToolsets\v143\toolset.targets')" />
+
+    <UsingTask TaskName="GetOutOfDateItems" AssemblyFile="$(MSBuildThisFileDirectory)Microsoft.Build.CppTasks.Common.dll"/>
+
+  <!--
+        MASM build customization props recognizes only Win32 and X64 platforms, declaring it
+        too late in the property imports to override. This target intercepts _MASM and declares
+        the X64 value before being passed to MASM with a failure regarding the Gaming.Desktop.x64 platform.
+        This is not a property that would be found in a project file, so no check for existing
+        values is needed.
+  -->
+
+    <Target Name="InterceptMASM"
+            BeforeTargets="_MASM">
+
+      <ItemGroup>
+        <MASM>
+          <CommandLineTemplate>ml64.exe /c [AllOptions] [AdditionalOptions] /Ta[Inputs]</CommandLineTemplate>
+        </MASM>
+      </ItemGroup>
+    </Target>
+
+    <Target Name="_EnforceToolset"
+            AfterTargets="_CheckForInvalidConfigurationAndPlatform">
+
+      <Error Condition="'$(TargetPlatformVersion)' &lt; '10.0.19041.0'"
+             Text="Gaming toolset is not supported by this version of the Windows SDK, install Windows SDK version 10.0.19041.0 or newer, or set Windows SDK Version to a newer installed version." />
+    </Target>
+
+<Target Name="MGCCompileProcessMetadata"
+        AfterTargets="Build"
+        BeforeTargets="Layout">
+    <ItemGroup>
+      <_MGCCompileSelectLegacyFilter Include="@(MGCCompile)" Condition="'%(MGCCompile.ExcludedFromBuild)' != 'true'" />
+      <_MGCCompileSelectDefaultApplyToFilter Include="@(MGCCompile)" Condition="'%(MGCCompile.DefaultApplyTo)' == 'true'" />
+      <_MGCCompileSelectApplyToFilter Include="@(MGCCompile)" Condition="'%(MGCCompile.ApplyTo)' == 'true'" />
+    </ItemGroup>
+
+    <GetOutOfDateItems
+        Condition                 ="'$(ConfigurationType)' != 'Makefile'"
+        Sources                   ="@(_MGCCompileSelectDefaultApplyToFilter)"
+        OutputsMetadataName       ="Outputs"
+        CommandMetadataName       ="Command"
+        TLogDirectory             ="$(TLogLocation)"
+        TLogNamePrefix            ="MGCCompile"
+        >
+        <Output TaskParameter="OutOfDateSources" ItemName="_MGCCompileSelectDefaultApplyTo"/>
+    </GetOutOfDateItems>
+
+    <GetOutOfDateItems
+        Condition                 ="'$(ConfigurationType)' != 'Makefile'"
+        Sources                   ="@(_MGCCompileSelectApplyToFilter)"
+        OutputsMetadataName       ="Outputs"
+        CommandMetadataName       ="Command"
+        TLogDirectory             ="$(TLogLocation)"
+        TLogNamePrefix            ="MGCCompile"
+        >
+        <Output TaskParameter="OutOfDateSources" ItemName="_MGCCompileSelectApplyTo"/>
+    </GetOutOfDateItems>
+
+    <GetOutOfDateItems
+        Condition                 ="'$(ConfigurationType)' != 'Makefile' AND '@(_MGCCompileSelectApplyTo->Count())' &lt; 1 AND '@(_MGCCompileSelectDefaultApplyTo->Count())' &lt; 1"
+        Sources                   ="@(_MGCCompileSelectLegacyFilter)"
+        OutputsMetadataName       ="Outputs"
+        CommandMetadataName       ="Command"
+        TLogDirectory             ="$(TLogLocation)"
+        TLogNamePrefix            ="MGCCompile"
+        >
+        <Output TaskParameter="OutOfDateSources" ItemName="_MGCCompileSelectLegacy"/>
+    </GetOutOfDateItems>
+
+    <Error Condition="'@(_MGCCompileSelectDefaultApplyToFilter->Count())' &gt; 1" Text="Only one Microsoft Game Config file can define DefaultApplyTo for each build configuration.%0D%0ASet 'DefaultApplyTo' for only one of the following:%0D%0A@(_MGCCompileSelectDefaultApplyToFilter)." />
+    <Error Condition="'@(_MGCCompileSelectApplyToFilter->Count())' &gt; 1" Text="Only one Microsoft Game Config file can define ApplyTo for each build configuration.%0D%0ASet 'ApplyTo' for only one of the following:%0D%0A@(_MGCCompileSelectApplyToFilter)." />
+ </Target>
+
+<Target Name="MGCCompile"
+        AfterTargets="MGCCompileProcessMetadata">
+
+        <ItemGroup
+            Condition="'@(_MGCCompileSelectDefaultApplyTo->Count())' &gt; 0">
+            <_MGCCompileSelectObject Include="@(_MGCCompileSelectDefaultApplyTo)" />
+        </ItemGroup>
+
+        <ItemGroup
+            Condition="'@(_MGCCompileSelectObject->Count())' &lt; 1">
+            <_MGCCompileSelectObject Include="@(_MGCCompileSelectApplyTo)" />
+        </ItemGroup>
+
+        <ItemGroup
+            Condition="'@(_MGCCompileSelectObject->Count())' &lt; 1">
+            <_MGCCompileSelectObject Include="@(_MGCCompileSelectLegacy)" />
+        </ItemGroup>
+
+      <PropertyGroup>
+         <MGCCompileLine
+             Condition="'$(XboxShellLocalizationDir)' == '' AND '@(_MGCCompileSelectObject->Count())' &gt; 0">"$(MGCToolExe)" %(_MGCCompileSelectObject.Command) /d "%(_MGCCompileSelectObject.RootDir)$([System.String]::Copy(%(_MGCCompileSelectObject.Directory)).Trim('\'))" /pd "$(OutDir.Trim('\'))" /gc "%(_MGCCompileSelectObject.Identity)"</MGCCompileLine>
+         <MGCCompileLine
+             Condition="'$(XboxShellLocalizationDir)' != '' AND '@(_MGCCompileSelectObject->Count())' &gt; 0">"$(MGCToolExe)" %(_MGCCompileSelectObject.Command) /d "%(_MGCCompileSelectObject.RootDir)$([System.String]::Copy(%(_MGCCompileSelectObject.Directory)).Trim('\'))" /resw "$(XboxShellLocalizationDir.Trim('\'))" /pd "$(OutDir.Trim('\'))" /gc "%(_MGCCompileSelectObject.Identity)"</MGCCompileLine>
+         <VSBuildPathAppend>$(Path)$(WDKBinRoot)\x64</VSBuildPathAppend>
+      </PropertyGroup>
+
+      <Exec Condition="'$(MGCCompileLine)' != ''" EnvironmentVariables="Path=$(VSBuildPathAppend)" ConsoleToMsBuild="true" Command="$(MGCCompileLine)"/>
+    </Target>
+
+    <Target Name="MGCPublishDefaultApplyTo"
+            Condition="'@(_MGCCompileSelectApplyTo)' == '' AND '@(_MGCCompileSelectDefaultApplyTo->Count())' == 1"
+            AfterTargets="MGCCompile;MGCCompileProcessMetadata">
+
+      <Message Condition="'@(_MGCCompileSelectDefaultApplyTo)' != 'MicrosoftGame.Config'" Text="Copying %(_MGCCompileSelectDefaultApplyTo.Identity) to $(OutDir)MicrosoftGame.Config"/>
+
+      <Copy SourceFiles="%(_MGCCompileSelectDefaultApplyTo.Identity)" DestinationFiles="$(OutDir)MicrosoftGame.Config"/>
+
+      <InsertIntoFile FilePath="$(OutDir)MicrosoftGame.Config" LineNumber="-1" Text="  %3C!-- Copied from @(_MGCCompileSelectDefaultApplyTo) for Platform: $(platform) | Configuration: $(Configuration) -->" />
+
+      <WriteLinesToFile
+          File="$(TLogLocation)MGCCompile.write.1.tlog"
+          Lines="^%(_MGCCompileSelectDefaultApplyTo.Identity);$(OutDir)MicrosoftGame.Config" />
+    </Target>
+
+    <Target Name="MGCPublishApplyTo"
+            Condition="'@(_MGCCompileSelectApplyTo->Count())' == 1"
+            AfterTargets="MGCCompileProcessMetadata">
+
+      <Message Condition="'@(_MGCCompileSelectApplyTo)' != 'MicrosoftGame.Config'" Text="Copying %(_MGCCompileSelectApplyTo.Identity) to $(OutDir)MicrosoftGame.Config"/>
+
+      <Copy SourceFiles="%(_MGCCompileSelectApplyTo.Identity)" DestinationFiles="$(OutDir)MicrosoftGame.Config"/>
+
+      <InsertIntoFile FilePath="$(OutDir)MicrosoftGame.Config" LineNumber="-1" Text="  %3C!-- Copied from @(_MGCCompileSelectApplyTo) for Platform: $(platform) | Configuration: $(Configuration) -->" />
+
+      <WriteLinesToFile
+          File="$(TLogLocation)MGCCompile.write.1.tlog"
+          Lines="^%(_MGCCompileSelectApplyTo.Identity);$(OutDir)MicrosoftGame.Config" />
+    </Target>
+
+
+    <Target Name="MGCPublishLegacy"
+            Condition="'@(_MGCCompileSelectLegacy)' != '' AND '@(_MGCCompileSelectApplyTo)' == '' AND '@(_MGCCompileSelectDefaultApplyTo)' == ''"
+            AfterTargets="MGCCompileProcessMetadata">
+
+      <Error Condition="'@(_MGCCompileSelectLegacy->Count())' &gt; 1" Text="Only one Microsoft Game Config file can be included for each build configuration.%0D%0AGo to the Gaming Project Control and select the Microsoft Game Config for this configuration." />
+
+      <Message Condition="'@(_MGCCompileSelectLegacy)' != 'MicrosoftGame.Config'" Text="Copying %(_MGCCompileSelectLegacy.Identity) to $(OutDir)MicrosoftGame.Config"/>
+
+      <Copy SourceFiles="%(_MGCCompileSelectLegacy.Identity)" DestinationFiles="$(OutDir)MicrosoftGame.Config"/>
+
+      <InsertIntoFile FilePath="$(OutDir)MicrosoftGame.Config" LineNumber="-1" Text="  %3C!-- Copied from @(_MGCCompileSelectLegacy) for Platform: $(platform) | Configuration: $(Configuration) -->" />
+
+      <WriteLinesToFile
+          File="$(TLogLocation)MGCCompile.write.1.tlog"
+          Lines="^%(_MGCCompileSelectApplyTo.Identity);$(OutDir)MicrosoftGame.Config" />
+    </Target>
+
+    <UsingTask
+      TaskName="InsertIntoFile"
+      TaskFactory="CodeTaskFactory"
+      AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >
+        <ParameterGroup>
+            <FilePath ParameterType="System.String" Required="true" />
+            <LineNumber ParameterType="System.Int32"  Required="true" />
+            <Text ParameterType="System.String" Required="true" />
+        </ParameterGroup>
+        <Task>
+          <Using Namespace="System" />
+          <Using Namespace="System.IO" />
+          <Code Type="Fragment" Language="cs">
+            <![CDATA[
+            var lineNumber = 0;
+            var lines = File.Exists(FilePath)
+                                  ? File.ReadAllLines(FilePath).ToList()
+                                  : new List<String>(1);
+
+            bool foundEndGameTag = false;
+            foreach (string line in lines)
+            {
+                // Game Element is all on the same line, we're done.
+                if (line.Contains("<Game") && line.Contains(">"))
+                {
+                    foundEndGameTag = true;
+                    lineNumber++;
+                    break;
+                }
+                else if (line.Contains("<Game"))
+                {
+                    //find the ending ">" or quit without writing the comment
+                    lineNumber++;
+                    while (foundEndGameTag == false && lineNumber < lines.Count)
+                    {
+                        if (lines[lineNumber].Contains(">"))
+                        {
+                            foundEndGameTag = true;
+                            lineNumber++; //Comment will be written on the line following the end > for Game tag
+                            break;
+                        }
+                        else if (lines[lineNumber].Contains("<"))
+                        {
+                            break; //we found a beginning tag so this file is not formatted correctly, bail out.
+                        }
+                        else
+                        {
+                            lineNumber++;
+                        }
+                    }
+                    break;
+                }
+                else
+                {
+                    lineNumber++;
+                }
+            }
+            if (foundEndGameTag)
+            {
+                lines.Insert(Math.Min(LineNumber == -1 ? lineNumber : LineNumber - 1, lines.Count), Text);
+                File.WriteAllLines(FilePath, lines);
+            }
+            return true;
+            ]]>
+          </Code>
+        </Task>
+    </UsingTask>
+    <Import Project="$(XdkEditionRootVS2022)$(XdkEdition)\PlatformToolsets\v143\ImportAfter\*.targets"
+            Condition="Exists('$(XdkEditionRootVS2022)$(XdkEdition)\PlatformToolsets\v143\ImportAfter')" />
+</Project>
