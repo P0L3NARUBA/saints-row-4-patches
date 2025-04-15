@@ -10,11 +10,11 @@ Make a new Environment Variable called **NINTENDO_SDK_ROOT** You can point this 
 
 # Extras
 [Visual Studio 2017](/vs_Community2017.exe)
-   - with Desktop C++ and C++ Game Development selected as well as Visual C++ MFC for x86 and x64.
+   - with Desktop C++ and C++ Game Development selected as well as Visual C++ MFC for x86 and x64.<br>
 [Visual Studio 2019](/vs_Community2019.exe)
-   - with Desktop C++ Development as well as Windows 10 SDK Version **10.0.18362.0**.
-[Microsoft GDK October 2023 Update 7](https://github.com/microsoft/GDK/archive/refs/tags/October_2023_Update_7.zip)
-[Vulkan SDK](https://sdk.lunarg.com/sdk/download/1.3.296.0/windows/VulkanSDK-1.3.296.0-Installer.exe)
+   - with Desktop C++ Development as well as Windows 10 SDK Version **10.0.18362.0**.<br>
+[Microsoft GDK October 2023 Update 7](https://github.com/microsoft/GDK/archive/refs/tags/October_2023_Update_7.zip)<br>
+[Vulkan SDK](https://sdk.lunarg.com/sdk/download/1.3.296.0/windows/VulkanSDK-1.3.296.0-Installer.exe)<br>
 [Volition .reg file](/volition.reg)
 
 Here's the source: https://gofile.io/d/PqdaAk<br>
